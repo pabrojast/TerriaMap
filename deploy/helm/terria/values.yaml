@@ -3,7 +3,5 @@ global:
     maxUnavailable: 0
   exposeNodePorts: false
   image:
-    repository: "ghcr.io/terriajs"
+    repository: "pabrojast"
     pullPolicy: Always
-tags:
-  all:
