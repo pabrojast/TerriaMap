@@ -10,7 +10,7 @@ COPY --chown=node:node . /app
 WORKDIR /app
 
 RUN yarn install --network-timeout 1000000
-RUN yarn gulp release --baseHref="/terriav8/"
+RUN yarn gulp release --baseHref="/terria/"
 
 # deploy container
 FROM node:16-slim as deploy

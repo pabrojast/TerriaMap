@@ -6,6 +6,7 @@ image:
   # full: "ghcr.io/terriajs/terriamap:0.1.1"
   # repository: ghcr.io/terriajs
   # tag: latest
+  full: "pabrojast/terria-terriamap:0.0.8-unesco"
   pullPolicy: Always
 clientConfig:
   initializationUrls:
@@ -14,25 +15,19 @@ clientConfig:
   parameters:
     disclaimer:
       text: "Disclaimer: This map must not be used for navigation or precise spatial analysis"
-      url: "http://google.com"
+      url: "https://ihp-wins.unesco.org"
     globalDisclaimer:
       confirmationRequired: true
       buttonTitle: "I agree"
       title: "Disclaimer"
-      prodHostRegex: "gov.\\.au$"
+      prodHostRegex: "ihp-wins.\\.com$"
       devHostRegex: "\\b(staging|preview|test|dev)\\."
       enableOnLocalhost: true
     developerAttribution:
-      text: "Your organisation"
-      link: "http://www.example.com"
-    appName: "Terria Map"
-    brandBarElements:
-      [
-        "",
-        '<a target="_blank" href="http://terria.io"><img src="images/terria_logo.png" height="52" title="Version: {{version}}" /></a>',
-        ""
-      ]
-    supportEmail: "help@example.com"
+      text: "IHP WINS"
+      link: "https://ihp-wins.unesco.org"
+    appName: "IHP-WINS - Terria Map"
+    supportEmail: "projas@cazalac.org"
     mobileDefaultViewerMode: "2d"
     experimentalFeatures: true
 initConfig:
@@ -47,6 +42,12 @@ serverConfig:
   allowProxyFor: []
   initPaths:
     - "/etc/config/client"
+  trustProxy: true
+  proxyAllDomains: true
+  singlePageRouting:
+    resolvePathRelativeToWwwroot: "/index.html"
+    # Whether to route unmatched routes to /index.html and let the frontend resolve the route
+    resolveUnmatchedPathsWithIndexHtml: true
 resources:
   {}
   # We usually recommend not to specify default resources and to leave this as a conscious

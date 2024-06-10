@@ -2,6 +2,7 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple"],
   "parameters": {
+    "aboutButtonHrefUrl": "https://ihp-wins.unesco.org/about",
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
@@ -46,7 +47,7 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-	  "<div style=\"display: flex; justify-content: center; align-items: center; width: 100%;\"><a target=\"_blank\" href=\"https://ihp-wins.unesco.org/terriav8\"><img src=\"images/UNESCO_logo_hor_blue.jpg\" height=\"52\" title=\"Version: {{version}}\" /></a></div>",
+      "<div style=\"display: flex; justify-content: center; align-items: center; width: 100%;\"><a target=\"_blank\" href=\"https://ihp-wins.unesco.org/terria/\"><img src=\"images/UNESCO_logo_hor_blue.jpg\" height=\"52\" title=\"Version: {{version}}\" /></a></div>",
       ""
     ],
     // Shown when things go wrong.
@@ -85,6 +86,16 @@
       },
       "fallbackLanguage": "en"
     },
+    "extraCreditLinks": [
+      {
+        "text": "map.extraCreditLinks.dataAttribution",
+        "url": "https://ihp-wins.unesco.org/about#data-attribution"
+      },
+      {
+        "text": "map.extraCreditLinks.disclaimer",
+        "url": "https://ihp-wins.unesco.org/about#disclaimer"
+      }
+    ],
     "helpContent": [
       {
         "title": "translate#gettingstarted.title",
