@@ -3,12 +3,10 @@
   "catalog": [
     {
       "name": "IHP-WINS",
-      "shareKeys": [
-        "Root Group"
-      ],
+      "shareKeys": ["Root Group"],
       "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
       "type": "terria-reference",
-      "isGroup": true
+      "isGroup": false
     }
   ],
   "corsDomains": [
@@ -24,8 +22,8 @@
     "data.dev-wins.com",
     "dev-wins.com",
     "terria.dev-wins.com",
-	"ihp-wins.unesco.org",
-	"unesco.org"
+    "ihp-wins.unesco.org",
+    "unesco.org"
   ],
   "homeCamera": {
     "north": 0,
@@ -35,20 +33,21 @@
   },
   "viewerMode": "3dSmooth",
   "baseMaps": {
-	"items":[{
-		"item": {
-		"name": "United Nations Clear Map",
-		"type": "wms",
-		"url": "https://pro-ags1.dfs.un.org/arcgis/services/ClearMap_WebTopo/MapServer/WMSServer?request=GetCapabilities&service=WMS",
-		"layers": "0,3,4,6,8,9,11,12,13,15,16,18,19,20,29,30,31,32,33",
-		"id": "clearmap-webtopo",
-		"isEsri": true,
-		"minScaleDenominator": 4724702.380952
-		},
-		"image": "images/basemaps/ClearMap.JPG"
-	}
-	],
+    "items": [
+      {
+        "item": {
+          "name": "United Nations Clear Map",
+          "type": "wms",
+          "url": "https://pro-ags1.dfs.un.org/arcgis/services/ClearMap_WebTopo/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+          "layers": "0,3,4,6,8,9,11,12,13,15,16,18,19,20,29,30,31,32,33",
+          "id": "clearmap-webtopo",
+          "isEsri": true,
+          "minScaleDenominator": 4724702.380952
+        },
+        "image": "images/basemaps/ClearMap.JPG"
+      }
+    ],
     "enabledBaseMaps": ["basemap-natural-earth-II", "clearmap-webtopo"],
     "defaultBaseMapId": "basemap-natural-earth-II"
-	},
+  }
 }

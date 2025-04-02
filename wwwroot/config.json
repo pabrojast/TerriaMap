@@ -56,21 +56,23 @@
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
     "feedbackUrl": "feedback",
-
+    "showExternalLink": true,
+    "externalLinkUrl": "https://ihp-wins.unesco.org/terria/",
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
     "mobileDefaultViewerMode": "2d",
     // Enable experimental features, since its nice to have the bleeding edge.
     // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,
+    "useCesiumIonTerrain": false,
     // To enable welcome message when map first loads
-    // "showWelcomeMessage": true,
+    "showWelcomeMessage": true,
     // To override the welcome message video displayed on the welcome message
     // By default, the Getting Started to Terria video is displayed
     // "welcomeMessageVideo": {
-    //     "videoTitle": "Getting started with the map",
-    //     "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
-    //     "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
+    //   "videoTitle": "Getting started with the map",
+    //   "videoUrl": "https://www.youtube-nocookie.com/embed/NTtSM70rIvI", // use an embedded video link
+    //   "placeholderImage": "https://img.youtube.com/vi/NTtSM70rIvI/maxresdefault.jpg"
     // },
 
     // True to display in-app guides.
@@ -78,14 +80,14 @@
 
     // see `languageOverrides.json` in languages/en
     "languageConfiguration": {
-      "enabled": false,
-      "debug": false,
+      "enabled": true,
+      "debug": true,
       "languages": {
-        "en": "English",
-        "fr": "Français"
+        "en": "English"
       },
       "fallbackLanguage": "en"
     },
+    "relatedMaps": [],
     "extraCreditLinks": [
       {
         "text": "map.extraCreditLinks.dataAttribution",

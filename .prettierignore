@@ -14,7 +14,8 @@ datasources/00_National_Data_Sets.json
 .sass-cache
 /terriajs.pid
 /terriajs-server.log
-
+deploy/helm/terriadev/
+wwwroot/init/test.json
 /wwwroot/editor/
 /error.log
 /error.log
