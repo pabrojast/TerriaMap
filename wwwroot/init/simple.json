@@ -6,7 +6,7 @@
       "shareKeys": [
         "Root Group"
       ],
-      "url": "https://ihp-wins.unesco.org/prod.json",
+      "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
       "type": "terria-reference",
       "isGroup": true
     }
@@ -35,7 +35,20 @@
   },
   "viewerMode": "3dSmooth",
   "baseMaps": {
-    "defaultBaseMapId": "basemap-openstreetmap",
-    "previewBaseMapId": "basemap-natural-earth-II"
-  }
+	"items":[{
+		"item": {
+		"name": "United Nations Clear Map",
+		"type": "wms",
+		"url": "https://pro-ags1.dfs.un.org/arcgis/services/ClearMap_WebTopo/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+		"layers": "0,3,4,6,8,9,11,12,13,15,16,18,19,20,29,30,31,32,33",
+		"id": "clearmap-webtopo",
+		"isEsri": true,
+		"minScaleDenominator": 4724702.380952
+		},
+		"image": "images/basemaps/ClearMap.JPG"
+	}
+	],
+    "enabledBaseMaps": ["basemap-natural-earth-II", "clearmap-webtopo"],
+    "defaultBaseMapId": "basemap-natural-earth-II"
+	},
 }

@@ -1,0 +1,7 @@
+global:
+  rollingUpdate:
+    maxUnavailable: 2
+  exposeNodePorts: false
+  image:
+    repository: "pabrojast"
+    pullPolicy: Always

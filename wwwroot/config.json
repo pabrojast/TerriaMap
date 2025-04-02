@@ -145,52 +145,51 @@
                 "title": "translate#stepbystepguide.gettingstarted.step8.title"
               }
             ]
+          },
+          {
+            "title": "translate#stepbystepguide.satelliteimagery.title",
+            "footnote": "translate#stepbystepguide.satelliteimagery.footnote",
+            "steps": [
+              {
+                "title": "translate#stepbystepguide.satelliteimagery.step1.title",
+                "markdownDescription": "translate#stepbystepguide.satelliteimagery.step1.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.satelliteimagery.step2.title",
+                "markdownDescription": "translate#stepbystepguide.satelliteimagery.step2.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.satelliteimagery.step3.title",
+                "markdownDescription": "translate#stepbystepguide.satelliteimagery.step3.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.satelliteimagery.step4.title",
+                "markdownDescription": "translate#stepbystepguide.satelliteimagery.step4.markdownDescription"
+              }
+            ]
+          },
+          {
+            "title": "translate#stepbystepguide.comparetimeseries.title",
+            "footnote": "translate#stepbystepguide.comparetimeseries.footnote",
+            "steps": [
+              {
+                "title": "translate#stepbystepguide.comparetimeseries.step1.title",
+                "markdownDescription": "translate#stepbystepguide.comparetimeseries.step1.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.comparetimeseries.step2.title",
+                "markdownDescription": "translate#stepbystepguide.comparetimeseries.step2.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.comparetimeseries.step3.title",
+                "markdownDescription": "translate#stepbystepguide.comparetimeseries.step3.markdownDescription"
+              },
+              {
+                "title": "translate#stepbystepguide.comparetimeseries.step4.title",
+                "markdownDescription": "translate#stepbystepguide.comparetimeseries.step4.markdownDescription"
+              }
+            ]
           }
-          // -- Uncomment to enable the following trainer guides --
-          // {
-          //   "title": "translate#stepbystepguide.satelliteimagery.title",
-          //   "footnote": "translate#stepbystepguide.satelliteimagery.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "translate#stepbystepguide.satelliteimagery.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step4.markdownDescription"
-          //     }
-          //   ]
-          // },
-          // {
-          //   "title": "translate#stepbystepguide.comparetimeseries.title",
-          //   "footnote": "translate#stepbystepguide.comparetimeseries.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step4.markdownDescription"
-          //     }
-          //   ]
-          // }
         ]
       },
       {
@@ -265,7 +264,7 @@
     //       "trainerItems": [
     //           {
     //               "title": "Adding satellite imagery",
-    //               "footnote": "Important: Satellite imagery can take a little while to load so please be patient. If images don’t seem to be loading, zoom out a little bit",
+    //               "footnote": "Important: Satellite imagery can take a little while to load so please be patient. If images don't seem to be loading, zoom out a little bit",
     //               "steps": [
     //                   {
     //                       "title": "Find the location to view satellite imagery",
