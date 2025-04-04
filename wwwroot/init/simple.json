@@ -6,7 +6,7 @@
       "shareKeys": ["Root Group"],
       "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
       "type": "terria-reference",
-      "isGroup": false
+      "isGroup": true
     }
   ],
   "corsDomains": [
