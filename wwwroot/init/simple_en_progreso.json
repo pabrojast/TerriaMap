@@ -1,0 +1,825 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "name": "IHP-WINS",
+      "type": "group",
+      "members": [
+        {
+          "name": "IHP-WINS",
+          "shareKeys": ["Root Group"],
+          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
+          "type": "terria-reference",
+          "isGroup": true
+        }
+      ]
+    },
+    {
+      "name": "Precipitation",
+      "type": "group",
+      "members": [
+        {
+          "name": "CHIRPS v2.0 Monthly",
+          "type": "wms",
+          "layers": "chirps_monthly_precip",
+          "url": "https://data.dev-wins.com/datacubeows/",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "CHIRPS provides rainfall estimates from rain gauge and satellite observations. Since 1999, USGS and CHC scientists—supported by USAID, NASA, and NOAA—have developed techniques for producing reliable rainfall maps for drought early warning and environmental monitoring."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "Quasi-global coverage spanning 50°S to 50°N with a temporal range from 1981 to near-present."
+            },
+            {
+              "name": "Methodology",
+              "content": "Combines in-house climatology (CHPclim), 0.05° resolution satellite imagery, and interpolated station data to correct systematic biases from complex terrain."
+            },
+            {
+              "name": "Applications",
+              "content": "Supports seasonal drought monitoring, trend analysis, and early warning systems such as FEWS NET."
+            },
+            {
+              "name": "More Information",
+              "content": "<a href=\"https://www.nature.com/articles/sdata201566\">Read more about CHIRPS</a>"
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Streamflow",
+      "type": "group",
+      "members": [
+        {
+          "name": "UNH-GRDC Composite Monthly Runoff Fields V1.0",
+          "type": "wms",
+          "layers": "cmp_runoff_monthly",
+          "url": "https://data.dev-wins.com/datacubeows/",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.compositerunoff.sr.unh.edu/index.html\">https://www.compositerunoff.sr.unh.edu/index.html</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Groundwater",
+      "type": "group",
+      "members": [
+        {
+          "name": "UNH-GRDC Composite Monthly Runoff Fields V1.0",
+          "type": "wms",
+          "layers": "cmp_runoff_monthly",
+          "url": "https://data.dev-wins.com/datacubeows/",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.compositerunoff.sr.unh.edu/index.html\">https://www.compositerunoff.sr.unh.edu/index.html</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rivers",
+      "type": "group",
+      "members": [
+        {
+          "name": "Global Dam Watch",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/GDW_v1_0_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.globaldamwatch.org/database\">https://www.globaldamwatch.org/database</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        },
+        {
+          "name": "HydroRIVERS",
+          "type": "group",
+          "members": [
+            {
+              "name": "Global",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Africa",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_af_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Arctic",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_ar_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Asia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_as_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Australasia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_au_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Europe and Middle East",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_eu_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Greenland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_gr_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "North and Central America",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_na_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "South America",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_sa_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Siberia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_si_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Water Quality",
+      "type": "group",
+      "members": [
+        {
+          "name": "UNH-GRDC Composite Monthly Runoff Fields V1.0",
+          "type": "wms",
+          "layers": "cmp_runoff_monthly",
+          "url": "https://data.dev-wins.com/datacubeows/",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.compositerunoff.sr.unh.edu/index.html\">https://www.compositerunoff.sr.unh.edu/index.html</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cryosphere",
+      "type": "group",
+      "members": [
+        {
+          "name": "UNH-GRDC Composite Monthly Runoff Fields V1.0",
+          "type": "wms",
+          "layers": "cmp_runoff_monthly",
+          "url": "https://data.dev-wins.com/datacubeows/",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.compositerunoff.sr.unh.edu/index.html\">https://www.compositerunoff.sr.unh.edu/index.html</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Water-related Disasters",
+      "type": "group",
+      "members": [
+        {
+          "name": "Global river flood hazard maps",
+          "type": "cog",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/LS_RF_Mean_1980-2018_COG.cog",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.jrc.ec.europa.eu/dataset/jrc-floods-floodmapgl_rp50y-tif#dataaccess\">https://data.jrc.ec.europa.eu/dataset/jrc-floods-floodmapgl_rp50y-tif#dataaccess</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Support Layers (Topography, Places, Demography)",
+      "type": "group",
+      "members": [
+        {
+          "name": "Hydrosheds Global 30s Void-filled DEM",
+          "type": "cog",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/hyd_glo_dem_30s.cog",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/hydrosheds-core-downloads\">https://www.hydrosheds.org/hydrosheds-core-downloads</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        },
+        {
+          "name": "World Cities",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/World_Cities.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0?geometry=7.512%2C-66.873%2C-4.441%2C82.375&page=20\">https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0?geometry=7.512%2C-66.873%2C-4.441%2C82.375&page=20</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        },
+        {
+          "name": "UN Country Boundaries of the World",
+          "type": "esri-mapServer",
+          "url": "https://pro-ags2.dfs.un.org/arcgis/rest/services/UN_BASE_BNDL/MapServer/0",
+          "description": "Capa que muestra los límites basados en el servicio UN_BASE_BNDL proporcionado por las Naciones Unidas.",
+          "opacity": 0.8
+        }
+      ]
+    }
+  ],
+  "corsDomains": [
+    "corsproxy.com",
+    "programs.communications.gov.au",
+    "mapsengine.google.com",
+    "s3-ap-southeast-2.amazonaws.com",
+    "data.melbourne.vic.gov.au",
+    "data.act.gov.au",
+    "dea.ga.gov.au",
+    "gsky.nci.org.au",
+    "data.gov.au",
+    "data.dev-wins.com",
+    "dev-wins.com",
+    "terria.dev-wins.com",
+    "ihp-wins.unesco.org",
+    "unesco.org"
+  ],
+  "homeCamera": {
+    "north": 0,
+    "east": 50,
+    "south": -75,
+    "west": 98
+  },
+  "viewerMode": "3dSmooth",
+  "baseMaps": {
+    "items": [
+      {
+        "item": {
+          "name": "United Nations Clear Map",
+          "type": "wms",
+          "url": "https://pro-ags1.dfs.un.org/arcgis/services/ClearMap_WebTopo/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+          "layers": "0,3,4,6,8,9,11,12,13,15,16,18,19,20,29,30,31,32,33",
+          "id": "clearmap-webtopo",
+          "isEsri": true,
+          "minScaleDenominator": 4724702.380952
+        },
+        "image": "images/basemaps/ClearMap.JPG"
+      }
+    ],
+    "enabledBaseMaps": ["basemap-natural-earth-II", "clearmap-webtopo"],
+    "defaultBaseMapId": "basemap-natural-earth-II"
+  }
+}
+/* {
+          "name": "Global Dam Watch Global",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/GDW_v1_0_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.globaldamwatch.org/database\">https://www.globaldamwatch.org/database</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        }, */

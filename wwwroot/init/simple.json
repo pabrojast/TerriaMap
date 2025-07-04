@@ -3,10 +3,2571 @@
   "catalog": [
     {
       "name": "IHP-WINS",
-      "shareKeys": ["Root Group"],
-      "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
-      "type": "terria-reference",
-      "isGroup": true
+      "type": "group",
+      "members": [
+        {
+          "name": "IHP-WINS",
+          "shareKeys": ["Root Group"],
+          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
+          "type": "terria-reference",
+          "isGroup": true,
+          "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) provides a collaborative platform for sharing water-related information at global, regional, and national scales."
+        }
+      ]
+    },
+    {
+      "name": "Precipitation",
+      "type": "group",
+      "description": "Global precipitation datasets including satellite-derived rainfall estimates and climate modeling products. These layers provide insights into rainfall patterns, drought monitoring, and hydrological analysis at various temporal scales.",
+      "members": [
+        {
+          "name": "CHIRPS v2.0 Monthly",
+          "type": "group",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+          "members": [
+            {
+              "name": "CHIRPS v2.0 Monthly East",
+              "type": "wms",
+              "layers": "chirps_monthly_precip_east",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CHIRPS provides rainfall estimates from rain gauge and satellite observations. Since 1999, USGS and CHC scientists—supported by USAID, NASA, and NOAA—have developed techniques for producing reliable rainfall maps for drought early warning and environmental monitoring."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "Quasi-global coverage spanning 50°S to 50°N with a temporal range from 1981 to near-present."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "Combines in-house climatology (CHPclim), 0.05° resolution satellite imagery, and interpolated station data to correct systematic biases from complex terrain."
+                },
+                {
+                  "name": "Applications",
+                  "content": "Supports seasonal drought monitoring, trend analysis, and early warning systems such as FEWS NET."
+                },
+                {
+                  "name": "More Information",
+                  "content": "<a href=\"https://www.nature.com/articles/sdata201566\">Read more about CHIRPS</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "CHIRPS v2.0 Monthly West",
+              "type": "wms",
+              "layers": "chirps_monthly_precip_west",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CHIRPS provides rainfall estimates from rain gauge and satellite observations. Since 1999, USGS and CHC scientists—supported by USAID, NASA, and NOAA—have developed techniques for producing reliable rainfall maps for drought early warning and environmental monitoring."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "Quasi-global coverage spanning 50°S to 50°N with a temporal range from 1981 to near-present."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "Combines in-house climatology (CHPclim), 0.05° resolution satellite imagery, and interpolated station data to correct systematic biases from complex terrain."
+                },
+                {
+                  "name": "Applications",
+                  "content": "Supports seasonal drought monitoring, trend analysis, and early warning systems such as FEWS NET."
+                },
+                {
+                  "name": "More Information",
+                  "content": "<a href=\"https://www.nature.com/articles/sdata201566\">Read more about CHIRPS</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PERSIANN Monthly",
+          "type": "group",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+          "members": [
+            {
+              "name": "PERSIANN Monthly East",
+              "type": "wms",
+              "layers": "persian_monthly_precip_east",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) system was developed by the Center for Hydrometeorology and Remote Sensing (CHRS) at the University of California, Irvine (UCI). It uses neural network function classification/approximation procedures to compute estimates of rainfall rate from satellite imagery."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "The PERSIANN rainfall product covers 60°S to 60°N globally, with a spatial resolution of 0.25° x 0.25°."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "PERSIANN uses neural network function classification/approximation procedures to compute an estimate of rainfall rate at each 0.25° x 0.25° pixel of the infrared brightness temperature image provided by geostationary satellites. An adaptive training feature facilitates updating of the network parameters whenever independent estimates of rainfall are available."
+                },
+                {
+                  "name": "Applications",
+                  "content": "PERSIANN data is widely used for climate studies, hydrological modeling, water resource management, and weather forecasting applications."
+                },
+                {
+                  "name": "More Information",
+                  "content": "The PERSIANN system was initially based on geostationary infrared imagery and later extended to include the use of both infrared and daytime visible imagery. The algorithm used here is based on the geostationary longwave infrared imagery to generate global rainfall. <a href=\"https://chrsdata.eng.uci.edu/\">Visit the CHRS Data Portal for more information</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "PERSIANN Monthly West",
+              "type": "wms",
+              "layers": "persian_monthly_precip_west",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) system was developed by the Center for Hydrometeorology and Remote Sensing (CHRS) at the University of California, Irvine (UCI). It uses neural network function classification/approximation procedures to compute estimates of rainfall rate from satellite imagery."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "The PERSIANN rainfall product covers 60°S to 60°N globally, with a spatial resolution of 0.25° x 0.25°."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "PERSIANN uses neural network function classification/approximation procedures to compute an estimate of rainfall rate at each 0.25° x 0.25° pixel of the infrared brightness temperature image provided by geostationary satellites. An adaptive training feature facilitates updating of the network parameters whenever independent estimates of rainfall are available."
+                },
+                {
+                  "name": "Applications",
+                  "content": "PERSIANN data is widely used for climate studies, hydrological modeling, water resource management, and weather forecasting applications."
+                },
+                {
+                  "name": "More Information",
+                  "content": "The PERSIANN system was initially based on geostationary infrared imagery and later extended to include the use of both infrared and daytime visible imagery. The algorithm used here is based on the geostationary longwave infrared imagery to generate global rainfall. <a href=\"https://chrsdata.eng.uci.edu/\">Visit the CHRS Data Portal for more information</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rivers",
+      "type": "group",
+      "description": "Global river network datasets and hydrographic resources, including major river systems, drainage networks, and dam infrastructure. These layers support hydrological modeling, water resource management, and environmental studies.",
+      "members": [
+        {
+          "name": "Reservoirs by Country",
+          "type": "group",
+          "description": "The Global Dam Watch (GDW) Database provides a comprehensive, harmonized collection of over 35,000 reservoir polygons worldwide. Developed by the Global Dam Watch consortium, this database combines existing repositories with new data collected through citizen science, remote sensing, and machine learning. It includes all types of anthropogenic instream barriers, with priority given to major dams forming reservoirs and run-of-river barriers on larger waterways. This dataset is split by country for focused analysis and faster loading times.",
+          "members": [
+            {
+              "name": "Afghanistan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Afghanistan.zip",
+              "description": "Dam and reservoir data for Afghanistan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Afghanistan."
+                }
+              ]
+            },
+            {
+              "name": "Albania",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Albania.zip",
+              "description": "Dam and reservoir data for Albania from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Albania."
+                }
+              ]
+            },
+            {
+              "name": "Algeria",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Algeria.zip",
+              "description": "Dam and reservoir data for Algeria from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Algeria."
+                }
+              ]
+            },
+            {
+              "name": "Andorra",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Andorra.zip",
+              "description": "Dam and reservoir data for Andorra from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Andorra."
+                }
+              ]
+            },
+            {
+              "name": "Angola",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Angola.zip",
+              "description": "Dam and reservoir data for Angola from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Angola."
+                }
+              ]
+            },
+            {
+              "name": "Argentina",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Argentina.zip",
+              "description": "Dam and reservoir data for Argentina from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Argentina."
+                }
+              ]
+            },
+            {
+              "name": "Armenia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Armenia.zip",
+              "description": "Dam and reservoir data for Armenia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Armenia."
+                }
+              ]
+            },
+            {
+              "name": "Australia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Australia.zip",
+              "description": "Dam and reservoir data for Australia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Australia."
+                }
+              ]
+            },
+            {
+              "name": "Austria",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Austria.zip",
+              "description": "Dam and reservoir data for Austria from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Austria."
+                }
+              ]
+            },
+            {
+              "name": "Azerbaijan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Azerbaijan.zip",
+              "description": "Dam and reservoir data for Azerbaijan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Azerbaijan."
+                }
+              ]
+            },
+            {
+              "name": "Bangladesh",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bangladesh.zip",
+              "description": "Dam and reservoir data for Bangladesh from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bangladesh."
+                }
+              ]
+            },
+            {
+              "name": "Belarus",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Belarus.zip",
+              "description": "Dam and reservoir data for Belarus from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Belarus."
+                }
+              ]
+            },
+            {
+              "name": "Belgium",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Belgium.zip",
+              "description": "Dam and reservoir data for Belgium from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Belgium."
+                }
+              ]
+            },
+            {
+              "name": "Belize",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Belize.zip",
+              "description": "Dam and reservoir data for Belize from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Belize."
+                }
+              ]
+            },
+            {
+              "name": "Benin",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Benin.zip",
+              "description": "Dam and reservoir data for Benin from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Benin."
+                }
+              ]
+            },
+            {
+              "name": "Bhutan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bhutan.zip",
+              "description": "Dam and reservoir data for Bhutan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bhutan."
+                }
+              ]
+            },
+            {
+              "name": "Bolivia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bolivia.zip",
+              "description": "Dam and reservoir data for Bolivia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bolivia."
+                }
+              ]
+            },
+            {
+              "name": "Bosnia and Herzegovina",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bosnia_and_Herzegovina.zip",
+              "description": "Dam and reservoir data for Bosnia and Herzegovina from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bosnia and Herzegovina."
+                }
+              ]
+            },
+            {
+              "name": "Botswana",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Botswana.zip",
+              "description": "Dam and reservoir data for Botswana from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Botswana."
+                }
+              ]
+            },
+            {
+              "name": "Brazil",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Brazil.zip",
+              "description": "Dam and reservoir data for Brazil from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Brazil."
+                }
+              ]
+            },
+            {
+              "name": "Brunei",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Brunei.zip",
+              "description": "Dam and reservoir data for Brunei from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Brunei."
+                }
+              ]
+            },
+            {
+              "name": "Bulgaria",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bulgaria.zip",
+              "description": "Dam and reservoir data for Bulgaria from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bulgaria."
+                }
+              ]
+            },
+            {
+              "name": "Burkina Faso",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Burkina_Faso.zip",
+              "description": "Dam and reservoir data for Burkina Faso from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Burkina Faso."
+                }
+              ]
+            },
+            {
+              "name": "Burundi",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Burundi.zip",
+              "description": "Dam and reservoir data for Burundi from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Burundi."
+                }
+              ]
+            },
+            {
+              "name": "Cambodia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Cambodia.zip",
+              "description": "Dam and reservoir data for Cambodia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Cambodia."
+                }
+              ]
+            },
+            {
+              "name": "Cameroon",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Cameroon.zip",
+              "description": "Dam and reservoir data for Cameroon from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Cameroon."
+                }
+              ]
+            },
+            {
+              "name": "Canada",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Canada.zip",
+              "description": "Dam and reservoir data for Canada from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Canada."
+                }
+              ]
+            },
+            {
+              "name": "Central African Republic",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Central_African_Republic.zip",
+              "description": "Dam and reservoir data for Central African Republic from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Central African Republic."
+                }
+              ]
+            },
+            {
+              "name": "Chile",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Chile.zip",
+              "description": "Dam and reservoir data for Chile from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Chile."
+                }
+              ]
+            },
+            {
+              "name": "China",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_China.zip",
+              "description": "Dam and reservoir data for China from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in China."
+                }
+              ]
+            },
+            {
+              "name": "Colombia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Colombia.zip",
+              "description": "Dam and reservoir data for Colombia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Colombia."
+                }
+              ]
+            },
+            {
+              "name": "Costa Rica",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Costa_Rica.zip",
+              "description": "Dam and reservoir data for Costa Rica from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Costa Rica."
+                }
+              ]
+            },
+            {
+              "name": "Cote d'Ivoire",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Cote_d'Ivoire.zip",
+              "description": "Dam and reservoir data for Cote d'Ivoire from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Cote d'Ivoire."
+                }
+              ]
+            },
+            {
+              "name": "Croatia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Croatia.zip",
+              "description": "Dam and reservoir data for Croatia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Croatia."
+                }
+              ]
+            },
+            {
+              "name": "Cuba",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Cuba.zip",
+              "description": "Dam and reservoir data for Cuba from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Cuba."
+                }
+              ]
+            },
+            {
+              "name": "Cyprus",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Cyprus.zip",
+              "description": "Dam and reservoir data for Cyprus from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Cyprus."
+                }
+              ]
+            },
+            {
+              "name": "Czechia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Czechia.zip",
+              "description": "Dam and reservoir data for Czechia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Czechia."
+                }
+              ]
+            },
+            {
+              "name": "Democratic Republic of the Congo",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Democratic_Republic_of_the_Congo.zip",
+              "description": "Dam and reservoir data for Democratic Republic of the Congo from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Democratic Republic of the Congo."
+                }
+              ]
+            },
+            {
+              "name": "Denmark",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Denmark.zip",
+              "description": "Dam and reservoir data for Denmark from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Denmark."
+                }
+              ]
+            },
+            {
+              "name": "Dominican Republic",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Dominican_Republic.zip",
+              "description": "Dam and reservoir data for Dominican Republic from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Dominican Republic."
+                }
+              ]
+            },
+            {
+              "name": "Ecuador",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Ecuador.zip",
+              "description": "Dam and reservoir data for Ecuador from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Ecuador."
+                }
+              ]
+            },
+            {
+              "name": "Egypt",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Egypt.zip",
+              "description": "Dam and reservoir data for Egypt from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Egypt."
+                }
+              ]
+            },
+            {
+              "name": "El Salvador",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_El_Salvador.zip",
+              "description": "Dam and reservoir data for El Salvador from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in El Salvador."
+                }
+              ]
+            },
+            {
+              "name": "Eritrea",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Eritrea.zip",
+              "description": "Dam and reservoir data for Eritrea from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Eritrea."
+                }
+              ]
+            },
+            {
+              "name": "Estonia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Estonia.zip",
+              "description": "Dam and reservoir data for Estonia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Estonia."
+                }
+              ]
+            },
+            {
+              "name": "Ethiopia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Ethiopia.zip",
+              "description": "Dam and reservoir data for Ethiopia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Ethiopia."
+                }
+              ]
+            },
+            {
+              "name": "Fiji",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Fiji.zip",
+              "description": "Dam and reservoir data for Fiji from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Fiji."
+                }
+              ]
+            },
+            {
+              "name": "Finland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Finland.zip",
+              "description": "Dam and reservoir data for Finland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Finland."
+                }
+              ]
+            },
+            {
+              "name": "France",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_France.zip",
+              "description": "Dam and reservoir data for France from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in France."
+                }
+              ]
+            },
+            {
+              "name": "French Guiana",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_French_Guiana.zip",
+              "description": "Dam and reservoir data for French Guiana from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in French Guiana."
+                }
+              ]
+            },
+            {
+              "name": "Gabon",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Gabon.zip",
+              "description": "Dam and reservoir data for Gabon from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Gabon."
+                }
+              ]
+            },
+            {
+              "name": "Georgia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Georgia.zip",
+              "description": "Dam and reservoir data for Georgia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Georgia."
+                }
+              ]
+            },
+            {
+              "name": "Germany",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Germany.zip",
+              "description": "Dam and reservoir data for Germany from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Germany."
+                }
+              ]
+            },
+            {
+              "name": "Ghana",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Ghana.zip",
+              "description": "Dam and reservoir data for Ghana from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Ghana."
+                }
+              ]
+            },
+            {
+              "name": "Greece",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Greece.zip",
+              "description": "Dam and reservoir data for Greece from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Greece."
+                }
+              ]
+            },
+            {
+              "name": "Greenland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Greenland.zip",
+              "description": "Dam and reservoir data for Greenland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Greenland."
+                }
+              ]
+            },
+            {
+              "name": "Guatemala",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Guatemala.zip",
+              "description": "Dam and reservoir data for Guatemala from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Guatemala."
+                }
+              ]
+            },
+            {
+              "name": "Guinea",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Guinea.zip",
+              "description": "Dam and reservoir data for Guinea from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Guinea."
+                }
+              ]
+            },
+            {
+              "name": "Haiti",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Haiti.zip",
+              "description": "Dam and reservoir data for Haiti from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Haiti."
+                }
+              ]
+            },
+            {
+              "name": "Honduras",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Honduras.zip",
+              "description": "Dam and reservoir data for Honduras from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Honduras."
+                }
+              ]
+            },
+            {
+              "name": "Hungary",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Hungary.zip",
+              "description": "Dam and reservoir data for Hungary from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Hungary."
+                }
+              ]
+            },
+            {
+              "name": "Iceland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Iceland.zip",
+              "description": "Dam and reservoir data for Iceland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Iceland."
+                }
+              ]
+            },
+            {
+              "name": "India",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_India.zip",
+              "description": "Dam and reservoir data for India from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in India."
+                }
+              ]
+            },
+            {
+              "name": "Indonesia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Indonesia.zip",
+              "description": "Dam and reservoir data for Indonesia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Indonesia."
+                }
+              ]
+            },
+            {
+              "name": "Iran",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Iran.zip",
+              "description": "Dam and reservoir data for Iran from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Iran."
+                }
+              ]
+            },
+            {
+              "name": "Iraq",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Iraq.zip",
+              "description": "Dam and reservoir data for Iraq from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Iraq."
+                }
+              ]
+            },
+            {
+              "name": "Ireland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Ireland.zip",
+              "description": "Dam and reservoir data for Ireland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Ireland."
+                }
+              ]
+            },
+            {
+              "name": "Isle of Man",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Isle_of_Man.zip",
+              "description": "Dam and reservoir data for Isle of Man from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Isle of Man."
+                }
+              ]
+            },
+            {
+              "name": "Israel",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Israel.zip",
+              "description": "Dam and reservoir data for Israel from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Israel."
+                }
+              ]
+            },
+            {
+              "name": "Italy",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Italy.zip",
+              "description": "Dam and reservoir data for Italy from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Italy."
+                }
+              ]
+            },
+            {
+              "name": "Japan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Japan.zip",
+              "description": "Dam and reservoir data for Japan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Japan."
+                }
+              ]
+            },
+            {
+              "name": "Jordan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Jordan.zip",
+              "description": "Dam and reservoir data for Jordan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Jordan."
+                }
+              ]
+            },
+            {
+              "name": "Kazakhstan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Kazakhstan.zip",
+              "description": "Dam and reservoir data for Kazakhstan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Kazakhstan."
+                }
+              ]
+            },
+            {
+              "name": "Kenya",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Kenya.zip",
+              "description": "Dam and reservoir data for Kenya from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Kenya."
+                }
+              ]
+            },
+            {
+              "name": "Kosovo",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Kosovo.zip",
+              "description": "Dam and reservoir data for Kosovo from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Kosovo."
+                }
+              ]
+            },
+            {
+              "name": "Kyrgyzstan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Kyrgyzstan.zip",
+              "description": "Dam and reservoir data for Kyrgyzstan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Kyrgyzstan."
+                }
+              ]
+            },
+            {
+              "name": "Laos",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Laos.zip",
+              "description": "Dam and reservoir data for Laos from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Laos."
+                }
+              ]
+            },
+            {
+              "name": "Latvia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Latvia.zip",
+              "description": "Dam and reservoir data for Latvia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Latvia."
+                }
+              ]
+            },
+            {
+              "name": "Lebanon",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Lebanon.zip",
+              "description": "Dam and reservoir data for Lebanon from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Lebanon."
+                }
+              ]
+            },
+            {
+              "name": "Lesotho",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Lesotho.zip",
+              "description": "Dam and reservoir data for Lesotho from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Lesotho."
+                }
+              ]
+            },
+            {
+              "name": "Liberia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Liberia.zip",
+              "description": "Dam and reservoir data for Liberia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Liberia."
+                }
+              ]
+            },
+            {
+              "name": "Libya",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Libya.zip",
+              "description": "Dam and reservoir data for Libya from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Libya."
+                }
+              ]
+            },
+            {
+              "name": "Lithuania",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Lithuania.zip",
+              "description": "Dam and reservoir data for Lithuania from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Lithuania."
+                }
+              ]
+            },
+            {
+              "name": "Luxembourg",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Luxembourg.zip",
+              "description": "Dam and reservoir data for Luxembourg from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Luxembourg."
+                }
+              ]
+            },
+            {
+              "name": "Madagascar",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Madagascar.zip",
+              "description": "Dam and reservoir data for Madagascar from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Madagascar."
+                }
+              ]
+            },
+            {
+              "name": "Malawi",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Malawi.zip",
+              "description": "Dam and reservoir data for Malawi from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Malawi."
+                }
+              ]
+            },
+            {
+              "name": "Malaysia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Malaysia.zip",
+              "description": "Dam and reservoir data for Malaysia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Malaysia."
+                }
+              ]
+            },
+            {
+              "name": "Mali",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mali.zip",
+              "description": "Dam and reservoir data for Mali from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mali."
+                }
+              ]
+            },
+            {
+              "name": "Martinique",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Martinique.zip",
+              "description": "Dam and reservoir data for Martinique from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Martinique."
+                }
+              ]
+            },
+            {
+              "name": "Mauritania",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mauritania.zip",
+              "description": "Dam and reservoir data for Mauritania from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mauritania."
+                }
+              ]
+            },
+            {
+              "name": "Mexico",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mexico.zip",
+              "description": "Dam and reservoir data for Mexico from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mexico."
+                }
+              ]
+            },
+            {
+              "name": "Moldova",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Moldova.zip",
+              "description": "Dam and reservoir data for Moldova from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Moldova."
+                }
+              ]
+            },
+            {
+              "name": "Mongolia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mongolia.zip",
+              "description": "Dam and reservoir data for Mongolia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mongolia."
+                }
+              ]
+            },
+            {
+              "name": "Montenegro",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Montenegro.zip",
+              "description": "Dam and reservoir data for Montenegro from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Montenegro."
+                }
+              ]
+            },
+            {
+              "name": "Morocco",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Morocco.zip",
+              "description": "Dam and reservoir data for Morocco from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Morocco."
+                }
+              ]
+            },
+            {
+              "name": "Mozambique",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mozambique.zip",
+              "description": "Dam and reservoir data for Mozambique from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mozambique."
+                }
+              ]
+            },
+            {
+              "name": "Myanmar",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Myanmar.zip",
+              "description": "Dam and reservoir data for Myanmar from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Myanmar."
+                }
+              ]
+            },
+            {
+              "name": "Namibia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Namibia.zip",
+              "description": "Dam and reservoir data for Namibia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Namibia."
+                }
+              ]
+            },
+            {
+              "name": "Nepal",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Nepal.zip",
+              "description": "Dam and reservoir data for Nepal from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Nepal."
+                }
+              ]
+            },
+            {
+              "name": "Netherlands",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Netherlands.zip",
+              "description": "Dam and reservoir data for Netherlands from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Netherlands."
+                }
+              ]
+            },
+            {
+              "name": "New Caledonia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_New_Caledonia.zip",
+              "description": "Dam and reservoir data for New Caledonia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in New Caledonia."
+                }
+              ]
+            },
+            {
+              "name": "New Zealand",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_New_Zealand.zip",
+              "description": "Dam and reservoir data for New Zealand from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in New Zealand."
+                }
+              ]
+            },
+            {
+              "name": "Nicaragua",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Nicaragua.zip",
+              "description": "Dam and reservoir data for Nicaragua from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Nicaragua."
+                }
+              ]
+            },
+            {
+              "name": "Niger",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Niger.zip",
+              "description": "Dam and reservoir data for Niger from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Niger."
+                }
+              ]
+            },
+            {
+              "name": "Nigeria",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Nigeria.zip",
+              "description": "Dam and reservoir data for Nigeria from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Nigeria."
+                }
+              ]
+            },
+            {
+              "name": "North Korea",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_North_Korea.zip",
+              "description": "Dam and reservoir data for North Korea from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in North Korea."
+                }
+              ]
+            },
+            {
+              "name": "North Macedonia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_North_Macedonia.zip",
+              "description": "Dam and reservoir data for North Macedonia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in North Macedonia."
+                }
+              ]
+            },
+            {
+              "name": "Northern Cyprus",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Northern_Cyprus.zip",
+              "description": "Dam and reservoir data for Northern Cyprus from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Northern Cyprus."
+                }
+              ]
+            },
+            {
+              "name": "Norway",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Norway.zip",
+              "description": "Dam and reservoir data for Norway from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Norway."
+                }
+              ]
+            },
+            {
+              "name": "Oman",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Oman.zip",
+              "description": "Dam and reservoir data for Oman from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Oman."
+                }
+              ]
+            },
+            {
+              "name": "Pakistan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Pakistan.zip",
+              "description": "Dam and reservoir data for Pakistan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Pakistan."
+                }
+              ]
+            },
+            {
+              "name": "Panama",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Panama.zip",
+              "description": "Dam and reservoir data for Panama from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Panama."
+                }
+              ]
+            },
+            {
+              "name": "Papua New Guinea",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Papua_New_Guinea.zip",
+              "description": "Dam and reservoir data for Papua New Guinea from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Papua New Guinea."
+                }
+              ]
+            },
+            {
+              "name": "Paraguay",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Paraguay.zip",
+              "description": "Dam and reservoir data for Paraguay from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Paraguay."
+                }
+              ]
+            },
+            {
+              "name": "Peru",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Peru.zip",
+              "description": "Dam and reservoir data for Peru from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Peru."
+                }
+              ]
+            },
+            {
+              "name": "Philippines",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Philippines.zip",
+              "description": "Dam and reservoir data for Philippines from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Philippines."
+                }
+              ]
+            },
+            {
+              "name": "Poland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Poland.zip",
+              "description": "Dam and reservoir data for Poland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Poland."
+                }
+              ]
+            },
+            {
+              "name": "Portugal",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Portugal.zip",
+              "description": "Dam and reservoir data for Portugal from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Portugal."
+                }
+              ]
+            },
+            {
+              "name": "Puerto Rico",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Puerto_Rico.zip",
+              "description": "Dam and reservoir data for Puerto Rico from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Puerto Rico."
+                }
+              ]
+            },
+            {
+              "name": "Republic of the Congo",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Republic_of_the_Congo.zip",
+              "description": "Dam and reservoir data for Republic of the Congo from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Republic of the Congo."
+                }
+              ]
+            },
+            {
+              "name": "Romania",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Romania.zip",
+              "description": "Dam and reservoir data for Romania from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Romania."
+                }
+              ]
+            },
+            {
+              "name": "Russia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Russia.zip",
+              "description": "Dam and reservoir data for Russia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Russia."
+                }
+              ]
+            },
+            {
+              "name": "Rwanda",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Rwanda.zip",
+              "description": "Dam and reservoir data for Rwanda from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Rwanda."
+                }
+              ]
+            },
+            {
+              "name": "Saudi Arabia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Saudi_Arabia.zip",
+              "description": "Dam and reservoir data for Saudi Arabia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Saudi Arabia."
+                }
+              ]
+            },
+            {
+              "name": "Senegal",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Senegal.zip",
+              "description": "Dam and reservoir data for Senegal from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Senegal."
+                }
+              ]
+            },
+            {
+              "name": "Serbia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Serbia.zip",
+              "description": "Dam and reservoir data for Serbia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Serbia."
+                }
+              ]
+            },
+            {
+              "name": "Sierra Leone",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Sierra_Leone.zip",
+              "description": "Dam and reservoir data for Sierra Leone from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Sierra Leone."
+                }
+              ]
+            },
+            {
+              "name": "Singapore",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Singapore.zip",
+              "description": "Dam and reservoir data for Singapore from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Singapore."
+                }
+              ]
+            },
+            {
+              "name": "Slovakia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Slovakia.zip",
+              "description": "Dam and reservoir data for Slovakia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Slovakia."
+                }
+              ]
+            },
+            {
+              "name": "Slovenia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Slovenia.zip",
+              "description": "Dam and reservoir data for Slovenia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Slovenia."
+                }
+              ]
+            },
+            {
+              "name": "Solomon Islands",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Solomon_Islands.zip",
+              "description": "Dam and reservoir data for Solomon Islands from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Solomon Islands."
+                }
+              ]
+            },
+            {
+              "name": "Somalia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Somalia.zip",
+              "description": "Dam and reservoir data for Somalia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Somalia."
+                }
+              ]
+            },
+            {
+              "name": "South Africa",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_South_Africa.zip",
+              "description": "Dam and reservoir data for South Africa from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in South Africa."
+                }
+              ]
+            },
+            {
+              "name": "South Korea",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_South_Korea.zip",
+              "description": "Dam and reservoir data for South Korea from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in South Korea."
+                }
+              ]
+            },
+            {
+              "name": "Spain",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Spain.zip",
+              "description": "Dam and reservoir data for Spain from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Spain."
+                }
+              ]
+            },
+            {
+              "name": "Sri Lanka",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Sri_Lanka.zip",
+              "description": "Dam and reservoir data for Sri Lanka from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Sri Lanka."
+                }
+              ]
+            },
+            {
+              "name": "Sudan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Sudan.zip",
+              "description": "Dam and reservoir data for Sudan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Sudan."
+                }
+              ]
+            },
+            {
+              "name": "Suriname",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Suriname.zip",
+              "description": "Dam and reservoir data for Suriname from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Suriname."
+                }
+              ]
+            },
+            {
+              "name": "Swaziland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Swaziland.zip",
+              "description": "Dam and reservoir data for Swaziland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Swaziland."
+                }
+              ]
+            },
+            {
+              "name": "Sweden",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Sweden.zip",
+              "description": "Dam and reservoir data for Sweden from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Sweden."
+                }
+              ]
+            },
+            {
+              "name": "Switzerland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Switzerland.zip",
+              "description": "Dam and reservoir data for Switzerland from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Switzerland."
+                }
+              ]
+            },
+            {
+              "name": "Syria",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Syria.zip",
+              "description": "Dam and reservoir data for Syria from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Syria."
+                }
+              ]
+            },
+            {
+              "name": "Taiwan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Taiwan.zip",
+              "description": "Dam and reservoir data for Taiwan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Taiwan."
+                }
+              ]
+            },
+            {
+              "name": "Tajikistan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Tajikistan.zip",
+              "description": "Dam and reservoir data for Tajikistan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Tajikistan."
+                }
+              ]
+            },
+            {
+              "name": "Tanzania",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Tanzania.zip",
+              "description": "Dam and reservoir data for Tanzania from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Tanzania."
+                }
+              ]
+            },
+            {
+              "name": "Thailand",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Thailand.zip",
+              "description": "Dam and reservoir data for Thailand from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Thailand."
+                }
+              ]
+            },
+            {
+              "name": "Togo",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Togo.zip",
+              "description": "Dam and reservoir data for Togo from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Togo."
+                }
+              ]
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Trinidad_and_Tobago.zip",
+              "description": "Dam and reservoir data for Trinidad and Tobago from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Trinidad and Tobago."
+                }
+              ]
+            },
+            {
+              "name": "Tunisia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Tunisia.zip",
+              "description": "Dam and reservoir data for Tunisia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Tunisia."
+                }
+              ]
+            },
+            {
+              "name": "Turkey",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Turkey.zip",
+              "description": "Dam and reservoir data for Turkey from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Turkey."
+                }
+              ]
+            },
+            {
+              "name": "Turkmenistan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Turkmenistan.zip",
+              "description": "Dam and reservoir data for Turkmenistan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Turkmenistan."
+                }
+              ]
+            },
+            {
+              "name": "Uganda",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Uganda.zip",
+              "description": "Dam and reservoir data for Uganda from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Uganda."
+                }
+              ]
+            },
+            {
+              "name": "Ukraine",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Ukraine.zip",
+              "description": "Dam and reservoir data for Ukraine from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Ukraine."
+                }
+              ]
+            },
+            {
+              "name": "United Arab Emirates",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_United_Arab_Emirates.zip",
+              "description": "Dam and reservoir data for United Arab Emirates from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in United Arab Emirates."
+                }
+              ]
+            },
+            {
+              "name": "United Kingdom",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_United_Kingdom.zip",
+              "description": "Dam and reservoir data for United Kingdom from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in United Kingdom."
+                }
+              ]
+            },
+            {
+              "name": "United States",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_United_States.zip",
+              "description": "Dam and reservoir data for United States from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in United States."
+                }
+              ]
+            },
+            {
+              "name": "Uruguay",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Uruguay.zip",
+              "description": "Dam and reservoir data for Uruguay from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Uruguay."
+                }
+              ]
+            },
+            {
+              "name": "Uzbekistan",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Uzbekistan.zip",
+              "description": "Dam and reservoir data for Uzbekistan from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Uzbekistan."
+                }
+              ]
+            },
+            {
+              "name": "Venezuela",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Venezuela.zip",
+              "description": "Dam and reservoir data for Venezuela from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Venezuela."
+                }
+              ]
+            },
+            {
+              "name": "Vietnam",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Vietnam.zip",
+              "description": "Dam and reservoir data for Vietnam from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Vietnam."
+                }
+              ]
+            },
+            {
+              "name": "Western Sahara",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Western_Sahara.zip",
+              "description": "Dam and reservoir data for Western Sahara from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Western Sahara."
+                }
+              ]
+            },
+            {
+              "name": "Yemen",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Yemen.zip",
+              "description": "Dam and reservoir data for Yemen from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Yemen."
+                }
+              ]
+            },
+            {
+              "name": "Zambia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Zambia.zip",
+              "description": "Dam and reservoir data for Zambia from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Zambia."
+                }
+              ]
+            },
+            {
+              "name": "Zimbabwe",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Zimbabwe.zip",
+              "description": "Dam and reservoir data for Zimbabwe from the Global Dam Watch database.",
+              "info": [
+                {
+                  "name": "Source",
+                  "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Zimbabwe."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HydroRIVERS",
+          "type": "group",
+          "description": "HydroRIVERS is a comprehensive global river network dataset containing 8.5 million individual river reaches with a total length of 35.9 million km. It includes all rivers with a catchment area of at least 10 km² or an average flow of at least 0.1 m³/sec. Extracted from the HydroSHEDS database at 15 arc-second resolution, each river segment contains key attributes including length, distance from headwaters and ocean outlets, river order, and estimated long-term average discharge. All reaches are co-registered with the HydroBASINS database through shared IDs, making it ideal for hydrological modeling and water resource management.",
+          "members": [
+            {
+              "name": "Africa",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_af_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Arctic",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_ar_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Asia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_as_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Australasia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_au_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Europe and Middle East",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_eu_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Greenland",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_gr_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "North and Central America",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_na_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "South America",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_sa_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            },
+            {
+              "name": "Siberia",
+              "type": "shp",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_si_shp.zip",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality. HydroRIVERS is a valuable resource for hydrological modeling, water resource management, and environmental studies."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "HydroRIVERS covers all rivers and streams worldwide, including those in remote and mountainous areas. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "Applications",
+                  "content": "HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                },
+                {
+                  "name": "More Information",
+                  "content": " HydroRIVERS is a global database of rivers and streams, including their physical characteristics, hydrological data, and geographic locations. It provides detailed information about the length, width, and depth of rivers, as well as their flow patterns and water quality."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "More Information"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "Support Layers (Topography, Places, Demography)",
+      "type": "group",
+      "description": "Supplementary datasets providing context for hydrological analysis, including digital elevation models, populated places, and administrative boundaries. These layers help situate water resources in their geographical and social contexts.",
+      "members": [
+        {
+          "name": "Hydrosheds Global 30s Void-filled DEM",
+          "type": "cog",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/hyd_glo_dem_30s.cog",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/hydrosheds-core-downloads\">https://www.hydrosheds.org/hydrosheds-core-downloads</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        },
+        {
+          "name": "World Cities",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/World_Cities.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0?geometry=7.512%2C-66.873%2C-4.441%2C82.375&page=20\">https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0?geometry=7.512%2C-66.873%2C-4.441%2C82.375&page=20</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The present data set demonstrates the potential of combining observed river discharge information with a climate-driven Water Balance Model to develop composite runoff fields that are consistent with observed discharges. These composite fields preserve the accuracy of the discharge measurements as well as the spatial and temporal distribution of simulated runoff, thereby providing the \"best estimate\" of terrestrial runoff over large domains."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "The dataset utilizes a gridded river network at 30-minute spatial resolution to represent riverine flow pathways, linking continental landmasses to the oceans. It integrates selected gauging stations from the Global Runoff Data Centre archive to ensure broad spatial coverage suitable for large-scale hydrological assessments."
+            },
+            {
+              "name": "Methodology",
+              "content": "Selected gauging stations from the Global Runoff Data Centre archive were co-registered to a simulated topological network (STN-30p) developed at the University of New Hampshire. Inter-station regions along the STN-30p were identified, and inter-station discharge and runoff were calculated to compare observed values with outputs from the Water Balance Model simulation. Correction coefficients, based on the ratio of observed to simulated runoff in these areas, were then applied to create the composite runoff fields."
+            },
+            {
+              "name": "Applications",
+              "content": "In addition to providing the composite runoff fields, the dataset includes intermediate products such as station attributes, long-term monthly runoff regimes of the selected gauging stations, the simulated topological network (STN-30p), and derived attributes for the stations. An HTML-based data explorer allows users to navigate the information from a global view down to subbasin or station-level details."
+            },
+            {
+              "name": "More Information",
+              "content": "The printed version of the report can be ordered free of charge from GRDC (grdc@bafg.de) or WMO (dhwr@gateway.wmo.ch). Note: Due to inaccuracies in the topographical dataset used in compiling the simulated river network, graphical errors may occur for certain lower-order rivers. Users are encouraged to send their comments and error notifications to the provided email addresses."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Methodology",
+            "Applications",
+            "More Information"
+          ]
+        },
+        {
+          "name": "UN Country Boundaries of the World",
+          "type": "esri-mapServer",
+          "url": "https://pro-ags2.dfs.un.org/arcgis/rest/services/UN_BASE_BNDL/MapServer/0",
+          "description": "UN Country Boundaries of the World",
+          "opacity": 0.8
+        }
+      ]
     }
   ],
   "corsDomains": [
