@@ -687,7 +687,36 @@ Failed release workflow
 - Improve the computation of the visible extent in 3D view, making the view stay more consistent when switching between 2D and 3D view.
 - Improve the accuracy of the shared 3D view by adding precise camera parameters to the URL.
 - Improve the performance of rendering point features, especially in 2D.
+
 # Change Log
+
+#### 0.4.2
+
+**2025-06-03**
+
+- Update TerriaJS to [8.9.5](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#895---2025-06-03)
+- Update terriajs-server to [4.0.2](https://github.com/TerriaJS/terriajs-server/blob/master/CHANGES.md#402---2025-06-03)
+
+#### 0.4.1
+
+**2025-04-24**
+
+- Update TerriaJS to `8.9.3`
+  - Contains a fix for region mapping and GeoJSON rendering.
+  - Read full [list of changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#893---2025-04-24)
+
+#### 0.4.0
+
+**2025-04-04**
+
+- **Breaking changes:**
+  - Update TerriaJS to `8.9.2`
+    - New features
+      - This release has a new look UI with changes to workbench and other panels
+      - Tiling support for ArcGIS feature service. This is enabled by default if the server supports tiling and unsupported marker/point styles aren't used - [PR 7370](https://github.com/TerriaJS/terriajs/pull/7370)
+    - Bug fixes
+      - Fixes a regression bug in GeoJSON rendering that caused some features to be not rendered - [PR 7144](https://github.com/TerriaJS/terriajs/pull/7144)
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#892---2025-03-31)
 
 #### 0.3.0
 
