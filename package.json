@@ -23,7 +23,7 @@
     "url": "http://github.com/TerriaJS/TerriaMap"
   },
   "dependencies": {
-    "terriajs": "github:pabrojast/terriajs#f31dec74b96486b231c4e7e9caa495baaa0f5129",
+    "terriajs": "github:pabrojast/terriajs#3bf86cb1b94e4764e3b0cd557fc3231beb7e14e6",
     "terriajs-server": "^4.0.0"
   },
   "config": {
@@ -47,6 +47,7 @@
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "babel-loader": "^9.2.1",
+    "babel-plugin-styled-components": "^2.1.4",
     "css-loader": "^7.1.2",
     "ejs": "^3.1.10",
     "eslint": "^8.57.1",
