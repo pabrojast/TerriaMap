@@ -2606,9 +2606,24 @@
           "minScaleDenominator": 4724702.380952
         },
         "image": "images/basemaps/ClearMap.JPG"
+      },
+      {
+        "item": {
+          "name": "Sentinel-2 cloudless 2024",
+          "type": "wms",
+          "url": "https://tiles.maps.eox.at/wms",
+          "layers": "s2cloudless-2024",
+          "id": "s2cloudless-2024",
+          "attribution": "Sentinel-2 cloudless - <a href=\"https://s2maps.eu\">s2maps.eu</a> by <a href=\"https://eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)"
+        },
+        "image": "images/basemaps/Sentinel-2-cloudless-2024.PNG"
       }
     ],
-    "enabledBaseMaps": ["basemap-natural-earth-II", "clearmap-webtopo"],
+    "enabledBaseMaps": [
+      "basemap-natural-earth-II",
+      "clearmap-webtopo",
+      "s2cloudless-2024"
+    ],
     "defaultBaseMapId": "basemap-natural-earth-II"
   }
 }
