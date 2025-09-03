@@ -1,0 +1,338 @@
+{
+  "catalog": [
+    {
+      "name": "Snow & Ice Monitoring",
+      "type": "group",
+      "description": "Snow cover extent and water equivalent measurements from NASA satellite missions providing essential information for water resource planning, seasonal forecasting, and mountain hydrology. These datasets monitor the world's largest freshwater reservoir stored as snow and ice.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA MODIS missions on Terra and Aqua satellites, and GCOM-W1/AMSR2 by JAXA. Snow products developed by NASA National Snow and Ice Data Center (NSIDC). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please cite appropriate missions and processing centers in publications."
+        },
+        {
+          "name": "Hydrological Importance",
+          "content": "Snow represents the world's largest freshwater reservoir and primary water source for over 1 billion people. Monitoring snow extent and water equivalent is critical for water resource management, flood forecasting, and climate studies."
+        },
+        {
+          "name": "Applications",
+          "content": "Seasonal water resource planning, flood forecasting, drought prediction, hydropower management, agricultural water allocation, climate change impact assessment."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Hydrological Importance",
+        "Applications"
+      ],
+      "members": [
+        {
+          "name": "Snow Water Equivalent",
+          "type": "group",
+          "description": "Snow Water Equivalent (SWE) represents the amount of water contained in snowpack, measured as the depth of water that would result from melting the snow column.",
+          "members": [
+            {
+              "name": "AMSR2 Snow Water Equivalent (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSR2_Snow_Water_Equivalent_Daily",
+              "description": "Daily global snow water equivalent from AMSR2 microwave measurements, providing critical information for water resource planning and flood forecasting.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "AMSR2 (Advanced Microwave Scanning Radiometer 2) measures snow water equivalent using passive microwave radiation. Microwaves can penetrate clouds and provide measurements regardless of weather conditions or time of day."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "Uses multiple microwave frequencies to detect snow depth and density. Lower frequencies penetrate deeper into snowpack, while higher frequencies are more sensitive to surface conditions."
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "25 km spatial resolution with global coverage of snow-covered regions"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "July 2012 to present, with daily global coverage"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Snow Water Equivalent in millimeters (mm), representing depth of water if all snow in column were melted"
+                },
+                {
+                  "name": "Strengths",
+                  "content": "All-weather capability, daily global coverage, can measure deep snowpack, independent of cloud cover and daylight conditions"
+                },
+                {
+                  "name": "Limitations",
+                  "content": "Reduced accuracy in wet snow conditions, complex terrain effects, limited performance in dense forests, calibration challenges in mountainous regions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Seasonal water supply forecasting, flood risk assessment, drought early warning, hydropower planning, agricultural water allocation, climate monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA Global Climate and Weather Modeling Program, NSIDC processing"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Measurement Units",
+                "Strengths",
+                "Limitations",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AMSR2 Snow Water Equivalent (5-Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSR2_Snow_Water_Equivalent_5Day",
+              "description": "5-day composite snow water equivalent reducing noise and providing more stable estimates for operational water resource management.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The 5-day composite combines multiple AMSR2 observations to reduce noise and provide more reliable snow water equivalent estimates, particularly valuable for operational water management applications."
+                },
+                {
+                  "name": "Composite Benefits",
+                  "content": "Reduced measurement noise, improved spatial coverage, more stable temporal behavior, better suited for operational water resource planning"
+                },
+                {
+                  "name": "Operational Value",
+                  "content": "Provides more stable inputs for hydrological models, seasonal water supply forecasts, and reservoir management decisions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Operational water supply forecasting, reservoir inflow predictions, seasonal water allocation planning, hydrological model inputs"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA GSFC, NSIDC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Composite Benefits",
+                "Operational Value",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AMSR2 Snow Water Equivalent (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSR2_Snow_Water_Equivalent_Monthly",
+              "description": "Monthly snow water equivalent climatology for long-term analysis, climate studies, and seasonal pattern assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Monthly snow water equivalent provides stable, long-term records suitable for climate analysis, trend detection, and seasonal pattern studies."
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Long-term trend analysis, climate change impact assessment, seasonal pattern characterization, interannual variability studies"
+                },
+                {
+                  "name": "Research Value",
+                  "content": "Enables detection of long-term changes in snow accumulation patterns, seasonal timing shifts, and regional snow climate trends"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate change research, seasonal forecasting model development, water resource trend analysis, snow climate characterization"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA climate data processing, NSIDC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Climate Applications",
+                "Research Value",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Snow Cover Extent",
+          "type": "group",
+          "description": "Snow cover extent products showing the spatial distribution of snow-covered areas, essential for understanding seasonal snow patterns and climate impacts.",
+          "members": [
+            {
+              "name": "MODIS Snow Cover (Terra, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Snow_Cover_Daily",
+              "description": "Daily global snow cover extent from MODIS Terra satellite at 500m resolution, providing high-resolution snow extent mapping for operational applications.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS snow cover products use visible and near-infrared reflectance to identify snow-covered pixels. Snow has distinctive spectral characteristics that make it easily distinguishable from most other surface types."
+                },
+                {
+                  "name": "Detection Method",
+                  "content": "Uses Normalized Difference Snow Index (NDSI) based on visible and shortwave infrared bands to identify snow-covered pixels with high accuracy"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution providing detailed snow extent mapping"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "February 2000 to present, daily global coverage from Terra satellite"
+                },
+                {
+                  "name": "Product Features",
+                  "content": "Binary snow/no-snow classification with quality flags, cloud masking, and water body identification"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Daily snow extent monitoring, avalanche risk assessment, winter recreation planning, transportation management, hydrological model inputs"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, National Snow and Ice Data Center (NSIDC)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Detection Method",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Product Features",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Snow Cover (Aqua, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Snow_Cover_Daily",
+              "description": "Daily global snow cover extent from MODIS Aqua satellite, providing complementary observations to Terra for improved snow monitoring reliability.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS Aqua provides complementary snow cover observations to Terra MODIS, with different overpass times enabling better temporal coverage and cloud gap reduction."
+                },
+                {
+                  "name": "Overpass Time",
+                  "content": "Aqua satellite has afternoon overpass (~1:30 PM local time) complementing Terra's morning overpass (~10:30 AM local time)"
+                },
+                {
+                  "name": "Complementary Value",
+                  "content": "Combined with Terra observations, provides improved daily snow cover mapping with reduced cloud gaps and better temporal sampling"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Enhanced daily snow monitoring, cloud gap filling when combined with Terra, improved snow extent accuracy through multi-platform approach"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, National Snow and Ice Data Center (NSIDC)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Overpass Time",
+                "Complementary Value",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Snow Cover (8-Day Composite)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Snow_Cover_8Day_Composite",
+              "description": "8-day composite snow cover reducing cloud contamination and providing more complete spatial coverage for regional snow analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The 8-day composite combines daily MODIS snow cover observations to reduce cloud obscuration and provide more spatially complete snow cover maps."
+                },
+                {
+                  "name": "Composite Process",
+                  "content": "Uses maximum snow extent approach over 8-day periods to minimize cloud gaps and provide most complete snow cover mapping"
+                },
+                {
+                  "name": "Advantages",
+                  "content": "Significantly reduced cloud contamination, improved spatial continuity, more reliable snow extent patterns, suitable for regional analysis"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Regional snow extent analysis, seasonal pattern assessment, hydrological model inputs, water resource planning, climate studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NSIDC composite processing"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Composite Process",
+                "Advantages",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ice Monitoring",
+          "type": "group",
+          "description": "Global ice monitoring products for tracking ice extent, concentration, and changes affecting freshwater resources and climate systems.",
+          "members": [
+            {
+              "name": "Sea Ice Concentration",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSR2_Sea_Ice_Concentration_Daily",
+              "description": "Daily sea ice concentration from AMSR2, important for understanding Arctic and Antarctic ice conditions affecting global water and climate systems.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Sea ice plays a crucial role in global water and climate systems, affecting ocean circulation, freshwater distribution, and regional water resources, particularly in polar regions."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Sea ice concentration as percentage (0-100%) of grid cell covered by ice"
+                },
+                {
+                  "name": "Climate Relevance",
+                  "content": "Sea ice changes affect global thermohaline circulation, freshwater distribution, and regional precipitation patterns, impacting water resources worldwide"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate system monitoring, freshwater availability studies, ocean-atmosphere interaction research, polar water resource assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA sea ice processing team, NSIDC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Climate Relevance",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "catalog": [
+    {
+      "name": "Evapotranspiration & Water Cycle",
+      "type": "group",
+      "description": "Comprehensive evapotranspiration and water cycle datasets from MERRA-2 reanalysis providing essential components for hydrological modeling, water balance studies, and agricultural water management. These products integrate land-atmosphere water exchange processes critical for understanding water resource availability.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA's Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2) and North American Land Data Assimilation System (NLDAS). Processing by NASA Global Modeling and Assimilation Office (GMAO) and NASA Goddard Space Flight Center. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. MERRA-2 and NLDAS products are designed for climate research, hydrological modeling, and water resource management applications."
+        },
+        {
+          "name": "Hydrological Applications",
+          "content": "Essential for water balance calculations, drought assessment, irrigation planning, crop water stress monitoring, and hydrological model validation."
+        },
+        {
+          "name": "Temporal Coverage",
+          "content": "MERRA-2: 1980 to present with monthly temporal resolution. NLDAS: 1979 to present providing high-resolution North American coverage."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Hydrological Applications",
+        "Temporal Coverage"
+      ],
+      "members": [
+        {
+          "name": "Land Surface Evaporation",
+          "type": "group",
+          "description": "Land surface evaporation processes including evapotranspiration from vegetation, soil evaporation, and canopy interception loss. Critical for understanding water loss from terrestrial ecosystems.",
+          "members": [
+            {
+              "name": "Land Evaporation (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Evaporation_Land_Monthly",
+              "description": "Monthly land surface evaporation from MERRA-2 reanalysis, representing total water loss from terrestrial surfaces including transpiration, soil evaporation, and canopy interception.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Land evaporation represents the total upward flux of water vapor from terrestrial surfaces, combining plant transpiration, soil evaporation, sublimation from snow/ice, and evaporation of intercepted precipitation from vegetation canopies."
+                },
+                {
+                  "name": "Process Components",
+                  "content": "Includes transpiration through plant stomata, direct evaporation from soil surfaces, sublimation from snow and ice, and evaporation of water intercepted by vegetation canopies"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° × 0.625° (approximately 50 km × 50 km) global grid"
+                },
+                {
+                  "name": "Units",
+                  "content": "kg m⁻² s⁻¹ (kilograms per square meter per second) representing water flux rate"
+                },
+                {
+                  "name": "Water Balance Role",
+                  "content": "Critical component of the terrestrial water budget, representing water loss that must be balanced against precipitation input and changes in water storage"
+                },
+                {
+                  "name": "Agricultural Applications",
+                  "content": "Essential for crop water requirement estimation, irrigation scheduling, water use efficiency assessment, and agricultural drought monitoring"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Key variable for land-atmosphere coupling studies, climate model validation, drought characterization, and water cycle trend analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, NASA Global Modeling and Assimilation Office (GMAO)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Process Components",
+                "Spatial Resolution",
+                "Units",
+                "Water Balance Role",
+                "Agricultural Applications",
+                "Climate Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Turbulent Evaporation (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Evaporation_from_Turbulence_Monthly",
+              "description": "Monthly atmospheric evaporation from turbulent processes, representing evaporation driven by atmospheric turbulence and convective processes in the boundary layer.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Turbulent evaporation represents the component of evaporation driven by atmospheric turbulence, including convective processes and boundary layer mixing that enhance water vapor transport from surface to atmosphere."
+                },
+                {
+                  "name": "Physical Process",
+                  "content": "Driven by atmospheric instability, wind shear, and convective mixing in the planetary boundary layer, particularly important during daytime heating and unstable atmospheric conditions"
+                },
+                {
+                  "name": "Meteorological Context",
+                  "content": "Enhanced during periods of strong surface heating, atmospheric instability, and high wind speeds that promote turbulent mixing"
+                },
+                {
+                  "name": "Complement to Land Evaporation",
+                  "content": "Provides additional perspective on evaporation mechanisms, distinguishing between surface-controlled and atmosphere-controlled evaporation processes"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Atmospheric boundary layer studies, land-atmosphere coupling research, evaporation mechanism analysis, numerical weather prediction model validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, turbulence parameterization by NASA GMAO"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Physical Process",
+                "Meteorological Context",
+                "Complement to Land Evaporation",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Atmospheric Water Content",
+          "type": "group",
+          "description": "Total atmospheric water vapor content representing the vertically integrated water vapor in the atmospheric column, essential for precipitation potential and moisture transport analysis.",
+          "members": [
+            {
+              "name": "Total Precipitable Water Vapor (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
+              "description": "Monthly total precipitable water vapor from MERRA-2, representing the total amount of water vapor in the atmospheric column available for precipitation formation.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Total precipitable water vapor (TPW) is the vertically integrated water vapor content of the entire atmospheric column, representing the total amount of water that would precipitate if all atmospheric moisture were condensed and fell to the surface."
+                },
+                {
+                  "name": "Physical Significance",
+                  "content": "Indicates atmospheric moisture availability for precipitation formation, storm intensity potential, and moisture transport by atmospheric circulation systems"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° × 0.625° global grid with monthly temporal averaging"
+                },
+                {
+                  "name": "Units",
+                  "content": "kg m⁻² (kilograms per square meter) representing the mass of water vapor per unit area"
+                },
+                {
+                  "name": "Conversion",
+                  "content": "Can be converted to millimeters of precipitable water (1 kg m⁻² = 1 mm precipitable water)"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Precipitation forecasting, atmospheric river detection, drought monitoring, monsoon analysis, storm intensity assessment"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Water cycle studies, climate change impact assessment, atmospheric moisture transport analysis, seasonal climate prediction"
+                },
+                {
+                  "name": "Water Resource Applications",
+                  "content": "Reservoir management planning, flood forecasting support, irrigation water availability assessment, atmospheric water harvesting potential"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, atmospheric water vapor analysis by NASA GMAO"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Physical Significance",
+                "Spatial Resolution",
+                "Units",
+                "Conversion",
+                "Hydrological Applications",
+                "Climate Applications",
+                "Water Resource Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Root Zone Soil Moisture",
+          "type": "group",
+          "description": "Root zone soil moisture content representing water available to vegetation in the root zone layer, critical for agricultural applications and vegetation water stress assessment.",
+          "members": [
+            {
+              "name": "Root Zone Soil Water (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Soil_Water_Root_Zone_Monthly",
+              "description": "Monthly root zone soil water content from MERRA-2, representing soil moisture in the root zone layer available to vegetation for transpiration and growth.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Root zone soil water represents the soil moisture content in the plant root zone layer, typically encompassing the top 1-2 meters of soil where most plant roots extract water for transpiration and growth."
+                },
+                {
+                  "name": "Agricultural Significance",
+                  "content": "Directly relates to plant water availability, crop stress conditions, irrigation requirements, and agricultural drought impacts on vegetation"
+                },
+                {
+                  "name": "Root Zone Depth",
+                  "content": "Represents soil moisture in the active root zone layer where vegetation can access water, typically 1-2 meters depth depending on vegetation type and soil characteristics"
+                },
+                {
+                  "name": "Units",
+                  "content": "m³ m⁻³ (cubic meters per cubic meter) representing volumetric soil moisture content as fraction of total soil volume"
+                },
+                {
+                  "name": "Relationship to Surface Moisture",
+                  "content": "Provides deeper soil moisture information compared to surface observations, showing water storage available to deep-rooted vegetation and buffering against short-term precipitation variability"
+                },
+                {
+                  "name": "Agricultural Applications",
+                  "content": "Crop water stress monitoring, irrigation scheduling, yield forecasting, agricultural drought assessment, precision agriculture support"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Evapotranspiration modeling, baseflow generation analysis, groundwater recharge assessment, drought early warning systems"
+                },
+                {
+                  "name": "Ecological Applications",
+                  "content": "Vegetation health monitoring, ecosystem water stress assessment, forest fire risk evaluation, ecosystem service quantification"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 land surface modeling, NASA GMAO land data assimilation system"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Agricultural Significance",
+                "Root Zone Depth",
+                "Units",
+                "Relationship to Surface Moisture",
+                "Agricultural Applications",
+                "Hydrological Applications",
+                "Ecological Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "High-Resolution Precipitation",
+          "type": "group",
+          "description": "High-resolution precipitation datasets from land data assimilation systems providing detailed precipitation patterns for regional water resource management and hydrological modeling.",
+          "members": [
+            {
+              "name": "NLDAS Surface Precipitation (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
+              "description": "Monthly high-resolution precipitation from NLDAS (North American Land Data Assimilation System) providing detailed precipitation patterns over North America for regional hydrological analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "NLDAS (North American Land Data Assimilation System) Surface Total Precipitation provides high-resolution precipitation data over North America by combining gauge observations, radar data, and satellite estimates through advanced data assimilation techniques."
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "North American domain covering United States, southern Canada, and northern Mexico with focus on continental water resource management"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1/8° (approximately 12.5 km) spatial resolution, much higher than global reanalysis products"
+                },
+                {
+                  "name": "Data Integration",
+                  "content": "Combines multiple observation sources including surface weather stations, weather radar, satellite precipitation estimates, and atmospheric models"
+                },
+                {
+                  "name": "Quality Advantages",
+                  "content": "Higher accuracy than global products due to dense observational network over North America and regional optimization of data assimilation"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Regional water resource assessment, flood forecasting, drought monitoring, reservoir management, agricultural planning, ecosystem water balance studies"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "1979 to present, providing long-term climatological context for current conditions and trend analysis"
+                },
+                {
+                  "name": "Units",
+                  "content": "kg m⁻² s⁻¹ (kilograms per square meter per second) representing precipitation rate, equivalent to mm/month when integrated"
+                },
+                {
+                  "name": "Regional Applications",
+                  "content": "Basin-scale water management, state and provincial water planning, agricultural water use optimization, municipal water supply planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Goddard Space Flight Center, NOAA National Weather Service, multiple observational networks and satellite missions"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Spatial Coverage",
+                "Spatial Resolution",
+                "Data Integration",
+                "Quality Advantages",
+                "Hydrological Applications",
+                "Temporal Coverage",
+                "Units",
+                "Regional Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "catalog": [
+    {
+      "name": "HydroRIVERS",
+      "type": "group",
+      "description": "HydroRIVERS is a comprehensive global river network dataset containing 8.5 million individual river reaches with a total length of 35.9 million km. It includes all rivers with a catchment area of at least 10 km² or an average flow of at least 0.1 m³/sec. Extracted from the HydroSHEDS database at 15 arc-second resolution, each river segment contains key attributes including length, distance from headwaters and ocean outlets, river order, and estimated long-term average discharge. All reaches are co-registered with the HydroBASINS database through shared IDs, making it ideal for hydrological modeling and water resource management.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "HydroRIVERS dataset by Lehner, B., Grill G. (2013). Global river hydrography and network routing: baseline data and new approaches to study the world's large river systems. Hydrological Processes, 27(15): 2171–2186. Data distributed by McGill University and World Wildlife Fund."
+        },
+        {
+          "name": "License",
+          "content": "Available for non-commercial use. For commercial use, please contact the HydroSHEDS team."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License"],
+      "members": [
+        {
+          "name": "Africa",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_af_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "HydroRIVERS provides detailed river network information for Africa, including all major river systems like the Nile, Congo, Niger, and Zambezi rivers. Each river segment contains hydrological attributes for water resource assessment."
+            },
+            {
+              "name": "Data Coverage",
+              "content": "Complete coverage of African continent river networks with minimum catchment area of 10 km² or flow of 0.1 m³/sec."
+            },
+            {
+              "name": "Applications",
+              "content": "Supports hydrological modeling, water resource management, flood risk assessment, and environmental studies across Africa."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Coverage",
+            "Applications",
+            "Attribution"
+          ]
+        },
+        {
+          "name": "Arctic",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_ar_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "Arctic river networks including rivers in northern Canada, Alaska, and northern Russia. These systems are crucial for understanding climate change impacts on Arctic hydrology."
+            },
+            {
+              "name": "Applications",
+              "content": "Climate change research, Arctic hydrology, and permafrost-river interactions."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "Asia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_as_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "Comprehensive river networks for Asia including major systems like the Ganges, Brahmaputra, Mekong, Yangtze, and Yellow rivers. Critical for water security in the world's most populous region."
+            },
+            {
+              "name": "Applications",
+              "content": "Transboundary water management, monsoon hydrology, water security assessment, and regional water resource planning."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "Australasia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_au_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks for Australia and New Zealand, including the Murray-Darling Basin and other major Australian river systems."
+            },
+            {
+              "name": "Applications",
+              "content": "Drought management, water allocation, and ecosystem conservation in arid and semi-arid regions."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "Europe and Middle East",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_eu_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks for Europe and Middle East including the Danube, Rhine, Volga, Tigris, and Euphrates rivers."
+            },
+            {
+              "name": "Applications",
+              "content": "Transboundary water management, Water Framework Directive compliance, and regional water security."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "Greenland",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_gr_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks in ice-free areas of Greenland, important for understanding glacial melt and Arctic hydrology."
+            },
+            {
+              "name": "Applications",
+              "content": "Climate change research and glacial hydrology studies."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "North and Central America",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_na_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks for North and Central America including the Mississippi, Colorado, Columbia, and Rio Grande river systems."
+            },
+            {
+              "name": "Applications",
+              "content": "Water allocation, flood management, ecosystem conservation, and transboundary water issues."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "South America",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_sa_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks for South America including the Amazon Basin, Orinoco, and Paraná river systems - some of the world's largest river networks."
+            },
+            {
+              "name": "Applications",
+              "content": "Amazon conservation, hydropower planning, biodiversity assessment, and transboundary water management."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        },
+        {
+          "name": "Siberia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_si_shp.zip",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/products/hydrorivers\">https://www.hydrosheds.org/products/hydrorivers</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "River networks for Siberia including the Ob, Yenisei, and Lena rivers - major Arctic-draining systems."
+            },
+            {
+              "name": "Applications",
+              "content": "Arctic hydrology, climate change impacts, and permafrost-hydrology interactions."
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroRIVERS by Lehner & Grill (2013), McGill University and World Wildlife Fund."
+            }
+          ],
+          "infoSectionOrder": ["Background", "Applications", "Attribution"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "catalog": [
+    {
+      "name": "Satellite Precipitation",
+      "type": "group",
+      "description": "Satellite-derived precipitation estimates from multiple NASA missions providing global rainfall and precipitation measurements. These datasets complement ground-based observations and are essential for water resource management in data-sparse regions.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA TRMM mission, GCOM-W1/AMSR2 by JAXA, and Lightning Imaging Sensor (LIS). Processing by NASA Precipitation Processing System (PPS). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please cite appropriate missions and processing systems in publications."
+        },
+        {
+          "name": "Global Coverage Advantage",
+          "content": "Satellite precipitation provides the only consistent global precipitation measurements, particularly valuable over oceans, remote regions, and areas with sparse ground-based rain gauge networks."
+        },
+        {
+          "name": "Applications",
+          "content": "Water resource assessment, drought monitoring, flood forecasting, agricultural planning, climate research, numerical weather prediction model validation."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Global Coverage Advantage",
+        "Applications"
+      ],
+      "members": [
+        {
+          "name": "TRMM Precipitation Products",
+          "type": "group",
+          "description": "Tropical Rainfall Measuring Mission (TRMM) provided the first dedicated satellite precipitation measurements in the tropics, establishing the foundation for global precipitation monitoring.",
+          "members": [
+            {
+              "name": "TRMM Precipitation Rate (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "TRMM_Precipitation_Rate_Asc",
+              "description": "Daily precipitation rate from TRMM multi-satellite analysis covering tropical and subtropical regions with high-quality rain rate estimates.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "TRMM 3B42 combines precipitation radar, microwave imager, and infrared data from multiple satellites to produce high-quality precipitation estimates in the tropics and subtropics."
+                },
+                {
+                  "name": "Coverage Area",
+                  "content": "50°N to 50°S latitude, covering tropical and subtropical regions where most global precipitation occurs"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.25° × 0.25° spatial resolution (~25 km at equator)"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "January 1998 - April 2015, providing 17+ years of consistent tropical precipitation data"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Precipitation rate in millimeters per hour (mm/hr)"
+                },
+                {
+                  "name": "Multi-sensor Approach",
+                  "content": "Combines precipitation radar (high accuracy), passive microwave (all-weather), and infrared (high temporal/spatial sampling) for optimal precipitation retrieval"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Tropical water resource assessment, monsoon analysis, hurricane precipitation studies, climate research, hydrological model validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA TRMM mission, NASA Goddard Space Flight Center Precipitation Processing System (PPS)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Coverage Area",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Measurement Units",
+                "Multi-sensor Approach",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "TRMM Precipitation Rate (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "TRMM_Precipitation_Rate_Asc",
+              "description": "Monthly precipitation rate from TRMM providing long-term tropical precipitation climatology and trend analysis capabilities.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "TRMM 3B43 provides monthly precipitation estimates by combining satellite data with rain gauge information where available, offering the best long-term tropical precipitation record."
+                },
+                {
+                  "name": "Gauge Adjustment",
+                  "content": "Monthly estimates are adjusted using available rain gauge data through the Global Precipitation Climatology Centre (GPCC) dataset"
+                },
+                {
+                  "name": "Climate Value",
+                  "content": "Provides the most reliable long-term tropical precipitation record for climate studies, trend analysis, and seasonal pattern characterization"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate change research, seasonal precipitation analysis, water resource climatology, monsoon trend studies, El Niño/La Niña impact assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA TRMM mission, NASA GSFC PPS, Global Precipitation Climatology Centre (GPCC)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Gauge Adjustment",
+                "Climate Value",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AMSR2 Precipitation Products",
+          "type": "group",
+          "description": "Advanced Microwave Scanning Radiometer 2 (AMSR2) precipitation products providing global precipitation measurements using passive microwave technology.",
+          "members": [
+            {
+              "name": "AMSR2 Surface Soil Moisture (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily",
+              "description": "Daily global surface soil moisture from AMSR2 passive microwave measurements, providing all-weather soil moisture detection capability.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "AMSR2 uses passive microwave radiometry to detect precipitation through its interaction with microwave radiation. This approach works through clouds and provides global coverage."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "Detects microwave emission and scattering signatures of precipitation particles, enabling precipitation retrieval under all weather conditions"
+                },
+                {
+                  "name": "Global Coverage",
+                  "content": "Complete global coverage between 89°N and 89°S with daily revisit capability"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "10-25 km spatial resolution depending on microwave frequency used"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "July 2012 to present, continuing operations"
+                },
+                {
+                  "name": "All-weather Capability",
+                  "content": "Microwave measurements can penetrate clouds, providing precipitation estimates regardless of cloud cover or lighting conditions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Global precipitation monitoring, numerical weather prediction, water cycle studies, complement to radar and gauge measurements"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA Global Precipitation Measurement (GPM) program"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Global Coverage",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "All-weather Capability",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AMSR2 Surface Soil Moisture (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily",
+              "description": "Monthly surface soil moisture from AMSR2 providing stable, long-term soil moisture climatology for global water cycle analysis and climate studies.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Monthly AMSR2 rain rate provides temporal averaging that reduces noise and provides stable precipitation climatology suitable for long-term analysis and climate studies."
+                },
+                {
+                  "name": "Temporal Stability",
+                  "content": "Monthly averaging reduces day-to-day variability and provides more stable precipitation patterns for climate analysis"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Suitable for precipitation trend analysis, seasonal cycle characterization, interannual variability studies, and water balance calculations"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Water resource climatology, seasonal forecasting support, climate model validation, long-term water balance studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA climate data processing"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Stability",
+                "Climate Applications",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lightning and Convective Activity",
+          "type": "group",
+          "description": "Lightning data providing insights into convective precipitation processes and storm intensity, complementing direct precipitation measurements.",
+          "members": [
+            {
+              "name": "OLS Digital Derived Lightning",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "OLS_DMSP_F10_Digital_Derived_Lightning",
+              "description": "Digital derived lightning from OLS providing information on convective intensity and storm activity patterns.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/OLS_DMSP_F10_Digital_Derived_Lightning_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Lightning Imaging Sensor (LIS) on TRMM detected lightning flashes across the tropics, providing unique information about convective activity and its relationship to precipitation processes."
+                },
+                {
+                  "name": "Lightning-Precipitation Relationship",
+                  "content": "Lightning activity is closely related to convective precipitation intensity, making it valuable for understanding storm dynamics and precipitation processes"
+                },
+                {
+                  "name": "Coverage Area",
+                  "content": "35°N to 35°S latitude, covering the main tropical convective regions"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "1995-2013, providing nearly two decades of tropical lightning climatology"
+                },
+                {
+                  "name": "Scientific Value",
+                  "content": "Provides insights into convective intensity, storm electrification processes, and relationships between lightning and precipitation"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Convective precipitation analysis, storm intensity studies, precipitation process research, severe weather climatology, thunderstorm frequency mapping"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA TRMM Lightning Imaging Sensor (LIS) team, NASA Marshall Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Lightning-Precipitation Relationship",
+                "Coverage Area",
+                "Temporal Coverage",
+                "Scientific Value",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Precipitation Analysis Products",
+          "type": "group",
+          "description": "Advanced precipitation analysis products combining multiple data sources for comprehensive precipitation monitoring and research.",
+          "members": [
+            {
+              "name": "MERRA-2 Convective Rainwater Source (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Convective_Rainwater_Source_700hPa_Monthly",
+              "description": "Monthly convective rainwater source from MERRA-2 reanalysis at 700hPa level for comprehensive atmospheric moisture analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Convective_Rainwater_Source_700hPa_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Combines precipitation estimates from multiple satellite missions to provide the most comprehensive global precipitation analysis available from space-based observations."
+                },
+                {
+                  "name": "Multi-mission Approach",
+                  "content": "Integrates data from TRMM, GPM, AMSR2, and other satellite missions to provide optimal global precipitation coverage"
+                },
+                {
+                  "name": "Global Coverage",
+                  "content": "Complete global coverage from pole to pole, including regions not covered by individual missions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Global water cycle studies, climate model validation, water resource assessment, drought and flood monitoring, precipitation trend analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Precipitation Measurement (GPM) program, multi-mission precipitation analysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Multi-mission Approach",
+                "Global Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,8 @@
     "gov.au",
     "csiro.au",
     "arcgis.com",
+    "esri.com",
+    "arcgisonline.com",
     "argo.jcommops.org",
     "www.abc.net.au",
     "geoserver.aurin.org.au",
@@ -28,5 +30,10 @@
     "ihp-wins.unesco.org",
     "unesco.org",
     "services.terrascope.be"
-  ]
+  ],
+
+  "esriTokenAuth": {
+    "postSizeLimit": 1024,
+    "servers": {}
+  }
 }

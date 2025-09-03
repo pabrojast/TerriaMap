@@ -2610,17 +2610,30 @@
       {
         "item": {
           "name": "Sentinel-2 cloudless 2024",
-          "type": "wms",
-          "url": "https://tiles.maps.eox.at/wms",
-          "layers": "s2cloudless-2024",
+          "type": "wmts",
+          "url": "https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml",
+          "layer": "s2cloudless-2024_3857",
           "id": "s2cloudless-2024",
+          "style": "default",
           "attribution": "Sentinel-2 cloudless - <a href=\"https://s2maps.eu\">s2maps.eu</a> by <a href=\"https://eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)"
         },
         "image": "images/basemaps/Sentinel-2-cloudless-2024.PNG"
+      },
+      {
+        "item": {
+          "name": "OpenStreetMap (EOX) WMTS",
+          "type": "wmts",
+          "url": "https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml",
+          "layer": "osm_3857",
+          "id": "osm-eox-wmts",
+          "attribution": "Data © <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap contributors</a>, Rendering © <a href=\"https://eox.at\" target=\"_blank\">EOX</a>, <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>"
+        },
+        "image": "images/basemaps/open-street-map.png"
       }
     ],
     "enabledBaseMaps": [
       "basemap-natural-earth-II",
+      "basemap-openstreetmap",
       "clearmap-webtopo",
       "s2cloudless-2024"
     ],

@@ -1,0 +1,332 @@
+{
+  "catalog": [
+    {
+      "name": "Temperature",
+      "type": "group",
+      "description": "Global temperature datasets from NASA's Global Imagery Browse Services (GIBS), including atmospheric and surface temperature measurements from various satellite missions and reanalysis products.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by NASA's Global Imagery Browse Services (GIBS). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please check individual dataset licenses and cite appropriately."
+        },
+        {
+          "name": "Coverage",
+          "content": "Global coverage with various temporal and spatial resolutions depending on the specific mission and instrument."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Coverage"],
+      "members": [
+        {
+          "name": "AIRS Temperature",
+          "type": "group",
+          "description": "Atmospheric Infrared Sounder (AIRS) temperature measurements from NASA Aqua satellite, providing high-quality atmospheric temperature profiles.",
+          "members": [
+            {
+              "name": "AIRS Surface Air Temperature (Day) - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "description": "AIRS daytime surface air temperature measurements with monthly temporal resolution.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Atmospheric Infrared Sounder (AIRS) on NASA's Aqua satellite measures infrared radiation to determine atmospheric temperature and humidity profiles."
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2002 to present, updated daily"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1° x 1° global grid"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Weather forecasting, climate monitoring, atmospheric research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Coverage",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Surface Air Temperature (Night) - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+              "description": "AIRS nighttime surface air temperature measurements with monthly temporal resolution.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Nighttime surface air temperature measurements from AIRS, providing complementary data to daytime observations for complete diurnal cycle analysis."
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2002 to present, updated daily"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1° x 1° global grid"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Diurnal temperature analysis, heat island studies, climate monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Coverage",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Temperature 500hPa - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Temperature_500hPa_Daily",
+              "description": "AIRS atmospheric temperature at 500hPa pressure level (approximately 5.5 km altitude).",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Mid-tropospheric temperature measurements at the 500hPa level, critical for weather pattern analysis and atmospheric dynamics."
+                },
+                {
+                  "name": "Pressure Level",
+                  "content": "500hPa (~5.5 km altitude, mid-troposphere)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Weather forecasting, jet stream analysis, storm tracking"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Pressure Level",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Temperature 700hPa - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Temperature_700hPa_Daily",
+              "description": "AIRS atmospheric temperature at 700hPa pressure level (approximately 3 km altitude).",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Lower tropospheric temperature measurements at the 700hPa level, important for boundary layer meteorology."
+                },
+                {
+                  "name": "Pressure Level",
+                  "content": "700hPa (~3 km altitude, lower troposphere)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Boundary layer studies, convection analysis, local weather patterns"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Pressure Level",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Temperature 850hPa - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Temperature_850hPa_Daily",
+              "description": "AIRS atmospheric temperature at 850hPa pressure level (approximately 1.5 km altitude).",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Near-surface atmospheric temperature measurements at the 850hPa level, closely related to surface conditions."
+                },
+                {
+                  "name": "Pressure Level",
+                  "content": "850hPa (~1.5 km altitude, near surface)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Surface weather analysis, agricultural meteorology, air quality studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Pressure Level",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MERRA-2 Temperature",
+          "type": "group",
+          "description": "Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2) temperature datasets providing long-term, consistent atmospheric reanalysis.",
+          "members": [
+            {
+              "name": "MERRA-2 2m Air Temperature - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_2m_Air_Temperature_Monthly",
+              "description": "MERRA-2 2-meter air temperature monthly averages from reanalysis model.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MERRA-2 is NASA's latest atmospheric reanalysis providing consistent, long-term datasets for climate studies. The 2m air temperature represents conditions experienced at human height."
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "1980 to present with monthly updates"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° x 0.625° global grid"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate research, trend analysis, model validation, agricultural applications"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Coverage",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MERRA-2 Surface Skin Temperature - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Skin_Temperature_Monthly",
+              "description": "MERRA-2 surface skin temperature representing the interface temperature between atmosphere and surface.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface skin temperature represents the temperature of the Earth's surface interface with the atmosphere, important for energy balance studies."
+                },
+                {
+                  "name": "Applications",
+                  "content": "Land surface modeling, energy budget analysis, urban heat island studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO)"
+                }
+              ],
+              "infoSectionOrder": ["Background", "Applications", "Attribution"]
+            },
+            {
+              "name": "MERRA-2 Temperature 250hPa - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Temperature_250hPa_Monthly",
+              "description": "MERRA-2 atmospheric temperature at 250hPa pressure level (approximately 10 km altitude, jet stream level).",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Upper tropospheric temperature at the 250hPa level, where jet streams typically occur and commercial aircraft cruise."
+                },
+                {
+                  "name": "Pressure Level",
+                  "content": "250hPa (~10 km altitude, upper troposphere/jet stream level)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Jet stream analysis, aviation meteorology, upper-level weather patterns"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Pressure Level",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GLDAS Temperature",
+          "type": "group",
+          "description": "Global Land Data Assimilation System (GLDAS) near-surface air temperature products combining satellite observations with land surface models.",
+          "members": [
+            {
+              "name": "GLDAS Near Surface Air Temperature - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GLDAS_Near_Surface_Air_Temperature_Monthly",
+              "description": "GLDAS near-surface air temperature over land surfaces with high spatial resolution.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "GLDAS integrates satellite observations with land surface models to provide high-quality land surface conditions including temperature."
+                },
+                {
+                  "name": "Coverage",
+                  "content": "Land surfaces only, 1° x 1° resolution"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Land surface studies, agricultural meteorology, water resource management"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Goddard Space Flight Center, GLDAS team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

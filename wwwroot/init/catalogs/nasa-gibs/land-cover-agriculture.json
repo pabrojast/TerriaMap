@@ -1,0 +1,371 @@
+{
+  "catalog": [
+    {
+      "name": "Land Cover & Agriculture",
+      "type": "group",
+      "description": "Comprehensive land cover classification, agricultural land mapping, and surface albedo datasets from satellite observations providing essential information for land use monitoring, agricultural assessment, climate studies, and environmental management. These products enable understanding of terrestrial surface characteristics and their changes over time.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Land cover data from NASA MODIS Combined missions and agricultural land datasets from multiple agencies. Surface albedo from MODIS Combined Terra/Aqua missions and MERRA-2 reanalysis. Processing by NASA Land Processes Distributed Active Archive Center (LP DAAC) and Global Modeling and Assimilation Office (GMAO). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. These products support land use planning, agricultural monitoring, climate research, and environmental management applications."
+        },
+        {
+          "name": "Agricultural Applications",
+          "content": "Essential for crop area estimation, agricultural productivity assessment, irrigation planning, food security analysis, and precision agriculture applications."
+        },
+        {
+          "name": "Environmental Applications",
+          "content": "Critical for land use change detection, deforestation monitoring, urban expansion tracking, ecosystem classification, and environmental impact assessment."
+        },
+        {
+          "name": "Climate Applications",
+          "content": "Surface albedo and land cover data are fundamental for climate modeling, energy balance studies, and understanding land-atmosphere interactions."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Agricultural Applications",
+        "Environmental Applications",
+        "Climate Applications"
+      ],
+      "members": [
+        {
+          "name": "Global Agricultural Lands",
+          "type": "group",
+          "description": "Global agricultural land datasets providing comprehensive mapping of croplands and agricultural areas for food security assessment and agricultural planning applications.",
+          "members": [
+            {
+              "name": "Global Croplands Distribution (2000)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "Agricultural_Lands_Croplands_2000",
+              "description": "Global distribution of croplands circa 2000 providing baseline agricultural land mapping for food security assessment, agricultural planning, and land use change analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "This global croplands dataset provides comprehensive mapping of agricultural areas worldwide as of the year 2000, serving as a critical baseline for understanding global food production capacity and agricultural land distribution."
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "Global coverage at high spatial resolution enabling identification of agricultural areas from continental to regional scales"
+                },
+                {
+                  "name": "Temporal Baseline",
+                  "content": "Year 2000 baseline providing reference period for agricultural land change detection and trend analysis over the past two decades"
+                },
+                {
+                  "name": "Classification Method",
+                  "content": "Uses satellite imagery analysis combined with agricultural census data and ground truth information to identify and map cropland areas"
+                },
+                {
+                  "name": "Agricultural Planning",
+                  "content": "Essential for understanding global agricultural capacity, identifying potential expansion areas, and assessing food security implications"
+                },
+                {
+                  "name": "Food Security Applications",
+                  "content": "Critical for global food security assessment, crop production estimation, and agricultural development planning in food-insecure regions"
+                },
+                {
+                  "name": "Land Use Change",
+                  "content": "Provides baseline for detecting agricultural expansion, conversion of natural areas to croplands, and urbanization impacts on agricultural land"
+                },
+                {
+                  "name": "Policy Applications",
+                  "content": "Supports agricultural policy development, sustainable agriculture planning, land tenure analysis, and rural development programs"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Foundation for agricultural productivity research, climate change impact studies, biodiversity conservation planning, and land system modeling"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Multiple agency collaboration including NASA, USGS, and international agricultural organizations, global cropland mapping consortium"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Spatial Coverage",
+                "Temporal Baseline",
+                "Classification Method",
+                "Agricultural Planning",
+                "Food Security Applications",
+                "Land Use Change",
+                "Policy Applications",
+                "Research Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Land Cover Classification",
+          "type": "group",
+          "description": "Comprehensive land cover classification systems providing detailed ecosystem and land use type mapping from satellite observations for environmental monitoring and management.",
+          "members": [
+            {
+              "name": "IGBP Global Land Cover (Annual)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_L3_IGBP_Land_Cover_Type_Annual",
+              "description": "Annual global land cover classification using the International Geosphere-Biosphere Programme (IGBP) system providing comprehensive ecosystem mapping for environmental monitoring and climate studies.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The IGBP (International Geosphere-Biosphere Programme) land cover classification system provides standardized global mapping of terrestrial ecosystems and land use types based on MODIS satellite observations."
+                },
+                {
+                  "name": "Classification System",
+                  "content": "Uses 17 IGBP land cover classes including forests, grasslands, croplands, urban areas, water bodies, and barren land, providing comprehensive terrestrial ecosystem characterization"
+                },
+                {
+                  "name": "IGBP Land Cover Classes",
+                  "content": "Evergreen needleleaf forest, evergreen broadleaf forest, deciduous needleleaf forest, deciduous broadleaf forest, mixed forests, closed shrublands, open shrublands, woody savannas, savannas, grasslands, permanent wetlands, croplands, urban areas, cropland/natural vegetation mosaic, snow/ice, barren/sparsely vegetated, water bodies"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution providing detailed land cover mapping suitable for regional to global environmental studies"
+                },
+                {
+                  "name": "Annual Updates",
+                  "content": "Annual land cover maps enable tracking of ecosystem changes, deforestation, agricultural expansion, and urban growth over time"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2001 to present, providing over 20 years of consistent global land cover mapping for change detection and trend analysis"
+                },
+                {
+                  "name": "Environmental Monitoring",
+                  "content": "Essential for biodiversity conservation planning, ecosystem service assessment, habitat mapping, and environmental impact evaluation"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Critical input for climate models, carbon cycle studies, land-atmosphere interaction research, and climate change impact assessment"
+                },
+                {
+                  "name": "Conservation Applications",
+                  "content": "Supports protected area planning, ecosystem conservation strategies, wildlife habitat assessment, and biodiversity monitoring programs"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Foundation for ecological research, land system science, environmental change studies, and sustainable development planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS Combined Terra/Aqua missions, Boston University land cover algorithm team, NASA Land Processes DAAC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Classification System",
+                "IGBP Land Cover Classes",
+                "Spatial Resolution",
+                "Annual Updates",
+                "Temporal Coverage",
+                "Environmental Monitoring",
+                "Climate Applications",
+                "Conservation Applications",
+                "Research Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Albedo",
+          "type": "group",
+          "description": "Surface albedo measurements representing the fraction of solar radiation reflected by Earth's surface, critical for energy balance studies, climate modeling, and understanding land-atmosphere interactions.",
+          "members": [
+            {
+              "name": "Black Sky Albedo (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_L3_Black_Sky_Albedo_Daily",
+              "description": "Daily black sky albedo from combined MODIS Terra and Aqua satellites representing surface reflectance under direct illumination conditions, essential for energy balance studies and climate modeling.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Black sky albedo represents the directional-hemispherical reflectance of Earth's surface under direct beam illumination (no diffuse skylight), providing fundamental information about surface energy balance and solar radiation reflection."
+                },
+                {
+                  "name": "Physical Significance",
+                  "content": "Measures the fraction of direct solar radiation reflected by the surface, critical for understanding surface energy budgets and heating rates"
+                },
+                {
+                  "name": "Illumination Conditions",
+                  "content": "Calculated for direct beam illumination conditions (black sky), representing surface reflectance when solar radiation comes primarily from the sun's direct beam"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution enabling detailed analysis of surface reflectance patterns across different land cover types and geographic regions"
+                },
+                {
+                  "name": "Temporal Resolution",
+                  "content": "Daily global coverage from combined Terra and Aqua MODIS observations providing high temporal resolution for monitoring albedo changes"
+                },
+                {
+                  "name": "Surface Type Variations",
+                  "content": "Varies significantly across land cover types: snow/ice (high ~0.8), forests (low ~0.1), grasslands (moderate ~0.2), deserts (variable ~0.3), crops (seasonal variation)"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Essential for climate models, surface energy balance calculations, land-atmosphere coupling studies, and understanding climate feedbacks"
+                },
+                {
+                  "name": "Energy Balance Studies",
+                  "content": "Critical for calculating net radiation, surface heating rates, and understanding regional energy budgets and temperature patterns"
+                },
+                {
+                  "name": "Environmental Applications",
+                  "content": "Supports urban heat island studies, agricultural monitoring, snow/ice monitoring, and land use change impact assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS Combined Terra/Aqua missions, surface albedo algorithm development team, NASA Land Processes DAAC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Physical Significance",
+                "Illumination Conditions",
+                "Spatial Resolution",
+                "Temporal Resolution",
+                "Surface Type Variations",
+                "Climate Applications",
+                "Energy Balance Studies",
+                "Environmental Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "White Sky Albedo (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_L3_White_Sky_Albedo_Daily",
+              "description": "Daily white sky albedo from combined MODIS Terra and Aqua satellites representing surface reflectance under diffuse illumination conditions, complementing black sky albedo for comprehensive surface energy analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "White sky albedo represents the bi-hemispherical reflectance of Earth's surface under completely diffuse illumination conditions (isotropic skylight), providing complementary information to black sky albedo for surface energy studies."
+                },
+                {
+                  "name": "Physical Significance",
+                  "content": "Measures surface reflectance when incoming solar radiation is completely diffuse, as occurs under overcast sky conditions or in heavily atmospheric conditions"
+                },
+                {
+                  "name": "Illumination Conditions",
+                  "content": "Calculated for diffuse illumination conditions (white sky), representing surface reflectance when solar radiation comes from all directions equally"
+                },
+                {
+                  "name": "Complementary to Black Sky",
+                  "content": "Combined with black sky albedo to calculate actual surface albedo under varying atmospheric conditions and sun angles"
+                },
+                {
+                  "name": "Atmospheric Interactions",
+                  "content": "Particularly relevant for understanding surface reflectance under cloudy conditions, high aerosol loading, and atmospheric scattering scenarios"
+                },
+                {
+                  "name": "Surface Energy Balance",
+                  "content": "Essential for accurate calculation of surface energy budgets under varying atmospheric and illumination conditions"
+                },
+                {
+                  "name": "Climate Model Applications",
+                  "content": "Critical input for climate models that need to account for varying atmospheric conditions and diffuse radiation components"
+                },
+                {
+                  "name": "Radiative Transfer Studies",
+                  "content": "Important for radiative transfer modeling, atmospheric correction algorithms, and understanding land-atmosphere radiation interactions"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Advanced climate research, surface energy balance validation, atmospheric correction development, radiative transfer modeling"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS Combined Terra/Aqua missions, surface albedo algorithm development team, NASA Land Processes DAAC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Physical Significance",
+                "Illumination Conditions",
+                "Complementary to Black Sky",
+                "Atmospheric Interactions",
+                "Surface Energy Balance",
+                "Climate Model Applications",
+                "Radiative Transfer Studies",
+                "Research Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MERRA-2 Surface Albedo (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Albedo_Monthly",
+              "description": "Monthly surface albedo from MERRA-2 reanalysis providing model-based surface reflectance estimates that integrate observations with atmospheric models for comprehensive climate and weather analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MERRA-2 surface albedo provides model-based estimates of surface reflectance by integrating satellite observations with advanced atmospheric models, offering consistent global surface albedo for climate and weather applications."
+                },
+                {
+                  "name": "Reanalysis Integration",
+                  "content": "Combines satellite observations with atmospheric modeling using data assimilation techniques to provide physically consistent surface albedo estimates"
+                },
+                {
+                  "name": "Model Consistency",
+                  "content": "Provides surface albedo that is consistent with other atmospheric variables in the MERRA-2 system, ensuring energy balance closure and physical consistency"
+                },
+                {
+                  "name": "Gap Filling",
+                  "content": "Fills gaps in satellite-based albedo products due to cloud cover, polar darkness, and instrument limitations using model physics"
+                },
+                {
+                  "name": "Temporal Consistency",
+                  "content": "Maintains temporal consistency throughout the reanalysis period (1980-present), important for long-term climate studies and trend analysis"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° × 0.625° global grid suitable for climate model validation and large-scale energy balance studies"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Essential for climate model evaluation, long-term climate trend analysis, and understanding surface energy balance variability"
+                },
+                {
+                  "name": "Weather Applications",
+                  "content": "Supports numerical weather prediction model development, surface energy flux analysis, and meteorological research"
+                },
+                {
+                  "name": "Validation Applications",
+                  "content": "Used for validating satellite-based albedo products, climate model surface schemes, and land surface model components"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, NASA Global Modeling and Assimilation Office (GMAO), surface albedo modeling team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Reanalysis Integration",
+                "Model Consistency",
+                "Gap Filling",
+                "Temporal Consistency",
+                "Spatial Resolution",
+                "Climate Applications",
+                "Weather Applications",
+                "Validation Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "catalog": [
+    {
+      "name": "Topography",
+      "type": "group",
+      "description": "Digital elevation models and topographic datasets providing essential context for hydrological analysis, terrain modeling, and watershed delineation.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "HydroSHEDS data: Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography derived from spaceborne elevation data. Eos, Transactions, AGU, 89(10): 93-94. Data distributed by WWF and McGill University."
+        },
+        {
+          "name": "License",
+          "content": "HydroSHEDS data available for non-commercial use. For commercial applications, contact the HydroSHEDS team."
+        },
+        {
+          "name": "Applications",
+          "content": "Watershed delineation, hydrological modeling, terrain analysis, flood risk assessment, and environmental studies."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Applications"],
+      "members": [
+        {
+          "name": "HydroSHEDS Global 30s Void-filled DEM",
+          "type": "cog",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/hyd_glo_dem_30s.cog",
+          "description": "Global digital elevation model at 30 arc-second resolution (~1 km) from the HydroSHEDS dataset, void-filled for hydrological applications. <br/><br/><strong>Dataset URL: </strong> <a href=\"https://www.hydrosheds.org/hydrosheds-core-downloads\">https://www.hydrosheds.org/hydrosheds-core-downloads</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "The HydroSHEDS DEM is derived from NASA's Shuttle Radar Topography Mission (SRTM) data and has been specifically processed for hydrological applications. Void areas in the original SRTM data have been filled using auxiliary elevation datasets to provide complete global coverage."
+            },
+            {
+              "name": "Spatial Resolution",
+              "content": "30 arc-seconds (~1 km at the equator), global coverage between 60°N and 60°S"
+            },
+            {
+              "name": "Data Processing",
+              "content": "The DEM has been hydrologically conditioned through void-filling, sink removal, and stream network enforcement to ensure proper flow routing for hydrological modeling applications."
+            },
+            {
+              "name": "Methodology",
+              "content": "Created from SRTM C-band radar data with additional processing including void-filling using ASTER GDEM, GTOPO30, and other elevation sources. Hydrological conditioning ensures drainage networks flow properly to ocean outlets."
+            },
+            {
+              "name": "Applications",
+              "content": "Watershed delineation, flow direction mapping, stream network extraction, flood modeling, and any hydrological analysis requiring terrain data."
+            },
+            {
+              "name": "Data Format",
+              "content": "Cloud Optimized GeoTIFF (COG) format for efficient web-based visualization and analysis"
+            },
+            {
+              "name": "Attribution",
+              "content": "HydroSHEDS by Lehner, B., Verdin, K., Jarvis, A. Based on SRTM data from NASA/JPL-Caltech and NGA. Distributed by WWF-US and McGill University."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Spatial Resolution",
+            "Data Processing",
+            "Methodology",
+            "Applications",
+            "Data Format",
+            "Attribution"
+          ]
+        }
+      ]
+    }
+  ]
+}

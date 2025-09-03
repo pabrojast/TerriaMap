@@ -1,0 +1,321 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "name": "IHP-WINS",
+      "type": "group",
+      "description": "UNESCO IHP-WINS datasets and base map references",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by UNESCO IHP-WINS. For more information visit: https://ihp-wins.unesco.org/"
+        },
+        {
+          "name": "License",
+          "content": "Data available under UNESCO data sharing policies. Please check individual datasets for specific licensing terms."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License"],
+      "members": [
+        {
+          "name": "IHP-WINS",
+          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
+          "type": "terria-reference",
+          "isGroup": true,
+          "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) remote catalog"
+        }
+      ]
+    },
+    {
+      "name": "Climate Data",
+      "type": "group",
+      "description": "Climate and atmospheric datasets including precipitation, temperature, and atmospheric composition from satellite missions and reanalysis products.",
+      "members": [
+        {
+          "name": "Global Precipitation Datasets",
+          "type": "terria-reference",
+          "url": "init/catalogs/climate/precipitation.json",
+          "description": "Global precipitation datasets including CHIRPS and PERSIANN satellite-derived rainfall estimates",
+          "isGroup": true
+        },
+        {
+          "name": "Satellite Precipitation",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/precipitation-satellite.json",
+          "description": "Multi-mission precipitation products from TRMM, AMSR2, and lightning sensors for comprehensive rainfall monitoring",
+          "isGroup": true
+        },
+        {
+          "name": "Temperature Analysis",
+          "type": "terria-reference",
+          "url": "init/catalogs/climate/temperature.json",
+          "description": "Temperature datasets from NASA GIBS including AIRS, MERRA-2, and GLDAS temperature products",
+          "isGroup": true
+        },
+        {
+          "name": "Atmospheric Composition",
+          "type": "terria-reference",
+          "url": "init/catalogs/climate/atmosphere.json",
+          "description": "Atmospheric composition datasets including aerosols, radiation, and upper atmosphere measurements",
+          "isGroup": true
+        },
+        {
+          "name": "Drought Indicators",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/drought-indicators.json",
+          "description": "Advanced drought monitoring combining soil moisture, vegetation, and water storage indicators",
+          "isGroup": true
+        },
+        {
+          "name": "Snow & Ice Monitoring",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/snow-ice.json",
+          "description": "Snow water equivalent and ice extent from MODIS and AMSR2 for seasonal water resource assessment",
+          "isGroup": true
+        },
+        {
+          "name": "Atmospheric Dynamics & Water Vapor",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/atmospheric-dynamics.json",
+          "description": "Atmospheric moisture transport, pressure systems, and circulation patterns affecting precipitation and water resources",
+          "isGroup": true
+        },
+        {
+          "name": "Evapotranspiration & Water Cycle",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/evapotranspiration.json",
+          "description": "Comprehensive evapotranspiration, atmospheric water vapor, and root zone soil moisture for water balance analysis and agricultural water management",
+          "isGroup": true
+        },
+        {
+          "name": "Air Quality & Atmospheric Pollution",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/air-quality.json",
+          "description": "Comprehensive air quality monitoring including trace gases, aerosols, and pollutants for environmental health assessment and pollution management",
+          "isGroup": true
+        }
+      ]
+    },
+    {
+      "name": "Hydrology",
+      "type": "group",
+      "description": "Hydrological datasets including river networks, reservoirs, and water infrastructure supporting water resource management and analysis.",
+      "members": [
+        {
+          "name": "Global River Networks",
+          "type": "terria-reference",
+          "url": "init/catalogs/hydrology/rivers.json",
+          "description": "Global river network dataset (HydroRIVERS) with comprehensive hydrographic information",
+          "isGroup": true
+        },
+        {
+          "name": "Dams & Reservoirs Database",
+          "type": "terria-reference",
+          "url": "init/catalogs/hydrology/reservoirs.json",
+          "description": "Global Dam Watch database with reservoir polygons organized by country",
+          "isGroup": true
+        },
+        {
+          "name": "Soil Moisture",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/soil-moisture.json",
+          "description": "Multi-mission soil moisture products from SMAP, CYGNSS, and AMSR2 for drought monitoring and agricultural applications",
+          "isGroup": true
+        },
+        {
+          "name": "Groundwater & Water Storage",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/water-storage.json",
+          "description": "GRACE mission data showing groundwater depletion and water storage changes",
+          "isGroup": true
+        },
+        {
+          "name": "Flood Monitoring",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/flood-monitoring.json",
+          "description": "Near real-time flood detection from MODIS for disaster response and emergency management",
+          "isGroup": true
+        },
+        {
+          "name": "Water Quality & Ocean Color",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/water-quality.json",
+          "description": "Satellite-derived water quality indicators including chlorophyll, turbidity, and aquatic ecosystem health assessment",
+          "isGroup": true
+        }
+      ]
+    },
+    {
+      "name": "Earth Observation",
+      "type": "group",
+      "description": "Earth observation datasets from NASA missions providing insights into vegetation, land surface, and oceanic conditions.",
+      "members": [
+        {
+          "name": "Land Surface & Vegetation",
+          "type": "terria-reference",
+          "url": "init/catalogs/earth-observation/vegetation.json",
+          "description": "GEDI canopy characteristics, MODIS vegetation indices, and land surface temperature",
+          "isGroup": true
+        },
+        {
+          "name": "Fire & Vegetation Monitoring",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/fire-vegetation.json",
+          "description": "Active fire detection, burn area mapping, and vegetation change monitoring from MODIS and VIIRS missions",
+          "isGroup": true
+        },
+        {
+          "name": "Ocean Monitoring",
+          "type": "terria-reference",
+          "url": "init/catalogs/earth-observation/oceans.json",
+          "description": "Ocean datasets including sea surface temperature and dynamic topography",
+          "isGroup": true
+        },
+        {
+          "name": "Advanced Land Surface Analysis",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/land-surface.json",
+          "description": "Land surface temperature, evapotranspiration, energy fluxes, and surface properties for hydrological applications",
+          "isGroup": true
+        },
+        {
+          "name": "Land Cover & Agriculture",
+          "type": "terria-reference",
+          "url": "init/catalogs/nasa-gibs/land-cover-agriculture.json",
+          "description": "Global land cover classification, agricultural land mapping, and surface albedo for land use monitoring and climate studies",
+          "isGroup": true
+        }
+      ]
+    },
+    {
+      "name": "Support Layers",
+      "type": "group",
+      "description": "Contextual datasets including topography, demographics, and administrative boundaries providing essential background information for analysis.",
+      "members": [
+        {
+          "name": "Digital Elevation Models",
+          "type": "terria-reference",
+          "url": "init/catalogs/support/topography.json",
+          "description": "Digital elevation models and topographic datasets for terrain analysis",
+          "isGroup": true
+        },
+        {
+          "name": "Population & Demographics",
+          "type": "terria-reference",
+          "url": "init/catalogs/support/demographics.json",
+          "description": "Global populated places and demographic information",
+          "isGroup": true
+        },
+        {
+          "name": "Political Boundaries",
+          "type": "terria-reference",
+          "url": "init/catalogs/support/boundaries.json",
+          "description": "International and administrative boundary datasets",
+          "isGroup": true
+        }
+      ]
+    }
+  ],
+  "corsDomains": [
+    "corsproxy.com",
+    "programs.communications.gov.au",
+    "mapsengine.google.com",
+    "s3-ap-southeast-2.amazonaws.com",
+    "data.melbourne.vic.gov.au",
+    "data.act.gov.au",
+    "dea.ga.gov.au",
+    "gsky.nci.org.au",
+    "data.gov.au",
+    "data.dev-wins.com",
+    "dev-wins.com",
+    "terria.dev-wins.com",
+    "ihp-wins.unesco.org",
+    "unesco.org",
+    "gibs.earthdata.nasa.gov",
+    "gitc.earthdata.nasa.gov",
+    "earthdata.nasa.gov",
+    "nasa.gov"
+  ],
+  "homeCamera": {
+    "north": 0,
+    "east": 50,
+    "south": -75,
+    "west": 98
+  },
+  "viewerMode": "3dSmooth",
+  "baseMaps": {
+    "items": [
+      {
+        "item": {
+          "name": "United Nations Clear Map",
+          "type": "wms",
+          "url": "https://pro-ags1.dfs.un.org/arcgis/services/ClearMap_WebTopo/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+          "layers": "0,3,4,6,8,9,11,12,13,15,16,18,19,20,29,30,31,32,33",
+          "id": "clearmap-webtopo",
+          "isEsri": true,
+          "minScaleDenominator": 4724702.380952
+        },
+        "image": "images/basemaps/ClearMap.JPG"
+      },
+      {
+        "item": {
+          "name": "Sentinel-2 cloudless 2024",
+          "type": "wmts",
+          "url": "https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml",
+          "layer": "s2cloudless-2024_3857",
+          "id": "s2cloudless-2024",
+          "style": "default",
+          "attribution": "Sentinel-2 cloudless - <a href=\"https://s2maps.eu\">s2maps.eu</a> by <a href=\"https://eox.at\">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)"
+        },
+        "image": "images/basemaps/Sentinel-2-cloudless-2024.PNG"
+      },
+      {
+        "item": {
+          "name": "OpenStreetMap (EOX) WMTS",
+          "type": "wmts",
+          "url": "https://tiles.maps.eox.at/wmts/1.0.0/WMTSCapabilities.xml",
+          "layer": "osm_3857",
+          "id": "osm-eox-wmts",
+          "attribution": "Data © <a href=\"http://www.openstreetmap.org/copyright\" target=\"_blank\">OpenStreetMap contributors</a>, Rendering © <a href=\"https://eox.at\" target=\"_blank\">EOX</a>, <a href=\"https://maps.eox.at/#data\" target=\"_blank\">others</a>"
+        },
+        "image": "images/basemaps/open-street-map.png"
+      },
+      {
+        "item": {
+          "name": "ArcGIS World Imagery",
+          "type": "esri-mapServer",
+          "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+          "id": "arcgis-world-imagery",
+          "attribution": "Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
+          "parameters": {
+            "token": "{{arcGisApiKey}}"
+          }
+        },
+        "image": "images/basemaps/arcgis-world-imagery.jpg"
+      }
+    ],
+    "enabledBaseMaps": [
+      "basemap-natural-earth-II",
+      "basemap-openstreetmap",
+      "clearmap-webtopo",
+      "s2cloudless-2024",
+      "arcgis-world-imagery"
+    ],
+    "defaultBaseMapId": "basemap-natural-earth-II"
+  },
+  "info": [
+    {
+      "name": "About This Catalog",
+      "content": "This is a modular version of the IHP-WINS TerriaMap catalog, organized into thematic modules for better performance and maintainability. Each module contains related datasets with complete attribution and licensing information."
+    },
+    {
+      "name": "Data Sources",
+      "content": "Data sources include UNESCO IHP-WINS, NASA Global Imagery Browse Services (GIBS), USGS/Climate Hazards Center (CHIRPS), UC Irvine (PERSIANN), McGill University/WWF (HydroRIVERS), Global Dam Watch consortium, and United Nations cartographic services."
+    },
+    {
+      "name": "Contact",
+      "content": "For technical support contact earthdata-support@nasa.gov (NASA GIBS data) or consult individual dataset documentation for specific data provider contacts."
+    }
+  ],
+  "infoSectionOrder": ["About This Catalog", "Data Sources", "Contact"]
+}

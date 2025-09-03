@@ -1,0 +1,200 @@
+{
+  "catalog": [
+    {
+      "name": "Precipitation",
+      "type": "group",
+      "description": "Global precipitation datasets including satellite-derived rainfall estimates and climate modeling products. These layers provide insights into rainfall patterns, drought monitoring, and hydrological analysis at various temporal scales.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "CHIRPS data: USGS and Climate Hazards Center at UC Santa Barbara, supported by USAID, NASA, and NOAA. PERSIANN data: Center for Hydrometeorology and Remote Sensing (CHRS) at University of California, Irvine."
+        },
+        {
+          "name": "License",
+          "content": "CHIRPS: Public domain (USGS). PERSIANN: Available for research and operational use, please cite appropriately."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License"],
+      "members": [
+        {
+          "name": "CHIRPS v2.0 Monthly",
+          "type": "group",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+          "members": [
+            {
+              "name": "CHIRPS v2.0 Monthly East",
+              "type": "wms",
+              "layers": "chirps_monthly_precip_east",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CHIRPS provides rainfall estimates from rain gauge and satellite observations. Since 1999, USGS and CHC scientists—supported by USAID, NASA, and NOAA—have developed techniques for producing reliable rainfall maps for drought early warning and environmental monitoring."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "Quasi-global coverage spanning 50°S to 50°N with a temporal range from 1981 to near-present."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "Combines in-house climatology (CHPclim), 0.05° resolution satellite imagery, and interpolated station data to correct systematic biases from complex terrain."
+                },
+                {
+                  "name": "Applications",
+                  "content": "Supports seasonal drought monitoring, trend analysis, and early warning systems such as FEWS NET."
+                },
+                {
+                  "name": "More Information",
+                  "content": "<a href=\"https://www.nature.com/articles/sdata201566\">Read more about CHIRPS</a>"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Data: USGS and Climate Hazards Center, UC Santa Barbara. Funding: USAID, NASA, NOAA."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "Attribution",
+                "More Information"
+              ]
+            },
+            {
+              "name": "CHIRPS v2.0 Monthly West",
+              "type": "wms",
+              "layers": "chirps_monthly_precip_west",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://data.chc.ucsb.edu/products/CHIRPS-2.0/\">https://data.chc.ucsb.edu/products/CHIRPS-2.0/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CHIRPS provides rainfall estimates from rain gauge and satellite observations. Since 1999, USGS and CHC scientists—supported by USAID, NASA, and NOAA—have developed techniques for producing reliable rainfall maps for drought early warning and environmental monitoring."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "Quasi-global coverage spanning 50°S to 50°N with a temporal range from 1981 to near-present."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "Combines in-house climatology (CHPclim), 0.05° resolution satellite imagery, and interpolated station data to correct systematic biases from complex terrain."
+                },
+                {
+                  "name": "Applications",
+                  "content": "Supports seasonal drought monitoring, trend analysis, and early warning systems such as FEWS NET."
+                },
+                {
+                  "name": "More Information",
+                  "content": "<a href=\"https://www.nature.com/articles/sdata201566\">Read more about CHIRPS</a>"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Data: USGS and Climate Hazards Center, UC Santa Barbara. Funding: USAID, NASA, NOAA."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "Attribution",
+                "More Information"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PERSIANN Monthly",
+          "type": "group",
+          "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+          "members": [
+            {
+              "name": "PERSIANN Monthly East",
+              "type": "wms",
+              "layers": "persian_monthly_precip_east",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) system was developed by the Center for Hydrometeorology and Remote Sensing (CHRS) at the University of California, Irvine (UCI). It uses neural network function classification/approximation procedures to compute estimates of rainfall rate from satellite imagery."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "The PERSIANN rainfall product covers 60°S to 60°N globally, with a spatial resolution of 0.25° x 0.25°."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "PERSIANN uses neural network function classification/approximation procedures to compute an estimate of rainfall rate at each 0.25° x 0.25° pixel of the infrared brightness temperature image provided by geostationary satellites. An adaptive training feature facilitates updating of the network parameters whenever independent estimates of rainfall are available."
+                },
+                {
+                  "name": "Applications",
+                  "content": "PERSIANN data is widely used for climate studies, hydrological modeling, water resource management, and weather forecasting applications."
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Center for Hydrometeorology and Remote Sensing (CHRS), University of California, Irvine."
+                },
+                {
+                  "name": "More Information",
+                  "content": "The PERSIANN system was initially based on geostationary infrared imagery and later extended to include the use of both infrared and daytime visible imagery. The algorithm used here is based on the geostationary longwave infrared imagery to generate global rainfall. <a href=\"https://chrsdata.eng.uci.edu/\">Visit the CHRS Data Portal for more information</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "Attribution",
+                "More Information"
+              ]
+            },
+            {
+              "name": "PERSIANN Monthly West",
+              "type": "wms",
+              "layers": "persian_monthly_precip_west",
+              "url": "https://data.dev-wins.com/datacubeows/",
+              "description": "<br/><br/><strong>Dataset URL: </strong> <a href=\"https://chrsdata.eng.uci.edu/\">https://chrsdata.eng.uci.edu/</a>",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The PERSIANN (Precipitation Estimation from Remotely Sensed Information using Artificial Neural Networks) system was developed by the Center for Hydrometeorology and Remote Sensing (CHRS) at the University of California, Irvine (UCI). It uses neural network function classification/approximation procedures to compute estimates of rainfall rate from satellite imagery."
+                },
+                {
+                  "name": "Data Coverage",
+                  "content": "The PERSIANN rainfall product covers 60°S to 60°N globally, with a spatial resolution of 0.25° x 0.25°."
+                },
+                {
+                  "name": "Methodology",
+                  "content": "PERSIANN uses neural network function classification/approximation procedures to compute an estimate of rainfall rate at each 0.25° x 0.25° pixel of the infrared brightness temperature image provided by geostationary satellites. An adaptive training feature facilitates updating of the network parameters whenever independent estimates of rainfall are available."
+                },
+                {
+                  "name": "Applications",
+                  "content": "PERSIANN data is widely used for climate studies, hydrological modeling, water resource management, and weather forecasting applications."
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Center for Hydrometeorology and Remote Sensing (CHRS), University of California, Irvine."
+                },
+                {
+                  "name": "More Information",
+                  "content": "The PERSIANN system was initially based on geostationary infrared imagery and later extended to include the use of both infrared and daytime visible imagery. The algorithm used here is based on the geostationary longwave infrared imagery to generate global rainfall. <a href=\"https://chrsdata.eng.uci.edu/\">Visit the CHRS Data Portal for more information</a>"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Coverage",
+                "Methodology",
+                "Applications",
+                "Attribution",
+                "More Information"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

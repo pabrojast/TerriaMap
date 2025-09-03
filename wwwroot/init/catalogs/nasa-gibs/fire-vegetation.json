@@ -1,0 +1,481 @@
+{
+  "catalog": [
+    {
+      "name": "Fire & Vegetation Change Monitoring",
+      "type": "group",
+      "description": "Fire detection and vegetation change products from MODIS and VIIRS missions providing critical information for wildfire monitoring, land use change detection, and ecosystem management.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Fire products from NASA MODIS and VIIRS missions, processed by NASA FIRMS (Fire Information for Resource Management System). Land cover data from NASA Land Processes Distributed Active Archive Center (LP DAAC). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Real-time fire data is provided for emergency response and resource management applications."
+        },
+        {
+          "name": "Early Warning Applications",
+          "content": "Fire detection products provide near real-time alerts for wildfire response, enabling rapid deployment of firefighting resources and early evacuation warnings for populated areas."
+        },
+        {
+          "name": "Ecosystem Management",
+          "content": "Long-term fire and vegetation datasets support prescribed fire planning, post-fire recovery monitoring, and ecosystem restoration efforts."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Early Warning Applications",
+        "Ecosystem Management"
+      ],
+      "members": [
+        {
+          "name": "Active Fire Detection",
+          "type": "group",
+          "description": "Near real-time fire detection products using thermal anomaly detection algorithms to identify actively burning fires and thermal hotspots.",
+          "members": [
+            {
+              "name": "MODIS Active Fire (Terra, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Thermal_Anomalies_All",
+              "description": "Daily active fire detections from MODIS Terra satellite using thermal infrared bands to identify fires and thermal anomalies with high confidence levels.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Thermal_Anomalies_All_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS active fire products use middle infrared (3.9 μm) and thermal infrared (11-12 μm) bands to detect thermal anomalies characteristic of fires. The algorithm identifies pixels significantly warmer than their surroundings."
+                },
+                {
+                  "name": "Detection Method",
+                  "content": "Uses contextual fire detection algorithm comparing target pixel brightness temperature to background pixels, with multiple tests to reject false alarms from hot surfaces, sun glint, and other sources"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km nominal resolution with sub-pixel fire detection capability for fires as small as 0.1% of pixel area under optimal conditions"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "February 2000 to present, daily global coverage from Terra satellite morning overpass (~10:30 AM local time)"
+                },
+                {
+                  "name": "Confidence Levels",
+                  "content": "Fire pixels classified as high confidence (>80%), nominal confidence (30-80%), or low confidence (<30%) based on detection algorithm performance"
+                },
+                {
+                  "name": "Detection Limitations",
+                  "content": "May miss small fires, fires under heavy smoke or cloud cover, and fires with low thermal contrast. Optimal detection during early morning overpass times"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Wildfire monitoring, fire weather analysis, emissions inventory, fire danger assessment, rapid response fire mapping, prescribed fire monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA FIRMS (Fire Information for Resource Management System)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Detection Method",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Confidence Levels",
+                "Detection Limitations",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Active Fire (Aqua, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Thermal_Anomalies_All",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Aqua_Thermal_Anomalies_All_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily active fire detections from MODIS Aqua satellite providing complementary afternoon fire detection to enhance overall fire monitoring capability.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS Aqua provides complementary fire detection to Terra MODIS, with afternoon overpass enabling detection of fires that develop during daytime heating or may be missed by morning observations."
+                },
+                {
+                  "name": "Overpass Time",
+                  "content": "Aqua satellite has afternoon overpass (~1:30 PM local time) complementing Terra's morning overpass for enhanced daily fire detection coverage"
+                },
+                {
+                  "name": "Complementary Value",
+                  "content": "Combined Terra and Aqua observations provide improved fire detection with two daily observation opportunities and better temporal sampling of fire activity"
+                },
+                {
+                  "name": "Diurnal Fire Patterns",
+                  "content": "Afternoon overpass captures peak fire activity periods when many fires reach maximum intensity due to daytime heating and lower humidity"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Enhanced fire detection when combined with Terra, fire behavior analysis, diurnal fire pattern studies, improved fire event mapping"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA FIRMS"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Overpass Time",
+                "Complementary Value",
+                "Diurnal Fire Patterns",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "VIIRS Active Fire (Day/Night, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "VIIRS_SNPP_Thermal_Anomalies_375m_All",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/VIIRS_SNPP_Thermal_Anomalies_375m_All_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily active fire detections from VIIRS instrument with higher spatial resolution and day/night fire detection capability for comprehensive fire monitoring.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "VIIRS (Visible Infrared Imaging Radiometer Suite) provides enhanced fire detection with higher spatial resolution than MODIS and capability to detect fires during both day and night overpasses."
+                },
+                {
+                  "name": "Enhanced Resolution",
+                  "content": "375m spatial resolution providing significantly higher detail than MODIS 1km fire products, enabling detection of smaller fires and more precise fire location"
+                },
+                {
+                  "name": "Day/Night Detection",
+                  "content": "Capable of fire detection during both daytime and nighttime overpasses, providing up to 4 daily observation opportunities for fire monitoring"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "January 2012 to present from Suomi NPP satellite, with continuing operations planned"
+                },
+                {
+                  "name": "Detection Algorithm",
+                  "content": "Uses similar contextual fire detection approach as MODIS but optimized for VIIRS spectral bands and higher spatial resolution"
+                },
+                {
+                  "name": "Unique Capabilities",
+                  "content": "Superior small fire detection, nighttime fire monitoring, higher spatial precision for fire location, improved detection in heterogeneous landscapes"
+                },
+                {
+                  "name": "Applications",
+                  "content": "High-resolution fire mapping, small fire detection, nighttime fire monitoring, precision fire location for response teams, detailed fire behavior analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA/NOAA VIIRS mission team, NASA FIRMS"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Enhanced Resolution",
+                "Day/Night Detection",
+                "Temporal Coverage",
+                "Detection Algorithm",
+                "Unique Capabilities",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Burn Area and Fire Impact",
+          "type": "group",
+          "description": "Post-fire burn area mapping and fire impact assessment products for quantifying fire effects on ecosystems and landscapes.",
+          "members": [
+            {
+              "name": "MODIS Burned Area (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Thermal_Anomalies_All",
+              "description": "Monthly global burned area product mapping areas affected by fire using multitemporal analysis of MODIS surface reflectance data.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The MODIS Burned Area product uses bidirectional reflectance characteristics and temporal changes in surface reflectance to identify areas affected by fire during each month."
+                },
+                {
+                  "name": "Mapping Approach",
+                  "content": "Uses combination of surface reflectance changes, vegetation indices, and active fire information to map burn areas with temporal precision to approximate day of burning"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution providing detailed burn area mapping for fire impact assessment"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "November 2000 to present, monthly global burned area products"
+                },
+                {
+                  "name": "Product Features",
+                  "content": "Includes burn date, burn area extent, and quality assessment information for each detected burn area"
+                },
+                {
+                  "name": "Validation",
+                  "content": "Extensively validated against Landsat-derived burn areas and field observations, with regional accuracy assessments available"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Fire impact assessment, carbon emissions estimation, post-fire recovery monitoring, fire regime analysis, land management planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, University of Maryland fire team, NASA GSFC"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Mapping Approach",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Product Features",
+                "Validation",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Fire Radiative Power (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Thermal_Anomalies_All",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Aqua_Thermal_Anomalies_All_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily fire radiative power measurements quantifying energy release rates from active fires for fire intensity assessment and emissions estimation.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Fire Radiative Power (FRP) measures the rate of energy release from fires, providing quantitative information about fire intensity and enabling estimation of fuel consumption and emissions."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Measured in Megawatts (MW), representing the rate of radiant energy release from fires"
+                },
+                {
+                  "name": "Scientific Basis",
+                  "content": "FRP is directly related to fuel consumption rates and can be used to estimate smoke emissions, trace gas release, and fire behavior characteristics"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Fire behavior analysis, emissions inventory development, air quality forecasting, fire danger assessment, fire management planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, King's College London fire research group"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Scientific Basis",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vegetation and Land Cover Change",
+          "type": "group",
+          "description": "Long-term vegetation monitoring and land cover change products for tracking ecosystem changes, deforestation, and landscape modifications.",
+          "members": [
+            {
+              "name": "MODIS Land Cover Type (Annual)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Land_Cover_Type_Annual",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Cover_Type_Annual_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Annual global land cover classification showing vegetation types, land use patterns, and ecosystem distributions with multiple classification schemes.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS Land Cover Type provides annual global land cover classifications using supervised machine learning algorithms applied to MODIS surface reflectance and land surface temperature data."
+                },
+                {
+                  "name": "Classification Schemes",
+                  "content": "Multiple classification systems including IGBP (International Geosphere-Biosphere Programme), University of Maryland scheme, and Plant Functional Type classifications"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution enabling detailed land cover mapping and change detection"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2001 to present, annual global land cover products enabling 20+ years of land cover change analysis"
+                },
+                {
+                  "name": "Land Cover Classes",
+                  "content": "17 IGBP classes including forests, grasslands, croplands, urban areas, wetlands, and other natural and human-modified landscapes"
+                },
+                {
+                  "name": "Change Detection",
+                  "content": "Time series analysis enables detection of deforestation, afforestation, agricultural expansion, urban growth, and other land cover transitions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Ecosystem monitoring, deforestation tracking, carbon cycle studies, biodiversity assessment, climate modeling, land use planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, Boston University land cover team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Classification Schemes",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Land Cover Classes",
+                "Change Detection",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Enhanced Vegetation Index (16-Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_L3_EVI_16Day",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_L3_EVI_16Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "16-day composite Enhanced Vegetation Index showing vegetation productivity and phenology patterns with improved sensitivity in high biomass areas.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Enhanced Vegetation Index (EVI) provides improved vegetation monitoring compared to NDVI, with reduced atmospheric and canopy background effects and enhanced sensitivity in high biomass regions."
+                },
+                {
+                  "name": "Index Formula",
+                  "content": "EVI = 2.5 * ((NIR - Red) / (NIR + 6*Red - 7.5*Blue + 1)), incorporating blue band correction for atmospheric effects"
+                },
+                {
+                  "name": "Composite Period",
+                  "content": "16-day composites using maximum value approach to reduce cloud contamination and provide consistent vegetation monitoring"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "250m spatial resolution enabling detailed vegetation analysis and landscape-scale monitoring"
+                },
+                {
+                  "name": "Phenology Applications",
+                  "content": "Excellent for tracking vegetation phenology, growing season timing, productivity changes, and ecosystem response to environmental conditions"
+                },
+                {
+                  "name": "Fire Recovery Monitoring",
+                  "content": "Particularly valuable for monitoring post-fire vegetation recovery and ecosystem restoration following disturbances"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Vegetation productivity monitoring, phenology studies, post-fire recovery assessment, ecosystem health evaluation, agricultural monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, University of Arizona vegetation index team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Index Formula",
+                "Composite Period",
+                "Spatial Resolution",
+                "Phenology Applications",
+                "Fire Recovery Monitoring",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Leaf Area Index (8-Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Leaf_Area_Index_8Day",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Leaf_Area_Index_8Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "8-day Leaf Area Index representing vegetation density and canopy structure for ecosystem productivity and carbon cycle studies.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Leaf Area Index (LAI) represents the amount of leaf area in an ecosystem and is fundamental for understanding ecosystem productivity, carbon cycling, and vegetation-atmosphere interactions."
+                },
+                {
+                  "name": "Definition",
+                  "content": "LAI is defined as the one-sided leaf area per unit ground surface area (m²/m²), providing quantitative measure of vegetation density"
+                },
+                {
+                  "name": "Temporal Resolution",
+                  "content": "8-day composites providing frequent monitoring of vegetation dynamics and seasonal changes"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m resolution suitable for ecosystem-scale vegetation monitoring and modeling applications"
+                },
+                {
+                  "name": "Carbon Cycle Relevance",
+                  "content": "LAI is directly related to photosynthetic capacity and primary productivity, making it essential for carbon cycle modeling"
+                },
+                {
+                  "name": "Fire Impact Assessment",
+                  "content": "Changes in LAI following fires provide quantitative assessment of fire impacts on vegetation density and ecosystem structure"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Ecosystem productivity modeling, carbon cycle studies, climate modeling, post-disturbance recovery monitoring, forest management"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA GSFC biophysical products team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Definition",
+                "Temporal Resolution",
+                "Spatial Resolution",
+                "Carbon Cycle Relevance",
+                "Fire Impact Assessment",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

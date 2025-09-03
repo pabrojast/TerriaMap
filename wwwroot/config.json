@@ -1,6 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": ["simple-modular"],
   "parameters": {
     "tabbedCatalog": true,
     "aboutButtonHrefUrl": "https://ihp-wins.unesco.org/about",
@@ -55,6 +55,8 @@
     "supportEmail": "projas@cazalac.org",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
+    // ArcGIS API configuration
+    "arcGisApiKey": "AAPTxy8BH1VEsoebNVZXo8HurKc8-mmrXWfHJiqKIhXlCIuG-_v2oN2AnmQYrCUKb_e4HjfbgUP4UI1YmJR05pVQBF8bMJ-OE0imtXnuAFLKUUzJlDsXfLCfJKHTMXjAltM2nWc9BRTIpeXB6TK0zYo-urmKP6F3nKR2tdEBTPmykNNErdXDy9QssqYjFxJj3PHTWRT2x550HZ_2LNPIlJXeceSL_iLy-y7odV6n74lwfpA.AT1_6MCJUTaC",
     // Or this
     "feedbackUrl": "feedback",
     "showExternalLink": true,

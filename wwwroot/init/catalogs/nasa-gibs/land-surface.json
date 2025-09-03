@@ -1,0 +1,462 @@
+{
+  "catalog": [
+    {
+      "name": "Advanced Land Surface Analysis",
+      "type": "group",
+      "description": "Advanced land surface products from NASA missions providing detailed information about land surface properties, energy balance, and hydrological processes essential for water resource management and climate studies.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Land surface products from NASA MODIS, AIRS, and GLDAS missions. Processing by NASA Land Processes Distributed Active Archive Center (LP DAAC) and Global Modeling and Assimilation Office (GMAO). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Land surface products support hydrological modeling, water resource planning, and climate research applications."
+        },
+        {
+          "name": "Hydrological Relevance",
+          "content": "Land surface properties directly control evapotranspiration, runoff generation, infiltration rates, and energy partitioning, making these products essential for water resource assessment."
+        },
+        {
+          "name": "Water Cycle Applications",
+          "content": "These products enable quantification of land-atmosphere water and energy exchanges, supporting improved hydrological modeling and water balance calculations."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Hydrological Relevance",
+        "Water Cycle Applications"
+      ],
+      "members": [
+        {
+          "name": "Land Surface Temperature",
+          "type": "group",
+          "description": "High-resolution land surface temperature products for understanding thermal conditions, energy balance, and water stress indicators.",
+          "members": [
+            {
+              "name": "MODIS Land Surface Temperature (Terra, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Land_Surface_Temp_Day_Daily",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Day_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily daytime land surface temperature from MODIS Terra at 1km resolution, essential for energy balance and water stress assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Land Surface Temperature (LST) represents the radiative skin temperature of the land surface, providing critical information about surface energy balance and thermal conditions."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Temperature in Kelvin (K), representing the radiative temperature of the land surface"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km spatial resolution enabling detailed thermal analysis and urban heat island studies"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "February 2000 to present, daily daytime observations from Terra satellite"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "LST is essential for evapotranspiration estimation, water stress detection, irrigation management, and surface energy balance calculations"
+                },
+                {
+                  "name": "Water Stress Indicator",
+                  "content": "High LST often indicates water stress in vegetation, while LST patterns can reveal soil moisture variations and irrigation effects"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Evapotranspiration modeling, drought monitoring, irrigation efficiency assessment, urban heat island analysis, surface energy balance studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Land Processes DAAC (LP DAAC)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Hydrological Applications",
+                "Water Stress Indicator",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Land Surface Temperature (Terra, Night)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Land_Surface_Temp_Night_Daily",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Night_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily nighttime land surface temperature from MODIS Terra providing thermal minima and cooling rates important for water cycle processes.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Nighttime LST represents minimum daily thermal conditions and provides information about surface cooling rates and thermal inertia properties."
+                },
+                {
+                  "name": "Thermal Inertia",
+                  "content": "Nighttime LST patterns reflect soil moisture content, surface roughness, and thermal properties important for understanding water availability"
+                },
+                {
+                  "name": "Cooling Rate Analysis",
+                  "content": "Day-night LST differences indicate surface energy balance characteristics and evaporative cooling effects"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Surface energy balance analysis, soil thermal property assessment, evaporative cooling evaluation, thermal inertia mapping"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Land Processes DAAC (LP DAAC)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Thermal Inertia",
+                "Cooling Rate Analysis",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Land Surface Temperature (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily land surface temperature from AIRS infrared sounder with all-weather capability and high radiometric accuracy.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "AIRS (Atmospheric Infrared Sounder) provides LST measurements using thermal infrared channels with high radiometric accuracy and some all-weather capability."
+                },
+                {
+                  "name": "All-Weather Capability",
+                  "content": "AIRS can retrieve LST through thin clouds, providing more complete temporal coverage than visible/IR imaging instruments"
+                },
+                {
+                  "name": "High Accuracy",
+                  "content": "AIRS LST products have high radiometric accuracy, making them suitable for climate monitoring and long-term trend analysis"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "50 km spatial resolution suitable for regional to global scale thermal analysis and climate studies"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate monitoring, thermal trend analysis, regional energy balance studies, all-weather surface temperature monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Jet Propulsion Laboratory (JPL)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "All-Weather Capability",
+                "High Accuracy",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Evapotranspiration & Energy Fluxes",
+          "type": "group",
+          "description": "Evapotranspiration and surface energy flux products quantifying land-atmosphere water and energy exchanges.",
+          "members": [
+            {
+              "name": "MODIS Evapotranspiration (8-Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Net_Evapotranspiration_8Day",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Net_Evapotranspiration_8Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "8-day evapotranspiration from MODIS providing quantitative estimates of water loss from land surface to atmosphere.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Evapotranspiration (ET) represents the combined water loss through evaporation from soil and water surfaces and transpiration from vegetation, a key component of the water cycle."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Evapotranspiration in millimeters per 8-day period (mm/8day), representing water depth equivalent"
+                },
+                {
+                  "name": "Algorithm Basis",
+                  "content": "Uses Penman-Monteith equation with MODIS land surface temperature, vegetation indices, and meteorological inputs to estimate ET"
+                },
+                {
+                  "name": "Water Balance Component",
+                  "content": "ET is crucial for water balance calculations, representing the largest water loss term in most terrestrial water budgets"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution enabling field-scale to regional evapotranspiration assessment"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Essential for water resource assessment, irrigation scheduling, drought monitoring, and hydrological model calibration"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Water resource management, irrigation efficiency assessment, drought impact evaluation, hydrological modeling, water balance studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, evapotranspiration algorithm development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Algorithm Basis",
+                "Water Balance Component",
+                "Spatial Resolution",
+                "Hydrological Applications",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GLDAS Latent Heat Flux (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GLDAS_Latent_Heat_Flux_Daily",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Latent_Heat_Flux_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily latent heat flux from GLDAS land surface model representing energy used for evapotranspiration processes.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Latent heat flux represents the energy used for evapotranspiration processes, directly related to water vapor transfer from land surface to atmosphere."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Latent heat flux in watts per square meter (W/m²), representing energy flux density"
+                },
+                {
+                  "name": "Energy-Water Relationship",
+                  "content": "Latent heat flux is directly proportional to evapotranspiration rates, with ~2.45 MJ/kg energy required to evaporate water"
+                },
+                {
+                  "name": "Model Integration",
+                  "content": "GLDAS integrates satellite observations with land surface models to provide comprehensive surface energy flux estimates"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.25° spatial resolution suitable for regional water and energy balance studies"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Surface energy balance analysis, evapotranspiration assessment, land-atmosphere interaction studies, climate model validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Land Data Assimilation System (GLDAS), NASA Global Modeling and Assimilation Office (GMAO)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Energy-Water Relationship",
+                "Model Integration",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GLDAS Sensible Heat Flux (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GLDAS_Sensible_Heat_Flux_Daily",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Sensible_Heat_Flux_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Daily sensible heat flux from GLDAS representing direct heating of atmosphere and energy balance partitioning.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Sensible heat flux represents direct heating of the atmosphere through conduction and convection, complementing latent heat flux in surface energy balance."
+                },
+                {
+                  "name": "Energy Partitioning",
+                  "content": "The ratio of sensible to latent heat flux indicates water availability and surface wetness conditions"
+                },
+                {
+                  "name": "Water Stress Indicator",
+                  "content": "High sensible heat flux relative to latent heat flux often indicates water stress and reduced evapotranspiration"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Surface energy balance analysis, water stress assessment, land-atmosphere coupling studies, irrigation efficiency evaluation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Land Data Assimilation System (GLDAS), NASA GMAO"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Energy Partitioning",
+                "Water Stress Indicator",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surface Albedo & Radiation",
+          "type": "group",
+          "description": "Surface albedo and radiation budget products essential for understanding energy balance and land surface-atmosphere interactions.",
+          "members": [
+            {
+              "name": "MODIS Surface Albedo (16-Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Surface_Albedo_16Day",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Surface_Albedo_16Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "16-day surface albedo from MODIS Terra indicating land surface reflectance properties and energy balance characteristics.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface albedo represents the fraction of solar radiation reflected by land surface, controlling the amount of solar energy absorbed and available for heating and evapotranspiration."
+                },
+                {
+                  "name": "Energy Balance Role",
+                  "content": "Albedo directly controls surface energy absorption, affecting temperature, evapotranspiration, and local climate conditions"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Dimensionless reflectance fraction (0-1), where 0 represents complete absorption and 1 represents complete reflection"
+                },
+                {
+                  "name": "Surface Properties",
+                  "content": "Albedo varies with surface type, vegetation cover, soil moisture, snow cover, and land use, providing insights into surface conditions"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "500m spatial resolution enabling detailed surface property analysis"
+                },
+                {
+                  "name": "Hydrological Relevance",
+                  "content": "Albedo changes affect energy available for evapotranspiration and influence local water cycle processes"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Surface energy balance modeling, land use change detection, vegetation monitoring, climate impact assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, albedo algorithm development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Energy Balance Role",
+                "Measurement Units",
+                "Surface Properties",
+                "Spatial Resolution",
+                "Hydrological Relevance",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "CERES Surface Radiation Budget (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "CERES_Combined_Surface_Shortwave_Flux_Diffuse_All_Sky_Monthly",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/CERES_Combined_Surface_Shortwave_Flux_Diffuse_All_Sky_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "description": "Monthly surface radiation budget from CERES providing comprehensive energy balance information for hydrological applications.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CERES (Clouds and the Earth's Radiant Energy System) provides comprehensive surface radiation budget measurements essential for understanding energy available for hydrological processes."
+                },
+                {
+                  "name": "Radiation Components",
+                  "content": "Includes downward and upward shortwave and longwave radiation components, providing complete surface energy budget information"
+                },
+                {
+                  "name": "Net Radiation Calculation",
+                  "content": "Net radiation represents total energy available at surface for heating, evapotranspiration, and other physical processes"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Net radiation is fundamental for evapotranspiration calculations and surface energy balance modeling in hydrological studies"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1° spatial resolution suitable for regional to global scale energy balance studies"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Evapotranspiration modeling, surface energy balance analysis, hydrological model forcing, climate model validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA CERES mission team, surface radiation budget algorithm teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Radiation Components",
+                "Net Radiation Calculation",
+                "Hydrological Applications",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

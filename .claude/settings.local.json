@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:gibs.earthdata.nasa.gov)",
+      "Bash(find:*)",
+      "Bash(node:*)",
+      "WebSearch",
+      "WebFetch(domain:nasa-gibs.github.io)",
+      "WebFetch(domain:worldview.earthdata.nasa.gov)",
+      "Bash(yarn dev)",
+      "Bash(yarn start)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:docs.terria.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "catalog": [
+    {
+      "name": "Flood Monitoring",
+      "type": "group",
+      "description": "Near real-time flood detection and monitoring products from NASA satellite missions providing critical information for disaster response, emergency management, and flood risk assessment. These datasets help identify flooded areas globally within hours of data acquisition.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA MODIS missions on Terra and Aqua satellites. MODIS Flood Products developed by NASA Goddard Space Flight Center. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. These products are designed for disaster response and emergency management applications."
+        },
+        {
+          "name": "Emergency Applications",
+          "content": "Disaster response coordination, emergency evacuation planning, flood extent mapping, damage assessment, insurance claims support, humanitarian aid deployment."
+        },
+        {
+          "name": "Update Frequency",
+          "content": "Near real-time products updated within 2-4 hours of satellite overpass, with daily composites for comprehensive flood monitoring."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Emergency Applications",
+        "Update Frequency"
+      ],
+      "members": [
+        {
+          "name": "MODIS Near Real-Time Flood Detection",
+          "type": "group",
+          "description": "Near real-time global flood products from MODIS instruments providing rapid flood detection for emergency response and disaster management.",
+          "members": [
+            {
+              "name": "MODIS Flood Product NRT (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_Flood_1-Day_Global_NRT",
+              "description": "Daily near real-time global flood detection from combined MODIS Terra and Aqua satellites, providing rapid identification of flooded areas for emergency response.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The MODIS Near Real-Time Global Flood Product (MCDWD) automatically detects flood water using MODIS surface reflectance imagery. The algorithm identifies water pixels and compares them to historical water occurrence to detect anomalous flooding."
+                },
+                {
+                  "name": "Detection Method",
+                  "content": "Uses normalized difference water index (NDWI) and other spectral indices to identify water surfaces, then compares to historical baseline to detect flood anomalies"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "250m spatial resolution for maximum detail in flood extent mapping"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2012 to present, with daily global coverage"
+                },
+                {
+                  "name": "Latency",
+                  "content": "Near real-time processing with 2-4 hour latency from satellite overpass"
+                },
+                {
+                  "name": "Product Classification",
+                  "content": "Water (including flood water), Non-water, No data (clouds, shadows), and quality flags for confidence assessment"
+                },
+                {
+                  "name": "Emergency Response Value",
+                  "content": "Rapid flood extent mapping, damage assessment support, evacuation planning, emergency resource allocation, international disaster response coordination"
+                },
+                {
+                  "name": "Limitations",
+                  "content": "Cloud cover can limit detection, best performance in areas with significant water extent, may miss flooding under dense vegetation canopy"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Goddard Space Flight Center Hydrological Sciences Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Detection Method",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Latency",
+                "Product Classification",
+                "Emergency Response Value",
+                "Limitations",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Flood Product NRT (2-Day Composite)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_Flood_2-Day_Global_NRT",
+              "description": "2-day composite near real-time flood product combining multiple MODIS observations to reduce cloud gaps and improve flood detection reliability.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The 2-day composite combines MODIS observations over a 2-day period to reduce the impact of clouds and provide more complete spatial coverage of flood events."
+                },
+                {
+                  "name": "Composite Advantages",
+                  "content": "Reduced cloud gaps, improved spatial coverage, more robust flood detection through temporal aggregation, better continuity of flood extent mapping"
+                },
+                {
+                  "name": "Optimal Use Cases",
+                  "content": "Situations with persistent cloud cover, comprehensive flood mapping over large areas, trend analysis of flood duration, validation of daily products"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Regional flood assessment, infrastructure damage evaluation, agricultural impact assessment, insurance claim support, disaster recovery planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Composite Advantages",
+                "Optimal Use Cases",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Flood Product NRT (3-Day Composite)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_Flood_3-Day_Global_NRT",
+              "description": "3-day composite flood product providing the most comprehensive flood extent mapping with minimal cloud contamination for detailed analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The 3-day composite provides the most complete spatial coverage by aggregating MODIS observations over a 3-day period, virtually eliminating cloud gaps in most regions."
+                },
+                {
+                  "name": "Maximum Coverage",
+                  "content": "Provides most complete flood extent mapping with minimal cloud gaps, ideal for comprehensive damage assessment and detailed flood analysis"
+                },
+                {
+                  "name": "Analysis Applications",
+                  "content": "Detailed flood extent analysis, maximum flood impact assessment, comprehensive damage evaluation, research and validation studies"
+                },
+                {
+                  "name": "Trade-offs",
+                  "content": "Slightly reduced temporal resolution but significantly improved spatial completeness, best for thorough post-event analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Maximum Coverage",
+                "Analysis Applications",
+                "Trade-offs",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flood Risk and Context Layers",
+          "type": "group",
+          "description": "Complementary datasets providing context for flood monitoring including water masks, terrain information, and population exposure data.",
+          "members": [
+            {
+              "name": "Global Water Mask",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MOD44W_Water_Mask",
+              "description": "Global water mask showing permanent water bodies and coastlines, essential for distinguishing between normal water and flood water in MODIS flood products.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The MODIS Water Mask (MOD44W) provides a global map of surface water at 250m resolution, derived from MODIS satellite data. It serves as a baseline for flood detection algorithms."
+                },
+                {
+                  "name": "Role in Flood Detection",
+                  "content": "Used as reference for distinguishing between permanent water bodies and temporary flood water, essential for accurate flood anomaly detection"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "250m spatial resolution, consistent with MODIS flood products"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Flood algorithm baseline, water resource mapping, coastal zone management, wetland identification, hydrological modeling validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, MOD44W product development team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Role in Flood Detection",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Historical Flood Archive",
+          "type": "group",
+          "description": "Long-term flood detection records for climate analysis, trend assessment, and historical comparison of flood events.",
+          "info": [
+            {
+              "name": "Data Availability",
+              "content": "Historical MODIS flood products are available through NASA Earthdata archives. Long-term datasets enable climate trend analysis and flood frequency studies."
+            },
+            {
+              "name": "Research Applications",
+              "content": "Climate change impact studies, flood frequency analysis, seasonal flood pattern assessment, long-term trend detection, model validation"
+            }
+          ],
+          "members": []
+        }
+      ]
+    }
+  ]
+}

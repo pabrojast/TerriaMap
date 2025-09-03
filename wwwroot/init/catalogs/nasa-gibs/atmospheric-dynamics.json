@@ -1,0 +1,705 @@
+{
+  "catalog": [
+    {
+      "name": "Atmospheric Dynamics & Water Vapor",
+      "type": "group",
+      "description": "Atmospheric dynamics and water vapor products from NASA missions providing essential information about atmospheric moisture transport, weather patterns, and precipitation processes affecting water resources.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Atmospheric products from NASA AIRS, GEOS, MERRA-2, and MODIS missions. Processing by NASA Goddard Earth Sciences Data and Information Services Center (GES DISC) and Global Modeling and Assimilation Office (GMAO). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Atmospheric products support weather analysis, water resource forecasting, and climate research applications."
+        },
+        {
+          "name": "Hydrological Relevance",
+          "content": "Atmospheric water vapor, wind patterns, and pressure systems control precipitation distribution, evaporation rates, and moisture transport, making these products essential for water resource assessment."
+        },
+        {
+          "name": "Weather-Water Connections",
+          "content": "Understanding atmospheric dynamics enables improved precipitation forecasting, drought prediction, and assessment of atmospheric rivers and moisture transport affecting regional water resources."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Hydrological Relevance",
+        "Weather-Water Connections"
+      ],
+      "members": [
+        {
+          "name": "Water Vapor & Humidity",
+          "type": "group",
+          "description": "Atmospheric water vapor and humidity products showing moisture content and transport in the atmosphere.",
+          "members": [
+            {
+              "name": "AIRS Air Temperature (Daily Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "description": "Daily daytime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "AIRS (Atmospheric Infrared Sounder) measures atmospheric water vapor using thermal infrared spectroscopy, providing high-accuracy humidity profiles and total column water vapor."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "Uses thermal infrared absorption lines to retrieve atmospheric water vapor with high vertical resolution and radiometric accuracy"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Total column water vapor in millimeters (mm) or grams per square centimeter (g/cm²)"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "50 km spatial resolution with global coverage, suitable for regional to global scale moisture analysis"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "September 2002 to present, providing 20+ years of high-quality atmospheric moisture data"
+                },
+                {
+                  "name": "All-Weather Capability",
+                  "content": "Infrared sounding provides some capability to measure water vapor through clouds, enhancing temporal coverage"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Water vapor measurements are essential for precipitation forecasting, atmospheric river detection, and understanding moisture transport affecting regional water resources"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Weather forecasting, precipitation prediction, atmospheric river tracking, drought monitoring, water resource planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Jet Propulsion Laboratory (JPL)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Measurement Units",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "All-Weather Capability",
+                "Hydrological Applications",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Cloud Water Path (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Water_Vapor_5km_Day",
+              "description": "Daily cloud water path from MODIS Terra satellite providing high-resolution cloud liquid water content measurements for weather analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Water_Vapor_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS measures atmospheric water vapor using near-infrared absorption bands, providing high spatial resolution measurements of atmospheric moisture content."
+                },
+                {
+                  "name": "High Resolution",
+                  "content": "1 km spatial resolution enabling detailed analysis of moisture patterns and gradients"
+                },
+                {
+                  "name": "Clear Sky Retrievals",
+                  "content": "MODIS water vapor retrievals require clear sky conditions, providing high-quality measurements where clouds are absent"
+                },
+                {
+                  "name": "Complementary Coverage",
+                  "content": "Combined with AIRS data, provides comprehensive atmospheric moisture monitoring with different spatial resolutions and measurement capabilities"
+                },
+                {
+                  "name": "Applications",
+                  "content": "High-resolution moisture analysis, local weather patterns, convective initiation studies, detailed atmospheric moisture mapping"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, atmospheric products development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "High Resolution",
+                "Clear Sky Retrievals",
+                "Complementary Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MERRA-2 Air Temperature (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_2m_Air_Temperature_Monthly",
+              "description": "Monthly air temperature from MERRA-2 reanalysis providing comprehensive atmospheric temperature analysis with meteorological context.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_2m_Air_Temperature_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MERRA-2 (Modern-Era Retrospective analysis for Research and Applications) provides air temperature through advanced data assimilation combining observations with atmospheric models."
+                },
+                {
+                  "name": "Data Assimilation",
+                  "content": "Combines satellite observations, radiosondes, and surface measurements to provide meteorologically consistent temperature fields"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Air temperature in degrees Celsius (°C) or Kelvin (K)"
+                },
+                {
+                  "name": "Vertical Levels",
+                  "content": "Surface air temperature at 2 meters above ground level, providing near-surface temperature conditions"
+                },
+                {
+                  "name": "Long-term Record",
+                  "content": "1980 to present, providing 40+ years of consistent atmospheric moisture reanalysis"
+                },
+                {
+                  "name": "Meteorological Context",
+                  "content": "Part of comprehensive reanalysis system including winds, pressure, and temperature for complete atmospheric state"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate studies, long-term temperature trend analysis, atmospheric model validation, weather pattern research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO), MERRA-2 reanalysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Assimilation",
+                "Measurement Units",
+                "Vertical Levels",
+                "Long-term Record",
+                "Meteorological Context",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Atmospheric Pressure & Circulation",
+          "type": "group",
+          "description": "Atmospheric pressure and circulation patterns controlling weather systems and moisture transport.",
+          "members": [
+            {
+              "name": "MERRA-2 Surface Pressure (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Pressure_Monthly",
+              "description": "Monthly surface pressure from MERRA-2 reanalysis showing pressure systems and weather patterns affecting precipitation and water resources.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Pressure_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface pressure patterns control weather systems, storm tracks, and precipitation distribution, making pressure analysis essential for water resource forecasting."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Surface pressure in hectopascals (hPa) or millibars (mb)"
+                },
+                {
+                  "name": "Weather System Identification",
+                  "content": "Pressure patterns reveal high and low pressure systems, fronts, and storm tracks that control precipitation distribution"
+                },
+                {
+                  "name": "Seasonal Patterns",
+                  "content": "Pressure climatology shows monsoon systems, seasonal pressure migrations, and climate patterns affecting regional water resources"
+                },
+                {
+                  "name": "Forecast Applications",
+                  "content": "Pressure patterns are fundamental for weather forecasting and predicting precipitation events affecting water resources"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Weather analysis, storm tracking, seasonal forecasting, climate pattern identification, water resource planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO), MERRA-2 reanalysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Weather System Identification",
+                "Seasonal Patterns",
+                "Forecast Applications",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MERRA-2 Wind Speed (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Wind_Speed_Monthly",
+              "description": "Monthly wind speed from MERRA-2 showing atmospheric circulation patterns and moisture transport.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Wind_Speed_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Atmospheric winds transport moisture, control storm movement, and determine precipitation patterns, making wind analysis crucial for water resource assessment."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Wind speed in meters per second (m/s) with directional components"
+                },
+                {
+                  "name": "Moisture Transport",
+                  "content": "Wind patterns control atmospheric moisture transport, including atmospheric rivers and monsoon circulations affecting regional water resources"
+                },
+                {
+                  "name": "Storm Tracking",
+                  "content": "Wind patterns enable tracking of storm systems, tropical cyclones, and weather fronts that produce precipitation"
+                },
+                {
+                  "name": "Circulation Analysis",
+                  "content": "Wind patterns reveal large-scale circulation features like jet streams, trade winds, and monsoon systems"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Storm tracking, moisture transport analysis, seasonal circulation studies, atmospheric river detection, weather pattern analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Global Modeling and Assimilation Office (GMAO), MERRA-2 reanalysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Moisture Transport",
+                "Storm Tracking",
+                "Circulation Analysis",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cloud Properties & Atmospheric Stability",
+          "type": "group",
+          "description": "Cloud properties and atmospheric stability indicators affecting precipitation formation and weather development.",
+          "members": [
+            {
+              "name": "MODIS Cloud Water Path (Terra)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Cloud_Water_Path",
+              "description": "Cloud water path from MODIS Terra indicating cloud liquid water content and potential for precipitation development.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Cloud_Water_Path_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Cloud fraction represents the percentage of area covered by clouds, providing information about cloudiness patterns and potential for precipitation."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Cloud fraction as percentage (0-100%) of grid cell covered by clouds"
+                },
+                {
+                  "name": "Precipitation Potential",
+                  "content": "High cloud fractions often indicate conditions conducive to precipitation formation and weather system development"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km spatial resolution enabling detailed cloud pattern analysis"
+                },
+                {
+                  "name": "Diurnal Patterns",
+                  "content": "Cloud fraction patterns reveal diurnal cycles of convective activity and weather system development"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Weather pattern analysis, convective activity monitoring, precipitation forecasting support, climate studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, cloud property algorithm teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Precipitation Potential",
+                "Spatial Resolution",
+                "Diurnal Patterns",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Air Temperature (Daily Night)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+              "description": "Daily nighttime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Night_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Atmospheric stability indices indicate the tendency of the atmosphere to support or suppress vertical motion and convective activity that leads to precipitation."
+                },
+                {
+                  "name": "Stability Measures",
+                  "content": "Includes various stability parameters such as convective available potential energy (CAPE) and convective inhibition (CIN)"
+                },
+                {
+                  "name": "Convective Potential",
+                  "content": "Stability indices help identify conditions favorable for thunderstorm development and intense precipitation events"
+                },
+                {
+                  "name": "Forecast Applications",
+                  "content": "Stability parameters are essential for predicting convective weather and associated precipitation patterns"
+                },
+                {
+                  "name": "Water Resource Relevance",
+                  "content": "Convective precipitation often produces intense rainfall events important for flash flood forecasting and water resource management"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Severe weather forecasting, convective precipitation prediction, flash flood assessment, atmospheric instability analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, atmospheric stability algorithm teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Stability Measures",
+                "Convective Potential",
+                "Forecast Applications",
+                "Water Resource Relevance",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Advanced Atmospheric Circulation",
+          "type": "group",
+          "description": "Advanced atmospheric circulation datasets from MERRA-2 reanalysis providing comprehensive surface wind and pressure patterns for detailed weather and climate analysis.",
+          "members": [
+            {
+              "name": "Surface Wind Speed (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Wind_Speed_Monthly",
+              "description": "Monthly surface wind speed from MERRA-2 reanalysis providing comprehensive global wind patterns for atmospheric circulation analysis and wind energy applications.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface wind speed from MERRA-2 provides model-based estimates of near-surface wind patterns by integrating observations with atmospheric modeling, offering consistent global wind climatology for multiple applications."
+                },
+                {
+                  "name": "Meteorological Significance",
+                  "content": "Surface winds drive atmospheric moisture transport, control evaporation rates, influence storm development, and determine air mass movement patterns critical for weather and climate"
+                },
+                {
+                  "name": "Hydrological Applications",
+                  "content": "Wind patterns control evaporation from water bodies, soil moisture loss, atmospheric moisture transport, and regional precipitation patterns affecting water resource availability"
+                },
+                {
+                  "name": "Seasonal Patterns",
+                  "content": "Monthly resolution reveals seasonal wind patterns including monsoon circulations, trade wind variations, and storm track changes affecting regional water resources"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° × 0.625° global grid providing detailed regional wind patterns suitable for climate analysis and atmospheric circulation studies"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "1980 to present, providing over 40 years of consistent wind data for long-term climate analysis and trend detection"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Climate model validation, long-term circulation trend analysis, monsoon system evaluation, atmospheric transport studies, climate change impact assessment"
+                },
+                {
+                  "name": "Energy Applications",
+                  "content": "Wind energy resource assessment, wind power potential mapping, renewable energy planning, wind farm site evaluation"
+                },
+                {
+                  "name": "Environmental Applications",
+                  "content": "Air quality modeling, pollutant transport analysis, dust storm tracking, wildfire smoke dispersion, atmospheric chemistry studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, NASA Global Modeling and Assimilation Office (GMAO), surface wind analysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Meteorological Significance",
+                "Hydrological Applications",
+                "Seasonal Patterns",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Climate Applications",
+                "Energy Applications",
+                "Environmental Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Surface Pressure (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Surface_Pressure_Monthly",
+              "description": "Monthly surface pressure from MERRA-2 reanalysis showing atmospheric pressure patterns that control weather systems, storm development, and large-scale atmospheric circulation.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface atmospheric pressure is a fundamental meteorological variable that controls weather patterns, storm systems, and large-scale atmospheric circulation affecting precipitation and water resources globally."
+                },
+                {
+                  "name": "Weather System Control",
+                  "content": "Surface pressure patterns determine the formation and movement of high and low pressure systems, frontal boundaries, and storm tracks that produce precipitation"
+                },
+                {
+                  "name": "Circulation Patterns",
+                  "content": "Pressure gradients drive wind patterns and atmospheric circulation including monsoons, trade winds, and seasonal pressure oscillations affecting regional water resources"
+                },
+                {
+                  "name": "Storm Development",
+                  "content": "Low pressure systems are associated with storm development, cyclone formation, and precipitation events, while high pressure systems typically bring clear, dry conditions"
+                },
+                {
+                  "name": "Seasonal Oscillations",
+                  "content": "Monthly resolution captures seasonal pressure variations including monsoon systems, polar oscillations, and other climate patterns affecting regional precipitation"
+                },
+                {
+                  "name": "Climate Indices",
+                  "content": "Surface pressure data is used to calculate climate indices like the Southern Oscillation Index, Arctic Oscillation, and other teleconnection patterns"
+                },
+                {
+                  "name": "Weather Prediction",
+                  "content": "Surface pressure patterns are fundamental for weather forecasting, storm tracking, and understanding atmospheric dynamics affecting water resources"
+                },
+                {
+                  "name": "Long-term Analysis",
+                  "content": "40+ year MERRA-2 record enables analysis of long-term pressure trends, climate variability, and changing atmospheric circulation patterns"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Atmospheric dynamics research, climate variability studies, teleconnection analysis, atmospheric circulation modeling, weather pattern classification"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, NASA Global Modeling and Assimilation Office (GMAO), atmospheric pressure analysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Weather System Control",
+                "Circulation Patterns",
+                "Storm Development",
+                "Seasonal Oscillations",
+                "Climate Indices",
+                "Weather Prediction",
+                "Long-term Analysis",
+                "Research Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Earth's Energy Balance",
+          "type": "group",
+          "description": "Earth's energy balance datasets measuring incoming solar radiation and outgoing longwave radiation, fundamental for understanding climate processes and surface energy budgets.",
+          "members": [
+            {
+              "name": "Outgoing Longwave Radiation (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Clear_Sky_Outgoing_Longwave_Radiation_Daily_Day",
+              "description": "Daily clear-sky outgoing longwave radiation from AIRS satellite measurements showing Earth's thermal emission to space, critical for understanding Earth's energy balance and climate processes.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Clear_Sky_Outgoing_Longwave_Radiation_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Outgoing Longwave Radiation (OLR) represents the thermal energy emitted by Earth to space, serving as a critical component of Earth's energy balance and a key indicator of atmospheric and surface conditions."
+                },
+                {
+                  "name": "Energy Balance Significance",
+                  "content": "OLR represents the 'cooling' side of Earth's energy balance, balancing incoming solar radiation. Changes in OLR affect global temperature and climate stability"
+                },
+                {
+                  "name": "Clear Sky Conditions",
+                  "content": "Clear-sky OLR measurements exclude cloud effects, providing direct information about surface and atmospheric thermal emissions without cloud interference"
+                },
+                {
+                  "name": "Temperature Relationship",
+                  "content": "OLR is directly related to surface and atmospheric temperatures - higher temperatures produce more longwave emission, lower temperatures produce less"
+                },
+                {
+                  "name": "Regional Variations",
+                  "content": "OLR varies geographically with surface type, elevation, and atmospheric conditions, providing insights into regional energy balance and climate characteristics"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Essential for climate model validation, greenhouse effect studies, climate sensitivity analysis, and understanding radiative forcing and climate feedbacks"
+                },
+                {
+                  "name": "Seasonal Patterns",
+                  "content": "Daily measurements reveal seasonal and diurnal cycles of thermal emission, providing insights into surface heating patterns and atmospheric dynamics"
+                },
+                {
+                  "name": "Weather Applications",
+                  "content": "OLR patterns can indicate atmospheric stability, convective activity, and temperature distributions affecting weather development and water vapor processes"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Climate change studies, radiative transfer research, atmospheric physics, surface energy balance validation, climate model evaluation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Jet Propulsion Laboratory (JPL), atmospheric radiation measurement team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Energy Balance Significance",
+                "Clear Sky Conditions",
+                "Temperature Relationship",
+                "Regional Variations",
+                "Climate Applications",
+                "Seasonal Patterns",
+                "Weather Applications",
+                "Research Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Incident Solar Radiation Over Land (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Incident_Shortwave_Over_Land_Monthly",
+              "description": "Monthly incident solar radiation over land surfaces from MERRA-2 reanalysis showing the solar energy reaching Earth's land surface, fundamental for understanding surface energy budgets and climate processes.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Incident_Shortwave_Over_Land_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Incident shortwave radiation represents the solar energy reaching Earth's land surface after atmospheric attenuation, providing the primary energy source for surface heating, photosynthesis, and the hydrological cycle."
+                },
+                {
+                  "name": "Energy Source",
+                  "content": "Solar radiation is the fundamental energy source driving Earth's climate system, surface heating, evaporation, photosynthesis, and nearly all atmospheric and hydrological processes"
+                },
+                {
+                  "name": "Land Surface Focus",
+                  "content": "This product specifically measures solar radiation reaching land surfaces, excluding ocean areas to focus on terrestrial energy balance and land-atmosphere interactions"
+                },
+                {
+                  "name": "Atmospheric Effects",
+                  "content": "Accounts for atmospheric absorption and scattering by gases, aerosols, and clouds, providing the actual solar energy available at the surface rather than theoretical top-of-atmosphere values"
+                },
+                {
+                  "name": "Seasonal Variations",
+                  "content": "Monthly resolution captures seasonal cycles of solar radiation driven by Earth's orbital geometry, providing insights into seasonal energy availability and climate patterns"
+                },
+                {
+                  "name": "Surface Energy Balance",
+                  "content": "Critical component of surface energy balance calculations, determining surface heating, temperature patterns, and energy available for evaporation and plant processes"
+                },
+                {
+                  "name": "Hydrological Relevance",
+                  "content": "Solar radiation drives evaporation from surface water and soil, plant transpiration, and atmospheric moisture processes that control the water cycle"
+                },
+                {
+                  "name": "Agricultural Applications",
+                  "content": "Essential for crop modeling, photosynthesis calculations, growing season analysis, and agricultural productivity assessment based on available solar energy"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Fundamental for climate modeling, surface temperature prediction, energy balance validation, and understanding land-atmosphere coupling processes"
+                },
+                {
+                  "name": "Renewable Energy Applications",
+                  "content": "Critical for solar energy resource assessment, photovoltaic potential mapping, renewable energy planning, and solar power system design"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 reanalysis, NASA Global Modeling and Assimilation Office (GMAO), surface radiation analysis team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Energy Source",
+                "Land Surface Focus",
+                "Atmospheric Effects",
+                "Seasonal Variations",
+                "Surface Energy Balance",
+                "Hydrological Relevance",
+                "Agricultural Applications",
+                "Climate Applications",
+                "Renewable Energy Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

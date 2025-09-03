@@ -1,0 +1,235 @@
+{
+  "catalog": [
+    {
+      "name": "Groundwater & Water Storage",
+      "type": "group",
+      "description": "GRACE mission data showing changes in Earth's water storage including groundwater depletion, seasonal water cycles, and long-term hydrological trends. Essential for understanding regional water security and climate impacts on water resources.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA/DLR GRACE and GRACE Follow-On missions. Processing by NASA Jet Propulsion Laboratory (JPL), Center for Space Research University of Texas (CSR), and GeoForschungsZentrum Potsdam (GFZ). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please cite GRACE mission and appropriate processing centers in publications."
+        },
+        {
+          "name": "Scientific Applications",
+          "content": "Groundwater monitoring, drought assessment, seasonal water cycle analysis, ice mass balance, regional water security studies, climate change impacts on water resources."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Scientific Applications"],
+      "members": [
+        {
+          "name": "GRACE Liquid Water Equivalent",
+          "type": "group",
+          "description": "Liquid Water Equivalent Thickness represents changes in total water storage (groundwater, soil moisture, surface water, snow, ice) measured by GRACE satellite gravimetry.",
+          "members": [
+            {
+              "name": "GRACE Liquid Water Equivalent (JPL Mascon)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Monthly water storage changes from GRACE JPL Mascon solution, providing high spatial resolution water storage variations with reduced leakage effects.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The GRACE (Gravity Recovery and Climate Experiment) mission measures tiny changes in Earth's gravity field caused by mass redistribution, primarily water movement. The JPL Mascon solution uses a regularized least squares approach to reduce leakage and improve spatial resolution."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "GRACE measures changes in Earth's gravity field by tracking distance changes between twin satellites. Water mass changes alter local gravity, allowing detection of groundwater depletion, seasonal water cycles, and ice loss."
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "~300 km effective spatial resolution, 0.5° × 0.5° grid spacing"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "April 2002 - June 2017 (GRACE), June 2018 - present (GRACE Follow-On)"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Liquid Water Equivalent Thickness in centimeters (cm), representing equivalent height of water"
+                },
+                {
+                  "name": "JPL Mascon Advantages",
+                  "content": "Reduced leakage between regions, improved signal recovery, better representation of sharp boundaries like coastlines, enhanced spatial localization"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Regional groundwater depletion studies, agricultural water management, drought monitoring, water security assessment, climate change impacts"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GRACE/GRACE-FO missions, NASA Jet Propulsion Laboratory (JPL), California Institute of Technology"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Measurement Units",
+                "JPL Mascon Advantages",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GRACE Liquid Water Equivalent (CSR)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Monthly water storage changes from GRACE CSR (Center for Space Research) spherical harmonics solution, providing long-term consistent time series.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The CSR solution uses traditional spherical harmonics approach to process GRACE gravity field data. It provides one of the longest consistent time series for climate studies and trend analysis."
+                },
+                {
+                  "name": "Processing Approach",
+                  "content": "Spherical harmonics expansion up to degree/order 60, with standard filtering applied to reduce correlated errors"
+                },
+                {
+                  "name": "Strengths",
+                  "content": "Long consistent time series, well-validated for climate studies, standard processing approach allows for intercomparison with other solutions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Long-term trend analysis, climate change studies, seasonal cycle characterization, interannual variability assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "Center for Space Research, University of Texas at Austin, NASA GRACE/GRACE-FO missions"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Processing Approach",
+                "Strengths",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GRACE Liquid Water Equivalent (GFZ)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Monthly water storage changes from GRACE GFZ (GeoForschungsZentrum) solution, providing independent validation of water storage variations.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The GFZ solution provides an independent analysis of GRACE gravity field data using different processing techniques, offering valuable comparison and validation for water storage studies."
+                },
+                {
+                  "name": "Processing Center",
+                  "content": "GeoForschungsZentrum Potsdam (GFZ), Germany - one of the three official GRACE processing centers"
+                },
+                {
+                  "name": "Validation Value",
+                  "content": "Provides independent validation of water storage changes, helps assess uncertainty in GRACE-based water storage estimates"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Uncertainty assessment, method comparison studies, robust trend detection through multi-solution analysis"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "GeoForschungsZentrum Potsdam (GFZ), Germany, NASA/DLR GRACE/GRACE-FO missions"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Processing Center",
+                "Validation Value",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Regional Water Storage Analysis",
+          "type": "group",
+          "description": "Specialized GRACE products focusing on specific regions or domains for detailed water resource analysis.",
+          "members": [
+            {
+              "name": "GRACE Land Water Storage (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Land-focused water storage changes from GRACE, isolating terrestrial water cycle variations from ocean mass changes.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "This product focuses specifically on land water storage changes, excluding ocean mass variations to provide clearer signals of terrestrial water cycle changes including groundwater, soil moisture, surface water, and snow."
+                },
+                {
+                  "name": "Domain Focus",
+                  "content": "Continental landmasses only, excluding ocean areas for focused terrestrial water analysis"
+                },
+                {
+                  "name": "Key Features",
+                  "content": "Enhanced signal-to-noise over land areas, better representation of groundwater and surface water changes, reduced contamination from ocean signals"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Terrestrial water balance studies, groundwater assessment, agricultural water monitoring, land surface model validation, drought characterization"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GRACE/GRACE-FO missions, specialized land-focused processing"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Domain Focus",
+                "Key Features",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GRACE Water Storage Anomalies",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Water storage anomalies relative to long-term mean, highlighting drought conditions, water surplus/deficit, and unusual hydrological events.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Water storage anomalies represent deviations from the long-term average water storage, making it easier to identify drought conditions, wet periods, and long-term trends in water availability."
+                },
+                {
+                  "name": "Reference Period",
+                  "content": "Anomalies calculated relative to 2004-2009 baseline period"
+                },
+                {
+                  "name": "Interpretation",
+                  "content": "Negative anomalies indicate below-normal water storage (drought conditions), positive anomalies indicate above-normal water storage (wet conditions)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Drought monitoring and early warning, water resource planning, climate impact assessment, extreme event detection, seasonal forecasting support"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GRACE/GRACE-FO missions, anomaly processing by NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Reference Period",
+                "Interpretation",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

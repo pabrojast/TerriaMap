@@ -1,0 +1,241 @@
+{
+  "catalog": [
+    {
+      "name": "Vegetation and Land Surface",
+      "type": "group",
+      "description": "Vegetation and land surface datasets from NASA Earth observation missions, including canopy characteristics from GEDI and vegetation indices from MODIS.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by NASA's Global Imagery Browse Services (GIBS). GEDI mission team at NASA Goddard Space Flight Center. MODIS mission team. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please check individual dataset licenses and cite appropriately."
+        },
+        {
+          "name": "Coverage",
+          "content": "Global coverage with various temporal and spatial resolutions. GEDI provides discrete lidar measurements between 51.6°N and 51.6°S."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Coverage"],
+      "members": [
+        {
+          "name": "GEDI Canopy Characteristics",
+          "type": "group",
+          "description": "Global Ecosystem Dynamics Investigation (GEDI) provides high-resolution measurements of forest canopy height, biomass, and structure using spaceborne lidar technology.",
+          "members": [
+            {
+              "name": "GEDI Aboveground Biomass Density",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GEDI_Aboveground_Biomass_Density_L4A_Monthly",
+              "description": "GEDI-derived estimates of aboveground biomass density in forested ecosystems, providing crucial data for carbon cycle studies.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "GEDI uses advanced lidar technology from the International Space Station to measure forest canopy height and structure, which is then used to estimate aboveground biomass density - a key parameter for carbon storage assessment."
+                },
+                {
+                  "name": "Measurement Unit",
+                  "content": "Megagrams of carbon per hectare (Mg C/ha)"
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "51.6°N to 51.6°S latitude, covering most forested regions globally"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2019 to present"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Carbon cycle research, forest management, REDD+ initiatives, climate change mitigation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GEDI mission team, NASA Goddard Space Flight Center, University of Maryland"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Unit",
+                "Spatial Coverage",
+                "Temporal Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GEDI Canopy Height Mean",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GEDI_Canopy_Height_Mean_L3_Monthly",
+              "description": "Mean canopy height measurements from GEDI lidar, providing detailed information about forest vertical structure.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "GEDI measures the vertical structure of forests by sending laser pulses to Earth and analyzing the returned signals. Canopy height is a fundamental parameter for ecosystem studies and biodiversity assessment."
+                },
+                {
+                  "name": "Measurement Unit",
+                  "content": "Meters above ground"
+                },
+                {
+                  "name": "Vertical Resolution",
+                  "content": "Sub-meter precision in height measurements"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Forest inventory, habitat mapping, biodiversity studies, forest health monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GEDI mission team, NASA Goddard Space Flight Center, University of Maryland"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Unit",
+                "Vertical Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GEDI Canopy Height Standard Deviation",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GEDI_Canopy_Height_Standard_Deviation_L3_Monthly",
+              "description": "Standard deviation of canopy height measurements from GEDI, indicating forest structural complexity and heterogeneity.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The standard deviation of canopy height provides insights into forest structural complexity - higher values indicate more heterogeneous canopy structure, often associated with older or more diverse forests."
+                },
+                {
+                  "name": "Interpretation",
+                  "content": "Low values: uniform canopy (plantations, young forests). High values: complex structure (old-growth, mixed forests)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Forest structural assessment, biodiversity indicators, forest management planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GEDI mission team, NASA Goddard Space Flight Center, University of Maryland"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Interpretation",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "GEDI Number of Samples",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GEDI_Number_of_Samples_L3_Monthly",
+              "description": "Number of GEDI lidar samples per grid cell, indicating data density and measurement confidence.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "This layer shows the number of individual GEDI measurements within each grid cell, providing information about data density and statistical confidence of derived parameters."
+                },
+                {
+                  "name": "Data Quality",
+                  "content": "Higher sample numbers generally indicate more reliable statistics and better spatial representation"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Data quality assessment, uncertainty analysis, research planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GEDI mission team, NASA Goddard Space Flight Center, University of Maryland"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Data Quality",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Land Surface Temperature",
+          "type": "group",
+          "description": "Land surface temperature measurements providing insights into surface energy balance, urban heat islands, and vegetation stress.",
+          "members": [
+            {
+              "name": "AIRS Surface Skin Temperature (Day) - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Skin_Temperature_Daily_Day",
+              "description": "Daytime surface skin temperature from AIRS, representing the interface temperature between land surface and atmosphere.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Surface skin temperature is the temperature of the Earth's surface as measured by thermal infrared sensors. It differs from air temperature and is crucial for energy balance studies."
+                },
+                {
+                  "name": "Temporal Sampling",
+                  "content": "Daytime observations (~1:30 PM local time)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Urban heat island studies, drought monitoring, land surface modeling, energy balance research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Sampling",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Surface Skin Temperature (Night) - Monthly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Surface_Skin_Temperature_Daily_Night",
+              "description": "Nighttime surface skin temperature from AIRS, providing complementary data to daytime observations for diurnal cycle analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Nighttime surface skin temperature measurements help understand diurnal temperature cycles and surface cooling processes."
+                },
+                {
+                  "name": "Temporal Sampling",
+                  "content": "Nighttime observations (~1:30 AM local time)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Diurnal cycle studies, surface cooling analysis, thermal inertia research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Sampling",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

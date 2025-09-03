@@ -1,0 +1,365 @@
+{
+  "catalog": [
+    {
+      "name": "Drought & Water Stress Indicators",
+      "type": "group",
+      "description": "Advanced drought monitoring and water stress indicators combining multiple NASA satellite observations to provide comprehensive drought assessment capabilities. These products integrate soil moisture, precipitation, vegetation, and water storage data for early warning and impact assessment.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Drought indicators derived from multiple NASA missions including GRACE, SMAP, MODIS, GLDAS, and MERRA-2. Processing by NASA Goddard Space Flight Center drought monitoring team. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. These products are designed for drought early warning and water resource management applications."
+        },
+        {
+          "name": "Multi-indicator Approach",
+          "content": "Combines meteorological drought (precipitation deficit), agricultural drought (soil moisture deficit), hydrological drought (groundwater/surface water deficit), and ecological drought (vegetation stress) for comprehensive assessment."
+        },
+        {
+          "name": "Early Warning Value",
+          "content": "Provides 2-4 weeks earlier drought detection compared to traditional precipitation-only indices, enabling proactive drought management and response."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Multi-indicator Approach",
+        "Early Warning Value"
+      ],
+      "members": [
+        {
+          "name": "Integrated Drought Indicators",
+          "type": "group",
+          "description": "Multi-variable drought indices combining soil moisture, precipitation, temperature, and water storage anomalies for comprehensive drought assessment.",
+          "members": [
+            {
+              "name": "GRACE-Based Drought Indicator",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
+              "description": "Monthly drought indicator based on GRACE water storage anomalies, providing deep water deficit assessment including groundwater depletion.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The GRACE-based drought indicator uses total water storage anomalies to assess deep water deficits, including groundwater depletion that other drought indices cannot detect. It provides unique insights into hydrological drought conditions."
+                },
+                {
+                  "name": "Drought Categories",
+                  "content": "Classified into categories from Normal to Exceptional Drought based on percentile ranks of water storage anomalies relative to historical record"
+                },
+                {
+                  "name": "Deep Water Assessment",
+                  "content": "Uniquely captures groundwater drought, aquifer depletion, and deep soil moisture deficits not reflected in surface-based drought indicators"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "~300 km effective resolution, suitable for regional to continental drought assessment"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2002 to present, providing 20+ years of hydrological drought climatology"
+                },
+                {
+                  "name": "Unique Capabilities",
+                  "content": "Detects groundwater drought, deep soil water deficits, total water storage depletion, and long-term hydrological drought trends"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Groundwater drought assessment, long-term water resource planning, aquifer depletion monitoring, hydrological drought early warning, water security evaluation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA GRACE/GRACE-FO missions, NASA Goddard drought monitoring team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Drought Categories",
+                "Deep Water Assessment",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Unique Capabilities",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "SMAP-Based Agricultural Drought Index",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
+              "description": "Daily agricultural drought index based on SMAP soil moisture observations, optimized for crop water stress detection and agricultural drought monitoring.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The SMAP Agricultural Drought Index uses high-quality L-band soil moisture measurements to assess root zone water availability for crops and vegetation, providing early warning of agricultural drought conditions."
+                },
+                {
+                  "name": "Root Zone Focus",
+                  "content": "Specifically designed to assess water availability in the root zone (top 5cm), most relevant for crop water stress and agricultural impacts"
+                },
+                {
+                  "name": "High Temporal Resolution",
+                  "content": "Daily updates provide rapid detection of developing agricultural drought conditions, enabling timely irrigation and management decisions"
+                },
+                {
+                  "name": "Agricultural Relevance",
+                  "content": "Directly measures soil water availability to crops, correlating strongly with crop yield impacts and agricultural drought stress"
+                },
+                {
+                  "name": "Early Warning Capability",
+                  "content": "Provides 2-4 weeks earlier agricultural drought detection compared to precipitation-based indices"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Crop yield forecasting, irrigation management, agricultural drought early warning, crop insurance applications, precision agriculture support"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA SMAP mission team, agricultural applications development team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Root Zone Focus",
+                "High Temporal Resolution",
+                "Agricultural Relevance",
+                "Early Warning Capability",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Vegetation Stress Indicators",
+          "type": "group",
+          "description": "Vegetation-based drought indicators using satellite observations of vegetation health, water content, and photosynthetic activity to assess ecological drought impacts.",
+          "members": [
+            {
+              "name": "MODIS Vegetation Health Index",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "VIIRS_SNPP_NDVI_8Day",
+              "description": "Weekly vegetation health index combining vegetation condition and temperature condition indices to assess vegetation drought stress and ecosystem health.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Vegetation Health Index (VHI) combines Vegetation Condition Index (VCI) and Temperature Condition Index (TCI) to provide comprehensive assessment of vegetation health and drought stress."
+                },
+                {
+                  "name": "Composite Approach",
+                  "content": "Integrates vegetation greenness (VCI) and land surface temperature anomalies (TCI) to assess both moisture stress and heat stress on vegetation"
+                },
+                {
+                  "name": "Ecosystem Health",
+                  "content": "Provides direct assessment of ecosystem health and vegetation drought impacts, complementing meteorological and agricultural drought indicators"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km spatial resolution enabling detailed vegetation drought monitoring"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2000 to present, providing 20+ years of vegetation drought climatology"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Ecosystem drought monitoring, rangeland management, forest health assessment, fire risk evaluation, biodiversity conservation planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, vegetation health monitoring team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Composite Approach",
+                "Ecosystem Health",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Enhanced Vegetation Index Anomaly",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_L3_EVI_Monthly",
+              "description": "Monthly Enhanced Vegetation Index (EVI) anomalies showing vegetation condition relative to long-term average, indicating drought impacts on vegetation productivity.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "EVI anomalies show vegetation condition relative to the long-term average, indicating areas where drought is impacting vegetation productivity and photosynthetic activity."
+                },
+                {
+                  "name": "Productivity Indicator",
+                  "content": "Directly measures vegetation productivity changes due to water stress, providing early indication of drought impacts on ecosystems"
+                },
+                {
+                  "name": "Anomaly Interpretation",
+                  "content": "Negative anomalies indicate below-normal vegetation condition (drought stress), positive anomalies indicate above-normal vegetation health"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Drought impact assessment, ecosystem monitoring, agricultural productivity analysis, carbon cycle studies, food security applications"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, vegetation index processing team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Productivity Indicator",
+                "Anomaly Interpretation",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meteorological Drought Indicators",
+          "type": "group",
+          "description": "Satellite-derived meteorological drought indicators based on precipitation and temperature anomalies, providing standardized drought assessment capabilities.",
+          "members": [
+            {
+              "name": "Standardized Precipitation Index (Satellite)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Precipitation_Bias_Corrected_Monthly",
+              "description": "Monthly Standardized Precipitation Index calculated from satellite precipitation estimates, providing standardized meteorological drought assessment for data-sparse regions.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Satellite-derived SPI uses precipitation estimates from TRMM, GPM, and other satellite missions to calculate standardized precipitation indices for regions lacking ground-based data."
+                },
+                {
+                  "name": "Global Coverage",
+                  "content": "Provides SPI calculations for regions without adequate rain gauge networks, particularly over oceans, remote areas, and developing countries"
+                },
+                {
+                  "name": "Standardized Scale",
+                  "content": "Uses standard SPI classification: >2.0 (Extremely Wet), 1.5-2.0 (Very Wet), 1.0-1.5 (Moderately Wet), -1.0 to 1.0 (Near Normal), -1.5 to -1.0 (Moderately Dry), -2.0 to -1.5 (Severely Dry), <-2.0 (Extremely Dry)"
+                },
+                {
+                  "name": "Multiple Timescales",
+                  "content": "Available at 1, 3, 6, 12, and 24-month timescales to assess short-term to long-term meteorological drought conditions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Global drought monitoring, international drought assessment, climate services, drought early warning in data-sparse regions"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA precipitation missions, World Meteorological Organization drought monitoring standards"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Global Coverage",
+                "Standardized Scale",
+                "Multiple Timescales",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Precipitation Percentile Anomalies",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
+              "description": "Monthly precipitation percentile anomalies from satellite observations, showing current precipitation relative to historical record for drought assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Precipitation percentile anomalies show current precipitation conditions relative to the historical record, providing intuitive assessment of meteorological drought severity."
+                },
+                {
+                  "name": "Percentile Interpretation",
+                  "content": "Values <10th percentile indicate severe drought, <5th percentile extreme drought, >90th percentile wet conditions, >95th percentile extremely wet conditions"
+                },
+                {
+                  "name": "Historical Context",
+                  "content": "Provides historical context by showing where current conditions rank relative to the full satellite record"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Meteorological drought assessment, water resource planning, seasonal climate monitoring, drought risk communication"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA satellite precipitation missions, drought monitoring algorithm development team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Percentile Interpretation",
+                "Historical Context",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Composite Drought Indices",
+          "type": "group",
+          "description": "Advanced composite drought indices combining multiple variables and data sources for comprehensive operational drought monitoring and decision support.",
+          "members": [
+            {
+              "name": "Multi-satellite Drought Index",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "SMAP_L4_Uncertainty_Analyzed_Root_Zone_Soil_Moisture",
+              "description": "Weekly composite drought index combining soil moisture, precipitation, vegetation, and water storage data for comprehensive drought assessment and early warning.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Multi-satellite Drought Index combines data from GRACE, SMAP, MODIS, TRMM/GPM, and other missions to provide comprehensive drought assessment that captures all aspects of drought development and impacts."
+                },
+                {
+                  "name": "Multi-variable Integration",
+                  "content": "Integrates meteorological (precipitation), agricultural (soil moisture), hydrological (water storage), and ecological (vegetation) drought indicators"
+                },
+                {
+                  "name": "Comprehensive Assessment",
+                  "content": "Provides most complete picture of drought conditions by combining surface and subsurface water, vegetation health, and atmospheric conditions"
+                },
+                {
+                  "name": "Early Warning Capability",
+                  "content": "Provides earliest possible drought detection by combining multiple drought indicators, typically 4-6 weeks earlier than single-variable approaches"
+                },
+                {
+                  "name": "Operational Applications",
+                  "content": "Designed for operational drought early warning, water resource management, agricultural decision support, and emergency response coordination"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Operational drought monitoring, early warning systems, water resource management, agricultural planning, disaster preparedness, food security assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA multi-mission drought monitoring team, operational drought applications development"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Multi-variable Integration",
+                "Comprehensive Assessment",
+                "Early Warning Capability",
+                "Operational Applications",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

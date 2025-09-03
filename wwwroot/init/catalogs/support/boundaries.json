@@ -1,0 +1,81 @@
+{
+  "catalog": [
+    {
+      "name": "Administrative Boundaries",
+      "type": "group",
+      "description": "Administrative and political boundary datasets providing essential context for transboundary water management, policy analysis, and regional water resource planning.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "UN Country Boundaries provided by the United Nations Cartographic Section, Department of Field Support."
+        },
+        {
+          "name": "License",
+          "content": "UN data generally available for public use. The boundaries shown do not imply official endorsement or acceptance by the United Nations."
+        },
+        {
+          "name": "Disclaimer",
+          "content": "The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations."
+        },
+        {
+          "name": "Applications",
+          "content": "Transboundary water resource management, policy analysis, international water law studies, and regional cooperation planning."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Disclaimer",
+        "Applications"
+      ],
+      "members": [
+        {
+          "name": "UN Country Boundaries of the World",
+          "type": "esri-mapServer",
+          "url": "https://pro-ags2.dfs.un.org/arcgis/rest/services/UN_BASE_BNDL/MapServer/0",
+          "description": "Official country boundaries of the world as maintained by the United Nations Cartographic Section, providing the most up-to-date international boundary information for policy and analysis purposes.",
+          "opacity": 0.8,
+          "info": [
+            {
+              "name": "Background",
+              "content": "The UN maintains this authoritative dataset of international boundaries for official use in mapping, analysis, and policy work. These boundaries reflect the most current understanding of international borders as recognized by the UN system."
+            },
+            {
+              "name": "Data Source",
+              "content": "United Nations Cartographic Section, Department of Field Support, maintained as an ArcGIS MapServer service."
+            },
+            {
+              "name": "Update Frequency",
+              "content": "Regularly updated to reflect changes in international boundaries and administrative arrangements."
+            },
+            {
+              "name": "Service Type",
+              "content": "Dynamic ArcGIS MapServer service providing real-time access to current boundary data"
+            },
+            {
+              "name": "Applications",
+              "content": "Transboundary river basin analysis, international water resource management, policy mapping, regional cooperation studies, and official UN reporting."
+            },
+            {
+              "name": "Legal Disclaimer",
+              "content": "The boundaries shown do not imply official endorsement or acceptance by the United Nations. For official boundary information, consult the UN Cartographic Section."
+            },
+            {
+              "name": "Attribution",
+              "content": "© United Nations, Department of Field Support, Cartographic Section. Accessed via UN ArcGIS Services."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Source",
+            "Update Frequency",
+            "Service Type",
+            "Applications",
+            "Legal Disclaimer",
+            "Attribution"
+          ]
+        }
+      ]
+    }
+  ]
+}

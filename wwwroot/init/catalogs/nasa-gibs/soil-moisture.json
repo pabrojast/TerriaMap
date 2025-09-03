@@ -1,0 +1,272 @@
+{
+  "catalog": [
+    {
+      "name": "Soil Moisture",
+      "type": "group",
+      "description": "Satellite-derived soil moisture products from multiple NASA missions providing critical information for drought monitoring, agricultural management, and hydrological modeling. These datasets measure volumetric water content in the top few centimeters of soil.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by NASA's Global Imagery Browse Services (GIBS). SMAP mission team at NASA Jet Propulsion Laboratory. CYGNSS mission at University of Michigan. GCOM-W1/AMSR2 by JAXA and NASA. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please check individual dataset licenses and cite appropriately."
+        },
+        {
+          "name": "Scientific Applications",
+          "content": "Drought early warning, agricultural water management, flood forecasting, climate model validation, water resource planning, and ecosystem monitoring."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Scientific Applications"],
+      "members": [
+        {
+          "name": "SMAP Soil Moisture",
+          "type": "group",
+          "description": "Soil Moisture Active Passive (SMAP) mission provides high-quality soil moisture measurements using L-band microwave radiometry with global coverage every 2-3 days.",
+          "members": [
+            {
+              "name": "SMAP L3 Soil Moisture (9km, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "SMAP_Sentinel-1_L2_Active_Passive_Soil_Moisture",
+              "description": "Daily global soil moisture from SMAP L-band radiometer at 9km resolution. Measures volumetric water content in top 5cm of soil.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Soil_Moisture_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "SMAP uses L-band (1.4 GHz) microwave radiometry to measure soil moisture in the top 5 cm of soil. L-band microwaves can penetrate through vegetation and clouds, making it ideal for all-weather soil moisture monitoring."
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "9 km spatial resolution, global coverage between 85.044°N and 85.044°S"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "April 2015 to present, with daily global coverage every 2-3 days"
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Volumetric soil moisture content in cm³/cm³ (or m³/m³)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Drought monitoring, agricultural irrigation scheduling, flood forecasting, numerical weather prediction, climate studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA SMAP mission team, NASA Jet Propulsion Laboratory, California Institute of Technology"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Measurement Units",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "SMAP L3 Soil Moisture (36km, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
+              "description": "Daily global soil moisture from SMAP at 36km resolution, providing longer time series and better temporal consistency.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Analyzed_Soil_Moisture_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The 36km product provides improved temporal consistency and reduced noise compared to higher resolution products, making it ideal for climate and trend analysis."
+                },
+                {
+                  "name": "Advantages",
+                  "content": "Better signal-to-noise ratio, more consistent time series, suitable for large-scale hydrological modeling and climate applications"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate monitoring, large-scale hydrological modeling, drought trend analysis, water resource assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA SMAP mission team, NASA Jet Propulsion Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Advantages",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CYGNSS Soil Moisture",
+          "type": "group",
+          "description": "Cyclone Global Navigation Satellite System (CYGNSS) provides soil moisture estimates using GPS reflection signals with high temporal resolution for tropical and subtropical regions.",
+          "members": [
+            {
+              "name": "CYGNSS Soil Moisture (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "CYGNSS_L3_Soil_Moisture_SDR_Daily",
+              "description": "Daily soil moisture estimates from CYGNSS GPS reflectometry covering latitudes between 38°N and 38°S with high temporal resolution.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/CYGNSS_L3_Soil_Moisture_SDR_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CYGNSS uses GPS signals reflected off the Earth's surface to measure soil moisture. The technique, called GNSS Reflectometry (GNSS-R), provides complementary measurements to traditional radiometer-based approaches."
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "Tropical and subtropical regions between 38°N and 38°S latitude"
+                },
+                {
+                  "name": "Temporal Resolution",
+                  "content": "High temporal resolution with multiple observations per day over the same area"
+                },
+                {
+                  "name": "Mission Duration",
+                  "content": "December 2016 to present, 8-satellite constellation"
+                },
+                {
+                  "name": "Unique Advantages",
+                  "content": "High temporal sampling, can penetrate dense vegetation, provides measurements in challenging terrain, complementary to other soil moisture missions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Hurricane and storm intensity forecasting, tropical agriculture monitoring, rapid response to soil moisture changes in dynamic weather conditions"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA CYGNSS mission team, University of Michigan, Southwest Research Institute"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Spatial Coverage",
+                "Temporal Resolution",
+                "Mission Duration",
+                "Unique Advantages",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AMSR2 Soil Moisture",
+          "type": "group",
+          "description": "Advanced Microwave Scanning Radiometer 2 (AMSR2) on GCOM-W1 satellite provides long-term soil moisture measurements with day/night observations.",
+          "members": [
+            {
+              "name": "AMSR2 Surface Soil Moisture C1-band (Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSRU2_Surface_Precipitation_Day",
+              "description": "Daytime surface soil moisture from AMSR2 C1-band measurements, providing global coverage with daily temporal resolution.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "AMSR2 uses multiple microwave frequencies including C-band (6.9 GHz) to measure soil moisture. The C1-band algorithm is optimized for surface soil moisture retrieval in the top few centimeters of soil."
+                },
+                {
+                  "name": "Observation Time",
+                  "content": "Daytime observations (ascending orbit) around 1:30 PM local time"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "25 km spatial resolution with global coverage"
+                },
+                {
+                  "name": "Mission Period",
+                  "content": "May 2012 to present, continuing operations"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Complement to SMAP for long-term climate studies, numerical weather prediction, agricultural monitoring in regions with different vegetation conditions"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA Global Climate and Weather Modeling Program"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Observation Time",
+                "Spatial Resolution",
+                "Mission Period",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AMSR2 Surface Soil Moisture C1-band (Night)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AMSRU2_Surface_Precipitation_Night",
+              "description": "Nighttime surface soil moisture from AMSR2 C1-band measurements, providing complementary observations to daytime data.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Night_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Nighttime soil moisture measurements help capture diurnal cycles and provide more stable conditions for soil moisture retrieval, with reduced influence from vegetation water content variations."
+                },
+                {
+                  "name": "Observation Time",
+                  "content": "Nighttime observations (descending orbit) around 1:30 AM local time"
+                },
+                {
+                  "name": "Advantages",
+                  "content": "More stable atmospheric conditions, reduced vegetation effects, better representation of soil water content without daytime heating effects"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Diurnal soil moisture analysis, improved agricultural monitoring, validation of land surface models, climate studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA Global Climate and Weather Modeling Program"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Observation Time",
+                "Advantages",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

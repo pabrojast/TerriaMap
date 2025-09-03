@@ -1,0 +1,326 @@
+{
+  "catalog": [
+    {
+      "name": "Reservoirs by Country",
+      "type": "group",
+      "description": "The Global Dam Watch (GDW) Database provides a comprehensive, harmonized collection of over 35,000 reservoir polygons worldwide. Developed by the Global Dam Watch consortium, this database combines existing repositories with new data collected through citizen science, remote sensing, and machine learning. It includes all types of anthropogenic instream barriers, with priority given to major dams forming reservoirs and run-of-river barriers on larger waterways. This dataset is split by country for focused analysis and faster loading times.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Global Dam Watch Database developed by the Global Dam Watch consortium. Data compiled from multiple sources including citizen science, remote sensing, and machine learning approaches."
+        },
+        {
+          "name": "License",
+          "content": "Open data under Creative Commons licensing. Please check individual data sources for specific terms and cite appropriately in publications."
+        },
+        {
+          "name": "Coverage",
+          "content": "Over 35,000 reservoir polygons worldwide across 130+ countries, focusing on major dams and run-of-river barriers."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Coverage"],
+      "members": [
+        {
+          "name": "Afghanistan",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Afghanistan.zip",
+          "description": "Dam and reservoir data for Afghanistan from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Afghanistan."
+            }
+          ]
+        },
+        {
+          "name": "Albania",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Albania.zip",
+          "description": "Dam and reservoir data for Albania from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Albania."
+            }
+          ]
+        },
+        {
+          "name": "Algeria",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Algeria.zip",
+          "description": "Dam and reservoir data for Algeria from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Algeria."
+            }
+          ]
+        },
+        {
+          "name": "Argentina",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Argentina.zip",
+          "description": "Dam and reservoir data for Argentina from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Argentina."
+            }
+          ]
+        },
+        {
+          "name": "Australia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Australia.zip",
+          "description": "Dam and reservoir data for Australia from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Australia."
+            }
+          ]
+        },
+        {
+          "name": "Austria",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Austria.zip",
+          "description": "Dam and reservoir data for Austria from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Austria."
+            }
+          ]
+        },
+        {
+          "name": "Bangladesh",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Bangladesh.zip",
+          "description": "Dam and reservoir data for Bangladesh from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Bangladesh."
+            }
+          ]
+        },
+        {
+          "name": "Belgium",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Belgium.zip",
+          "description": "Dam and reservoir data for Belgium from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Belgium."
+            }
+          ]
+        },
+        {
+          "name": "Brazil",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Brazil.zip",
+          "description": "Dam and reservoir data for Brazil from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Brazil."
+            }
+          ]
+        },
+        {
+          "name": "Canada",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Canada.zip",
+          "description": "Dam and reservoir data for Canada from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Canada."
+            }
+          ]
+        },
+        {
+          "name": "China",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_China.zip",
+          "description": "Dam and reservoir data for China from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in China."
+            }
+          ]
+        },
+        {
+          "name": "Egypt",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Egypt.zip",
+          "description": "Dam and reservoir data for Egypt from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Egypt."
+            }
+          ]
+        },
+        {
+          "name": "France",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_France.zip",
+          "description": "Dam and reservoir data for France from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in France."
+            }
+          ]
+        },
+        {
+          "name": "Germany",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Germany.zip",
+          "description": "Dam and reservoir data for Germany from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Germany."
+            }
+          ]
+        },
+        {
+          "name": "India",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_India.zip",
+          "description": "Dam and reservoir data for India from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in India."
+            }
+          ]
+        },
+        {
+          "name": "Indonesia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Indonesia.zip",
+          "description": "Dam and reservoir data for Indonesia from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Indonesia."
+            }
+          ]
+        },
+        {
+          "name": "Japan",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Japan.zip",
+          "description": "Dam and reservoir data for Japan from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Japan."
+            }
+          ]
+        },
+        {
+          "name": "Mexico",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Mexico.zip",
+          "description": "Dam and reservoir data for Mexico from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Mexico."
+            }
+          ]
+        },
+        {
+          "name": "Norway",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Norway.zip",
+          "description": "Dam and reservoir data for Norway from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Norway."
+            }
+          ]
+        },
+        {
+          "name": "Pakistan",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Pakistan.zip",
+          "description": "Dam and reservoir data for Pakistan from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Pakistan."
+            }
+          ]
+        },
+        {
+          "name": "Russia",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Russia.zip",
+          "description": "Dam and reservoir data for Russia from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Russia."
+            }
+          ]
+        },
+        {
+          "name": "Spain",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Spain.zip",
+          "description": "Dam and reservoir data for Spain from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Spain."
+            }
+          ]
+        },
+        {
+          "name": "Turkey",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_Turkey.zip",
+          "description": "Dam and reservoir data for Turkey from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in Turkey."
+            }
+          ]
+        },
+        {
+          "name": "United Kingdom",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_United Kingdom.zip",
+          "description": "Dam and reservoir data for United Kingdom from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in United Kingdom."
+            }
+          ]
+        },
+        {
+          "name": "United States of America",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/reservoirs_United States of America.zip",
+          "description": "Dam and reservoir data for United States of America from the Global Dam Watch database.",
+          "info": [
+            {
+              "name": "Source",
+              "content": "This is a subset of the Global Dam Watch database filtered to include only dams and reservoirs in United States of America."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

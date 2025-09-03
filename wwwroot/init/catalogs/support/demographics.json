@@ -1,0 +1,71 @@
+{
+  "catalog": [
+    {
+      "name": "Demographics and Populated Places",
+      "type": "group",
+      "description": "Global populated places and demographic datasets providing context for water resource management, population distribution analysis, and socio-economic studies related to water access and security.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "World Cities data from ArcGIS Hub. Original data sources may include Natural Earth, OpenStreetMap, and various national statistical offices."
+        },
+        {
+          "name": "License",
+          "content": "Data generally available under open data licenses. Please verify specific licensing terms for each dataset and cite appropriately."
+        },
+        {
+          "name": "Applications",
+          "content": "Water access analysis, urban hydrology, population-based water demand estimation, and emergency response planning."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Applications"],
+      "members": [
+        {
+          "name": "World Cities",
+          "type": "shp",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/World_Cities.zip",
+          "description": "Global dataset of populated places including cities, towns, and settlements with population and geographic information. <br/><br/><strong>Dataset URL: </strong> <a href=\"https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0\">https://hub.arcgis.com/datasets/6996f03a1b364dbab4008d99380370ed_0</a>",
+          "info": [
+            {
+              "name": "Background",
+              "content": "This comprehensive global dataset contains information about populated places worldwide, including cities, towns, and other settlements. It provides essential demographic and geographic context for water resource planning and analysis."
+            },
+            {
+              "name": "Data Content",
+              "content": "Includes settlement names, coordinates, population estimates, administrative information, and classification by settlement type and size."
+            },
+            {
+              "name": "Coverage",
+              "content": "Global coverage with thousands of populated places, from major metropolitan areas to smaller towns and settlements."
+            },
+            {
+              "name": "Update Frequency",
+              "content": "Periodically updated based on available census data, surveys, and administrative records from various countries."
+            },
+            {
+              "name": "Applications",
+              "content": "Urban water supply planning, population-based water demand analysis, settlement pattern studies, emergency response planning, and socio-economic analysis of water access."
+            },
+            {
+              "name": "Data Quality",
+              "content": "Population estimates and boundaries may vary in accuracy depending on the source country's data collection methods and update frequency."
+            },
+            {
+              "name": "Attribution",
+              "content": "World Cities dataset from ArcGIS Hub. Compiled from multiple sources including Natural Earth, OpenStreetMap, and national statistical offices."
+            }
+          ],
+          "infoSectionOrder": [
+            "Background",
+            "Data Content",
+            "Coverage",
+            "Update Frequency",
+            "Applications",
+            "Data Quality",
+            "Attribution"
+          ]
+        }
+      ]
+    }
+  ]
+}

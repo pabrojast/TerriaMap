@@ -1,0 +1,530 @@
+{
+  "catalog": [
+    {
+      "name": "Water Quality & Ocean Color",
+      "type": "group",
+      "description": "Satellite-derived water quality and ocean color products from MODIS and VIIRS missions providing essential information for aquatic ecosystem health assessment and water resource management.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Ocean color products from NASA MODIS and VIIRS missions, processed by NASA Ocean Biology Processing Group (OBPG). Chlorophyll algorithms developed by NASA Ocean Color team. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Ocean color products support water quality monitoring and aquatic ecosystem research applications."
+        },
+        {
+          "name": "Water Quality Applications",
+          "content": "These products enable monitoring of eutrophication, harmful algal blooms, water clarity, and overall aquatic ecosystem health in both marine and freshwater environments."
+        },
+        {
+          "name": "Freshwater Monitoring",
+          "content": "While optimized for ocean applications, these products also provide valuable information for large lakes, reservoirs, and coastal waters affecting freshwater resources."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Water Quality Applications",
+        "Freshwater Monitoring"
+      ],
+      "members": [
+        {
+          "name": "Chlorophyll Concentration",
+          "type": "group",
+          "description": "Chlorophyll-a concentration products indicating phytoplankton biomass and primary productivity in aquatic systems.",
+          "members": [
+            {
+              "name": "MODIS Chlorophyll-a (Terra, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Chlorophyll_A_Daily",
+              "description": "Daily chlorophyll-a concentration from MODIS Terra satellite indicating phytoplankton biomass and water quality conditions.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Chlorophyll-a is the primary photosynthetic pigment in phytoplankton and serves as a proxy for phytoplankton biomass and primary productivity in aquatic ecosystems."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Chlorophyll-a concentration in milligrams per cubic meter (mg/m³)"
+                },
+                {
+                  "name": "Algorithm Basis",
+                  "content": "Uses ocean color algorithms based on blue-green light ratios that correlate with chlorophyll concentration in the water column"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "4 km spatial resolution optimized for regional to global scale aquatic ecosystem monitoring"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "February 2000 to present, daily global coverage from Terra satellite"
+                },
+                {
+                  "name": "Water Quality Indicator",
+                  "content": "High chlorophyll levels may indicate eutrophication, nutrient pollution, or harmful algal blooms; low levels may indicate oligotrophic (nutrient-poor) conditions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Eutrophication monitoring, harmful algal bloom detection, aquatic ecosystem health assessment, water quality management, fisheries productivity evaluation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Ocean Biology Processing Group (OBPG)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Algorithm Basis",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Water Quality Indicator",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "MODIS Chlorophyll-a (Aqua, Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Chlorophyll_A_Daily",
+              "description": "Daily chlorophyll-a concentration from MODIS Aqua satellite providing complementary observations for enhanced aquatic ecosystem monitoring.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MODIS Aqua provides complementary chlorophyll-a observations to Terra MODIS, with different overpass times enabling better temporal coverage and cloud gap reduction."
+                },
+                {
+                  "name": "Overpass Time",
+                  "content": "Aqua satellite has afternoon overpass (~1:30 PM local time) complementing Terra's morning overpass (~10:30 AM local time)"
+                },
+                {
+                  "name": "Enhanced Coverage",
+                  "content": "Combined Terra and Aqua observations provide improved daily aquatic ecosystem monitoring with reduced cloud gaps"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Enhanced water quality monitoring when combined with Terra, improved harmful algal bloom detection, comprehensive aquatic ecosystem assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Ocean Biology Processing Group (OBPG)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Overpass Time",
+                "Enhanced Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "VIIRS Chlorophyll-a (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "VIIRS_SNPP_Chlorophyll_A_Daily",
+              "description": "Daily chlorophyll-a concentration from VIIRS with enhanced spatial resolution for detailed water quality assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "VIIRS (Visible Infrared Imaging Radiometer Suite) provides enhanced chlorophyll-a measurements with higher spatial resolution than MODIS for more detailed aquatic ecosystem monitoring."
+                },
+                {
+                  "name": "Enhanced Resolution",
+                  "content": "750m spatial resolution providing significantly higher detail than MODIS 4km chlorophyll products"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "January 2012 to present from Suomi NPP satellite, with continuing operations planned"
+                },
+                {
+                  "name": "Detailed Monitoring",
+                  "content": "Higher resolution enables monitoring of smaller water bodies, coastal areas, and detailed spatial patterns of phytoplankton distribution"
+                },
+                {
+                  "name": "Applications",
+                  "content": "High-resolution water quality mapping, detailed harmful algal bloom monitoring, coastal water quality assessment, small lake ecosystem studies"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA/NOAA VIIRS mission team, NASA Ocean Biology Processing Group (OBPG)"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Enhanced Resolution",
+                "Temporal Coverage",
+                "Detailed Monitoring",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Water Turbidity & Clarity",
+          "type": "group",
+          "description": "Water turbidity and clarity indicators derived from satellite observations for assessing sediment loads and water quality conditions.",
+          "members": [
+            {
+              "name": "MODIS Water Turbidity (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_Water_Turbidity_Daily",
+              "description": "Daily water turbidity measurements indicating suspended sediment concentrations and water clarity conditions.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Water turbidity measurements indicate the amount of suspended particles in water, providing information about sediment loads, erosion impacts, and overall water clarity."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "Uses visible light reflectance patterns to estimate suspended sediment concentrations and water clarity"
+                },
+                {
+                  "name": "Turbidity Impacts",
+                  "content": "High turbidity reduces water quality, affects aquatic habitat, reduces photosynthesis in aquatic plants, and impacts drinking water treatment costs"
+                },
+                {
+                  "name": "Sediment Sources",
+                  "content": "Turbidity can indicate soil erosion, urban runoff, construction activities, dredging operations, and natural sediment transport processes"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Water quality assessment, erosion monitoring, construction impact evaluation, drinking water source protection, aquatic habitat assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, water quality algorithm development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Turbidity Impacts",
+                "Sediment Sources",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Suspended Sediment Concentration",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Suspended_Sediment_Daily",
+              "description": "Daily suspended sediment concentration estimates from satellite observations for monitoring water quality and sediment transport.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Suspended sediment concentration provides quantitative measures of particulate matter in water bodies, essential for understanding water quality and sediment transport processes."
+                },
+                {
+                  "name": "Measurement Units",
+                  "content": "Suspended sediment concentration typically expressed in milligrams per liter (mg/L)"
+                },
+                {
+                  "name": "Environmental Significance",
+                  "content": "Suspended sediments transport nutrients and pollutants, affect light penetration, and influence aquatic ecosystem health and productivity"
+                },
+                {
+                  "name": "Monitoring Applications",
+                  "content": "Tracking construction impacts, monitoring dam removal effects, assessing watershed management effectiveness, evaluating dredging operations"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, sediment algorithm development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Units",
+                "Environmental Significance",
+                "Monitoring Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Colored Dissolved Organic Matter",
+          "type": "group",
+          "description": "Colored Dissolved Organic Matter (CDOM) products indicating organic carbon content and water quality characteristics.",
+          "members": [
+            {
+              "name": "MODIS CDOM Index (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Terra_CDOM_Index_Daily",
+              "description": "Daily Colored Dissolved Organic Matter (CDOM) index indicating dissolved organic carbon levels and water quality characteristics.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "CDOM consists of dissolved organic compounds that absorb light, particularly in blue wavelengths. It serves as an indicator of dissolved organic carbon and water quality conditions."
+                },
+                {
+                  "name": "Organic Carbon Indicator",
+                  "content": "CDOM levels correlate with dissolved organic carbon concentrations, providing insights into terrestrial organic matter inputs and water quality"
+                },
+                {
+                  "name": "Sources and Impacts",
+                  "content": "CDOM originates from terrestrial vegetation, soil organic matter, and aquatic biological processes. High levels can affect water treatment and aquatic ecosystem light conditions"
+                },
+                {
+                  "name": "Water Quality Relevance",
+                  "content": "CDOM affects water color, light penetration, and photochemical processes, influencing aquatic ecosystem dynamics and water treatment requirements"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Water quality monitoring, dissolved organic carbon assessment, terrestrial-aquatic carbon cycling studies, water treatment planning"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, ocean color algorithm development teams"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Organic Carbon Indicator",
+                "Sources and Impacts",
+                "Water Quality Relevance",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Advanced Ocean Color Products",
+          "type": "group",
+          "description": "High-resolution and advanced ocean color products from MODIS and VIIRS missions providing enhanced capabilities for detailed marine ecosystem monitoring and water quality assessment.",
+          "members": [
+            {
+              "name": "MODIS Aqua High-Resolution Chlorophyll-a (L2)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_L2_Chlorophyll_A",
+              "description": "High-resolution Level 2 chlorophyll-a concentration from MODIS Aqua satellite providing detailed ocean productivity measurements at full spatial resolution for coastal and marine ecosystem studies.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Level 2 (L2) chlorophyll-a products provide the highest spatial resolution ocean color data available from MODIS Aqua, maintaining the native 1km resolution for detailed coastal and marine ecosystem monitoring."
+                },
+                {
+                  "name": "Enhanced Resolution",
+                  "content": "Native 1km spatial resolution (versus 4km for Level 3 products) enables detailed monitoring of coastal waters, upwelling zones, and small-scale ocean features"
+                },
+                {
+                  "name": "Swath Coverage",
+                  "content": "Provides coverage along satellite swaths rather than gridded products, offering maximum spatial detail for specific regions and dates"
+                },
+                {
+                  "name": "Coastal Applications",
+                  "content": "Excellent for coastal water quality monitoring, estuarine studies, coral reef ecosystem assessment, and near-shore marine productivity analysis"
+                },
+                {
+                  "name": "Marine Ecosystem Detail",
+                  "content": "Captures fine-scale features like frontal boundaries, eddy structures, river plume dynamics, and upwelling patterns critical for marine ecosystem understanding"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Ideal for detailed oceanographic research, validation studies, algorithm development, and high-resolution marine ecosystem modeling"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "July 2002 to present from MODIS Aqua satellite with continuing operations"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS Aqua mission, NASA Ocean Biology Processing Group (OBPG), Level 2 algorithm development team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Enhanced Resolution",
+                "Swath Coverage",
+                "Coastal Applications",
+                "Marine Ecosystem Detail",
+                "Research Applications",
+                "Temporal Coverage",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "VIIRS High-Resolution Chlorophyll-a (L2)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "VIIRS_SNPP_L2_Chlorophyll_A",
+              "description": "Ultra-high resolution Level 2 chlorophyll-a concentration from VIIRS providing the most detailed satellite-based ocean productivity measurements available for comprehensive marine ecosystem assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "VIIRS Level 2 chlorophyll-a represents the current state-of-the-art in satellite ocean color observations, providing unprecedented spatial resolution for marine ecosystem monitoring and coastal water quality assessment."
+                },
+                {
+                  "name": "Ultra-High Resolution",
+                  "content": "Native 750m spatial resolution, the highest available for operational satellite ocean color products, enabling detailed coastal and inland water monitoring"
+                },
+                {
+                  "name": "Advanced Sensor Technology",
+                  "content": "VIIRS incorporates improved sensor design and calibration compared to MODIS, providing enhanced data quality and more accurate retrievals"
+                },
+                {
+                  "name": "Small Water Body Monitoring",
+                  "content": "Resolution sufficient for monitoring large lakes, reservoirs, coastal lagoons, and other water bodies previously difficult to assess with satellite data"
+                },
+                {
+                  "name": "Coastal Zone Excellence",
+                  "content": "Superior performance in coastal waters where traditional ocean color algorithms face challenges due to complex optical properties"
+                },
+                {
+                  "name": "Continuity and Innovation",
+                  "content": "Continues the MODIS ocean color record while providing technological advances in sensor design and data processing capabilities"
+                },
+                {
+                  "name": "Climate Data Record",
+                  "content": "Part of NOAA's Climate Data Record program ensuring long-term continuity for climate and ecosystem monitoring applications"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Detailed coastal water quality assessment, small lake monitoring, coral reef ecosystem studies, harmful algal bloom detection, marine protected area monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA/NOAA VIIRS Suomi NPP mission, NASA Ocean Biology Processing Group (OBPG), NOAA Climate Data Record program"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Ultra-High Resolution",
+                "Advanced Sensor Technology",
+                "Small Water Body Monitoring",
+                "Coastal Zone Excellence",
+                "Continuity and Innovation",
+                "Climate Data Record",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ocean Optical Properties",
+          "type": "group",
+          "description": "Advanced ocean optical property measurements providing detailed information about marine atmosphere interactions, aerosol properties over oceans, and water column optical characteristics.",
+          "members": [
+            {
+              "name": "Ocean Angstrom Exponent",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Angstrom_Exponent_Ocean",
+              "description": "Ocean Angstrom Exponent from MODIS Aqua providing information about aerosol particle size distribution over oceanic regions, critical for ocean-atmosphere interaction studies and marine air quality assessment.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Angstrom Exponent describes the wavelength dependence of aerosol optical depth, providing information about aerosol particle size distribution. Over oceans, it helps characterize marine aerosols and their interactions with ocean processes."
+                },
+                {
+                  "name": "Particle Size Information",
+                  "content": "Higher Angstrom Exponent values (>1.5) indicate smaller particles like sea salt and pollution aerosols; lower values (<1.0) suggest larger particles like sea spray and dust"
+                },
+                {
+                  "name": "Ocean-Atmosphere Coupling",
+                  "content": "Provides insights into ocean-atmosphere interactions including sea spray generation, marine boundary layer processes, and transport of continental aerosols over oceans"
+                },
+                {
+                  "name": "Marine Air Quality",
+                  "content": "Important for understanding air quality over oceanic regions, shipping lane impacts, and the role of oceans in global aerosol and climate systems"
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "Focuses on oceanic regions where specialized algorithms optimize aerosol retrievals over water surfaces with low reflectance"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Essential for climate model validation, ocean-atmosphere interaction studies, marine aerosol characterization, and understanding oceanic contributions to global aerosol systems"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Oceanographic research, marine meteorology, sea spray aerosol studies, shipping emission impacts, island and coastal aerosol transport"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS Aqua mission, aerosol retrieval algorithms optimized for ocean surfaces"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Particle Size Information",
+                "Ocean-Atmosphere Coupling",
+                "Marine Air Quality",
+                "Spatial Coverage",
+                "Climate Applications",
+                "Research Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "VIIRS Ocean-Land Aerosol Optical Thickness",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "VIIRS_NOAA20_AOT_Dark_Target_Land_Ocean",
+              "description": "Advanced aerosol optical thickness over both land and ocean from VIIRS NOAA-20 satellite providing comprehensive atmospheric clarity assessment for air quality and climate applications with enhanced coastal coverage.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "VIIRS Dark Target Aerosol Optical Thickness provides state-of-the-art aerosol measurements over both land and ocean surfaces using advanced algorithms that leverage VIIRS improved sensor capabilities."
+                },
+                {
+                  "name": "Unified Land-Ocean Retrievals",
+                  "content": "Advanced algorithm provides seamless aerosol optical thickness measurements across land-ocean boundaries, critical for coastal air quality and atmospheric transport studies"
+                },
+                {
+                  "name": "Enhanced Coastal Coverage",
+                  "content": "Improved retrieval capabilities in coastal zones where land-ocean transitions create challenging conditions for traditional satellite aerosol algorithms"
+                },
+                {
+                  "name": "VIIRS Sensor Advantages",
+                  "content": "Benefits from VIIRS improved calibration, enhanced spectral channels, and better spatial resolution compared to heritage MODIS sensors"
+                },
+                {
+                  "name": "Air Quality Applications",
+                  "content": "Comprehensive air quality monitoring across terrestrial and marine environments, coastal pollution assessment, atmospheric transport studies"
+                },
+                {
+                  "name": "Climate Monitoring",
+                  "content": "Part of operational climate monitoring systems providing consistent aerosol observations for climate model validation and trend analysis"
+                },
+                {
+                  "name": "Operational Continuity",
+                  "content": "Continues and enhances the MODIS aerosol climate data record while providing technological improvements for next-generation atmospheric monitoring"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Advanced atmospheric research, air quality model validation, climate impact studies, coastal environmental monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA/NOAA VIIRS NOAA-20 mission, Dark Target aerosol algorithm development team, operational climate monitoring program"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Unified Land-Ocean Retrievals",
+                "Enhanced Coastal Coverage",
+                "VIIRS Sensor Advantages",
+                "Air Quality Applications",
+                "Climate Monitoring",
+                "Operational Continuity",
+                "Research Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

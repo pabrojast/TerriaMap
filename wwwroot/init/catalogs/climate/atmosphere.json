@@ -1,0 +1,186 @@
+{
+  "catalog": [
+    {
+      "name": "Atmosphere",
+      "type": "group",
+      "description": "Atmospheric composition and aerosol datasets from NASA's Global Imagery Browse Services (GIBS), including aerosol optical depth, atmospheric composition, and radiation measurements.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by NASA's Global Imagery Browse Services (GIBS). Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please check individual dataset licenses and cite appropriately."
+        },
+        {
+          "name": "Coverage",
+          "content": "Global coverage with various temporal and spatial resolutions depending on the specific mission and instrument."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Coverage"],
+      "members": [
+        {
+          "name": "Aerosols",
+          "type": "group",
+          "description": "Aerosol optical depth and related measurements providing insights into atmospheric particles, air quality, and climate interactions.",
+          "members": [
+            {
+              "name": "MODIS Aqua Aerosol Optical Depth",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Aqua_Aerosol_Optical_Depth_Land_Ocean_Best_Estimate_Daily",
+              "description": "Daily aerosol optical depth measurements from MODIS on the Aqua satellite, combining land and ocean retrievals.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Aerosol Optical Depth (AOD) measures the extinction of solar radiation by aerosol particles in the atmosphere. It's a key parameter for air quality monitoring and climate studies."
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2002 to present, updated daily"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km at nadir, aggregated to various resolutions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Air quality monitoring, dust storm tracking, smoke detection, climate research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MODIS mission team, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Coverage",
+                "Spatial Resolution",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "SWDB Aerosol Angstrom Exponent",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "SWDB_Aerosol_Angstrom_Exponent_Daily",
+              "description": "Aerosol Angstrom Exponent from SeaWiFS Deep Blue algorithm, indicating aerosol particle size characteristics.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The Angstrom Exponent relates to aerosol particle size - higher values indicate smaller particles (urban pollution, smoke) while lower values indicate larger particles (dust)."
+                },
+                {
+                  "name": "Parameter Range",
+                  "content": "Typically ranges from 0 (large particles like dust) to 2+ (small particles like smoke/pollution)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Aerosol type discrimination, air quality studies, source identification"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA SeaWiFS mission team, Deep Blue algorithm development team"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Parameter Range",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Radiation",
+          "type": "group",
+          "description": "Atmospheric radiation measurements including outgoing longwave radiation critical for Earth's energy balance studies.",
+          "members": [
+            {
+              "name": "PREFIRE Outgoing Longwave Radiative Flux",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "PREFIRE_Outgoing_Longwave_Radiative_Flux_Daily",
+              "description": "Outgoing longwave radiative flux measurements from the PREFIRE (Polar Radiant Energy in the Far-InfraRed Experiment) mission.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "PREFIRE measures far-infrared radiation emitted by Earth, particularly important in polar regions for understanding energy balance and climate change impacts."
+                },
+                {
+                  "name": "Mission Focus",
+                  "content": "Polar regions - Arctic and Antarctic energy balance"
+                },
+                {
+                  "name": "Wavelength Range",
+                  "content": "Far-infrared spectrum (5-50 μm) previously unmeasured from space"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate modeling, polar climate studies, ice-atmosphere interactions, global energy budget"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA PREFIRE mission team, NASA Jet Propulsion Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Mission Focus",
+                "Wavelength Range",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Upper Atmosphere",
+          "type": "group",
+          "description": "Upper atmospheric measurements from specialized instruments providing insights into stratospheric and mesospheric conditions.",
+          "members": [
+            {
+              "name": "MLS Temperature 46hPa",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MLS_Temperature_46hPa_Daily",
+              "description": "Microwave Limb Sounder (MLS) temperature measurements at 46hPa pressure level in the stratosphere.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MLS provides precise measurements of atmospheric temperature in the upper troposphere and stratosphere using microwave observations of thermal emission."
+                },
+                {
+                  "name": "Pressure Level",
+                  "content": "46hPa (~20-22 km altitude, lower stratosphere)"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "2004 to present from Aura satellite"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Stratospheric research, ozone layer studies, atmospheric dynamics, climate monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MLS team, NASA Jet Propulsion Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Pressure Level",
+                "Temporal Coverage",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

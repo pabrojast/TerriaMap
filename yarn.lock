@@ -10189,9 +10189,9 @@ terriajs-typings-for-css-modules-loader@^2.5.2:
   optionalDependencies:
     prettier "*"
 
-"terriajs@github:pabrojast/terriajs#8913de81557f355991f8ba3899ba86985b3db856":
+"terriajs@github:pabrojast/terriajs#40b7eec1a64837f5115b7cbdb5ab9955245ef0fe":
   version "8.9.5"
-  resolved "https://codeload.github.com/pabrojast/terriajs/tar.gz/8913de81557f355991f8ba3899ba86985b3db856"
+  resolved "https://codeload.github.com/pabrojast/terriajs/tar.gz/40b7eec1a64837f5115b7cbdb5ab9955245ef0fe"
   dependencies:
     "@babel/core" "^7.23.5"
     "@babel/plugin-proposal-decorators" "^7.22.7"

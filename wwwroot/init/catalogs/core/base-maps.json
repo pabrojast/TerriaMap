@@ -1,0 +1,30 @@
+{
+  "catalog": [
+    {
+      "name": "IHP-WINS",
+      "type": "group",
+      "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) provides a collaborative platform for sharing water-related information at global, regional, and national scales.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by UNESCO IHP-WINS. For more information visit: <a href=\"https://ihp-wins.unesco.org/\">https://ihp-wins.unesco.org/</a>"
+        },
+        {
+          "name": "License",
+          "content": "Data available under UNESCO data sharing policies. Please check individual datasets for specific licensing terms."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License"],
+      "members": [
+        {
+          "name": "IHP-WINS",
+          "shareKeys": ["Root Group"],
+          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
+          "type": "terria-reference",
+          "isGroup": true,
+          "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) provides a collaborative platform for sharing water-related information at global, regional, and national scales."
+        }
+      ]
+    }
+  ]
+}

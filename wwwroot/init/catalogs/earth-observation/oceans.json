@@ -1,0 +1,180 @@
+{
+  "catalog": [
+    {
+      "name": "Oceans",
+      "type": "group",
+      "description": "Ocean and marine datasets from NASA Earth observation missions, including sea surface measurements and oceanographic parameters critical for understanding ocean dynamics and climate interactions.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data provided by NASA's Global Imagery Browse Services (GIBS) and oceanographic missions. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Please check individual dataset licenses and cite appropriately."
+        },
+        {
+          "name": "Coverage",
+          "content": "Global ocean coverage with various temporal and spatial resolutions depending on the specific mission and instrument."
+        }
+      ],
+      "infoSectionOrder": ["Attribution", "License", "Coverage"],
+      "members": [
+        {
+          "name": "Sea Surface Dynamics",
+          "type": "group",
+          "description": "Ocean surface measurements including sea level anomalies and dynamic topography from satellite altimetry missions.",
+          "members": [
+            {
+              "name": "AVISO Absolute Dynamic Topography",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AVISO_Absolute_Dynamic_Topography_Daily",
+              "description": "Absolute Dynamic Topography (ADT) from AVISO satellite altimetry, representing sea surface height relative to the geoid and indicating ocean currents and circulation patterns.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Absolute Dynamic Topography combines satellite altimetry measurements with a high-resolution mean sea surface and geoid model. ADT represents the sea surface height above the geoid and directly relates to ocean currents through geostrophic balance."
+                },
+                {
+                  "name": "Measurement Principle",
+                  "content": "Satellite altimeters measure sea surface height by timing radar pulses. ADT is calculated by removing the geoid and adding the mean dynamic topography."
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.25° x 0.25° global grid, daily updates"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "1993 to present from multiple altimeter missions (TOPEX/Poseidon, Jason series, Sentinel-3, etc.)"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Ocean current mapping, eddy detection, sea level rise studies, marine navigation, fisheries management, climate research"
+                },
+                {
+                  "name": "Data Provider",
+                  "content": "AVISO+ (Archiving, Validation and Interpretation of Satellite Oceanographic data)"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "AVISO+ altimetry data produced by CLS/CNES. Distributed through NASA GIBS."
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Principle",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Applications",
+                "Data Provider",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sea Surface Temperature",
+          "type": "group",
+          "description": "Sea surface temperature measurements from various satellite missions, critical for understanding ocean-atmosphere interactions and climate patterns.",
+          "members": [
+            {
+              "name": "AIRS Sea Surface Temperature (Day)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Sea_Surface_Temperature_Daily_Day",
+              "description": "Daytime sea surface temperature measurements from the Atmospheric Infrared Sounder (AIRS) on NASA's Aqua satellite.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Sea Surface Temperature (SST) is a key oceanographic parameter that influences weather patterns, marine ecosystems, and global climate. AIRS provides high-quality SST measurements using infrared radiation."
+                },
+                {
+                  "name": "Measurement Technique",
+                  "content": "Infrared radiometry measuring thermal emission from the ocean surface skin layer (~10 μm depth)"
+                },
+                {
+                  "name": "Temporal Sampling",
+                  "content": "Daytime overpasses (~1:30 PM local time)"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1° x 1° global grid"
+                },
+                {
+                  "name": "Accuracy",
+                  "content": "±0.5K under clear sky conditions"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Climate monitoring, weather forecasting, ocean-atmosphere interaction studies, marine ecosystem research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center, NASA Jet Propulsion Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Technique",
+                "Temporal Sampling",
+                "Spatial Resolution",
+                "Accuracy",
+                "Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "AIRS Sea Surface Temperature (Night)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "AIRS_L3_Sea_Surface_Temperature_Daily_Night",
+              "description": "Nighttime sea surface temperature measurements from AIRS, providing complementary data to daytime observations for diurnal cycle analysis.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Nighttime SST measurements help understand diurnal temperature cycles in the ocean surface, which are important for air-sea interaction processes and marine ecosystem dynamics."
+                },
+                {
+                  "name": "Temporal Sampling",
+                  "content": "Nighttime overpasses (~1:30 AM local time)"
+                },
+                {
+                  "name": "Diurnal Variation",
+                  "content": "Typically, nighttime SST is cooler than daytime due to surface cooling and reduced solar heating"
+                },
+                {
+                  "name": "Applications",
+                  "content": "Diurnal warming studies, air-sea heat flux calculations, marine boundary layer research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA AIRS mission team, NASA Goddard Space Flight Center, NASA Jet Propulsion Laboratory"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Temporal Sampling",
+                "Diurnal Variation",
+                "Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ocean Color",
+          "type": "group",
+          "description": "Ocean color and marine productivity parameters derived from satellite observations of water-leaving radiance.",
+          "info": [
+            {
+              "name": "Coming Soon",
+              "content": "Additional ocean color products including chlorophyll-a concentration, photosynthetically active radiation, and marine productivity indices will be added in future updates."
+            }
+          ],
+          "members": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "catalog": [
+    {
+      "name": "Air Quality & Atmospheric Pollution",
+      "type": "group",
+      "description": "Comprehensive air quality monitoring datasets from multiple NASA satellite missions providing essential information for atmospheric pollution assessment, environmental health monitoring, and air quality management. These products combine ground-level pollutants, aerosols, and trace gases critical for understanding air quality impacts on human health and ecosystems.",
+      "info": [
+        {
+          "name": "Attribution",
+          "content": "Data from NASA satellite missions including MERRA-2, TEMPO, MOPITT, OMI, MODIS, and VIIRS. Processing by NASA Goddard Space Flight Center, Jet Propulsion Laboratory, and Langley Research Center. Contact: earthdata-support@nasa.gov"
+        },
+        {
+          "name": "License",
+          "content": "NASA data is generally available for public use. Air quality products are designed for environmental monitoring, public health applications, and pollution source identification."
+        },
+        {
+          "name": "Health Applications",
+          "content": "Essential for air quality index calculation, health risk assessment, pollution exposure monitoring, and environmental health research supporting public health decision-making."
+        },
+        {
+          "name": "Environmental Applications",
+          "content": "Critical for emission inventory validation, pollution transport studies, environmental impact assessment, and air quality management policy development."
+        }
+      ],
+      "infoSectionOrder": [
+        "Attribution",
+        "License",
+        "Health Applications",
+        "Environmental Applications"
+      ],
+      "members": [
+        {
+          "name": "Trace Gas Pollutants",
+          "type": "group",
+          "description": "Major atmospheric trace gas pollutants including carbon monoxide, sulfur dioxide, and ozone affecting air quality and human health at local to global scales.",
+          "members": [
+            {
+              "name": "Carbon Monoxide Emissions (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_Carbon_Monoxide_Emission_Monthly",
+              "description": "Monthly carbon monoxide emissions from MERRA-2 reanalysis, representing CO emissions from combustion sources including vehicles, industry, and biomass burning affecting urban and regional air quality.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Carbon monoxide (CO) is a toxic gas produced by incomplete combustion of fossil fuels, biomass burning, and industrial processes. It is a key air pollutant affecting human health and an important precursor to ground-level ozone formation."
+                },
+                {
+                  "name": "Health Significance",
+                  "content": "CO reduces oxygen-carrying capacity of blood, causing cardiovascular stress, reduced cognitive function, and at high concentrations can be fatal. Particularly dangerous in enclosed spaces and urban environments."
+                },
+                {
+                  "name": "Source Categories",
+                  "content": "Major sources include vehicle exhaust, industrial combustion, residential heating, wildfire smoke, and agricultural burning"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "0.5° × 0.625° global grid suitable for regional air quality assessment and emission inventory validation"
+                },
+                {
+                  "name": "Units",
+                  "content": "kg m⁻² s⁻¹ representing emission flux of carbon monoxide to the atmosphere"
+                },
+                {
+                  "name": "Air Quality Applications",
+                  "content": "Urban air quality monitoring, emission inventory validation, pollution source identification, transportation planning, industrial emission assessment"
+                },
+                {
+                  "name": "Climate Applications",
+                  "content": "Atmospheric chemistry studies, ozone precursor analysis, biomass burning impact assessment, emission trend analysis"
+                },
+                {
+                  "name": "Policy Applications",
+                  "content": "Emission reduction strategy evaluation, air quality standard compliance monitoring, environmental health policy development"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 atmospheric chemistry reanalysis, NASA Global Modeling and Assimilation Office"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Health Significance",
+                "Source Categories",
+                "Spatial Resolution",
+                "Units",
+                "Air Quality Applications",
+                "Climate Applications",
+                "Policy Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Carbon Monoxide Total Column (Daily)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MOPITT_CO_Daily_Total_Column_Day",
+              "description": "Daily carbon monoxide total atmospheric column from MOPITT satellite observations, providing comprehensive global CO distribution for air quality and pollution transport monitoring.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "MOPITT (Measurements of Pollution in the Troposphere) provides daily global measurements of carbon monoxide throughout the atmospheric column, enabling detection of pollution plumes, biomass burning events, and long-range transport of CO."
+                },
+                {
+                  "name": "Measurement Technique",
+                  "content": "Uses thermal infrared spectroscopy to measure CO absorption, providing vertical profile information and total column amounts with high sensitivity to tropospheric CO"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "22 km × 22 km footprint with daily global coverage, excellent for tracking pollution events and transport patterns"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "March 2000 to present, providing over 20 years of global CO observations for trend analysis and climatological studies"
+                },
+                {
+                  "name": "Units",
+                  "content": "molecules cm⁻² representing total atmospheric column abundance of carbon monoxide"
+                },
+                {
+                  "name": "Pollution Monitoring",
+                  "content": "Excellent for detecting urban pollution, industrial emissions, wildfire smoke, agricultural burning, and transboundary pollution transport"
+                },
+                {
+                  "name": "Event Detection",
+                  "content": "Capable of detecting major pollution events, forest fires, volcanic emissions, and seasonal pollution patterns with daily temporal resolution"
+                },
+                {
+                  "name": "Validation Applications",
+                  "content": "Used to validate atmospheric chemistry models, emission inventories, and ground-based air quality measurements"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Terra MOPITT mission, University of Toronto, National Center for Atmospheric Research"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Measurement Technique",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Units",
+                "Pollution Monitoring",
+                "Event Detection",
+                "Validation Applications",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "Sulfur Dioxide Column Density (Monthly)",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MERRA2_SO2_Column_Mass_Density_Monthly",
+              "description": "Monthly sulfur dioxide column mass density from MERRA-2 reanalysis, representing SO2 concentrations from industrial sources, volcanic emissions, and fossil fuel combustion affecting air quality and acid deposition.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Sulfur dioxide (SO2) is a major air pollutant released from fossil fuel burning, industrial processes, and volcanic activity. It contributes to acid rain formation, particulate matter production, and respiratory health problems."
+                },
+                {
+                  "name": "Health Impacts",
+                  "content": "SO2 causes respiratory irritation, exacerbates asthma and other lung diseases, and contributes to cardiovascular problems. Particularly harmful to children, elderly, and individuals with pre-existing respiratory conditions."
+                },
+                {
+                  "name": "Environmental Impacts",
+                  "content": "Major contributor to acid deposition affecting forests, lakes, and buildings. Precursor to sulfate aerosols that affect climate and visibility."
+                },
+                {
+                  "name": "Source Categories",
+                  "content": "Primary sources include coal-fired power plants, industrial smelting, petroleum refining, volcanic eruptions, and ship emissions"
+                },
+                {
+                  "name": "Units",
+                  "content": "kg m⁻² representing column integrated mass of sulfur dioxide in the atmospheric column"
+                },
+                {
+                  "name": "Monitoring Applications",
+                  "content": "Industrial emission monitoring, volcanic eruption tracking, power plant pollution assessment, ship emission surveillance, acid rain precursor analysis"
+                },
+                {
+                  "name": "Regulatory Applications",
+                  "content": "Clean air act compliance monitoring, emission reduction strategy evaluation, environmental health risk assessment"
+                },
+                {
+                  "name": "Research Applications",
+                  "content": "Atmospheric chemistry studies, aerosol formation research, climate impact assessment, air quality model validation"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA MERRA-2 atmospheric chemistry analysis, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Health Impacts",
+                "Environmental Impacts",
+                "Source Categories",
+                "Units",
+                "Monitoring Applications",
+                "Regulatory Applications",
+                "Research Applications",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ozone & UV Monitoring",
+          "type": "group",
+          "description": "Ozone and ultraviolet radiation monitoring from advanced satellite instruments providing high-resolution air quality assessment over North America and UV exposure monitoring.",
+          "members": [
+            {
+              "name": "TEMPO Ozone & UV Index",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "TEMPO_L3_Ozone_UV_Aerosol_Index",
+              "description": "High-resolution ozone and UV aerosol index from TEMPO (Tropospheric Emissions: Monitoring of Pollution) satellite providing hourly air quality monitoring over North America for public health and environmental applications.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "TEMPO is NASA's first Earth Venture Instrument providing hourly observations of air quality over North America from geostationary orbit, offering unprecedented temporal resolution for pollution monitoring and public health applications."
+                },
+                {
+                  "name": "Revolutionary Capabilities",
+                  "content": "First space-based instrument to monitor air quality hourly during daytime, enabling tracking of pollution evolution, rush hour impacts, and rapid response to air quality events"
+                },
+                {
+                  "name": "Spatial Coverage",
+                  "content": "North American domain from Mexico to Canada with 2.1 km × 4.4 km spatial resolution at nadir, providing city-scale air quality monitoring"
+                },
+                {
+                  "name": "Temporal Resolution",
+                  "content": "Hourly observations during daylight hours, revolutionizing our ability to track diurnal air quality patterns and rapid pollution changes"
+                },
+                {
+                  "name": "Ozone Monitoring",
+                  "content": "Measures tropospheric ozone column amounts, enabling ground-level ozone estimation and air quality index calculation for public health warnings"
+                },
+                {
+                  "name": "UV Aerosol Index",
+                  "content": "Detects absorbing aerosols including dust, smoke, and volcanic ash that affect air quality and UV radiation reaching the surface"
+                },
+                {
+                  "name": "Public Health Applications",
+                  "content": "Real-time air quality alerts, AQI forecasting, pollution exposure assessment, health risk communication, environmental justice studies"
+                },
+                {
+                  "name": "Urban Applications",
+                  "content": "City-scale pollution monitoring, traffic impact assessment, industrial emission tracking, urban planning support"
+                },
+                {
+                  "name": "Emergency Response",
+                  "content": "Wildfire smoke tracking, industrial accident monitoring, volcanic ash detection, rapid air quality impact assessment"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA TEMPO mission, Smithsonian Astrophysical Observatory, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Revolutionary Capabilities",
+                "Spatial Coverage",
+                "Temporal Resolution",
+                "Ozone Monitoring",
+                "UV Aerosol Index",
+                "Public Health Applications",
+                "Urban Applications",
+                "Emergency Response",
+                "Attribution"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aerosol Optical Properties",
+          "type": "group",
+          "description": "Comprehensive aerosol optical depth and absorbing aerosol products from multiple satellite missions providing essential information for air quality, visibility, and climate applications.",
+          "members": [
+            {
+              "name": "MODIS Combined Aerosol Optical Depth",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "MODIS_Combined_Value_Added_AOD",
+              "description": "Combined Terra and Aqua MODIS aerosol optical depth providing comprehensive global aerosol monitoring for air quality assessment, visibility studies, and particulate matter estimation.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "Aerosol Optical Depth (AOD) measures the extinction of light by aerosols in the atmospheric column, providing key information about particulate matter concentrations and air quality conditions."
+                },
+                {
+                  "name": "Combined Product Advantages",
+                  "content": "Merges Terra (morning) and Aqua (afternoon) MODIS observations for enhanced daily coverage and improved aerosol characterization with reduced data gaps"
+                },
+                {
+                  "name": "Air Quality Relationship",
+                  "content": "AOD correlates strongly with ground-level particulate matter (PM2.5 and PM10) concentrations, enabling air quality assessment in areas lacking ground-based monitoring"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "1 km resolution enabling detailed urban air quality monitoring and identification of local pollution sources"
+                },
+                {
+                  "name": "Temporal Coverage",
+                  "content": "February 2000 to present, providing over 20 years of global aerosol observations for trend analysis and climatological studies"
+                },
+                {
+                  "name": "Health Applications",
+                  "content": "PM2.5 exposure assessment, respiratory health studies, air quality index estimation, environmental health risk evaluation"
+                },
+                {
+                  "name": "Visibility Applications",
+                  "content": "Haze monitoring, visibility forecasting, transportation safety, aviation applications, tourism and recreation planning"
+                },
+                {
+                  "name": "Source Identification",
+                  "content": "Dust storm tracking, wildfire smoke detection, urban pollution monitoring, industrial emission assessment, volcanic ash monitoring"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Terra and Aqua MODIS missions, aerosol retrieval algorithms by NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Combined Product Advantages",
+                "Air Quality Relationship",
+                "Spatial Resolution",
+                "Temporal Coverage",
+                "Health Applications",
+                "Visibility Applications",
+                "Source Identification",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "OMI Absorbing Aerosol Optical Depth",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "OMI_Absorbing_Aerosol_Optical_Depth",
+              "description": "Absorbing aerosol optical depth from OMI satellite observations, specifically detecting light-absorbing particles such as black carbon, dust, and smoke that significantly impact air quality and climate.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "OMI (Ozone Monitoring Instrument) Absorbing Aerosol Optical Depth specifically measures aerosols that absorb sunlight, including black carbon, dust, and smoke particles that have significant health and climate impacts."
+                },
+                {
+                  "name": "Absorbing Aerosol Types",
+                  "content": "Detects black carbon from combustion, mineral dust from arid regions, biomass burning smoke, and other light-absorbing particles that affect air quality and climate"
+                },
+                {
+                  "name": "Health Significance",
+                  "content": "Absorbing aerosols, particularly black carbon, are associated with cardiovascular disease, respiratory problems, and cancer due to their toxic properties and small particle size"
+                },
+                {
+                  "name": "Climate Impact",
+                  "content": "Absorbing aerosols warm the atmosphere by absorbing solar radiation, contributing to regional climate change and affecting precipitation patterns"
+                },
+                {
+                  "name": "Detection Method",
+                  "content": "Uses UV observations to detect aerosols that absorb strongly in the UV spectrum, complementing visible-based aerosol retrievals"
+                },
+                {
+                  "name": "Spatial Resolution",
+                  "content": "13 km × 24 km with daily global coverage, excellent for regional air quality and source identification"
+                },
+                {
+                  "name": "Source Monitoring",
+                  "content": "Wildfire emission tracking, diesel exhaust detection, industrial black carbon monitoring, dust storm identification, agricultural burning assessment"
+                },
+                {
+                  "name": "Environmental Justice",
+                  "content": "Identifies communities disproportionately affected by absorbing aerosol pollution, supporting environmental health equity research"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Aura OMI mission, Royal Netherlands Meteorological Institute, NASA Goddard Space Flight Center"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Absorbing Aerosol Types",
+                "Health Significance",
+                "Climate Impact",
+                "Detection Method",
+                "Spatial Resolution",
+                "Source Monitoring",
+                "Environmental Justice",
+                "Attribution"
+              ]
+            },
+            {
+              "name": "OMI UV Aerosol Index",
+              "type": "wms",
+              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "layers": "OMI_UV_Aerosol_Index",
+              "description": "UV aerosol index from OMI satellite observations providing sensitive detection of absorbing aerosols including dust, smoke, and volcanic ash affecting air quality and UV radiation transmission.",
+              "info": [
+                {
+                  "name": "Background",
+                  "content": "The UV Aerosol Index (UVAI) is a qualitative measure of absorbing aerosols based on spectral contrast in the UV wavelength range, providing sensitive detection of dust, smoke, and volcanic particles."
+                },
+                {
+                  "name": "Detection Sensitivity",
+                  "content": "Highly sensitive to absorbing aerosols even over bright surfaces like deserts and clouds, where traditional visible aerosol retrievals may fail"
+                },
+                {
+                  "name": "Aerosol Type Indication",
+                  "content": "Positive UVAI values indicate absorbing aerosols (dust, smoke, volcanic ash), while near-zero values suggest scattering aerosols or clean conditions"
+                },
+                {
+                  "name": "Atmospheric Hazards",
+                  "content": "Excellent for detecting atmospheric hazards including volcanic ash clouds, severe dust storms, and major wildfire smoke events that pose aviation and health risks"
+                },
+                {
+                  "name": "Global Coverage",
+                  "content": "Daily global observations with 13 km × 24 km resolution, providing comprehensive monitoring of absorbing aerosol events worldwide"
+                },
+                {
+                  "name": "Long-term Record",
+                  "content": "October 2004 to present, enabling trend analysis of dust storms, wildfire activity, and volcanic eruption impacts on air quality"
+                },
+                {
+                  "name": "Aviation Applications",
+                  "content": "Critical for aviation safety through volcanic ash detection, dust storm monitoring, and smoke plume tracking for flight path planning"
+                },
+                {
+                  "name": "Disaster Monitoring",
+                  "content": "Early warning for dust storms, wildfire smoke transport, volcanic ash dispersal, and other natural hazards affecting air quality"
+                },
+                {
+                  "name": "Attribution",
+                  "content": "NASA Aura OMI mission, UV aerosol index algorithm development by multiple international institutions"
+                }
+              ],
+              "infoSectionOrder": [
+                "Background",
+                "Detection Sensitivity",
+                "Aerosol Type Indication",
+                "Atmospheric Hazards",
+                "Global Coverage",
+                "Long-term Record",
+                "Aviation Applications",
+                "Disaster Monitoring",
+                "Attribution"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
