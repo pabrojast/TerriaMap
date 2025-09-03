@@ -31,6 +31,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Monthly water storage changes from GRACE JPL Mascon solution, providing high spatial resolution water storage variations with reduced leakage effects.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -82,6 +88,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Monthly water storage changes from GRACE CSR (Center for Space Research) spherical harmonics solution, providing long-term consistent time series.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -118,6 +130,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Monthly water storage changes from GRACE GFZ (GeoForschungsZentrum) solution, providing independent validation of water storage variations.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -161,6 +179,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Land-focused water storage changes from GRACE, isolating terrestrial water cycle variations from ocean mass changes.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -197,6 +221,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Water storage anomalies relative to long-term mean, highlighting drought conditions, water surplus/deficit, and unusual hydrological events.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

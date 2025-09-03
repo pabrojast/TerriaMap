@@ -31,6 +31,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AVISO_Absolute_Dynamic_Topography_Daily",
               "description": "Absolute Dynamic Topography (ADT) from AVISO satellite altimetry, representing sea surface height relative to the geoid and indicating ocean currents and circulation patterns.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AVISO_Absolute_Dynamic_Topography_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

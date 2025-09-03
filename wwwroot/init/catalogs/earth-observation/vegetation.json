@@ -177,6 +177,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L3_Surface_Skin_Temperature_Daily_Day",
               "description": "Daytime surface skin temperature from AIRS, representing the interface temperature between land surface and atmosphere.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Skin_Temperature_Daily_Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -208,6 +214,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L3_Surface_Skin_Temperature_Daily_Night",
               "description": "Nighttime surface skin temperature from AIRS, providing complementary data to daytime observations for diurnal cycle analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Skin_Temperature_Daily_Night_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
