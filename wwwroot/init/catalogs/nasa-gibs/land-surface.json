@@ -38,7 +38,7 @@
               "name": "MODIS Land Surface Temperature (Terra, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Land_Surface_Temp_Day_Daily",
+              "layers": "MODIS_Terra_Land_Surface_Temp_Day",
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Day_Daily_H.png",
@@ -95,7 +95,7 @@
               "name": "MODIS Land Surface Temperature (Terra, Night)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Land_Surface_Temp_Night_Daily",
+              "layers": "MODIS_Terra_Land_Surface_Temp_Night",
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Night_Daily_H.png",
@@ -137,7 +137,7 @@
               "name": "AIRS Land Surface Temperature (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "layers": "AIRS_L2_Surface_Air_Temperature_Day",
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",

@@ -29,7 +29,7 @@
               "name": "AIRS Surface Air Temperature (Day) - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "layers": "AIRS_L2_Surface_Air_Temperature_Day",
               "description": "AIRS daytime surface air temperature measurements with monthly temporal resolution.",
               "info": [
                 {
@@ -65,7 +65,7 @@
               "name": "AIRS Surface Air Temperature (Night) - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+              "layers": "AIRS_L2_Surface_Air_Temperature_Night",
               "description": "AIRS nighttime surface air temperature measurements with monthly temporal resolution.",
               "info": [
                 {
@@ -101,7 +101,7 @@
               "name": "AIRS Temperature 500hPa - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Temperature_500hPa_Daily",
+              "layers": "AIRS_L2_Temperature_500hPa_Day",
               "description": "AIRS atmospheric temperature at 500hPa pressure level (approximately 5.5 km altitude).",
               "info": [
                 {
@@ -132,7 +132,7 @@
               "name": "AIRS Temperature 700hPa - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Temperature_700hPa_Daily",
+              "layers": "AIRS_L2_Temperature_700hPa_Day",
               "description": "AIRS atmospheric temperature at 700hPa pressure level (approximately 3 km altitude).",
               "info": [
                 {
@@ -163,7 +163,7 @@
               "name": "AIRS Temperature 850hPa - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Temperature_850hPa_Daily",
+              "layers": "AIRS_L2_Temperature_850hPa_Day",
               "description": "AIRS atmospheric temperature at 850hPa pressure level (approximately 1.5 km altitude).",
               "info": [
                 {
@@ -259,7 +259,7 @@
               "name": "MERRA-2 Temperature 250hPa - Monthly",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MERRA2_Temperature_250hPa_Monthly",
+              "layers": "MERRA2_Air_Temperature_250hPa_Monthly",
               "description": "MERRA-2 atmospheric temperature at 250hPa pressure level (approximately 10 km altitude, jet stream level).",
               "info": [
                 {

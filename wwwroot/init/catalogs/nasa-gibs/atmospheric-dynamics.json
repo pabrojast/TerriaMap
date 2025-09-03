@@ -38,7 +38,7 @@
               "name": "AIRS Air Temperature (Daily Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "layers": "AIRS_L2_Surface_Air_Temperature_Day",
               "description": "Daily daytime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
               "legends": [
                 {
@@ -374,7 +374,7 @@
               "name": "AIRS Air Temperature (Daily Night)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+              "layers": "AIRS_L2_Surface_Air_Temperature_Night",
               "description": "Daily nighttime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
               "legends": [
                 {

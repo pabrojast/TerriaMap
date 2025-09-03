@@ -138,11 +138,11 @@
               "name": "AMSR2 Surface Soil Moisture (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily",
+              "layers": "AMSRU2_Surface_Precipitation_Day",
               "description": "Daily global surface soil moisture from AMSR2 passive microwave measurements, providing all-weather soil moisture detection capability.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Day_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -195,7 +195,7 @@
               "name": "AMSR2 Surface Soil Moisture (Monthly)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily",
+              "layers": "AMSRU2_Surface_Precipitation_Day",
               "description": "Monthly surface soil moisture from AMSR2 providing stable, long-term soil moisture climatology for global water cycle analysis and climate studies.",
               "info": [
                 {
