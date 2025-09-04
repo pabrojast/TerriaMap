@@ -45,6 +45,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "Agricultural_Lands_Croplands_2000",
               "description": "Global distribution of croplands circa 2000 providing baseline agricultural land mapping for food security assessment, agricultural planning, and land use change analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/Agricultural_Lands_Croplands_2000_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -113,6 +119,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Combined_L3_IGBP_Land_Cover_Type_Annual",
               "description": "Annual global land cover classification using the International Geosphere-Biosphere Programme (IGBP) system providing comprehensive ecosystem mapping for environmental monitoring and climate studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_IGBP_Land_Cover_Type_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -186,6 +198,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Combined_L3_Black_Sky_Albedo_Daily",
               "description": "Daily black sky albedo from combined MODIS Terra and Aqua satellites representing surface reflectance under direct illumination conditions, essential for energy balance studies and climate modeling.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?version=1.1.1&service=WMS&request=GetLegendGraphic&layer=MODIS_Combined_L3_Black_Sky_Albedo_Daily&format=image/png&STYLE=default",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -247,6 +265,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Combined_L3_White_Sky_Albedo_Daily",
               "description": "Daily white sky albedo from combined MODIS Terra and Aqua satellites representing surface reflectance under diffuse illumination conditions, complementing black sky albedo for comprehensive surface energy analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?version=1.1.1&service=WMS&request=GetLegendGraphic&layer=MODIS_Combined_L3_White_Sky_Albedo_Daily&format=image/png&STYLE=default",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -308,6 +332,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Surface_Albedo_Monthly",
               "description": "Monthly surface albedo from MERRA-2 reanalysis providing model-based surface reflectance estimates that integrate observations with atmospheric models for comprehensive climate and weather analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Albedo_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

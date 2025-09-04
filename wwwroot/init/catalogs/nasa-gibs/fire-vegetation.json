@@ -42,7 +42,7 @@
               "description": "Daily active fire detections from MODIS Terra satellite using thermal infrared bands to identify fires and thermal anomalies with high confidence levels.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Thermal_Anomalies_All_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?version=1.1.1&service=WMS&request=GetLegendGraphic&layer=MODIS_Terra_Thermal_Anomalies_All&format=image/png&STYLE=default",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -98,7 +98,7 @@
               "layers": "MODIS_Aqua_Thermal_Anomalies_All",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Aqua_Thermal_Anomalies_All_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?version=1.1.1&service=WMS&request=GetLegendGraphic&layer=MODIS_Aqua_Thermal_Anomalies_All&format=image/png&STYLE=default",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -145,7 +145,7 @@
               "layers": "VIIRS_SNPP_Thermal_Anomalies_375m_All",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/VIIRS_SNPP_Thermal_Anomalies_375m_All_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?version=1.1.1&service=WMS&request=GetLegendGraphic&layer=VIIRS_SNPP_Thermal_Anomalies_375m_All&format=image/png&STYLE=default",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -208,6 +208,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Terra_Thermal_Anomalies_All",
               "description": "Monthly global burned area product mapping areas affected by fire using multitemporal analysis of MODIS surface reflectance data.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Thermal_Anomalies_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -257,10 +263,10 @@
               "name": "Fire Radiative Power (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Aqua_Thermal_Anomalies_All",
+              "layers": "MODIS_Combined_Thermal_Anomalies_All",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Aqua_Thermal_Anomalies_All_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Thermal_Anomalies_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -306,10 +312,10 @@
               "name": "MODIS Land Cover Type (Annual)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Land_Cover_Type_Annual",
+              "layers": "MODIS_Combined_L3_IGBP_Land_Cover_Type_Annual",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Cover_Type_Annual_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_IGBP_Land_Cover_Type_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -366,7 +372,7 @@
               "layers": "MODIS_Terra_L3_EVI_16Day",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_L3_EVI_16Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_L3_EVI_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -423,7 +429,7 @@
               "layers": "MODIS_Terra_Leaf_Area_Index_8Day",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Leaf_Area_Index_8Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Leaf_Area_Index_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],

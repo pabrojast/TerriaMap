@@ -38,8 +38,14 @@
               "name": "AMSR2 Snow Water Equivalent (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSR2_Snow_Water_Equivalent_Daily",
-              "description": "Daily global snow water equivalent from AMSR2 microwave measurements, providing critical information for water resource planning and flood forecasting.",
+              "layers": "SMAP_L4_Snow_Mass",
+              "description": "Daily global snow water equivalent from SMAP microwave measurements, providing critical information for water resource planning and flood forecasting.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Snow_Mass_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -94,8 +100,14 @@
               "name": "AMSR2 Snow Water Equivalent (5-Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSR2_Snow_Water_Equivalent_5Day",
-              "description": "5-day composite snow water equivalent reducing noise and providing more stable estimates for operational water resource management.",
+              "layers": "MERRA2_Snowfall_Monthly",
+              "description": "Monthly snowfall from MERRA-2 reanalysis reducing noise and providing more stable estimates for operational water resource management.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Snowfall_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -130,8 +142,14 @@
               "name": "AMSR2 Snow Water Equivalent (Monthly)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSR2_Snow_Water_Equivalent_Monthly",
-              "description": "Monthly snow water equivalent climatology for long-term analysis, climate studies, and seasonal pattern assessment.",
+              "layers": "MERRA2_Snow_Depth_Over_Glaciated_Surface_Monthly",
+              "description": "Monthly snow depth climatology for long-term analysis, climate studies, and seasonal pattern assessment.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Snow_Depth_Over_Glaciated_Surface_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -173,8 +191,14 @@
               "name": "MODIS Snow Cover (Terra, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Snow_Cover_Daily",
+              "layers": "MODIS_Terra_L3_NDSI_Snow_Cover_Daily",
               "description": "Daily global snow cover extent from MODIS Terra satellite at 500m resolution, providing high-resolution snow extent mapping for operational applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_NDSI_Snow_Cover_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -219,8 +243,14 @@
               "name": "MODIS Snow Cover (Aqua, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Aqua_Snow_Cover_Daily",
+              "layers": "MODIS_Aqua_L3_NDSI_Snow_Cover_Daily",
               "description": "Daily global snow cover extent from MODIS Aqua satellite, providing complementary observations to Terra for improved snow monitoring reliability.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_NDSI_Snow_Cover_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -255,8 +285,14 @@
               "name": "MODIS Snow Cover (8-Day Composite)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Snow_Cover_8Day_Composite",
-              "description": "8-day composite snow cover reducing cloud contamination and providing more complete spatial coverage for regional snow analysis.",
+              "layers": "MODIS_Terra_L3_Snow_Cover_Monthly_Average_Pct",
+              "description": "Monthly composite snow cover reducing cloud contamination and providing more complete spatial coverage for regional snow analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_L3_Snow_Extent_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -298,8 +334,14 @@
               "name": "Sea Ice Concentration",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSR2_Sea_Ice_Concentration_Daily",
-              "description": "Daily sea ice concentration from AMSR2, important for understanding Arctic and Antarctic ice conditions affecting global water and climate systems.",
+              "layers": "AMSRU2_Sea_Ice_Brightness_Temp_6km_89H",
+              "description": "Daily sea ice brightness temperature from AMSR2, important for understanding Arctic and Antarctic ice conditions affecting global water and climate systems.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Sea_Ice_Brightness_Temp_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

@@ -31,6 +31,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L2_Surface_Air_Temperature_Day",
               "description": "AIRS daytime surface air temperature measurements with monthly temporal resolution.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -67,6 +73,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L2_Surface_Air_Temperature_Night",
               "description": "AIRS nighttime surface air temperature measurements with monthly temporal resolution.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -103,6 +115,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L2_Temperature_500hPa_Day",
               "description": "AIRS atmospheric temperature at 500hPa pressure level (approximately 5.5 km altitude).",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -134,6 +152,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L2_Temperature_700hPa_Day",
               "description": "AIRS atmospheric temperature at 700hPa pressure level (approximately 3 km altitude).",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -165,6 +189,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AIRS_L2_Temperature_850hPa_Day",
               "description": "AIRS atmospheric temperature at 850hPa pressure level (approximately 1.5 km altitude).",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -203,6 +233,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_2m_Air_Temperature_Monthly",
               "description": "MERRA-2 2-meter air temperature monthly averages from reanalysis model.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_2m_Air_Temperature_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -239,6 +275,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Surface_Skin_Temperature_Monthly",
               "description": "MERRA-2 surface skin temperature representing the interface temperature between atmosphere and surface.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Skin_Temperature_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -261,6 +303,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Air_Temperature_250hPa_Monthly",
               "description": "MERRA-2 atmospheric temperature at 250hPa pressure level (approximately 10 km altitude, jet stream level).",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Air_Temperature_250hPa_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -299,6 +347,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GLDAS_Near_Surface_Air_Temperature_Monthly",
               "description": "GLDAS near-surface air temperature over land surfaces with high spatial resolution.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Near_Surface_Air_Temperature_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

@@ -38,8 +38,14 @@
               "name": "MODIS Flood Product NRT (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Combined_Flood_1-Day_Global_NRT",
+              "layers": "MODIS_Combined_Flood_1-Day",
               "description": "Daily near real-time global flood detection from combined MODIS Terra and Aqua satellites, providing rapid identification of flooded areas for emergency response.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Flood_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -94,8 +100,14 @@
               "name": "MODIS Flood Product NRT (2-Day Composite)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Combined_Flood_2-Day_Global_NRT",
+              "layers": "MODIS_Combined_Flood_2-Day",
               "description": "2-day composite near real-time flood product combining multiple MODIS observations to reduce cloud gaps and improve flood detection reliability.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Flood_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -130,8 +142,14 @@
               "name": "MODIS Flood Product NRT (3-Day Composite)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Combined_Flood_3-Day_Global_NRT",
+              "layers": "MODIS_Combined_Flood_3-Day",
               "description": "3-day composite flood product providing the most comprehensive flood extent mapping with minimal cloud contamination for detailed analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Flood_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -173,8 +191,14 @@
               "name": "Global Water Mask",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MOD44W_Water_Mask",
+              "layers": "MODIS_Water_Mask",
               "description": "Global water mask showing permanent water bodies and coastlines, essential for distinguishing between normal water and flood water in MODIS flood products.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Water_Mask_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -206,22 +230,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Historical Flood Archive",
-          "type": "group",
-          "description": "Long-term flood detection records for climate analysis, trend assessment, and historical comparison of flood events.",
-          "info": [
-            {
-              "name": "Data Availability",
-              "content": "Historical MODIS flood products are available through NASA Earthdata archives. Long-term datasets enable climate trend analysis and flood frequency studies."
-            },
-            {
-              "name": "Research Applications",
-              "content": "Climate change impact studies, flood frequency analysis, seasonal flood pattern assessment, long-term trend detection, model validation"
-            }
-          ],
-          "members": []
         }
       ]
     }

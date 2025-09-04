@@ -97,6 +97,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "TRMM_Precipitation_Rate_Asc",
               "description": "Monthly precipitation rate from TRMM providing long-term tropical precipitation climatology and trend analysis capabilities.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -135,14 +141,14 @@
           "description": "Advanced Microwave Scanning Radiometer 2 (AMSR2) precipitation products providing global precipitation measurements using passive microwave technology.",
           "members": [
             {
-              "name": "AMSR2 Surface Soil Moisture (Daily)",
+              "name": "AMSR2 Surface Precipitation (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AMSRU2_Surface_Precipitation_Day",
-              "description": "Daily global surface soil moisture from AMSR2 passive microwave measurements, providing all-weather soil moisture detection capability.",
+              "description": "Daily global surface precipitation from AMSR2 passive microwave measurements, providing all-weather precipitation detection capability.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -192,11 +198,17 @@
               ]
             },
             {
-              "name": "AMSR2 Surface Soil Moisture (Monthly)",
+              "name": "AMSR2 Surface Precipitation (Monthly)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "AMSRU2_Surface_Precipitation_Day",
-              "description": "Monthly surface soil moisture from AMSR2 providing stable, long-term soil moisture climatology for global water cycle analysis and climate studies.",
+              "description": "Monthly surface precipitation from AMSR2 providing stable, long-term precipitation climatology for global water cycle analysis and climate studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

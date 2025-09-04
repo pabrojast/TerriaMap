@@ -40,6 +40,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI",
               "description": "Monthly drought indicator based on GRACE water storage anomalies, providing deep water deficit assessment including groundwater depletion.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GRACE_Tellus_Liquid_Water_Equivalent_Thickness_Mascon_CRI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -91,6 +97,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
               "description": "Daily agricultural drought index based on SMAP soil moisture observations, optimized for crop water stress detection and agricultural drought monitoring.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Analyzed_Soil_Moisture_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -144,6 +156,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "VIIRS_SNPP_NDVI_8Day",
               "description": "Weekly vegetation health index combining vegetation condition and temperature condition indices to assess vegetation drought stress and ecosystem health.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_NDVI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -190,6 +208,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Terra_L3_EVI_Monthly",
               "description": "Monthly Enhanced Vegetation Index (EVI) anomalies showing vegetation condition relative to long-term average, indicating drought impacts on vegetation productivity.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_L3_EVI_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -233,6 +257,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Precipitation_Bias_Corrected_Monthly",
               "description": "Monthly Standardized Precipitation Index calculated from satellite precipitation estimates, providing standardized meteorological drought assessment for data-sparse regions.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Precipitation_Bias_Corrected_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -274,6 +304,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
               "description": "Monthly precipitation percentile anomalies from satellite observations, showing current precipitation relative to historical record for drought assessment.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Total_Precipitable_Water_Vapor_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -317,6 +353,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "SMAP_L4_Uncertainty_Analyzed_Root_Zone_Soil_Moisture",
               "description": "Weekly composite drought index combining soil moisture, precipitation, vegetation, and water storage data for comprehensive drought assessment and early warning.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Uncertainty_Analyzed_Soil_Moisture_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

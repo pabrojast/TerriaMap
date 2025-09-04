@@ -38,8 +38,14 @@
               "name": "MODIS Chlorophyll-a (Terra, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Chlorophyll_A_Daily",
+              "layers": "MODIS_Terra_L2_Chlorophyll_A",
               "description": "Daily chlorophyll-a concentration from MODIS Terra satellite indicating phytoplankton biomass and water quality conditions.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Chlorophyll_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -89,8 +95,14 @@
               "name": "MODIS Chlorophyll-a (Aqua, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Aqua_Chlorophyll_A_Daily",
+              "layers": "MODIS_Aqua_L2_Chlorophyll_A",
               "description": "Daily chlorophyll-a concentration from MODIS Aqua satellite providing complementary observations for enhanced aquatic ecosystem monitoring.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Chlorophyll_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -125,8 +137,14 @@
               "name": "VIIRS Chlorophyll-a (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "VIIRS_SNPP_Chlorophyll_A_Daily",
+              "layers": "VIIRS_SNPP_L2_Chlorophyll_A",
               "description": "Daily chlorophyll-a concentration from VIIRS with enhanced spatial resolution for detailed water quality assessment.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/VIIRS_Chlorophyll_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -170,11 +188,17 @@
           "description": "Water turbidity and clarity indicators derived from satellite observations for assessing sediment loads and water quality conditions.",
           "members": [
             {
-              "name": "MODIS Water Turbidity (Daily)",
+              "name": "MODIS Water Vapor (Terra, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Water_Turbidity_Daily",
-              "description": "Daily water turbidity measurements indicating suspended sediment concentrations and water clarity conditions.",
+              "layers": "MODIS_Terra_Water_Vapor_5km_Day",
+              "description": "Daily water vapor measurements providing atmospheric moisture content information for weather and climate studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Water_Vapor_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -211,11 +235,17 @@
               ]
             },
             {
-              "name": "Suspended Sediment Concentration",
+              "name": "MODIS Water Vapor (Aqua, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Aqua_Suspended_Sediment_Daily",
-              "description": "Daily suspended sediment concentration estimates from satellite observations for monitoring water quality and sediment transport.",
+              "layers": "MODIS_Aqua_Water_Vapor_5km_Day",
+              "description": "Daily water vapor measurements from MODIS Aqua satellite providing atmospheric moisture content for meteorological applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Water_Vapor_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -254,11 +284,17 @@
           "description": "Colored Dissolved Organic Matter (CDOM) products indicating organic carbon content and water quality characteristics.",
           "members": [
             {
-              "name": "MODIS CDOM Index (Daily)",
+              "name": "MODIS Cloud Water Path (Terra)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_CDOM_Index_Daily",
-              "description": "Daily Colored Dissolved Organic Matter (CDOM) index indicating dissolved organic carbon levels and water quality characteristics.",
+              "layers": "MODIS_Terra_Cloud_Water_Path",
+              "description": "Daily cloud water path measurements indicating liquid water content in clouds for atmospheric and climate studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Cloud_Fraction_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -307,6 +343,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Aqua_L2_Chlorophyll_A",
               "description": "High-resolution Level 2 chlorophyll-a concentration from MODIS Aqua satellite providing detailed ocean productivity measurements at full spatial resolution for coastal and marine ecosystem studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Chlorophyll_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -358,6 +400,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "VIIRS_SNPP_L2_Chlorophyll_A",
               "description": "Ultra-high resolution Level 2 chlorophyll-a concentration from VIIRS providing the most detailed satellite-based ocean productivity measurements available for comprehensive marine ecosystem assessment.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/VIIRS_Chlorophyll_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -421,6 +469,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Aqua_Angstrom_Exponent_Ocean",
               "description": "Ocean Angstrom Exponent from MODIS Aqua providing information about aerosol particle size distribution over oceanic regions, critical for ocean-atmosphere interaction studies and marine air quality assessment.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_VIIRS_Angstrom_Exponent_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -472,6 +526,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "VIIRS_NOAA20_AOT_Dark_Target_Land_Ocean",
               "description": "Advanced aerosol optical thickness over both land and ocean from VIIRS NOAA-20 satellite providing comprehensive atmospheric clarity assessment for air quality and climate applications with enhanced coastal coverage.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_VIIRS_AOD_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

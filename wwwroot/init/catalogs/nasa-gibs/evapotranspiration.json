@@ -40,6 +40,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Evaporation_Land_Monthly",
               "description": "Monthly land surface evaporation from MERRA-2 reanalysis, representing total water loss from terrestrial surfaces including transpiration, soil evaporation, and canopy interception.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Evaporation_Land_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -91,6 +97,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Evaporation_from_Turbulence_Monthly",
               "description": "Monthly atmospheric evaporation from turbulent processes, representing evaporation driven by atmospheric turbulence and convective processes in the boundary layer.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Evaporation_from_Turbulence_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -139,6 +151,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
               "description": "Monthly total precipitable water vapor from MERRA-2, representing the total amount of water vapor in the atmospheric column available for precipitation formation.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Total_Precipitable_Water_Vapor_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -202,6 +220,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Soil_Water_Root_Zone_Monthly",
               "description": "Monthly root zone soil water content from MERRA-2, representing soil moisture in the root zone layer available to vegetation for transpiration and growth.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Soil_Water_Root_Zone_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -265,6 +289,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
               "description": "Monthly high-resolution precipitation from NLDAS (North American Land Data Assimilation System) providing detailed precipitation patterns over North America for regional hydrological analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/NLDAS_Surface_Total_Precipitation_Primary_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

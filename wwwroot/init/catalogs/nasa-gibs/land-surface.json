@@ -41,7 +41,7 @@
               "layers": "MODIS_Terra_Land_Surface_Temp_Day",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Day_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -98,7 +98,7 @@
               "layers": "MODIS_Terra_Land_Surface_Temp_Night",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_Night_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Land_Surface_Temp_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -140,7 +140,7 @@
               "layers": "AIRS_L2_Surface_Air_Temperature_Day",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -191,10 +191,10 @@
               "name": "MODIS Evapotranspiration (8-Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Net_Evapotranspiration_8Day",
+              "layers": "MERRA2_Evaporation_Land_Monthly",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Net_Evapotranspiration_8Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Evaporation_Land_Monthly_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -245,29 +245,29 @@
               ]
             },
             {
-              "name": "GLDAS Latent Heat Flux (Daily)",
+              "name": "GLDAS Underground Soil Moisture (Monthly)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "GLDAS_Latent_Heat_Flux_Daily",
+              "layers": "GLDAS_Underground_Soil_Moisture_Monthly",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Latent_Heat_Flux_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Underground_Soil_Moisture_Monthly_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
-              "description": "Daily latent heat flux from GLDAS land surface model representing energy used for evapotranspiration processes.",
+              "description": "Monthly underground soil moisture from GLDAS land surface model representing subsurface water content in soil layers.",
               "info": [
                 {
                   "name": "Background",
-                  "content": "Latent heat flux represents the energy used for evapotranspiration processes, directly related to water vapor transfer from land surface to atmosphere."
+                  "content": "Underground soil moisture represents water content in subsurface soil layers, critical for understanding subsurface water storage and root zone water availability."
                 },
                 {
                   "name": "Measurement Units",
-                  "content": "Latent heat flux in watts per square meter (W/m²), representing energy flux density"
+                  "content": "Soil moisture content in volumetric fraction (m³/m³) or equivalent water thickness"
                 },
                 {
-                  "name": "Energy-Water Relationship",
-                  "content": "Latent heat flux is directly proportional to evapotranspiration rates, with ~2.45 MJ/kg energy required to evaporate water"
+                  "name": "Subsurface Water Storage",
+                  "content": "Underground soil moisture indicates subsurface water storage capacity and availability for vegetation and groundwater recharge"
                 },
                 {
                   "name": "Model Integration",
@@ -279,7 +279,7 @@
                 },
                 {
                   "name": "Applications",
-                  "content": "Surface energy balance analysis, evapotranspiration assessment, land-atmosphere interaction studies, climate model validation"
+                  "content": "Hydrological modeling, drought monitoring, agricultural water management, groundwater recharge assessment, soil water storage analysis"
                 },
                 {
                   "name": "Attribution",
@@ -297,33 +297,33 @@
               ]
             },
             {
-              "name": "GLDAS Sensible Heat Flux (Daily)",
+              "name": "GLDAS Surface Total Precipitation Rate (Monthly)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "GLDAS_Sensible_Heat_Flux_Daily",
+              "layers": "GLDAS_Surface_Total_Precipitation_Rate_Monthly",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Sensible_Heat_Flux_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Surface_Total_Precipitation_Rate_Monthly_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
-              "description": "Daily sensible heat flux from GLDAS representing direct heating of atmosphere and energy balance partitioning.",
+              "description": "Monthly surface total precipitation rate from GLDAS representing combined rainfall and snowfall reaching the land surface.",
               "info": [
                 {
                   "name": "Background",
-                  "content": "Sensible heat flux represents direct heating of the atmosphere through conduction and convection, complementing latent heat flux in surface energy balance."
+                  "content": "Surface total precipitation rate represents the combined water input from rainfall and snowfall reaching the land surface, fundamental for hydrological cycle analysis."
                 },
                 {
-                  "name": "Energy Partitioning",
-                  "content": "The ratio of sensible to latent heat flux indicates water availability and surface wetness conditions"
+                  "name": "Precipitation Components",
+                  "content": "Total precipitation includes both liquid (rain) and solid (snow) forms, providing comprehensive water input assessment"
                 },
                 {
-                  "name": "Water Stress Indicator",
-                  "content": "High sensible heat flux relative to latent heat flux often indicates water stress and reduced evapotranspiration"
+                  "name": "Hydrological Significance",
+                  "content": "Precipitation rate is the primary water input driving hydrological processes, soil moisture replenishment, and river discharge"
                 },
                 {
                   "name": "Applications",
-                  "content": "Surface energy balance analysis, water stress assessment, land-atmosphere coupling studies, irrigation efficiency evaluation"
+                  "content": "Hydrological modeling, flood forecasting, drought monitoring, water resource management, agricultural planning"
                 },
                 {
                   "name": "Attribution",
@@ -332,8 +332,8 @@
               ],
               "infoSectionOrder": [
                 "Background",
-                "Energy Partitioning",
-                "Water Stress Indicator",
+                "Precipitation Components",
+                "Hydrological Significance",
                 "Applications",
                 "Attribution"
               ]
@@ -349,10 +349,10 @@
               "name": "MODIS Surface Albedo (16-Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Terra_Surface_Albedo_16Day",
+              "layers": "MERRA2_Surface_Albedo_Monthly",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Terra_Surface_Albedo_16Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Albedo_Monthly_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],

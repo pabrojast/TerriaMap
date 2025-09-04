@@ -29,8 +29,14 @@
               "name": "GEDI Aboveground Biomass Density",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "GEDI_Aboveground_Biomass_Density_L4A_Monthly",
+              "layers": "GEDI_ISS_L4B_Aboveground_Biomass_Density_Mean_201904-202303",
               "description": "GEDI-derived estimates of aboveground biomass density in forested ecosystems, providing crucial data for carbon cycle studies.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GEDI_MU_Color_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -72,6 +78,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GEDI_ISS_L3_Canopy_Height_Mean_RH100_201904-202303",
               "description": "Mean canopy height measurements from GEDI lidar, providing detailed information about forest vertical structure.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GEDI_RH100_Mean_Color_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -108,6 +120,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "GEDI_ISS_L3_Canopy_Height_StdDev_RH100_201904-202303",
               "description": "Standard deviation of canopy height measurements from GEDI, indicating forest structural complexity and heterogeneity.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GEDI_RH100_Stddev_Color_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -137,8 +155,14 @@
               "name": "GEDI Number of Samples",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "GEDI_Number_of_Samples_L3_Monthly",
+              "layers": "GEDI_ISS_L4B_Number_of_Samples_201904-202303",
               "description": "Number of GEDI lidar samples per grid cell, indicating data density and measurement confidence.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GEDI_NS_Color_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

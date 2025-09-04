@@ -40,6 +40,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Carbon_Monoxide_Emission_Monthly",
               "description": "Monthly carbon monoxide emissions from MERRA-2 reanalysis, representing CO emissions from combustion sources including vehicles, industry, and biomass burning affecting urban and regional air quality.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Carbon_Monoxide_Emission_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -96,6 +102,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MOPITT_CO_Daily_Total_Column_Day",
               "description": "Daily carbon monoxide total atmospheric column from MOPITT satellite observations, providing comprehensive global CO distribution for air quality and pollution transport monitoring.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MOPITT_CO_Daily_Total_Column_L2_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -152,6 +164,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_SO2_Column_Mass_Density_Monthly",
               "description": "Monthly sulfur dioxide column mass density from MERRA-2 reanalysis, representing SO2 concentrations from industrial sources, volcanic emissions, and fossil fuel combustion affecting air quality and acid deposition.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_SO2_Column_Mass_Density_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -215,6 +233,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "TEMPO_L3_Ozone_UV_Aerosol_Index",
               "description": "High-resolution ozone and UV aerosol index from TEMPO (Tropospheric Emissions: Monitoring of Pollution) satellite providing hourly air quality monitoring over North America for public health and environmental applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/TEMPO_Ozone_UV_Aerosol_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -283,6 +307,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Combined_Value_Added_AOD",
               "description": "Combined Terra and Aqua MODIS aerosol optical depth providing comprehensive global aerosol monitoring for air quality assessment, visibility studies, and particulate matter estimation.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Combined_Value_Added_AOD_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -339,6 +369,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "OMI_Absorbing_Aerosol_Optical_Depth",
               "description": "Absorbing aerosol optical depth from OMI satellite observations, specifically detecting light-absorbing particles such as black carbon, dust, and smoke that significantly impact air quality and climate.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/OMI_Absorbing_Aerosol_Optical_Depth_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -395,6 +431,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "OMI_UV_Aerosol_Index",
               "description": "UV aerosol index from OMI satellite observations providing sensitive detection of absorbing aerosols including dust, smoke, and volcanic ash affecting air quality and UV radiation transmission.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/OMI_UV_Aerosol_Index_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

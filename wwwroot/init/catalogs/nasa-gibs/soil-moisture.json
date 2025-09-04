@@ -29,7 +29,7 @@
               "name": "SMAP L3 Soil Moisture (9km, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "SMAP_Sentinel-1_L2_Active_Passive_Soil_Moisture",
+              "layers": "SMAP_L3_Passive_Enhanced_Day_Soil_Moisture",
               "description": "Daily global soil moisture from SMAP L-band radiometer at 9km resolution. Measures volumetric water content in top 5cm of soil.",
               "legends": [
                 {
@@ -76,11 +76,11 @@
               "name": "SMAP L3 Soil Moisture (36km, Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "SMAP_L4_Analyzed_Root_Zone_Soil_Moisture",
+              "layers": "SMAP_L3_Passive_Day_Soil_Moisture",
               "description": "Daily global soil moisture from SMAP at 36km resolution, providing longer time series and better temporal consistency.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Analyzed_Soil_Moisture_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Soil_Moisture_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -124,7 +124,7 @@
               "description": "Daily soil moisture estimates from CYGNSS GPS reflectometry covering latitudes between 38°N and 38°S with high temporal resolution.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/CYGNSS_L3_Soil_Moisture_SDR_Daily_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SMAP_Soil_Moisture_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -179,11 +179,11 @@
               "name": "AMSR2 Surface Soil Moisture C1-band (Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSRU2_Surface_Precipitation_Day",
+              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily",
               "description": "Daytime surface soil moisture from AMSR2 C1-band measurements, providing global coverage with daily temporal resolution.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Day_Daily_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -226,11 +226,11 @@
               "name": "AMSR2 Surface Soil Moisture C1-band (Night)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AMSRU2_Surface_Precipitation_Night",
+              "layers": "LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Night_Daily",
               "description": "Nighttime surface soil moisture from AMSR2 C1-band measurements, providing complementary observations to daytime data.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSRU2_Surface_Precipitation_Night_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/LPRM_AMSR2_Surface_Soil_Moisture_C1_Band_Night_Daily_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],

@@ -11,7 +11,12 @@
       "Bash(yarn start)",
       "Bash(rg:*)",
       "Bash(grep:*)",
-      "WebFetch(domain:docs.terria.io)"
+      "WebFetch(domain:docs.terria.io)",
+      "WebFetch(domain:gitc.earthdata.nasa.gov)",
+      "Bash(for layer in \"MODIS_Combined_L3_Black_Sky_Albedo_Daily\" \"MODIS_Combined_L3_White_Sky_Albedo_Daily\" \"NLDAS_Surface_Total_Precipitation_Primary_Monthly\" \"CYGNSS_L3_Soil_Moisture_SDR_Daily\" \"TEMPO_L3_Ozone_UV_Aerosol_Index\")",
+      "Bash(do echo -n \"$layer: \")",
+      "Bash(done)",
+      "Bash(for:*)"
     ],
     "deny": [],
     "ask": []

@@ -42,7 +42,7 @@
               "description": "Daily daytime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -97,11 +97,11 @@
               ]
             },
             {
-              "name": "MODIS Cloud Water Path (Daily)",
+              "name": "MODIS Water Vapor (Daily)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MODIS_Terra_Water_Vapor_5km_Day",
-              "description": "Daily cloud water path from MODIS Terra satellite providing high-resolution cloud liquid water content measurements for weather analysis.",
+              "description": "Daily atmospheric water vapor from MODIS Terra satellite providing high-resolution water vapor measurements for weather analysis.",
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Water_Vapor_H.png",
@@ -326,7 +326,7 @@
               "description": "Cloud water path from MODIS Terra indicating cloud liquid water content and potential for precipitation development.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Cloud_Water_Path_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MODIS_Cloud_Fraction_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -378,7 +378,7 @@
               "description": "Daily nighttime air temperature from AIRS infrared sounder providing high-accuracy temperature measurements for weather and climate applications.",
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Night_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Temperature_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
               ],
@@ -435,6 +435,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Surface_Wind_Speed_Monthly",
               "description": "Monthly surface wind speed from MERRA-2 reanalysis providing comprehensive global wind patterns for atmospheric circulation analysis and wind energy applications.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Wind_Speed_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -496,6 +502,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "MERRA2_Surface_Pressure_Monthly",
               "description": "Monthly surface pressure from MERRA-2 reanalysis showing atmospheric pressure patterns that control weather systems, storm development, and large-scale atmospheric circulation.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Surface_Pressure_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",

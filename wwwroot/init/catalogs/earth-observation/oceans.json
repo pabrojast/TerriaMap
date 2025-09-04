@@ -88,8 +88,14 @@
               "name": "AIRS Sea Surface Temperature (Day)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Sea_Surface_Temperature_Daily_Day",
-              "description": "Daytime sea surface temperature measurements from the Atmospheric Infrared Sounder (AIRS) on NASA's Aqua satellite.",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Day",
+              "description": "Daytime surface air temperature measurements from the Atmospheric Infrared Sounder (AIRS) on NASA's Aqua satellite.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Day_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -134,8 +140,14 @@
               "name": "AIRS Sea Surface Temperature (Night)",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "AIRS_L3_Sea_Surface_Temperature_Daily_Night",
-              "description": "Nighttime sea surface temperature measurements from AIRS, providing complementary data to daytime observations for diurnal cycle analysis.",
+              "layers": "AIRS_L3_Surface_Air_Temperature_Daily_Night",
+              "description": "Nighttime surface air temperature measurements from AIRS, providing complementary data to daytime observations for diurnal cycle analysis.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Surface_Air_Temperature_Daily_Night_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -167,18 +179,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "Ocean Color",
-          "type": "group",
-          "description": "Ocean color and marine productivity parameters derived from satellite observations of water-leaving radiance.",
-          "info": [
-            {
-              "name": "Coming Soon",
-              "content": "Additional ocean color products including chlorophyll-a concentration, photosynthetically active radiation, and marine productivity indices will be added in future updates."
-            }
-          ],
-          "members": []
         }
       ]
     }

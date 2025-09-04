@@ -29,8 +29,14 @@
               "name": "MODIS Aqua Aerosol Optical Depth",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MODIS_Aqua_Aerosol_Optical_Depth_Land_Ocean_Best_Estimate_Daily",
+              "layers": "MODIS_Aqua_Aerosol_Optical_Depth_3km",
               "description": "Daily aerosol optical depth measurements from MODIS on the Aqua satellite, combining land and ocean retrievals.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/OMI_Aerosol_Optical_Depth_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -67,6 +73,12 @@
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
               "layers": "SWDB_Aerosol_Angstrom_Exponent_Daily",
               "description": "Aerosol Angstrom Exponent from SeaWiFS Deep Blue algorithm, indicating aerosol particle size characteristics.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SWDB_Aerosol_Angstrom_Exponent_Daily_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -103,8 +115,14 @@
               "name": "PREFIRE Outgoing Longwave Radiative Flux",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "PREFIRE_Outgoing_Longwave_Radiative_Flux_Daily",
+              "layers": "PREFIRE_SAT1_Outgoing_Longwave_Radiative_Flux",
               "description": "Outgoing longwave radiative flux measurements from the PREFIRE (Polar Radiant Energy in the Far-InfraRed Experiment) mission.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/PREFIRE_Outgoing_Longwave_Radiative_Flux_LEO_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
@@ -146,8 +164,14 @@
               "name": "MLS Temperature 46hPa",
               "type": "wms",
               "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
-              "layers": "MLS_Temperature_46hPa_Daily",
+              "layers": "MLS_Temperature_46hPa_Day",
               "description": "Microwave Limb Sounder (MLS) temperature measurements at 46hPa pressure level in the stratosphere.",
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MLS_Temperature_46hPa_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ],
               "info": [
                 {
                   "name": "Background",
