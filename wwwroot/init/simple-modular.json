@@ -68,10 +68,24 @@
         },
         {
           "name": "Snow & Ice Monitoring",
-          "type": "terria-reference",
-          "url": "init/catalogs/nasa-gibs/snow-ice.json",
-          "description": "Snow water equivalent and ice extent from MODIS and AMSR2 for seasonal water resource assessment",
-          "isGroup": true
+          "type": "group",
+          "description": "Snow, ice, and glacier datasets for seasonal water resource assessment and cryosphere monitoring.",
+          "members": [
+            {
+              "name": "NASA Snow & Ice (GIBS)",
+              "type": "terria-reference",
+              "url": "init/catalogs/nasa-gibs/snow-ice.json",
+              "description": "Snow water equivalent and ice extent from MODIS, AMSR2, and related missions",
+              "isGroup": true
+            },
+            {
+              "name": "Glaciers (GLIMS & RGI)",
+              "type": "terria-reference",
+              "url": "init/catalogs/glims/glims.json",
+              "description": "Global glacier outlines and inventory from GLIMS (NSIDC) and the Randolph Glacier Inventory (RGI v7.0)",
+              "isGroup": true
+            }
+          ]
         },
         {
           "name": "Atmospheric Dynamics & Water Vapor",
@@ -234,7 +248,9 @@
     "gibs.earthdata.nasa.gov",
     "gitc.earthdata.nasa.gov",
     "earthdata.nasa.gov",
-    "nasa.gov"
+    "nasa.gov",
+    "glims.org",
+    "www.glims.org"
   ],
   "homeCamera": {
     "north": 0,

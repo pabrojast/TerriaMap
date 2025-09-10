@@ -1,0 +1,311 @@
+{
+  "catalog": [
+    {
+      "name": "GLIMS & RGI Glaciers",
+      "type": "group",
+      "description": "Glacier outlines and inventory from GLIMS (Global Land Ice Measurements from Space) and the Randolph Glacier Inventory (RGI), curated by NSIDC.",
+      "info": [
+        {
+          "name": "About",
+          "content": "GLIMS (Global Land Ice Measurements from Space) is an international initiative to map and monitor the world's glaciers using satellite data. The Randolph Glacier Inventory (RGI) is a globally complete inventory of glacier outlines, widely used in climate and hydrological studies."
+        },
+        {
+          "name": "Attribution",
+          "content": "Data served by GLIMS/NSIDC. GLIMS: Global Land Ice Measurements from Space (https://www.glims.org). RGI: Randolph Glacier Inventory v7.0 (RGI Consortium). Contact organization (WMS): National Snow and Ice Data Center (NSIDC)."
+        },
+        {
+          "name": "Access & License",
+          "content": "WMS GetCapabilities indicates Fees: NONE and AccessConstraints: NONE. Please cite GLIMS and the RGI Consortium when using these data."
+        },
+        {
+          "name": "Links",
+          "content": "GLIMS: https://www.glims.org | RGI: https://www.glims.org/RGI/"
+        }
+      ],
+      "infoSectionOrder": ["About", "Attribution", "Access & License", "Links"],
+      "members": [
+        {
+          "name": "GLIMS Core Layers",
+          "type": "group",
+          "description": "Core GLIMS glacier datasets including polygon outlines and glacier center points.",
+          "members": [
+            {
+              "name": "GLIMS Glacier Outlines",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_GLACIERS",
+              "description": "Global glacier outlines from the GLIMS initiative maintained by NSIDC.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GLIMS Glacier Center Points",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_Points",
+              "description": "GLIMS glacier center points to complement polygon outlines.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GLIMS Points & Outlines (combined)",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_GLACIERS_GROUP",
+              "description": "Convenience layer combining GLIMS glacier points and outlines.",
+              "parameters": { "transparent": true }
+            }
+          ]
+        },
+        {
+          "name": "GLIMS Context & Admin",
+          "type": "group",
+          "description": "Regional centers and institutions involved in GLIMS.",
+          "members": [
+            {
+              "name": "GLIMS Regional Centers",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_REGIONS",
+              "description": "Locations of GLIMS Regional Centers.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GLIMS Regional Centers Outlines",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_RC_Outlines",
+              "description": "Outlines of GLIMS Regional Centers.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GLIMS Institutions",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_Institutions",
+              "description": "Institutions participating in GLIMS.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GLIMS Regional Institutions",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:GLIMS_REGIONAL_INSTITUTIONS",
+              "description": "Regional institutions participating in GLIMS.",
+              "parameters": { "transparent": true }
+            }
+          ]
+        },
+        {
+          "name": "Change & Observations",
+          "type": "group",
+          "description": "Observation points, fluctuation records, photos, thickness, and historical/extinct glacier datasets.",
+          "members": [
+            {
+              "name": "Fluctuations of Glaciers (FOG) Points",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:FOG_points",
+              "description": "GLIMS Fluctuations of Glaciers observation points.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "World Glacier Inventory (WGI) Points",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:WGI_points",
+              "description": "WGI points with glacier metadata.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "Glacier Photos",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:glacier_photos",
+              "description": "Geolocated glacier photos.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "Glacier Thickness Dataset (GlaThiDa)",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:glathida_points",
+              "description": "Point measurements from the Glacier Thickness Database (GlaThiDa).",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "Extinct Glaciers (view)",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:extinct_glaciers_view",
+              "description": "View of documented extinct glaciers.",
+              "parameters": { "transparent": true }
+            }
+          ]
+        },
+        {
+          "name": "GTN-G Regions",
+          "type": "group",
+          "description": "Global Terrestrial Network for Glaciers (GTN-G) region boundaries.",
+          "members": [
+            {
+              "name": "GTN-G Regions (Order 1)",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:glims_regions_1",
+              "description": "Order 1 glacier regions.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "GTN-G Regions (Order 2)",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:glims_regions_2",
+              "description": "Order 2 glacier regions.",
+              "parameters": { "transparent": true }
+            }
+          ]
+        },
+        {
+          "name": "RGI 7.0",
+          "type": "group",
+          "description": "Randolph Glacier Inventory v7.0 global and by-region layers.",
+          "members": [
+            {
+              "name": "RGI 7.0 Global",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI70",
+              "description": "Global RGI v7.0 outlines.",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Alaska",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_Alaska",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Western Canada & US",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_WesternCanadaUS",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Arctic Canada North",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_ArcticCanadaNorth",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Arctic Canada South",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_ArcticCanadaSouth",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Greenland Periphery",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_GreenlandPeriphery",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Iceland",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_Iceland",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Svalbard",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_Svalbard",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Russian Arctic",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_RussianArctic",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI North Asia",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_NorthAsia",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Central Europe",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_CentralEurope",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Caucasus & Middle East",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_CaucasusMiddleEast",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Central Asia",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_CentralAsia",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI South Asia West",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_SouthAsiaWest",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI South Asia East",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_SouthAsiaEast",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Low Latitudes",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_LowLatitudes",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Southern Andes",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_SouthernAndes",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI New Zealand",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_NewZealand",
+              "parameters": { "transparent": true }
+            },
+            {
+              "name": "RGI Scandinavia",
+              "type": "wms",
+              "url": "https://www.glims.org/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
+              "layers": "GLIMS:RGI_Scandinavia",
+              "parameters": { "transparent": true }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
