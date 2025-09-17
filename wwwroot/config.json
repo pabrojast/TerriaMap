@@ -2,6 +2,8 @@
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
   "initializationUrls": ["simple-modular"],
   "parameters": {
+    "autoLoadReferencesForShareLinks": true,
+    "autoLoadMaxNodesForShareLinks": 800,
     "tabbedCatalog": true,
     "aboutButtonHrefUrl": "https://ihp-wins.unesco.org/about",
     "googleUrlShortenerKey": null,
