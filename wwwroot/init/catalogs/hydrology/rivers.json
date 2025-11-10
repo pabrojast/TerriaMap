@@ -17,6 +17,45 @@
       "infoSectionOrder": ["Attribution", "License"],
       "members": [
         {
+          "type": "mvt",
+          "name": "HydroRIVERS (Blob)",
+          "url": "https://ihpwinsdata.blob.core.windows.net/data/%24web/HydroRIVERS_v10_sa/{z}/{x}/{y}.pbf",
+          "layer": "HydroRIVERS_v10_sa",
+          "minimumZoom": 3,
+          "maximumNativeZoom": 12,
+          "maximumZoom": 12,
+          "clipToRectangle": true,
+          "rectangle": {
+            "west": -91.65625,
+            "south": -55.8770833,
+            "east": -34.79375,
+            "north": 14.8770833
+          },
+          "style": {
+            "layers": [
+              {
+                "type": "line",
+                "source-layer": "HydroRIVERS_v10_sa",
+                "paint": {
+                  "line-color": "hsl(180,80%,30%)",
+                  "line-width": {
+                    "stops": [
+                      [5, 2.2],
+                      [8, 3],
+                      [12, 3.6]
+                    ]
+                  },
+                  "line-join": "round",
+                  "line-cap": "round"
+                }
+              }
+            ]
+          },
+          "allowFeaturePicking": true,
+          "idProperty": "HYRIV_ID",
+          "nameProperty": "HYRIV_ID"
+        },
+        {
           "name": "Africa",
           "type": "shp",
           "url": "https://ihpwinsdata.blob.core.windows.net/data/static/terria/HydroRIVERS_v10_af_shp.zip",

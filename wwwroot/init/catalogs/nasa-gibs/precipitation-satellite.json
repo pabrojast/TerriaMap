@@ -1,7 +1,7 @@
 {
   "catalog": [
     {
-      "name": "Satellite Precipitation",
+      "name": "NASA GIBS - Precipitation Satellite",
       "type": "group",
       "description": "Satellite-derived precipitation estimates from multiple NASA missions providing global rainfall and precipitation measurements. These datasets complement ground-based observations and are essential for water resource management in data-sparse regions.",
       "info": [
@@ -37,7 +37,7 @@
             {
               "name": "TRMM Precipitation Rate (Daily)",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "TRMM_Precipitation_Rate_Asc",
               "description": "Daily precipitation rate from TRMM multi-satellite analysis covering tropical and subtropical regions with high-quality rain rate estimates.",
               "legends": [
@@ -94,7 +94,7 @@
             {
               "name": "TRMM Precipitation Rate (Monthly)",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "TRMM_Precipitation_Rate_Asc",
               "description": "Monthly precipitation rate from TRMM providing long-term tropical precipitation climatology and trend analysis capabilities.",
               "legends": [
@@ -143,7 +143,7 @@
             {
               "name": "AMSR2 Surface Precipitation (Daily)",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Surface_Precipitation_Day",
               "description": "Daily global surface precipitation from AMSR2 passive microwave measurements, providing all-weather precipitation detection capability.",
               "legends": [
@@ -200,7 +200,7 @@
             {
               "name": "AMSR2 Surface Precipitation (Monthly)",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Surface_Precipitation_Day",
               "description": "Monthly surface precipitation from AMSR2 providing stable, long-term precipitation climatology for global water cycle analysis and climate studies.",
               "legends": [
@@ -249,7 +249,7 @@
             {
               "name": "OLS Digital Derived Lightning",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "OLS_DMSP_F10_Digital_Derived_Lightning",
               "description": "Digital derived lightning from OLS providing information on convective intensity and storm activity patterns.",
               "legends": [
@@ -308,7 +308,7 @@
             {
               "name": "MERRA-2 Convective Rainwater Source (Monthly)",
               "type": "wms",
-              "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "MERRA2_Convective_Rainwater_Source_700hPa_Monthly",
               "description": "Monthly convective rainwater source from MERRA-2 reanalysis at 700hPa level for comprehensive atmospheric moisture analysis.",
               "legends": [
