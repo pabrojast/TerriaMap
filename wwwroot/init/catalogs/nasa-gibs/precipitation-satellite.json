@@ -1,350 +1,868 @@
 {
   "catalog": [
     {
-      "name": "NASA GIBS - Precipitation Satellite",
       "type": "group",
-      "description": "Satellite-derived precipitation estimates from multiple NASA missions providing global rainfall and precipitation measurements. These datasets complement ground-based observations and are essential for water resource management in data-sparse regions.",
-      "info": [
-        {
-          "name": "Attribution",
-          "content": "Data from NASA TRMM mission, GCOM-W1/AMSR2 by JAXA, and Lightning Imaging Sensor (LIS). Processing by NASA Precipitation Processing System (PPS). Contact: earthdata-support@nasa.gov"
-        },
-        {
-          "name": "License",
-          "content": "NASA data is generally available for public use. Please cite appropriate missions and processing systems in publications."
-        },
-        {
-          "name": "Global Coverage Advantage",
-          "content": "Satellite precipitation provides the only consistent global precipitation measurements, particularly valuable over oceans, remote regions, and areas with sparse ground-based rain gauge networks."
-        },
-        {
-          "name": "Applications",
-          "content": "Water resource assessment, drought monitoring, flood forecasting, agricultural planning, climate research, numerical weather prediction model validation."
-        }
-      ],
-      "infoSectionOrder": [
-        "Attribution",
-        "License",
-        "Global Coverage Advantage",
-        "Applications"
-      ],
+      "name": "NASA GIBS - Precipitation Satellite",
+      "description": "Satellite-based precipitation data from NASA Global Imagery Browse Services",
       "members": [
         {
-          "name": "TRMM Precipitation Products",
           "type": "group",
-          "description": "Tropical Rainfall Measuring Mission (TRMM) provided the first dedicated satellite precipitation measurements in the tropics, establishing the foundation for global precipitation monitoring.",
+          "name": "AIRS - Atmospheric Infrared Sounder",
           "members": [
             {
-              "name": "TRMM Precipitation Rate (Daily)",
               "type": "wms",
+              "name": "Precipitation Estimate (Day)",
+              "id": "AIRS_Precipitation_Day",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "TRMM_Precipitation_Rate_Asc",
-              "description": "Daily precipitation rate from TRMM multi-satellite analysis covering tropical and subtropical regions with high-quality rain rate estimates.",
+              "layers": "AIRS_Precipitation_Day",
+              "description": "Daily precipitation estimate from AIRS instrument during daytime passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-05-08 to Present",
+                "resolution": "2km",
+                "products": "AIRS2SUP_NRT 006, AIRS2SUP_NRT 7.0"
+              },
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Precipitation_Day_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
-                {
-                  "name": "Background",
-                  "content": "TRMM 3B42 combines precipitation radar, microwave imager, and infrared data from multiple satellites to produce high-quality precipitation estimates in the tropics and subtropics."
-                },
-                {
-                  "name": "Coverage Area",
-                  "content": "50°N to 50°S latitude, covering tropical and subtropical regions where most global precipitation occurs"
-                },
-                {
-                  "name": "Spatial Resolution",
-                  "content": "0.25° × 0.25° spatial resolution (~25 km at equator)"
-                },
-                {
-                  "name": "Temporal Coverage",
-                  "content": "January 1998 - April 2015, providing 17+ years of consistent tropical precipitation data"
-                },
-                {
-                  "name": "Measurement Units",
-                  "content": "Precipitation rate in millimeters per hour (mm/hr)"
-                },
-                {
-                  "name": "Multi-sensor Approach",
-                  "content": "Combines precipitation radar (high accuracy), passive microwave (all-weather), and infrared (high temporal/spatial sampling) for optimal precipitation retrieval"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Tropical water resource assessment, monsoon analysis, hurricane precipitation studies, climate research, hydrological model validation"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "NASA TRMM mission, NASA Goddard Space Flight Center Precipitation Processing System (PPS)"
-                }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Coverage Area",
-                "Spatial Resolution",
-                "Temporal Coverage",
-                "Measurement Units",
-                "Multi-sensor Approach",
-                "Applications",
-                "Attribution"
               ]
             },
             {
-              "name": "TRMM Precipitation Rate (Monthly)",
               "type": "wms",
+              "name": "Precipitation Estimate (Night)",
+              "id": "AIRS_Precipitation_Night",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "TRMM_Precipitation_Rate_Asc",
-              "description": "Monthly precipitation rate from TRMM providing long-term tropical precipitation climatology and trend analysis capabilities.",
+              "layers": "AIRS_Precipitation_Night",
+              "description": "Daily precipitation estimate from AIRS instrument during nighttime passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-05-08 to Present",
+                "resolution": "2km",
+                "products": "AIRS2SUP_NRT 006, AIRS2SUP_NRT 7.0"
+              },
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AIRS_Precipitation_Night_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
-                {
-                  "name": "Background",
-                  "content": "TRMM 3B43 provides monthly precipitation estimates by combining satellite data with rain gauge information where available, offering the best long-term tropical precipitation record."
-                },
-                {
-                  "name": "Gauge Adjustment",
-                  "content": "Monthly estimates are adjusted using available rain gauge data through the Global Precipitation Climatology Centre (GPCC) dataset"
-                },
-                {
-                  "name": "Climate Value",
-                  "content": "Provides the most reliable long-term tropical precipitation record for climate studies, trend analysis, and seasonal pattern characterization"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Climate change research, seasonal precipitation analysis, water resource climatology, monsoon trend studies, El Niño/La Niña impact assessment"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "NASA TRMM mission, NASA GSFC PPS, Global Precipitation Climatology Centre (GPCC)"
-                }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Gauge Adjustment",
-                "Climate Value",
-                "Applications",
-                "Attribution"
               ]
             }
           ]
         },
         {
-          "name": "AMSR2 Precipitation Products",
           "type": "group",
-          "description": "Advanced Microwave Scanning Radiometer 2 (AMSR2) precipitation products providing global precipitation measurements using passive microwave technology.",
+          "name": "AMSR - Advanced Microwave Scanning Radiometer",
           "members": [
             {
-              "name": "AMSR2 Surface Precipitation (Daily)",
               "type": "wms",
+              "name": "AMSR-E Surface Precipitation (Day)",
+              "id": "AMSRUE_Surface_Precipitation_Day",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "AMSRU2_Surface_Precipitation_Day",
-              "description": "Daily global surface precipitation from AMSR2 passive microwave measurements, providing all-weather precipitation detection capability.",
+              "layers": "AMSRUE_Surface_Precipitation_Day",
+              "description": "Daily surface precipitation from AMSR-E during daytime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2002-06-01 to 2011-10-04",
+                "resolution": "2km",
+                "products": "AU_Rain 1"
+              },
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
-                {
-                  "name": "Background",
-                  "content": "AMSR2 uses passive microwave radiometry to detect precipitation through its interaction with microwave radiation. This approach works through clouds and provides global coverage."
-                },
-                {
-                  "name": "Measurement Principle",
-                  "content": "Detects microwave emission and scattering signatures of precipitation particles, enabling precipitation retrieval under all weather conditions"
-                },
-                {
-                  "name": "Global Coverage",
-                  "content": "Complete global coverage between 89°N and 89°S with daily revisit capability"
-                },
-                {
-                  "name": "Spatial Resolution",
-                  "content": "10-25 km spatial resolution depending on microwave frequency used"
-                },
-                {
-                  "name": "Temporal Coverage",
-                  "content": "July 2012 to present, continuing operations"
-                },
-                {
-                  "name": "All-weather Capability",
-                  "content": "Microwave measurements can penetrate clouds, providing precipitation estimates regardless of cloud cover or lighting conditions"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Global precipitation monitoring, numerical weather prediction, water cycle studies, complement to radar and gauge measurements"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA Global Precipitation Measurement (GPM) program"
-                }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Measurement Principle",
-                "Global Coverage",
-                "Spatial Resolution",
-                "Temporal Coverage",
-                "All-weather Capability",
-                "Applications",
-                "Attribution"
               ]
             },
             {
-              "name": "AMSR2 Surface Precipitation (Monthly)",
               "type": "wms",
+              "name": "AMSR-E Surface Precipitation (Night)",
+              "id": "AMSRUE_Surface_Precipitation_Night",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "AMSRU2_Surface_Precipitation_Day",
-              "description": "Monthly surface precipitation from AMSR2 providing stable, long-term precipitation climatology for global water cycle analysis and climate studies.",
+              "layers": "AMSRUE_Surface_Precipitation_Night",
+              "description": "Daily surface precipitation from AMSR-E during nighttime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2002-06-01 to 2011-10-04",
+                "resolution": "2km",
+                "products": "AU_Rain 1"
+              },
               "legends": [
                 {
                   "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "AMSR-E Surface Precipitation Rate (Day)",
+              "id": "AMSRE_Surface_Precipitation_Rate_Day",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRE_Surface_Precipitation_Rate_Day",
+              "description": "Daily surface precipitation rate from AMSR-E during daytime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2002-06-01 to 2011-10-04",
+                "resolution": "2km",
+                "products": "AE_Rain 4"
+              },
+              "legends": [
                 {
-                  "name": "Background",
-                  "content": "Monthly AMSR2 rain rate provides temporal averaging that reduces noise and provides stable precipitation climatology suitable for long-term analysis and climate studies."
-                },
-                {
-                  "name": "Temporal Stability",
-                  "content": "Monthly averaging reduces day-to-day variability and provides more stable precipitation patterns for climate analysis"
-                },
-                {
-                  "name": "Climate Applications",
-                  "content": "Suitable for precipitation trend analysis, seasonal cycle characterization, interannual variability studies, and water balance calculations"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Water resource climatology, seasonal forecasting support, climate model validation, long-term water balance studies"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "JAXA GCOM-W1/AMSR2 mission, NASA climate data processing"
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Temporal Stability",
-                "Climate Applications",
-                "Applications",
-                "Attribution"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "AMSR-E Surface Precipitation Rate (Night)",
+              "id": "AMSRE_Surface_Precipitation_Rate_Night",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRE_Surface_Precipitation_Rate_Night",
+              "description": "Daily surface precipitation rate from AMSR-E during nighttime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2002-06-01 to 2011-10-04",
+                "resolution": "2km",
+                "products": "AE_Rain 4"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Precipitable Water over Ice-Free Oceans (Monthly)",
+              "id": "RSS_Total_Precipitable_Water_Climatology_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "RSS_Total_Precipitable_Water_Climatology_Monthly",
+              "description": "Monthly average precipitable water over ice-free oceans",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1988-01-01 to 2021-12-31",
+                "resolution": "2km",
+                "products": "rss1tpwnv7r01 7R01"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/RSS_Total_Precipitable_Water_Climatology_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
               ]
             }
           ]
         },
         {
-          "name": "Lightning and Convective Activity",
           "type": "group",
-          "description": "Lightning data providing insights into convective precipitation processes and storm intensity, complementing direct precipitation measurements.",
+          "name": "GCOM-W1 AMSR2",
           "members": [
             {
-              "name": "OLS Digital Derived Lightning",
               "type": "wms",
+              "name": "Surface Precipitation (Day)",
+              "id": "AMSRU2_Surface_Precipitation_Day",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "OLS_DMSP_F10_Digital_Derived_Lightning",
-              "description": "Digital derived lightning from OLS providing information on convective intensity and storm activity patterns.",
+              "layers": "AMSRU2_Surface_Precipitation_Day",
+              "description": "Daily surface precipitation from AMSR2 during daytime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_Rain_NRT_R02 2, AU_Rain 1"
+              },
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/OLS_DMSP_F10_Digital_Derived_Lightning_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Surface Precipitation (Night)",
+              "id": "AMSRU2_Surface_Precipitation_Night",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_Surface_Precipitation_Night",
+              "description": "Daily surface precipitation from AMSR2 during nighttime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_Rain_NRT_R02 2, AU_Rain 1"
+              },
+              "legends": [
                 {
-                  "name": "Background",
-                  "content": "The Lightning Imaging Sensor (LIS) on TRMM detected lightning flashes across the tropics, providing unique information about convective activity and its relationship to precipitation processes."
-                },
-                {
-                  "name": "Lightning-Precipitation Relationship",
-                  "content": "Lightning activity is closely related to convective precipitation intensity, making it valuable for understanding storm dynamics and precipitation processes"
-                },
-                {
-                  "name": "Coverage Area",
-                  "content": "35°N to 35°S latitude, covering the main tropical convective regions"
-                },
-                {
-                  "name": "Temporal Coverage",
-                  "content": "1995-2013, providing nearly two decades of tropical lightning climatology"
-                },
-                {
-                  "name": "Scientific Value",
-                  "content": "Provides insights into convective intensity, storm electrification processes, and relationships between lightning and precipitation"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Convective precipitation analysis, storm intensity studies, precipitation process research, severe weather climatology, thunderstorm frequency mapping"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "NASA TRMM Lightning Imaging Sensor (LIS) team, NASA Marshall Space Flight Center"
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Surface_Precipitation_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Lightning-Precipitation Relationship",
-                "Coverage Area",
-                "Temporal Coverage",
-                "Scientific Value",
-                "Applications",
-                "Attribution"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Total Precipitable Water (Day)",
+              "id": "AMSRU2_Total_Precipitable_Water_Day",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_Total_Precipitable_Water_Day",
+              "description": "Daily total precipitable water from AMSR2 during daytime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_Ocean_NRT_R01 1, AU_Ocean 1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Total_Precipitable_Water_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Total Precipitable Water (Night)",
+              "id": "AMSRU2_Total_Precipitable_Water_Night",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_Total_Precipitable_Water_Night",
+              "description": "Daily total precipitable water from AMSR2 during nighttime",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_Ocean_NRT_R01 1, AU_Ocean 1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Total_Precipitable_Water_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Total Precipitable Water (L3, Daily)",
+              "id": "AMSRU2_L3_Total_Precipitable_Water_Daily",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_L3_Total_Precipitable_Water_Daily",
+              "description": "Level 3 daily total precipitable water from AMSR2",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_DyOcn 1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Total_Precipitable_Water_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Total Precipitable Water (L3, Weekly)",
+              "id": "AMSRU2_L3_Total_Precipitable_Water_Weekly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_L3_Total_Precipitable_Water_Weekly",
+              "description": "Level 3 weekly total precipitable water from AMSR2",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_WkOcn 1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Total_Precipitable_Water_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Total Precipitable Water (L3, Monthly)",
+              "id": "AMSRU2_L3_Total_Precipitable_Water_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "AMSRU2_L3_Total_Precipitable_Water_Monthly",
+              "description": "Level 3 monthly total precipitable water from AMSR2",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "2012-07-02 to Present",
+                "resolution": "2km",
+                "products": "AU_MoOcn 1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/AMSR_Total_Precipitable_Water_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
               ]
             }
           ]
         },
         {
-          "name": "Precipitation Analysis Products",
           "type": "group",
-          "description": "Advanced precipitation analysis products combining multiple data sources for comprehensive precipitation monitoring and research.",
+          "name": "SSMI/SSMIS - Special Sensor Microwave Imager",
           "members": [
             {
-              "name": "MERRA-2 Convective Rainwater Source (Monthly)",
               "type": "wms",
+              "name": "DMSP-F8 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Ascending",
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
-              "layers": "MERRA2_Convective_Rainwater_Source_700hPa_Monthly",
-              "description": "Monthly convective rainwater source from MERRA-2 reanalysis at 700hPa level for comprehensive atmospheric moisture analysis.",
+              "layers": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F8 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1987-07-09 to 1991-12-31",
+                "resolution": "2km",
+                "products": "rssmif08d 7"
+              },
               "legends": [
                 {
-                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Convective_Rainwater_Source_700hPa_Monthly_H.png",
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
                   "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "info": [
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F8 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F8 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1987-07-09 to 1991-12-31",
+                "resolution": "2km",
+                "products": "rssmif08d 7"
+              },
+              "legends": [
                 {
-                  "name": "Background",
-                  "content": "Combines precipitation estimates from multiple satellite missions to provide the most comprehensive global precipitation analysis available from space-based observations."
-                },
-                {
-                  "name": "Multi-mission Approach",
-                  "content": "Integrates data from TRMM, GPM, AMSR2, and other satellite missions to provide optimal global precipitation coverage"
-                },
-                {
-                  "name": "Global Coverage",
-                  "content": "Complete global coverage from pole to pole, including regions not covered by individual missions"
-                },
-                {
-                  "name": "Applications",
-                  "content": "Global water cycle studies, climate model validation, water resource assessment, drought and flood monitoring, precipitation trend analysis"
-                },
-                {
-                  "name": "Attribution",
-                  "content": "NASA Global Precipitation Measurement (GPM) program, multi-mission precipitation analysis team"
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
                 }
-              ],
-              "infoSectionOrder": [
-                "Background",
-                "Multi-mission Approach",
-                "Global Coverage",
-                "Applications",
-                "Attribution"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F10 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F10 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1990-12-08 to 1997-11-14",
+                "resolution": "2km",
+                "products": "rssmif10d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F10 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F10 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1990-12-08 to 1997-11-14",
+                "resolution": "2km",
+                "products": "rssmif10d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F11 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F11 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1991-12-03 to 2000-05-16",
+                "resolution": "2km",
+                "products": "rssmif11d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F11 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F11 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1991-12-03 to 2000-05-16",
+                "resolution": "2km",
+                "products": "rssmif11d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F13 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F13 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1995-05-03 to 2009-11-04",
+                "resolution": "2km",
+                "products": "rssmif13d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F13 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F13 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1995-05-03 to 2009-11-04",
+                "resolution": "2km",
+                "products": "rssmif13d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F14 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F14 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1997-05-08 to 2008-08-08",
+                "resolution": "2km",
+                "products": "rssmif14d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F14 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F14 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1997-05-08 to 2008-08-08",
+                "resolution": "2km",
+                "products": "rssmif14d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F15 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F15 SSMI ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1999-12-18 to 2011-12-31",
+                "resolution": "2km",
+                "products": "rssmif15d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F15 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F15 SSMI descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1999-12-18 to 2011-12-31",
+                "resolution": "2km",
+                "products": "rssmif15d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F16 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F16 SSMIS ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2003-10-26 to Present",
+                "resolution": "2km",
+                "products": "rssmif16d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F16 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F16 SSMIS descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2003-10-26 to Present",
+                "resolution": "2km",
+                "products": "rssmif16d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F17 Rain Rate Over Oceans (Ascending)",
+              "id": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Ascending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Ascending",
+              "description": "Rain rate over oceans from DMSP-F17 SSMIS ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2006-12-14 to Present",
+                "resolution": "2km",
+                "products": "rssmif17d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Ascending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "DMSP-F17 Rain Rate Over Oceans (Descending)",
+              "id": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Descending",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Descending",
+              "description": "Rain rate over oceans from DMSP-F17 SSMIS descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2006-12-14 to Present",
+                "resolution": "2km",
+                "products": "rssmif17d 7"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/SSMI_Rain_Rate_Over_Oceans_Descending_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "GPM - Global Precipitation Measurement",
+          "members": [
+            {
+              "type": "wms",
+              "name": "GMI Precipitation Rate (Ascending)",
+              "id": "GMI_Precipitation_Rate_Asc",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "GMI_Precipitation_Rate_Asc",
+              "description": "Precipitation rate from GPM Microwave Imager ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2014-03-04 to Present",
+                "resolution": "2km",
+                "products": "GPM_2AGPROFGPMGMI 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "GMI Precipitation Rate (Descending)",
+              "id": "GMI_Precipitation_Rate_Dsc",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "GMI_Precipitation_Rate_Dsc",
+              "description": "Precipitation rate from GPM Microwave Imager descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2014-03-04 to Present",
+                "resolution": "2km",
+                "products": "GPM_2AGPROFGPMGMI 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "IMERG Precipitation Rate (30-min)",
+              "id": "IMERG_Precipitation_Rate_30min",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "IMERG_Precipitation_Rate_30min",
+              "description": "Integrated Multi-satellite Retrievals for GPM 30-minute precipitation rate",
+              "dateFormat": "YYYY-MM-DDTHH:mm:ssZ",
+              "info": {
+                "temporalRange": "1998-01-01T00:00:00Z to Present",
+                "resolution": "2km",
+                "products": "GPM_3IMERGHH 07, GPM_3IMERGHHE 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "IMERG Precipitation Rate",
+              "id": "IMERG_Precipitation_Rate",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "IMERG_Precipitation_Rate",
+              "description": "Integrated Multi-satellite Retrievals for GPM daily precipitation rate",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "2000-06-01 to Present",
+                "resolution": "2km",
+                "products": "GPM_3IMERGHH 07, GPM_3IMERGHHE 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "TRMM - Tropical Rainfall Measuring Mission",
+          "members": [
+            {
+              "type": "wms",
+              "name": "TMI Precipitation Rate (Ascending)",
+              "id": "TRMM_Precipitation_Rate_Asc",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "TRMM_Precipitation_Rate_Asc",
+              "description": "Precipitation rate from TRMM Microwave Imager ascending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1997-12-07 to 2015-04-08",
+                "resolution": "2km",
+                "products": "GPM_2AGPROFTRMMTMI_CLIM 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "TMI Precipitation Rate (Descending)",
+              "id": "TRMM_Precipitation_Rate_Dsc",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "TRMM_Precipitation_Rate_Dsc",
+              "description": "Precipitation rate from TRMM Microwave Imager descending passes",
+              "dateFormat": "YYYY-MM-DD",
+              "info": {
+                "temporalRange": "1997-12-07 to 2015-04-08",
+                "resolution": "2km",
+                "products": "GPM_2AGPROFTRMMTMI_CLIM 07"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GPM_Precipitation_Rate_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "name": "Model-Based Precipitation Products",
+          "members": [
+            {
+              "type": "wms",
+              "name": "GLDAS Total Precipitation Rate (Monthly)",
+              "id": "GLDAS_Surface_Total_Precipitation_Rate_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "GLDAS_Surface_Total_Precipitation_Rate_Monthly",
+              "description": "Global Land Data Assimilation System monthly total precipitation rate",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1948-01-01 to 2025-07-03",
+                "resolution": "2km",
+                "products": "GLDAS_NOAH10_M 2.0, GLDAS_NOAH025_M 2.1"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/GLDAS_Surface_Total_Precipitation_Rate_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "MERRA-2 Total Precipitation Bias Corrected (Monthly)",
+              "id": "MERRA2_Precipitation_Bias_Corrected_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "MERRA2_Precipitation_Bias_Corrected_Monthly",
+              "description": "MERRA-2 monthly bias-corrected total precipitation",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1980-01-01 to Present",
+                "resolution": "2km",
+                "products": "M2TMNXFLX 5.12.4"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Precipitation_Bias_Corrected_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "MERRA-2 Snowfall (Monthly)",
+              "id": "MERRA2_Snowfall_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "MERRA2_Snowfall_Monthly",
+              "description": "MERRA-2 monthly snowfall",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1980-01-01 to Present",
+                "resolution": "2km",
+                "products": "M2TMNXFLX 5.12.4"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Snowfall_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "MERRA-2 Total Precipitable Water Vapor (Monthly)",
+              "id": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
+              "description": "MERRA-2 monthly total precipitable water vapor",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1980-01-01 to Present",
+                "resolution": "2km",
+                "products": "M2IMNXINT 5.12.4"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/MERRA2_Total_Precipitable_Water_Vapor_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "NLDAS Total Precipitation (Monthly)",
+              "id": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
+              "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
+              "layers": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
+              "description": "North American Land Data Assimilation System monthly total precipitation",
+              "dateFormat": "YYYY-MM",
+              "info": {
+                "temporalRange": "1979-01-01 to Present",
+                "resolution": "2km",
+                "products": "NLDAS_FORA0125_M 002, NLDAS_FORA0125_M 2.0"
+              },
+              "legends": [
+                {
+                  "url": "https://gibs.earthdata.nasa.gov/legends/NLDAS_Surface_Total_Precipitation_Primary_Monthly_H.png",
+                  "backgroundColor": "rgba(255, 255, 255, 0.8)"
+                }
               ]
             }
           ]
