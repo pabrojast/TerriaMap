@@ -16,7 +16,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AIRS_Precipitation_Day",
               "description": "Daily precipitation estimate from AIRS instrument during daytime passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-05-08 to Present",
                 "resolution": "2km",
@@ -36,7 +35,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AIRS_Precipitation_Night",
               "description": "Daily precipitation estimate from AIRS instrument during nighttime passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-05-08 to Present",
                 "resolution": "2km",
@@ -62,7 +60,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRUE_Surface_Precipitation_Day",
               "description": "Daily surface precipitation from AMSR-E during daytime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2002-06-01 to 2011-10-04",
                 "resolution": "2km",
@@ -82,7 +79,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRUE_Surface_Precipitation_Night",
               "description": "Daily surface precipitation from AMSR-E during nighttime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2002-06-01 to 2011-10-04",
                 "resolution": "2km",
@@ -102,7 +98,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRE_Surface_Precipitation_Rate_Day",
               "description": "Daily surface precipitation rate from AMSR-E during daytime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2002-06-01 to 2011-10-04",
                 "resolution": "2km",
@@ -122,7 +117,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRE_Surface_Precipitation_Rate_Night",
               "description": "Daily surface precipitation rate from AMSR-E during nighttime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2002-06-01 to 2011-10-04",
                 "resolution": "2km",
@@ -142,7 +136,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "RSS_Total_Precipitable_Water_Climatology_Monthly",
               "description": "Monthly average precipitable water over ice-free oceans",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1988-01-01 to 2021-12-31",
                 "resolution": "2km",
@@ -168,7 +161,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Surface_Precipitation_Day",
               "description": "Daily surface precipitation from AMSR2 during daytime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -188,7 +180,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Surface_Precipitation_Night",
               "description": "Daily surface precipitation from AMSR2 during nighttime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -208,7 +199,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Total_Precipitable_Water_Day",
               "description": "Daily total precipitable water from AMSR2 during daytime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -228,7 +218,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_Total_Precipitable_Water_Night",
               "description": "Daily total precipitable water from AMSR2 during nighttime",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -248,7 +237,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_L3_Total_Precipitable_Water_Daily",
               "description": "Level 3 daily total precipitable water from AMSR2",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -268,7 +256,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_L3_Total_Precipitable_Water_Weekly",
               "description": "Level 3 weekly total precipitable water from AMSR2",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -288,7 +275,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "AMSRU2_L3_Total_Precipitable_Water_Monthly",
               "description": "Level 3 monthly total precipitable water from AMSR2",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "2012-07-02 to Present",
                 "resolution": "2km",
@@ -314,7 +300,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F8 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1987-07-09 to 1991-12-31",
                 "resolution": "2km",
@@ -334,7 +319,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F8_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F8 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1987-07-09 to 1991-12-31",
                 "resolution": "2km",
@@ -354,7 +338,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F10 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1990-12-08 to 1997-11-14",
                 "resolution": "2km",
@@ -374,7 +357,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F10_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F10 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1990-12-08 to 1997-11-14",
                 "resolution": "2km",
@@ -394,7 +376,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F11 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1991-12-03 to 2000-05-16",
                 "resolution": "2km",
@@ -414,7 +395,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F11_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F11 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1991-12-03 to 2000-05-16",
                 "resolution": "2km",
@@ -434,7 +414,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F13 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1995-05-03 to 2009-11-04",
                 "resolution": "2km",
@@ -454,7 +433,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F13_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F13 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1995-05-03 to 2009-11-04",
                 "resolution": "2km",
@@ -474,7 +452,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F14 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1997-05-08 to 2008-08-08",
                 "resolution": "2km",
@@ -494,7 +471,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F14_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F14 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1997-05-08 to 2008-08-08",
                 "resolution": "2km",
@@ -514,7 +490,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F15 SSMI ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1999-12-18 to 2011-12-31",
                 "resolution": "2km",
@@ -534,7 +509,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F15_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F15 SSMI descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1999-12-18 to 2011-12-31",
                 "resolution": "2km",
@@ -554,7 +528,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F16 SSMIS ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2003-10-26 to Present",
                 "resolution": "2km",
@@ -574,7 +547,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F16_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F16 SSMIS descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2003-10-26 to Present",
                 "resolution": "2km",
@@ -594,7 +566,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Ascending",
               "description": "Rain rate over oceans from DMSP-F17 SSMIS ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2006-12-14 to Present",
                 "resolution": "2km",
@@ -614,7 +585,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "SSMI_DMSP_F17_Rain_Rate_Over_Oceans_Descending",
               "description": "Rain rate over oceans from DMSP-F17 SSMIS descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2006-12-14 to Present",
                 "resolution": "2km",
@@ -640,7 +610,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "GMI_Precipitation_Rate_Asc",
               "description": "Precipitation rate from GPM Microwave Imager ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2014-03-04 to Present",
                 "resolution": "2km",
@@ -660,7 +629,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "GMI_Precipitation_Rate_Dsc",
               "description": "Precipitation rate from GPM Microwave Imager descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2014-03-04 to Present",
                 "resolution": "2km",
@@ -680,7 +648,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "IMERG_Precipitation_Rate_30min",
               "description": "Integrated Multi-satellite Retrievals for GPM 30-minute precipitation rate",
-              "dateFormat": "YYYY-MM-DDTHH:mm:ssZ",
               "info": {
                 "temporalRange": "1998-01-01T00:00:00Z to Present",
                 "resolution": "2km",
@@ -700,7 +667,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "IMERG_Precipitation_Rate",
               "description": "Integrated Multi-satellite Retrievals for GPM daily precipitation rate",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "2000-06-01 to Present",
                 "resolution": "2km",
@@ -726,7 +692,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "TRMM_Precipitation_Rate_Asc",
               "description": "Precipitation rate from TRMM Microwave Imager ascending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1997-12-07 to 2015-04-08",
                 "resolution": "2km",
@@ -746,7 +711,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "TRMM_Precipitation_Rate_Dsc",
               "description": "Precipitation rate from TRMM Microwave Imager descending passes",
-              "dateFormat": "YYYY-MM-DD",
               "info": {
                 "temporalRange": "1997-12-07 to 2015-04-08",
                 "resolution": "2km",
@@ -772,7 +736,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "GLDAS_Surface_Total_Precipitation_Rate_Monthly",
               "description": "Global Land Data Assimilation System monthly total precipitation rate",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1948-01-01 to 2025-07-03",
                 "resolution": "2km",
@@ -792,7 +755,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "MERRA2_Precipitation_Bias_Corrected_Monthly",
               "description": "MERRA-2 monthly bias-corrected total precipitation",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1980-01-01 to Present",
                 "resolution": "2km",
@@ -812,7 +774,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "MERRA2_Snowfall_Monthly",
               "description": "MERRA-2 monthly snowfall",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1980-01-01 to Present",
                 "resolution": "2km",
@@ -832,7 +793,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "MERRA2_Total_Precipitable_Water_Vapor_Monthly",
               "description": "MERRA-2 monthly total precipitable water vapor",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1980-01-01 to Present",
                 "resolution": "2km",
@@ -852,7 +812,6 @@
               "url": "https://gitc.earthdata.nasa.gov/wms/epsg4326/best/",
               "layers": "NLDAS_Surface_Total_Precipitation_Primary_Monthly",
               "description": "North American Land Data Assimilation System monthly total precipitation",
-              "dateFormat": "YYYY-MM",
               "info": {
                 "temporalRange": "1979-01-01 to Present",
                 "resolution": "2km",
