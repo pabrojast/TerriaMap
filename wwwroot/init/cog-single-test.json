@@ -1,0 +1,29 @@
+{
+  "catalog": [
+    {
+      "type": "cog",
+      "id": "ukraine-chl-single",
+      "name": "Single COG Test - CHL Ukraine",
+      "url": "http://localhost:3001/cog-data/S2C_20251231T084401_36TVS_CHL_20M_V121/CHL.tif",
+      "renderOptions": {
+        "single": {
+          "colorScale": "ylgnbu",
+          "domain": [0, 500],
+          "type": "continuous",
+          "band": 1,
+          "clampHigh": true,
+          "noDataColor": "rgba(0,0,0,0)"
+        },
+        "nodata": 65535,
+        "resampleMethod": "nearest"
+      }
+    }
+  ],
+  "homeCamera": {
+    "west": 30,
+    "south": 47,
+    "east": 37,
+    "north": 51
+  },
+  "workbench": ["ukraine-chl-single"]
+}
