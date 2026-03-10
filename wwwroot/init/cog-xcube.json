@@ -10,7 +10,7 @@
           "id": "chl-daily",
           "name": "📅 CHL Daily (749 dates, 2023–2026)",
           "description": "Daily chlorophyll-a composites. Each date contains a single COG covering the Dnipro reservoir region. 749 dates from January 2023 to March 2026.",
-          "url": "http://localhost:3001/cog-data/chl-daily.json",
+          "url": "/cog-data/chl-daily.json",
           "renderOptions": {
             "single": {
               "colorScale": "ylgnbu",
@@ -31,7 +31,7 @@
           "id": "chl-monthly",
           "name": "📆 CHL Monthly (39 months, 2023–2026)",
           "description": "Monthly chlorophyll-a composites. Monthly averages computed from daily data. 39 months from January 2023 to March 2026.",
-          "url": "http://localhost:3001/cog-data/chl-monthly.json",
+          "url": "/cog-data/chl-monthly.json",
           "renderOptions": {
             "single": {
               "colorScale": "ylgnbu",
@@ -52,7 +52,7 @@
           "id": "chl-annual",
           "name": "📊 CHL Annual (4 years, 2023–2026)",
           "description": "Annual chlorophyll-a composites. Yearly averages for 2023, 2024, 2025, and 2026.",
-          "url": "http://localhost:3001/cog-data/chl-annual.json",
+          "url": "/cog-data/chl-annual.json",
           "renderOptions": {
             "single": {
               "colorScale": "ylgnbu",

@@ -4,7 +4,7 @@
       "type": "cog",
       "id": "ukraine-chl-single",
       "name": "Single COG Test - CHL Ukraine",
-      "url": "http://localhost:3001/cog-data/S2C_20251231T084401_36TVS_CHL_20M_V121/CHL.tif",
+      "url": "/cog-data/S2C_20251231T084401_36TVS_CHL_20M_V121/CHL.tif",
       "renderOptions": {
         "single": {
           "colorScale": "ylgnbu",

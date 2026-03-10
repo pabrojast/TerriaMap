@@ -5,7 +5,7 @@
       "id": "ukraine-chl-demo",
       "name": "🇺🇦 Clorofila-a Sentinel-2 (Demo 5 fechas)",
       "description": "Demo de serie temporal COG con datos de clorofila-a Sentinel-2 sobre Ucrania. 5 fechas recientes con mosaicos multi-tile. Datos: Terrascope/VITO.",
-      "url": "http://localhost:3001/cog-data/cog-timeseries-demo.json",
+      "url": "/cog-data/cog-timeseries-demo.json",
       "renderOptions": {
         "single": {
           "colorScale": "ylgnbu",

@@ -5,7 +5,7 @@
       "id": "ukraine-chl-full-demo",
       "name": "🇺🇦 Clorofila-a Sentinel-2 (20 fechas, 2023-2025)",
       "description": "Serie temporal COG con datos de clorofila-a Sentinel-2 sobre Ucrania. 20 fechas distribuidas entre 2023-2025 con mosaicos multi-tile (116 COGs total). Datos: Terrascope/VITO.",
-      "url": "http://localhost:3001/cog-data/cog-timeseries-full-demo.json",
+      "url": "/cog-data/cog-timeseries-full-demo.json",
       "renderOptions": {
         "single": {
           "colorScale": "ylgnbu",
