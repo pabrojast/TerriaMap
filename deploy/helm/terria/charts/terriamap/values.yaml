@@ -6,7 +6,7 @@ image:
   # full: "ghcr.io/terriajs/terriamap:0.1.1"
   # repository: ghcr.io/terriajs
   # tag: latest
-  full: "pabrojast/terriamap:v2-2026-03-10"
+  full: "pabrojast/terriamap:v3-2026-03-10"
   pullPolicy: Always
 clientConfig:
   initializationUrls:
