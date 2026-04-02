@@ -8,7 +8,7 @@
         {
           "name": "IHP-WINS",
           "shareKeys": ["Root Group"],
-          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/d38e6e75-dcc3-4e41-924e-edf41997be15/download/ihp-wins.json",
+          "url": "https://ihp-wins.unesco.org/dataset/8aadbf95-c6ed-4366-9ad7-deafd033ae15/resource/b8d0aa5d-3dd6-42f6-bf53-50ff1956185d/download/ihp-wins.json",
           "type": "terria-reference",
           "isGroup": true,
           "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) provides a collaborative platform for sharing water-related information at global, regional, and national scales."
