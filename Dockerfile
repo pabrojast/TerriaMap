@@ -8,6 +8,7 @@ USER node
 COPY --chown=node:node . /app
 
 WORKDIR /app
+RUN yarn gulp clean
 RUN yarn cache clean
 RUN yarn install --network-timeout 1000000 --cache-folder /tmp
 RUN yarn gulp release --baseHref="/terria/"
