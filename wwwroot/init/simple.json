@@ -2484,7 +2484,39 @@
         }
       ]
     },
-
+    {
+      "name": "Cryosphere",
+      "type": "group",
+      "description": "Datasets related to cryospheric sciences",
+      "members": [
+        {
+          "name": "Randolph Glacier Inventory",
+          "type": "group",
+          "description": "Glacier",
+          "members": [
+            {
+              "name": "Glacier Product",
+              "type": "group",
+              "description": "Simple Glacier Product",
+              "members": [
+                {
+                  "name": "Southern Andes",
+                  "type": "shp",
+                  "url": "https://ihp-wins.unesco.org/dataset/33a5017a-e6e9-43cc-82d6-62da7fbb74d8/resource/5d98469c-e845-4f9f-a2a3-84064ca1551e/download/rgi2000-v7.0-g-17_southern_andes.zip",
+                  "description": "The simple glacier product for the southern andes",
+                  "info": [
+                    {
+                      "name": "Source",
+                      "content": "The simple glacier product for the southern andes (content)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "name": "Support Layers (Topography, Places, Demography)",
       "type": "group",
