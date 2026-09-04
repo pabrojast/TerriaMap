@@ -66,6 +66,20 @@
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
     "mobileDefaultViewerMode": "2d",
+    // Location search for the search bar. Without this Terria only searches
+    // the catalog: typing a place name never zooms the map anywhere.
+    // Nominatim (OpenStreetMap) needs no API key, and results are biased
+    // toward the current camera view, so searches land in the right region
+    // regardless of the active base map (satellite included).
+    "searchProviders": [
+      {
+        "id": "search-provider/nominatim",
+        "type": "nominatim-search-provider",
+        "name": "Locations",
+        "flightDurationSeconds": 2,
+        "maxResults": 8
+      }
+    ],
     // Enable experimental features, since its nice to have the bleeding edge.
     // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,

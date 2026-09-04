@@ -30,6 +30,14 @@ clientConfig:
     supportEmail: "projas@cazalac.org"
     mobileDefaultViewerMode: "2d"
     experimentalFeatures: true
+    # Location search for the search bar (no API key needed; results biased
+    # toward the current camera view). Keep in sync with wwwroot/config.json.
+    searchProviders:
+      - id: "search-provider/nominatim"
+        type: "nominatim-search-provider"
+        name: "Locations"
+        flightDurationSeconds: 2
+        maxResults: 8
 initConfig:
   homeCamera:
     north: "-8"
