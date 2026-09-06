@@ -5,6 +5,17 @@
     "autoLoadReferencesForShareLinks": true,
     "autoLoadMaxNodesForShareLinks": 800,
     "tabbedCatalog": true,
+    // Same-origin CKAN session integration (data.dev-wins.com/terria <-> CKAN).
+    // Relative URLs only: they must never go through the terriajs-server proxy.
+    "ckanSession": {
+      "sessionUrl": "/api/terria/user/session",
+      "privateCatalogUrl": "/api/terria/user/private-catalog",
+      "loginUrl": "/user/login",
+      "logoutUrl": "/user/_logout",
+      "catalogGroupId": "ckan-private-catalog",
+      "checkOnFocus": true,
+      "focusThrottleMs": 5000
+    },
     "aboutButtonHrefUrl": "https://ihp-wins.unesco.org/about",
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
