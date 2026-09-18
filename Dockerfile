@@ -8,9 +8,9 @@ USER node
 COPY --chown=node:node . /app
 
 WORKDIR /app
-RUN yarn gulp clean
-RUN yarn cache clean
+# Install first: a clean checkout has no node_modules, so gulp is not available yet.
 RUN yarn install --network-timeout 1000000 --cache-folder /tmp
+RUN yarn gulp clean
 RUN yarn gulp release --baseHref="/terria/"
 
 # deploy container
