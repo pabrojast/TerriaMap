@@ -86,6 +86,7 @@
       {
         "id": "search-provider/nominatim",
         "type": "nominatim-search-provider",
+        "url": "/data-stories/api/location-search",
         "name": "Locations",
         "flightDurationSeconds": 2,
         "maxResults": 8

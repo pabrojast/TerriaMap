@@ -19,7 +19,7 @@
       "members": [
         {
           "name": "IHP-WINS",
-          "url": "https://ihp-wins.unesco.org/api/terria/file/full",
+          "url": "/api/terria/file/full",
           "type": "terria-reference",
           "isGroup": true,
           "description": "UNESCO's International Hydrological Programme Water Information Network System (IHP-WINS) remote catalog"

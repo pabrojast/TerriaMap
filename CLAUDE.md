@@ -38,7 +38,7 @@ This is a TerriaJS-based geospatial web application using a monorepo structure w
 
 ### TerriaJS Integration
 
-- Uses TerriaJS as primary dependency from custom fork: `github:pabrojast/terriajs#fe1a9b5121090ee1d6347c6a9388762b241b2d70`
+- Uses TerriaJS as primary dependency from custom fork: the revision pinned in `package.json`
 - Extends TerriaJS with custom components in `lib/Views/`
 - Overrides TerriaJS styling via `lib/Styles/variables-overrides.scss`
 - Custom webpack configuration extends TerriaJS buildprocess
@@ -49,6 +49,10 @@ This is a TerriaJS-based geospatial web application using a monorepo structure w
 - **serverconfig.json** - terriajs-server proxy configuration
 - **wwwroot/init/\*.json** - Catalog initialization files
 - **buildprocess/webpack.config.js** - Main webpack configuration
+
+### CKAN Integration
+
+The image is served at `/terria` on the same origin as CKAN (dev `data.dev-wins.com`, production `ihp-wins.unesco.org`), and one image serves both. Every CKAN URL is therefore root-relative: the public catalog in `wwwroot/init/simple-modular.json` (`/api/terria/file/full`) and the `parameters.ckanSession` block in `wwwroot/config.json` (`/api/terria/user/...`). Do not make them absolute: cookie-authenticated calls must not go through the terriajs-server proxy, which drops `Cookie`. Under `yarn gulp dev` there is no CKAN on the origin, so the IHP-WINS group fails to load locally.
 
 ### Development Workflow
 
