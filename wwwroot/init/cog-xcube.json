@@ -30,7 +30,11 @@
               "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-annual.json",
               "dateFormat": "UTC:yyyy",
               "fromContinuous": "previous",
-              "renderOptions": { "single": { "domain": [0, 60] } }
+              "renderOptions": {
+                "single": {
+                  "domain": [0, 60]
+                }
+              }
             },
             {
               "id": "monthly",
@@ -38,7 +42,11 @@
               "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-monthly.json",
               "dateFormat": "UTC:mmm yyyy",
               "fromContinuous": "previous",
-              "renderOptions": { "single": { "domain": [0, 80] } }
+              "renderOptions": {
+                "single": {
+                  "domain": [0, 80]
+                }
+              }
             },
             {
               "id": "daily",
@@ -49,7 +57,11 @@
               "valueScale": 0.1,
               "valueOffset": 0,
               "partialCoverage": true,
-              "renderOptions": { "single": { "domain": [0, 100] } }
+              "renderOptions": {
+                "single": {
+                  "domain": [0, 100]
+                }
+              }
             }
           ]
         },
@@ -123,5 +135,14 @@
         }
       ]
     }
-  ]
+  ],
+  "workbench": ["chl-dnipro"],
+  "timeline": ["chl-dnipro"],
+  "viewerMode": "3dSmooth",
+  "initialCamera": {
+    "west": 29.6,
+    "south": 45.7,
+    "east": 36.5,
+    "north": 51.7
+  }
 }
