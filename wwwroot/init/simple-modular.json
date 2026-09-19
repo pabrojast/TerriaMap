@@ -250,7 +250,8 @@
     "earthdata.nasa.gov",
     "nasa.gov",
     "glims.org",
-    "www.glims.org"
+    "www.glims.org",
+    "tiles.maps.eox.at"
   ],
   "homeCamera": {
     "north": 0,
