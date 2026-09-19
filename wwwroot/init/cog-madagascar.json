@@ -1,0 +1,853 @@
+{
+  "catalog": [
+    {
+      "type": "group",
+      "name": "🇲🇬 Water quality Sentinel-2 — Madagascar central highlands",
+      "description": "Chlorophyll-a and turbidity time series derived from Sentinel-2 (Terrascope/VITO) over the water bodies of Madagascar's central highlands, as daily, monthly and annual Cloud Optimized GeoTIFFs.",
+      "isOpen": true,
+      "members": [
+        {
+          "type": "cog-time-series",
+          "id": "mdg-chl",
+          "name": "Chlorophyll-a (CHL) — Madagascar central highlands",
+          "description": "Chlorophyll-a (mg m-3) from Sentinel-2, 2015–2026, for the two MGRS tiles Terrascope (VITO) processes over Madagascar's central highlands (38KPD, 38KQD): Lake Itasy, the Mantasoa and Tsiazompaniry reservoirs, the Antsirabe lakes and reaches of the Sakay, Mania, Kitsamby and Onive rivers. MDN algorithm (Pahlevan et al. 2020), Terrascope collection terrascope-s2-chl-v1, 20 m.<br/><br/>Switch between <strong>Annual</strong>, <strong>Monthly</strong> and <strong>Daily</strong> on the workbench, pick a <strong>statistic</strong>, and use <strong>Go to a place</strong> to jump to a water body and chart it. Click any water pixel to chart its time series; click more to compare.<br/><br/><strong>How the values are built.</strong> Monthly = per-pixel statistics over the satellite passes of the month; the median is the reference because concentrations are log-normal. Annual = statistics over the <em>monthly medians</em> (each month weighs the same), because clear scenes concentrate in the dry season and averaging passes would bias the year towards it. Check <em>Months with data</em> before comparing years: 2015 (from October) and 2026 (to June) are partial. Indicative trophic classes (Carlson/OECD): oligotrophic < 2.6, mesotrophic 2.6–7.3, eutrophic 7.3–56, hypereutrophic > 56 mg m⁻³.<br/><br/>The colour scale is roughly logarithmic. Land, cloud and shadow are already masked by the provider.",
+          "unit": "mg m-3",
+          "opacity": 1,
+          "activeResolutionId": "monthly",
+          "prefetchHeaders": true,
+          "renderOptions": {
+            "resampleMethod": "nearest"
+          },
+          "resolutions": [
+            {
+              "id": "annual",
+              "name": "Annual",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/chl-annual.json",
+              "dateFormat": "UTC:yyyy",
+              "fromContinuous": "previous",
+              "bands": [
+                {
+                  "id": "mean",
+                  "name": "Mean of monthly medians",
+                  "band": 1,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "median",
+                  "name": "Median of monthly medians",
+                  "band": 2,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "max_month",
+                  "name": "Highest month",
+                  "band": 3,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "n_months",
+                  "name": "Months with data",
+                  "band": 4,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 12],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "months"
+                },
+                {
+                  "id": "n_obs",
+                  "name": "Satellite passes used",
+                  "band": 5,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 120],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "passes"
+                }
+              ]
+            },
+            {
+              "id": "monthly",
+              "name": "Monthly",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/chl-monthly.json",
+              "dateFormat": "UTC:mmm yyyy",
+              "fromContinuous": "previous",
+              "bands": [
+                {
+                  "id": "median",
+                  "name": "Median",
+                  "band": 1,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "mean",
+                  "name": "Mean",
+                  "band": 2,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "p90",
+                  "name": "90th percentile (peaks)",
+                  "band": 3,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#e3f4ec"],
+                        [5, "#b5e2cf"],
+                        [10, "#7fcaae"],
+                        [20, "#45ad8a"],
+                        [50, "#12936b"],
+                        [100, "#0a6e50"],
+                        [200, "#064a36"]
+                      ],
+                      "domain": [2, 200],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "mg m-3"
+                },
+                {
+                  "id": "n_obs",
+                  "name": "Satellite passes used",
+                  "band": 4,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 10],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "passes"
+                }
+              ]
+            },
+            {
+              "id": "daily",
+              "name": "Daily",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/chl-daily.json",
+              "dateFormat": "UTC:d mmm yyyy",
+              "fromContinuous": "nearest",
+              "valueScale": 0.1,
+              "valueOffset": 0,
+              "unit": "mg m-3",
+              "pointSeriesMaxSteps": 150,
+              "renderOptions": {
+                "single": {
+                  "type": "continuous",
+                  "colorScaleMode": "custom",
+                  "useRealValue": true,
+                  "colors": [
+                    [2, "#e3f4ec"],
+                    [5, "#b5e2cf"],
+                    [10, "#7fcaae"],
+                    [20, "#45ad8a"],
+                    [50, "#12936b"],
+                    [100, "#0a6e50"],
+                    [200, "#064a36"]
+                  ],
+                  "domain": [2, 200],
+                  "clampLow": true,
+                  "clampHigh": true,
+                  "band": 1
+                }
+              },
+              "hint": "Single satellite passes: clouds leave gaps, so a water body can be empty on some dates."
+            }
+          ],
+          "attribution": "Terrascope Sentinel-2 water products (VITO) · Copernicus Sentinel data",
+          "info": [
+            {
+              "name": "Source",
+              "content": "[Terrascope](https://terrascope.be) Sentinel-2 water quality products (VITO), https://stac.terrascope.be. Contains modified Copernicus Sentinel data."
+            }
+          ],
+          "places": [
+            {
+              "id": "body-1",
+              "name": "Farihy Itasy",
+              "detail": "lake, 32.3 km²",
+              "latitude": -19.05968,
+              "longitude": 46.80098,
+              "bbox": [46.73408, -19.09781, 46.8307, -19.02167]
+            },
+            {
+              "id": "body-2",
+              "name": "Tobindranon’i Tsiazompaniry",
+              "detail": "reservoir, 25.9 km²",
+              "latitude": -19.28657,
+              "longitude": 47.86405,
+              "bbox": [47.80348, -19.39258, 47.90455, -19.19121]
+            },
+            {
+              "id": "body-3",
+              "name": "Mandalo",
+              "detail": "river, 15.3 km²",
+              "latitude": -19.40594,
+              "longitude": 46.35124,
+              "bbox": [45.95249, -19.44513, 46.37861, -19.21668]
+            },
+            {
+              "id": "body-4",
+              "name": "Tobindranon’i Mantasoa · 1",
+              "detail": "reservoir, 13.4 km²",
+              "latitude": -19.01733,
+              "longitude": 47.89396,
+              "bbox": [47.84573, -19.06476, 47.91052, -18.96988]
+            },
+            {
+              "id": "body-5",
+              "name": "Onive · 1",
+              "detail": "river, 6.3 km²",
+              "latitude": -19.60002,
+              "longitude": 47.35885,
+              "bbox": [47.31717, -19.65226, 47.68423, -19.51102]
+            },
+            {
+              "id": "body-6",
+              "name": "Sakay · 1",
+              "detail": "river, 4.0 km²",
+              "latitude": -19.1721,
+              "longitude": 46.36254,
+              "bbox": [46.28722, -19.29807, 46.45336, -19.07811]
+            },
+            {
+              "id": "body-7",
+              "name": "Mania",
+              "detail": "river, 2.4 km²",
+              "latitude": -19.95145,
+              "longitude": 46.0363,
+              "bbox": [45.95551, -19.98157, 46.07262, -19.92121]
+            },
+            {
+              "id": "body-8",
+              "name": "Onive · 2",
+              "detail": "river, 2.0 km²",
+              "latitude": -19.79115,
+              "longitude": 47.89195,
+              "bbox": [47.79417, -19.8037, 47.91353, -19.70202]
+            },
+            {
+              "id": "body-9",
+              "name": "Kitsamby · 1",
+              "detail": "river, 1.6 km²",
+              "latitude": -19.39238,
+              "longitude": 46.46901,
+              "bbox": [46.44338, -19.40507, 46.51258, -19.37956]
+            },
+            {
+              "id": "body-10",
+              "name": "Iandratsay · 1",
+              "detail": "river, 1.4 km²",
+              "latitude": -19.81354,
+              "longitude": 46.34176,
+              "bbox": [46.32176, -19.8265, 46.41439, -19.80061]
+            },
+            {
+              "id": "body-11",
+              "name": "Sahasarotra · 1",
+              "detail": "river, 1.3 km²",
+              "latitude": -19.4255,
+              "longitude": 46.58025,
+              "bbox": [46.5205, -19.45663, 46.60729, -19.39424]
+            },
+            {
+              "id": "body-12",
+              "name": "Iandratsay · 2",
+              "detail": "river, 1.3 km²",
+              "latitude": -19.8525,
+              "longitude": 46.07099,
+              "bbox": [46.00196, -19.8712, 46.073, -19.83375]
+            },
+            {
+              "id": "body-13",
+              "name": "Onive · 3",
+              "detail": "river, 1.2 km²",
+              "latitude": -19.67423,
+              "longitude": 47.72429,
+              "bbox": [47.68693, -19.67603, 47.72588, -19.62732]
+            },
+            {
+              "id": "body-14",
+              "name": "Iandratsay · 3",
+              "detail": "river, 1.1 km²",
+              "latitude": -19.77398,
+              "longitude": 46.20323,
+              "bbox": [46.15255, -19.783, 46.22228, -19.76497]
+            },
+            {
+              "id": "body-15",
+              "name": "Andraikiba",
+              "detail": "lake, 0.9 km²",
+              "latitude": -19.87382,
+              "longitude": 46.96945,
+              "bbox": [46.964, -19.87851, 46.9753, -19.86923]
+            },
+            {
+              "id": "body-16",
+              "name": "Farihy Andranobe",
+              "detail": "lake, 0.9 km²",
+              "latitude": -19.82283,
+              "longitude": 47.00022,
+              "bbox": [46.98958, -19.83139, 47.0089, -19.81428]
+            },
+            {
+              "id": "body-21",
+              "name": "Farihy Analavana",
+              "detail": "lake, 0.5 km²",
+              "latitude": -19.08261,
+              "longitude": 46.84228,
+              "bbox": [46.83764, -19.08797, 46.84561, -19.07713]
+            },
+            {
+              "id": "body-24",
+              "name": "Farihy Besofina",
+              "detail": "lake, 0.4 km²",
+              "latitude": -19.07901,
+              "longitude": 46.86134,
+              "bbox": [46.85542, -19.0847, 46.86574, -19.07335]
+            }
+          ]
+        },
+        {
+          "type": "cog-time-series",
+          "id": "mdg-tur",
+          "name": "Turbidity (TUR) — Madagascar central highlands",
+          "description": "Turbidity (FNU) from Sentinel-2, 2015–2026, for the two MGRS tiles Terrascope (VITO) processes over Madagascar's central highlands (38KPD, 38KQD): Lake Itasy, the Mantasoa and Tsiazompaniry reservoirs, the Antsirabe lakes and reaches of the Sakay, Mania, Kitsamby and Onive rivers. Dogliotti et al. (2015), Terrascope collection terrascope-s2-tur-v1, 10 m. The product saturates at 5000 FNU.<br/><br/>Switch between <strong>Annual</strong>, <strong>Monthly</strong> and <strong>Daily</strong> on the workbench, pick a <strong>statistic</strong>, and use <strong>Go to a place</strong> to jump to a water body and chart it. Click any water pixel to chart its time series; click more to compare.<br/><br/><strong>How the values are built.</strong> Monthly = per-pixel statistics over the satellite passes of the month; the median is the reference because concentrations are log-normal. Annual = statistics over the <em>monthly medians</em> (each month weighs the same), because clear scenes concentrate in the dry season and averaging passes would bias the year towards it. Check <em>Months with data</em> before comparing years: 2015 (from October) and 2026 (to June) are partial. Operational (not regulatory) classes: clear < 5, moderate 5–25, turbid 25–100, very turbid > 100 FNU.<br/><br/>The colour scale is roughly logarithmic. Land, cloud and shadow are already masked by the provider.",
+          "unit": "FNU",
+          "opacity": 1,
+          "activeResolutionId": "monthly",
+          "prefetchHeaders": true,
+          "renderOptions": {
+            "resampleMethod": "nearest"
+          },
+          "resolutions": [
+            {
+              "id": "annual",
+              "name": "Annual",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/tur-annual.json",
+              "dateFormat": "UTC:yyyy",
+              "fromContinuous": "previous",
+              "bands": [
+                {
+                  "id": "mean",
+                  "name": "Mean of monthly medians",
+                  "band": 1,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "median",
+                  "name": "Median of monthly medians",
+                  "band": 2,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "max_month",
+                  "name": "Highest month",
+                  "band": 3,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "n_months",
+                  "name": "Months with data",
+                  "band": 4,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 12],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "months"
+                },
+                {
+                  "id": "n_obs",
+                  "name": "Satellite passes used",
+                  "band": 5,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 120],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "passes"
+                }
+              ]
+            },
+            {
+              "id": "monthly",
+              "name": "Monthly",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/tur-monthly.json",
+              "dateFormat": "UTC:mmm yyyy",
+              "fromContinuous": "previous",
+              "bands": [
+                {
+                  "id": "median",
+                  "name": "Median",
+                  "band": 1,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "mean",
+                  "name": "Mean",
+                  "band": 2,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "p90",
+                  "name": "90th percentile (peaks)",
+                  "band": 3,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "custom",
+                      "useRealValue": true,
+                      "colors": [
+                        [2, "#fbeadb"],
+                        [5, "#f5cfae"],
+                        [20, "#eaac79"],
+                        [50, "#dc864a"],
+                        [200, "#c8641e"],
+                        [500, "#9a4a14"],
+                        [2000, "#6b320c"]
+                      ],
+                      "domain": [2, 2000],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "FNU"
+                },
+                {
+                  "id": "n_obs",
+                  "name": "Satellite passes used",
+                  "band": 4,
+                  "renderOptions": {
+                    "single": {
+                      "type": "continuous",
+                      "colorScaleMode": "named",
+                      "colorScale": "ylgnbu",
+                      "domain": [0, 10],
+                      "clampLow": true,
+                      "clampHigh": true
+                    }
+                  },
+                  "unit": "passes"
+                }
+              ]
+            },
+            {
+              "id": "daily",
+              "name": "Daily",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/madagascar/wq/config/tur-daily.json",
+              "dateFormat": "UTC:d mmm yyyy",
+              "fromContinuous": "nearest",
+              "valueScale": 0.1,
+              "valueOffset": 0,
+              "unit": "FNU",
+              "pointSeriesMaxSteps": 150,
+              "renderOptions": {
+                "single": {
+                  "type": "continuous",
+                  "colorScaleMode": "custom",
+                  "useRealValue": true,
+                  "colors": [
+                    [2, "#fbeadb"],
+                    [5, "#f5cfae"],
+                    [20, "#eaac79"],
+                    [50, "#dc864a"],
+                    [200, "#c8641e"],
+                    [500, "#9a4a14"],
+                    [2000, "#6b320c"]
+                  ],
+                  "domain": [2, 2000],
+                  "clampLow": true,
+                  "clampHigh": true,
+                  "band": 1
+                }
+              },
+              "hint": "Single satellite passes: clouds leave gaps, so a water body can be empty on some dates."
+            }
+          ],
+          "attribution": "Terrascope Sentinel-2 water products (VITO) · Copernicus Sentinel data",
+          "info": [
+            {
+              "name": "Source",
+              "content": "[Terrascope](https://terrascope.be) Sentinel-2 water quality products (VITO), https://stac.terrascope.be. Contains modified Copernicus Sentinel data."
+            }
+          ],
+          "places": [
+            {
+              "id": "body-1",
+              "name": "Farihy Itasy",
+              "detail": "lake, 32.3 km²",
+              "latitude": -19.05968,
+              "longitude": 46.80098,
+              "bbox": [46.73408, -19.09781, 46.8307, -19.02167]
+            },
+            {
+              "id": "body-2",
+              "name": "Tobindranon’i Tsiazompaniry",
+              "detail": "reservoir, 25.9 km²",
+              "latitude": -19.28657,
+              "longitude": 47.86405,
+              "bbox": [47.80348, -19.39258, 47.90455, -19.19121]
+            },
+            {
+              "id": "body-3",
+              "name": "Mandalo",
+              "detail": "river, 15.3 km²",
+              "latitude": -19.40594,
+              "longitude": 46.35124,
+              "bbox": [45.95249, -19.44513, 46.37861, -19.21668]
+            },
+            {
+              "id": "body-4",
+              "name": "Tobindranon’i Mantasoa · 1",
+              "detail": "reservoir, 13.4 km²",
+              "latitude": -19.01733,
+              "longitude": 47.89396,
+              "bbox": [47.84573, -19.06476, 47.91052, -18.96988]
+            },
+            {
+              "id": "body-5",
+              "name": "Onive · 1",
+              "detail": "river, 6.3 km²",
+              "latitude": -19.60002,
+              "longitude": 47.35885,
+              "bbox": [47.31717, -19.65226, 47.68423, -19.51102]
+            },
+            {
+              "id": "body-6",
+              "name": "Sakay · 1",
+              "detail": "river, 4.0 km²",
+              "latitude": -19.1721,
+              "longitude": 46.36254,
+              "bbox": [46.28722, -19.29807, 46.45336, -19.07811]
+            },
+            {
+              "id": "body-7",
+              "name": "Mania",
+              "detail": "river, 2.4 km²",
+              "latitude": -19.95145,
+              "longitude": 46.0363,
+              "bbox": [45.95551, -19.98157, 46.07262, -19.92121]
+            },
+            {
+              "id": "body-8",
+              "name": "Onive · 2",
+              "detail": "river, 2.0 km²",
+              "latitude": -19.79115,
+              "longitude": 47.89195,
+              "bbox": [47.79417, -19.8037, 47.91353, -19.70202]
+            },
+            {
+              "id": "body-9",
+              "name": "Kitsamby · 1",
+              "detail": "river, 1.6 km²",
+              "latitude": -19.39238,
+              "longitude": 46.46901,
+              "bbox": [46.44338, -19.40507, 46.51258, -19.37956]
+            },
+            {
+              "id": "body-10",
+              "name": "Iandratsay · 1",
+              "detail": "river, 1.4 km²",
+              "latitude": -19.81354,
+              "longitude": 46.34176,
+              "bbox": [46.32176, -19.8265, 46.41439, -19.80061]
+            },
+            {
+              "id": "body-11",
+              "name": "Sahasarotra · 1",
+              "detail": "river, 1.3 km²",
+              "latitude": -19.4255,
+              "longitude": 46.58025,
+              "bbox": [46.5205, -19.45663, 46.60729, -19.39424]
+            },
+            {
+              "id": "body-12",
+              "name": "Iandratsay · 2",
+              "detail": "river, 1.3 km²",
+              "latitude": -19.8525,
+              "longitude": 46.07099,
+              "bbox": [46.00196, -19.8712, 46.073, -19.83375]
+            },
+            {
+              "id": "body-13",
+              "name": "Onive · 3",
+              "detail": "river, 1.2 km²",
+              "latitude": -19.67423,
+              "longitude": 47.72429,
+              "bbox": [47.68693, -19.67603, 47.72588, -19.62732]
+            },
+            {
+              "id": "body-14",
+              "name": "Iandratsay · 3",
+              "detail": "river, 1.1 km²",
+              "latitude": -19.77398,
+              "longitude": 46.20323,
+              "bbox": [46.15255, -19.783, 46.22228, -19.76497]
+            },
+            {
+              "id": "body-15",
+              "name": "Andraikiba",
+              "detail": "lake, 0.9 km²",
+              "latitude": -19.87382,
+              "longitude": 46.96945,
+              "bbox": [46.964, -19.87851, 46.9753, -19.86923]
+            },
+            {
+              "id": "body-16",
+              "name": "Farihy Andranobe",
+              "detail": "lake, 0.9 km²",
+              "latitude": -19.82283,
+              "longitude": 47.00022,
+              "bbox": [46.98958, -19.83139, 47.0089, -19.81428]
+            },
+            {
+              "id": "body-21",
+              "name": "Farihy Analavana",
+              "detail": "lake, 0.5 km²",
+              "latitude": -19.08261,
+              "longitude": 46.84228,
+              "bbox": [46.83764, -19.08797, 46.84561, -19.07713]
+            },
+            {
+              "id": "body-24",
+              "name": "Farihy Besofina",
+              "detail": "lake, 0.4 km²",
+              "latitude": -19.07901,
+              "longitude": 46.86134,
+              "bbox": [46.85542, -19.0847, 46.86574, -19.07335]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "workbench": ["mdg-chl"],
+  "timeline": ["mdg-chl"],
+  "viewerMode": "3dSmooth",
+  "initialCamera": {
+    "west": 46.62,
+    "south": -19.17,
+    "east": 46.95,
+    "north": -18.95
+  }
+}
