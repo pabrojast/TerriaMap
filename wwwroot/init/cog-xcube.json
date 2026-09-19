@@ -4,69 +4,122 @@
       "type": "group",
       "name": "🇺🇦 Chlorophyll-a Sentinel-2 — Dnipro Reservoir",
       "description": "Chlorophyll-a (CHL) time series derived from Sentinel-2 over the Dnipro reservoir, Ukraine. Processed from Terrascope/VITO, stored as COGs in Azure Blob Storage.",
+      "isOpen": true,
       "members": [
         {
           "type": "cog-time-series",
-          "id": "chl-daily",
-          "name": "📅 CHL Daily (749 dates, 2023–2026)",
-          "description": "Daily chlorophyll-a composites. Each date contains a single COG covering the Dnipro reservoir region. 749 dates from January 2023 to March 2026.",
-          "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-daily.json",
+          "id": "chl-dnipro",
+          "name": "Chlorophyll-a (CHL) — Dnipro Reservoir",
+          "description": "Chlorophyll-a concentration (mg m⁻³) from Sentinel-2, 2023–2026.<br/><br/>Switch between <strong>Annual</strong> (4 years), <strong>Monthly</strong> (39 months) and <strong>Daily</strong> (749 dates) from the workbench. Click the map to read the value and chart the time series at that point; click more points to compare them.<br/><br/>Daily scenes only cover the Sentinel-2 passes of that day, so the map can be empty in places on some dates.",
+          "unit": "mg m-3",
+          "opacity": 0.9,
+          "activeResolutionId": "monthly",
           "renderOptions": {
             "single": {
               "colorScale": "ylgnbu",
-              "domain": [0, 100],
               "type": "continuous",
               "band": 1,
-              "clampHigh": true,
-              "noDataColor": "rgba(0,0,0,0)"
-            },
-            "nodata": 0
+              "clampLow": true,
+              "clampHigh": true
+            }
           },
-          "opacity": 0.9,
-          "providerCacheSize": 5,
-          "noDataValues": [-999, -9999]
+          "resolutions": [
+            {
+              "id": "annual",
+              "name": "Annual",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-annual.json",
+              "dateFormat": "UTC:yyyy",
+              "fromContinuous": "previous",
+              "renderOptions": { "single": { "domain": [0, 60] } }
+            },
+            {
+              "id": "monthly",
+              "name": "Monthly",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-monthly.json",
+              "dateFormat": "UTC:mmm yyyy",
+              "fromContinuous": "previous",
+              "renderOptions": { "single": { "domain": [0, 80] } }
+            },
+            {
+              "id": "daily",
+              "name": "Daily",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-daily.json",
+              "dateFormat": "UTC:d mmm yyyy",
+              "fromContinuous": "nearest",
+              "valueScale": 0.1,
+              "valueOffset": 0,
+              "partialCoverage": true,
+              "renderOptions": { "single": { "domain": [0, 100] } }
+            }
+          ]
         },
         {
-          "type": "cog-time-series",
-          "id": "chl-monthly",
-          "name": "📆 CHL Monthly (39 months, 2023–2026)",
-          "description": "Monthly chlorophyll-a composites. Monthly averages computed from daily data. 39 months from January 2023 to March 2026.",
-          "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-monthly.json",
-          "renderOptions": {
-            "single": {
-              "colorScale": "ylgnbu",
-              "domain": [0, 80],
-              "type": "continuous",
-              "band": 1,
-              "clampHigh": true,
-              "noDataColor": "rgba(0,0,0,0)"
+          "type": "group",
+          "name": "Separate layers (for older share links)",
+          "description": "The same data as three independent layers. Kept so that share links created before the combined layer existed keep working.",
+          "isOpen": false,
+          "members": [
+            {
+              "type": "cog-time-series",
+              "id": "chl-daily",
+              "name": "📅 CHL Daily (749 dates, 2023–2026)",
+              "description": "Daily chlorophyll-a composites (mg m⁻³). Coverage varies per date (only the Sentinel-2 passes of that day).",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-daily.json",
+              "dateFormat": "UTC:d mmm yyyy",
+              "unit": "mg m-3",
+              "valueScale": 0.1,
+              "renderOptions": {
+                "single": {
+                  "colorScale": "ylgnbu",
+                  "domain": [0, 100],
+                  "type": "continuous",
+                  "band": 1,
+                  "clampHigh": true
+                }
+              },
+              "opacity": 0.9
             },
-            "nodata": 0
-          },
-          "opacity": 0.9,
-          "providerCacheSize": 5,
-          "noDataValues": [-999, -9999]
-        },
-        {
-          "type": "cog-time-series",
-          "id": "chl-annual",
-          "name": "📊 CHL Annual (4 years, 2023–2026)",
-          "description": "Annual chlorophyll-a composites. Yearly averages for 2023, 2024, 2025, and 2026.",
-          "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-annual.json",
-          "renderOptions": {
-            "single": {
-              "colorScale": "ylgnbu",
-              "domain": [0, 60],
-              "type": "continuous",
-              "band": 1,
-              "clampHigh": true,
-              "noDataColor": "rgba(0,0,0,0)"
+            {
+              "type": "cog-time-series",
+              "id": "chl-monthly",
+              "name": "📆 CHL Monthly (39 months, 2023–2026)",
+              "description": "Monthly chlorophyll-a composites (mg m⁻³). 39 months from January 2023 to March 2026.",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-monthly.json",
+              "dateFormat": "UTC:mmm yyyy",
+              "fromContinuous": "previous",
+              "unit": "mg m-3",
+              "renderOptions": {
+                "single": {
+                  "colorScale": "ylgnbu",
+                  "domain": [0, 80],
+                  "type": "continuous",
+                  "band": 1,
+                  "clampHigh": true
+                }
+              },
+              "opacity": 0.9
             },
-            "nodata": 0
-          },
-          "opacity": 0.9,
-          "providerCacheSize": 3,
-          "noDataValues": [-999, -9999]
+            {
+              "type": "cog-time-series",
+              "id": "chl-annual",
+              "name": "📊 CHL Annual (4 years, 2023–2026)",
+              "description": "Annual chlorophyll-a composites (mg m⁻³) for 2023, 2024, 2025 and 2026.",
+              "url": "https://ihpwinsdata.blob.core.windows.net/data/xcube/config/chl-annual.json",
+              "dateFormat": "UTC:yyyy",
+              "fromContinuous": "previous",
+              "unit": "mg m-3",
+              "renderOptions": {
+                "single": {
+                  "colorScale": "ylgnbu",
+                  "domain": [0, 60],
+                  "type": "continuous",
+                  "band": 1,
+                  "clampHigh": true
+                }
+              },
+              "opacity": 0.9
+            }
+          ]
         }
       ]
     }
