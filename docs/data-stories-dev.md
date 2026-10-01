@@ -17,3 +17,9 @@ CKAN Pages owns combined text/map/dashboard templates and scroll/manual-slide na
 ## Personal image library
 
 Set `storyImageLibraryUrl: /story-images/library` on the same CKAN origin. The new Pages backend and its migration must be available before deploying this configuration. CKAN owns the reusable library, validation and optimization; Terria stores permanent portal URLs. Existing shares remain readable and inline images are converted when a story step is edited and saved.
+
+## Production promotion (2026-10-01)
+
+The functional revision `634903f` is published on `dev` and `production` and pins TerriaJS `2ac905a5c`. The same DEV-tested image was promoted to IHP production: `pabrojast/terriamap:20261001154955-634903f@sha256:5343f05bd6af0bde0755c09fb15a0d755b7a330ba660c76d767dd0d3d1dbf285`. No environment-specific rebuild is needed because CKAN endpoints remain root-relative.
+
+CKAN was updated first using `ckan-unesco-docker/scripts/manual-deploy.sh` (revision 103), including the image library migration and profile navigation merged into the theme's `dev210`. Terria then upgraded through its existing Helm release (revision 33), preserving server configuration; its four replicas reached Ready with zero restarts. The live client exposes both image endpoints and recognizes the IHP session. Release pins, resource comparisons and validation details are recorded in `ckan-unesco-docker/deploy/docker/story-images-production.md`.
