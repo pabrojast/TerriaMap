@@ -8,8 +8,12 @@ Actualizar CKAN antes de activar el proveedor; después cambiar la imagen de Ter
 
 ## Narrative images and visual templates (2026-09-24)
 
-The pinned TerriaJS revision enables authenticated image upload/paste/drop through the same-origin `storyImageUploadUrl: /pages_upload`. CKAN Pages supplies session/CSRF/size limits and persistent storage; failed uploads retain the editor draft. TinyMCE image dialogs appear above StoryBuilder, with proportional images and a scrollable editor on small screens.
+The pinned TerriaJS revision enables authenticated image upload/paste/drop through the same-origin `storyImageUploadUrl: /story-images/upload`. CKAN Pages supplies session/CSRF/size limits and persistent storage; failed uploads retain the editor draft. TinyMCE image dialogs appear above StoryBuilder, with proportional images and a scrollable editor on small screens.
 
 Feature Info grows with late COG/table/media content until the viewport limit, preserving manual resizing and a Reset automatic size button. Shared state records `sizeMode` and keeps legacy dimensions compatible.
 
 CKAN Pages owns combined text/map/dashboard templates and scroll/manual-slide navigation. Dashboard Builder accepts versioned same-origin narrative filter/highlight commands; map references reuse Terria's applyScene receipt/completion contract. Deploy this app with the dev workflow in `ckan-unesco-docker`, passing the immutable TerriaMap commit. Check the CKAN Stories release alongside it; this config requires the new Pages upload GET endpoint.
+
+## Personal image library
+
+Set `storyImageLibraryUrl: /story-images/library` on the same CKAN origin. The new Pages backend and its migration must be available before deploying this configuration. CKAN owns the reusable library, validation and optimization; Terria stores permanent portal URLs. Existing shares remain readable and inline images are converted when a story step is edited and saved.

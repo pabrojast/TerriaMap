@@ -7,7 +7,8 @@
     "tabbedCatalog": true,
     // Same-origin CKAN session integration (data.dev-wins.com/terria <-> CKAN).
     // Relative URLs only: they must never go through the terriajs-server proxy.
-    "storyImageUploadUrl": "/pages_upload",
+    "storyImageUploadUrl": "/story-images/upload",
+    "storyImageLibraryUrl": "/story-images/library",
     "ckanSession": {
       "sessionUrl": "/api/terria/user/session",
       "privateCatalogUrl": "/api/terria/user/private-catalog",
