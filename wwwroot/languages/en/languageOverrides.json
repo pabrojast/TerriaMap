@@ -303,8 +303,8 @@
   },
   "helpPanel": {
     "btnText": "Help",
-    "menuPaneTitle": "About IHP Viewers",
-    "menuPaneBody": "The Geospatial Catalogue Viewer enables you to overlay datasets to gain insights into water-related patterns and trends, facilitating informed decision-making. The variety of datasets and scales enable you to uncover insights into both overarching global trends and finer-grained local patterns.\n\nThe Thematic Viewers complement the multitude of visualization options available for our water-related data, offering a diverse array of tools tailored to the need of the specific theme.",
+    "menuPaneTitle": "About this map",
+    "menuPaneBody": "Overlay the datasets of this portal to explore water-related patterns and trends, from global overviews to local detail. Add layers from the catalogue, change the base map, split the screen to compare, and share what you see.",
     "promptMessage": "Find the Tour, how-to videos & other help content here",
     "dismissText": "Got it, thanks!",
     "takeTour": "Take the tour",
@@ -343,9 +343,9 @@
     "showCuratedData": "Show Curated Data"
   },
   "welcomeMessage": {
-    "title": "Welcome to IHP Viewers",
-    "welcomeMessage": "The Geospatial Catalogue Viewer within IHP-WINS serves as a powerful tool, enabling users to transform data from the catalogue into actionable insights, supporting the closing of the data-knowledge gap.",
-    "welcomeMessageOnMobile": "The Geospatial Catalogue Viewer enables users to transform data into actionable insights.",
+    "title": "Welcome to the map viewer",
+    "welcomeMessage": "Explore the datasets of this portal on a map: add layers from the catalogue, combine them and share the result.",
+    "welcomeMessageOnMobile": "Explore the datasets of this portal on a map.",
     "tourBtnText": "Take the tour",
     "helpBtnText": "I'll need some help",
     "exploreDataBtnText": "Explore map data",

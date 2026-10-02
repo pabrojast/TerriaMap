@@ -7,8 +7,6 @@
     "tabbedCatalog": true,
     // Same-origin CKAN session integration (data.dev-wins.com/terria <-> CKAN).
     // Relative URLs only: they must never go through the terriajs-server proxy.
-    "storyImageUploadUrl": "/story-images/upload",
-    "storyImageLibraryUrl": "/story-images/library",
     "ckanSession": {
       "sessionUrl": "/api/terria/user/session",
       "privateCatalogUrl": "/api/terria/user/private-catalog",
@@ -18,7 +16,7 @@
       "checkOnFocus": true,
       "focusThrottleMs": 5000
     },
-    "aboutButtonHrefUrl": "https://ihp-wins.unesco.org/about",
+    "aboutButtonHrefUrl": "/about",
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
@@ -58,24 +56,22 @@
             link: "http://www.example.com"
         },*/
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "IHP-WINS - Terria Map",
+    "appName": "Map viewer",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<div style=\"display: flex; justify-content: center; align-items: center; width: 100%;\"><a target=\"_blank\" href=\"https://ihp-wins.unesco.org/terria/\"><img src=\"images/UNESCO_logo_hor_blue.jpg\" height=\"52\" title=\"Version: {{version}}\" /></a></div>",
+      "<div style=\"display:flex;justify-content:center;align-items:center;width:100%;font-weight:600\"><a href=\"/\" style=\"color:inherit;text-decoration:none\">Map viewer</a></div>",
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "projas@cazalac.org",
+    "supportEmail": "",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
-    // ArcGIS API configuration
-    "arcGisApiKey": "AAPTxy8BH1VEsoebNVZXo8HurKc8-mmrXWfHJiqKIhXlCIuG-_v2oN2AnmQYrCUKb_e4HjfbgUP4UI1YmJR05pVQBF8bMJ-OE0imtXnuAFLKUUzJlDsXfLCfJKHTMXjAltM2nWc9BRTIpeXB6TK0zYo-urmKP6F3nKR2tdEBTPmykNNErdXDy9QssqYjFxJj3PHTWRT2x550HZ_2LNPIlJXeceSL_iLy-y7odV6n74lwfpA.AT1_6MCJUTaC",
     // Or this
     "feedbackUrl": "feedback",
     "showExternalLink": true,
-    "externalLinkUrl": "https://ihp-wins.unesco.org/terria/",
+    "externalLinkUrl": "/terria/",
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
     "mobileDefaultViewerMode": "2d",
@@ -88,7 +84,7 @@
       {
         "id": "search-provider/nominatim",
         "type": "nominatim-search-provider",
-        "url": "/data-stories/api/location-search",
+        "url": "https://nominatim.openstreetmap.org/search",
         "name": "Locations",
         "flightDurationSeconds": 2,
         "maxResults": 8
@@ -121,16 +117,7 @@
       "fallbackLanguage": "en"
     },
     "relatedMaps": [],
-    "extraCreditLinks": [
-      {
-        "text": "map.extraCreditLinks.dataAttribution",
-        "url": "https://ihp-wins.unesco.org/about#data-attribution"
-      },
-      {
-        "text": "map.extraCreditLinks.disclaimer",
-        "url": "https://www.unesco.org/en/geospatial/disclaimer"
-      }
-    ],
+    "extraCreditLinks": [],
     "helpContent": [
       {
         "title": "translate#gettingstarted.title",
