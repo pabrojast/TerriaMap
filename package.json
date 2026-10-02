@@ -23,7 +23,7 @@
     "url": "http://github.com/TerriaJS/TerriaMap"
   },
   "dependencies": {
-    "terriajs": "git+https://github.com/pabrojast/terriajs.git#cb828add9a20ad3e0ed9dd8974631990b82e171a",
+    "terriajs": "git+https://github.com/pabrojast/terriajs.git#367781b0ebd8acc81cd7b8ff434cba2d6c3a2fe4",
     "terriajs-server": "git+https://github.com/pabrojast/terriajs-server.git#5c458df30eaf10e1189717539a1cc064df7f2abf"
   },
   "config": {
