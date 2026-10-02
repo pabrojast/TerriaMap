@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "terriajs": "git+https://github.com/pabrojast/terriajs.git#2ac905a5ca61bd743e7258349b6bb265890547ce",
-    "terriajs-server": "git+https://github.com/pabrojast/terriajs-server.git#5c458df30eaf10e1189717539a1cc064df7f2abf"
+    "terriajs-server": "git+https://github.com/pabrojast/terriajs-server.git#fe12f4d8c79ccf8fd8be84aad684b0cbd7a909d6"
   },
   "config": {
     "docker": {
