@@ -2,6 +2,11 @@
 
 ### The Next Release
 
+- Merged upstream TerriaMap `main` (0.4.8, PR #786) into the fork: React 18 root with a MobX loader (`lib/Views/render.jsx`, `terriaStore.ts`), `html-webpack-plugin` renders `index.ejs`, terriajs SVG sprite plugin replaces `svg-sprite-loader`, ESLint 10 flat config reused from terriajs, Prettier 3, yarn 1.22.22, Node >= 22, `tini` in the Docker image.
+- `terriajs` now points at the fork branch synced with upstream TerriaJS 8.13.0+ (flat layout); `terriajs-cesium` 26.3.0 and the shared build/lint dependencies follow the versions terriajs declares (`gulp check-terriajs-dependencies`).
+- Added `resolutions.tinymce` (terriajs's own resolutions do not apply to a dependency) and the fork's spec dependencies (`jasmine-ajax`, `react-test-renderer` and their types) because the build's type check uses terriajs's `tsconfig.json`, which includes `test/`.
+- Kept fork customizations: `Map viewer` title, IHP-WINS `404.html` and static pages, proxy allowlist in `serverconfig.json`, Helm values, `simple.json` catalog, `ExperimentalMenu`, neutral branding (no `AboutButton`), git dependencies for `terriajs` and `terriajs-server`.
+
 ### `0.1.1`
 
 **2024-03-05**
@@ -41,9 +46,7 @@ Failed release workflow
 **2023-05-22**
 
 - Update TerriaJS to `8.3.0`
-
   - **Breaking changes:**
-
     - **Upgraded Mobx to version 6.7.x**
     - **Upgraded Typescript to version 4.9.x**
 
@@ -687,6 +690,7 @@ Failed release workflow
 - Improve the computation of the visible extent in 3D view, making the view stay more consistent when switching between 2D and 3D view.
 - Improve the accuracy of the shared 3D view by adding precise camera parameters to the URL.
 - Improve the performance of rendering point features, especially in 2D.
+
 # Change Log
 
 #### next release

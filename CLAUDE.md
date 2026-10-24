@@ -10,14 +10,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `yarn gulp build` - Build application for development
 - `yarn gulp release` - Build application for production
 - `yarn gulp watch` - Watch files and rebuild incrementally
-- `yarn hot` - Start webpack-dev-server with hot reloading
 - `yarn start` - Start terriajs-server (requires built application)
 
 ### Linting & Code Quality
 
 - `yarn prettier` - Format code using Prettier
 - `yarn prettier-check` - Check code formatting
-- `yarn gulp lint` - Run ESLint on index.js and lib/ directory
+- `yarn gulp lint` - Run ESLint (flat config `eslint.config.mjs`, reused from terriajs) on index.js and lib/ directory
 
 ### Utilities
 
@@ -26,11 +25,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is a TerriaJS-based geospatial web application using a monorepo structure with yarn workspaces.
+This is a TerriaJS-based geospatial web application built with yarn 1 (`.yarn/releases/yarn-1.22.22.js`).
 
 ### Core Structure
 
-- **entry.js** - Application entry point with loading screen
+- **entry.js** - Application entry point; `lib/Views/render.jsx` mounts a React 18 root with a loader while `lib/Views/terriaStore.ts` imports and starts `index.js`
 - **index.js** - Main application bootstrap and TerriaJS initialization
 - **lib/** - Custom application components and overrides
 - **wwwroot/** - Static assets, configuration files, and build output
@@ -38,7 +37,8 @@ This is a TerriaJS-based geospatial web application using a monorepo structure w
 
 ### TerriaJS Integration
 
-- Uses TerriaJS as primary dependency from custom fork: the revision pinned in `package.json`
+- Uses TerriaJS as primary dependency from custom fork: the revision pinned in `package.json` (branch `integrate/upstream-8.13-flat-*` of `pabrojast/terriajs`, flat layout, synced with upstream TerriaJS 8.13.0+). `terriajs-cesium` in `devDependencies` must match the version terriajs declares (26.3.0), otherwise `gulp build` aborts with two copies of Cesium.
+- Upstream TerriaMap (`https://github.com/TerriaJS/TerriaMap`, remote `upstream`) is merged into the fork periodically; keep the fork's `index.ejs` title, `404.html`, `serverconfig.json` proxy list, Helm values, `simple.json` catalog and the git dependencies when resolving conflicts.
 - Extends TerriaJS with custom components in `lib/Views/`
 - Overrides TerriaJS styling via `lib/Styles/variables-overrides.scss`
 - Custom webpack configuration extends TerriaJS buildprocess
@@ -48,7 +48,7 @@ This is a TerriaJS-based geospatial web application using a monorepo structure w
 - **config.json** - Runtime application configuration
 - **serverconfig.json** - terriajs-server proxy configuration
 - **wwwroot/init/\*.json** - Catalog initialization files
-- **buildprocess/webpack.config.js** - Main webpack configuration
+- **buildprocess/webpack.config.js** - Main webpack configuration (takes `{ devMode, baseHref }`; `html-webpack-plugin` renders `wwwroot/index.ejs` to `wwwroot/index.html`, so there is no `render-index` gulp task anymore)
 
 ### CKAN Integration
 
@@ -82,8 +82,8 @@ The image is served at `/terria` on the same origin as CKAN (dev `data.dev-wins.
 
 ## Development Notes
 
-- Node.js >= 20.0.0 required
+- Node.js >= 22 required (Docker images use `node:22`)
 - Uses TypeScript with React JSX support
 - ESLint configuration includes React and TypeScript rules
-- Prettier for code formatting (version 2.7.1)
+- Prettier for code formatting (version 3.8.1)
 - Husky for git hooks with pretty-quick for staged file formatting
