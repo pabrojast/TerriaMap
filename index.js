@@ -1,5 +1,5 @@
-import ConsoleAnalytics from "terriajs/lib/Core/ConsoleAnalytics";
-import GoogleAnalytics from "terriajs/lib/Core/GoogleAnalytics";
+import ConsoleAnalytics from "terriajs/lib/Core/Analytics/ConsoleAnalytics";
+import GoogleAnalytics from "terriajs/lib/Core/Analytics/GoogleAnalytics";
 import registerCatalogMembers from "terriajs/lib/Models/Catalog/registerCatalogMembers";
 import registerSearchProviders from "terriajs/lib/Models/SearchProviders/registerSearchProviders";
 import ShareDataService from "terriajs/lib/Models/ShareDataService";
@@ -9,7 +9,6 @@ import registerCustomComponentTypes from "terriajs/lib/ReactViews/Custom/registe
 import updateApplicationOnHashChange from "terriajs/lib/ViewModels/updateApplicationOnHashChange";
 import updateApplicationOnMessageFromParentWindow from "terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow";
 import loadPlugins from "./lib/Core/loadPlugins";
-import render from "./lib/Views/render";
 import showGlobalDisclaimer from "./lib/Views/showGlobalDisclaimer";
 import plugins from "./plugins";
 
@@ -97,10 +96,11 @@ export default terria
         styleSheet.innerText = fontImports;
         document.head.appendChild(styleSheet);
       }
-
-      render(terria, [], viewState);
     } catch (e) {
       console.error(e);
       console.error(e.stack);
     }
+  })
+  .then(() => {
+    return { terria, viewState };
   });

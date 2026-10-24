@@ -689,6 +689,86 @@ Failed release workflow
 - Improve the performance of rendering point features, especially in 2D.
 # Change Log
 
+#### next release
+
+#### 0.4.8
+
+- Upgrade terriajs-server to 5.0.0
+- Upgrade terriajs to 8.13.0
+
+#### 0.4.7
+
+- Upgrade terriajs-server to version 5 alpha
+  - Requires node version 22 or above
+  - Comes with a new version of proxy rewritten using undici instead of deprecated `request` package. This should improve the performance and reliability of the proxy. Please test your map with this new version of terriajs-server and report any issues you find.
+  - For full changelog see [terriajs-server CHANGES.md](https://github.com/TerriaJS/terriajs-server/blob/master/CHANGES.md#next-release---unreleased)
+- Upgraded `terriajs-cesium` to `26.0.0`. We are now using cesium 1.142.
+
+#### 0.4.6
+
+- Upgrades TerriaJS to [8.12.2](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8120---2026-03-27)
+
+#### 0.4.5
+
+- Upgrades TerriaJS to [8.11.3](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8113---2026-02-02)
+- Upgrades TerriaJS to [8.12.2](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#8120---2026-03-27)
+
+#### 0.4.5
+
+- Upgrades TerriaJS to [8.11.3](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#8113---2026-02-02)
+
+#### 0.4.4
+
+**2025-12-04**
+
+- **Security fixes**
+  - Fixed a security bug in `/proxy` endpoint that allowed requests to a variation of domains in the `allowProxyFor` list. If `example.com` is in `allowProxyFor` setting, this allowed requests to a domain with a different prefix, like `badexample.com` to pass through. [#212](https://github.com/TerriaJS/terriajs-server/pull/212)
+
+- **Deprecations**
+  - Deprecates most of the proxy domains in the [default serverconfig.json](https://github.com/TerriaJS/TerriaMap/blob/d126a10a0625926762351b1b44b918fb03737836/serverconfig.json#L7-L25) file. These will be removed in a future release, so please add them through a [custom serverconfig.json](https://docs.terria.io/guide/getting-started/#customizing-terriamap) if you rely on terria proxying to any of these servers.
+
+- Upgrades TerriaJS to
+  [8.11.1](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8111---2025-12-04)
+  [8.11.1](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#8111---2025-12-04)
+
+#### 0.4.3
+
+**2025-10-09**
+
+- Update TerriaJS to [8.11.0](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8110---2025-10-09)
+- Update TerriaJS to [8.11.0](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#8110---2025-10-09)
+
+#### 0.4.2
+
+**2025-06-03**
+
+- Update TerriaJS to [8.9.5](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#895---2025-06-03)
+- Update TerriaJS to [8.9.5](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#895---2025-06-03)
+- Update terriajs-server to [4.0.2](https://github.com/TerriaJS/terriajs-server/blob/master/CHANGES.md#402---2025-06-03)
+
+#### 0.4.1
+
+**2025-04-24**
+
+- Update TerriaJS to `8.9.3`
+  - Contains a fix for region mapping and GeoJSON rendering.
+  - Read full [list of changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#893---2025-04-24)
+  - Read full [list of changes](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#893---2025-04-24)
+
+#### 0.4.0
+
+**2025-04-04**
+
+- **Breaking changes:**
+  - Update TerriaJS to `8.9.2`
+    - New features
+      - This release has a new look UI with changes to workbench and other panels
+      - Tiling support for ArcGIS feature service. This is enabled by default if the server supports tiling and unsupported marker/point styles aren't used - [PR 7370](https://github.com/TerriaJS/terriajs/pull/7370)
+    - Bug fixes
+      - Fixes a regression bug in GeoJSON rendering that caused some features to be not rendered - [PR 7144](https://github.com/TerriaJS/terriajs/pull/7144)
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#892---2025-03-31)
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#892---2025-03-31)
+
 #### 0.3.0
 
 **2025-02-18**
@@ -698,6 +778,7 @@ Failed release workflow
     - Upgrades Webpack to version 5
     - Upgraded sass to version 1.80+
     - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#880---2025-02-18)
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#880---2025-02-18)
   - Converted files from CJS to ESM style
     - This includes `entry.js`, `index.js` - if you have changed these files it is likely that you will get a merge conflict when upgrading. Please [reach out to us](https://github.com/terriajs/terriajs/discussions) if you need help.
     - Replaced webpack aliases `~terriajs-variables` and `~terriajs` in css imports with relative paths. This simplifies the webpack configuration.
@@ -719,6 +800,7 @@ Failed release workflow
   - Upgraded gulp to version 5
     - Gulp 5 defaults to encoding copied files as utf-8, had turn off encoding by setting `encoding: false` to correctly copy binary assets from dependencies.
   - Bunch of other packages upgraded, [see CHANGES](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8710---2024-11-29).
+  - Bunch of other packages upgraded, [see CHANGES](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#8710---2024-11-29).
 
 ### `0.2.2`
 
@@ -751,6 +833,7 @@ Failed release workflow
     - **Upgraded Cesium to version 6.2.0**
     - **Upgraded Typescript to version 5.2.x**
   - For full list of changes, see [terriajs/CHANGES.md](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md)
+  - For full list of changes, see [terriajs/CHANGES.md](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md)
 - Replaced `node-sass` with `sass`. (both packages expose the same JavaScript API, so no changes should be required)
 - Increase NodeJS minimum version to 16
 
@@ -775,15 +858,14 @@ Failed release workflow
   - Now supports Google Analytics 4 properties.
   - Upgraded babel packages
   - See [the full list of changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#832---2023-08-11).
+  - See [the full list of changes](https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/CHANGES.md#832---2023-08-11).
 
 ### `0.0.7`
 
 **2023-05-22**
 
 - Update TerriaJS to `8.3.0`
-
   - **Breaking changes:**
-
     - **Upgraded Mobx to version 6.7.x**
     - **Upgraded Typescript to version 4.9.x**
 
@@ -810,6 +892,7 @@ Failed release workflow
 **2022-09-23**
 
 - Removed `RelatedMaps.jsx` - this is now generated from configuration in `terriajs`. See https://github.com/TerriaJS/terriajs/blob/main/doc/customizing/client-side-config.md#parameters for example configuration.
+- Removed `RelatedMaps.jsx` - this is now generated from configuration in `terriajs`. See https://github.com/TerriaJS/terriajs/blob/main/packages/terriajs/doc/customizing/client-side-config.md#parameters for example configuration.
   - **Note** `RelatedMaps` can remain unchanged if HTML/JSX file is preferred.
 
 ### 2022-06-30
