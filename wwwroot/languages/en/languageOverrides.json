@@ -245,8 +245,8 @@
     "mapDataState_plural": "{{count}} datasets enabled on map"
   },
   "toolsPanel": {
-    "btnText": "Tool",
-    "btnTitle": "Advanced toolbox"
+    "btnText": "Tools",
+    "btnTitle": "Map tools"
   },
   "settingPanel": {
     "viewerModeLabels": {
