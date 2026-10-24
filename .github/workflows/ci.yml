@@ -19,7 +19,11 @@ jobs:
         uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: ${{ matrix.node-version }}
-      - run: rm -rf node_modules && yarn install --frozen-lockfile
+      # terriajs is a git dependency with a `prepare` script, so yarn runs a nested
+      # install while the outer one is still fetching. Both share ~/.cache/yarn and
+      # race on the same tarballs ("Extracting tar content of undefined failed").
+      # Give the outer install its own cache, as the Dockerfile already does.
+      - run: rm -rf node_modules && yarn install --frozen-lockfile --cache-folder /tmp/yarn-cache
       - run: yarn gulp lint release
         env:
           NODE_OPTIONS: "--max_old_space_size=4096"
