@@ -5,6 +5,11 @@
     "autoLoadReferencesForShareLinks": true,
     "autoLoadMaxNodesForShareLinks": 800,
     "tabbedCatalog": true,
+    // Enable per environment only after the authenticated CKAN backend is deployed.
+    "dataAssistant": {
+      "enabled": false,
+      "apiBaseUrl": "/api/terriassistant/data"
+    },
     // Same-origin CKAN session integration (data.dev-wins.com/terria <-> CKAN).
     // Relative URLs only: they must never go through the terriajs-server proxy.
     "storyImageUploadUrl": "/story-images/upload",

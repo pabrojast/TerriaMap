@@ -50,3 +50,7 @@ What this means:
 - [The terriajs7 branch of TerriaMap](https://github.com/TerriaJS/TerriaMap/tree/terriajs7) will use v7 TerriaJS, but will not receive further updates
 - We have a [migration guide](https://docs.terria.io/guide/contributing/migration-guide/) available for users of TerriaJS v7 to help them upgrade their applications to TerriaJS v8
 - Please chat to us and the community in our [GitHub discussions forum](https://github.com/TerriaJS/terriajs/discussions)
+
+### Authenticated data assistant
+
+`parameters.dataAssistant` defaults to disabled in `wwwroot/config.json`. DEV Helm enables it with `apiBaseUrl: /api/terriassistant/data`; this must stay same-origin, alongside `ckanSession`. The CKAN `terriassistant` plugin and two `terria-data` RQ workers provide the authenticated API and DeepSeek Flash integration. Provider credentials stay in CKAN. See the TerriaJS vault for analysis tools, limits and testing.
