@@ -10,6 +10,6 @@ After candidate validation, TerriaJS PR #18 was merged into `develop` at `95e20e
 
 ## Separate dataset search (2026-10-30)
 
-Library `bc3f81025e3e6b066a1e9444218a37e99e9e8118` moves catalogue search to Add data → Search datasets. It opens a side panel with optional text, polygon drawing and filters; resource additions preserve saved CKAN views. Search state survives tool changes and chat resets. Use this area in AI Assistant explicitly copies its polygon into the analysis context. The assistant keeps chat, collapsed context and Apply/Undo. My data handles file/URL imports on desktop and mobile; Share displays excluded layers. Existing configuration and same-origin CKAN endpoints are retained.
+Library `c02df9714e2aabe989e38ee5e4e86bdcb59c2b17` moves catalogue search to Add data → Search datasets. It opens a side panel with optional text, polygon drawing and filters; resource additions preserve saved CKAN views. Search state survives tool changes and chat resets. Use this area in AI Assistant explicitly copies its polygon into the analysis context. The assistant keeps chat, collapsed context and Apply/Undo. My data handles file/URL imports on desktop and mobile; Share displays excluded layers. Existing configuration and same-origin CKAN endpoints are retained.
 
 Validation and DEV release evidence: `ckan-unesco-docker/deploy/envoy-dev/validation-dataset-search-2026-10-30.md`.
